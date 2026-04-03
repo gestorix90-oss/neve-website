@@ -1,0 +1,129 @@
+---
+---
+
+<section class="pillars">
+  <div class="container">
+    <div class="section-header">
+      <h2>Cosa troverai qui</h2>
+      <p>Tre pilastri per capire perché prendi decisioni finanziarie sbagliate — e come rimediare.</p>
+    </div>
+    
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#c9a84c" stroke-width="2" fill="none"/>
+            <path d="M14 20 C14 16, 20 12, 26 16 C32 20, 26 28, 20 24" stroke="#c9a84c" stroke-width="2" fill="none"/>
+            <circle cx="14" cy="20" r="2" fill="#c9a84c"/>
+            <circle cx="26" cy="16" r="2" fill="#c9a84c"/>
+          </svg>
+        </div>
+        <h3>Psicologia del Denaro</h3>
+        <p>Perché il tuo cervello ti frega quando si parla di soldi. Bias cognitivi, euristiche e trappole mentali che ti costano cari.</p>
+      </div>
+      
+      <div class="pillar-card">
+        <div class="pillar-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <rect x="8" y="8" width="24" height="24" rx="4" stroke="#c9a84c" stroke-width="2" fill="none"/>
+            <path d="M14 20 L18 24 L26 16" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Finanza Comportamentale</h3>
+        <p>Le regole non scritte che governano le tue scelte economiche. Dalla perdita avversione all'effetto gregge.</p>
+      </div>
+      
+      <div class="pillar-card">
+        <div class="pillar-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path d="M20 6 L20 34 M6 20 L34 20" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="20" cy="20" r="14" stroke="#c9a84c" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <h3>Strumenti Pratici</h3>
+        <p>Checklist, framework e modelli per prendere decisioni migliori. Niente teoria — solo roba che funziona.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .pillars {
+    padding: 6rem 2rem;
+    background: var(--secondary);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+
+  .section-header p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .pillar-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .pillar-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .pillar-icon {
+    margin-bottom: 1.5rem;
+  }
+
+  .pillar-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+
+  .pillar-card p {
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 768px) {
+    .pillars {
+      padding: 4rem 1.5rem;
+    }
+
+    .pillars-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+    }
+  }
+</style>

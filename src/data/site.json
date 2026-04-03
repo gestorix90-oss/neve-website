@@ -1,0 +1,28 @@
+{
+  "name": "neve",
+  "title": "Neve — La Meccanica della Finanza Comportamentale",
+  "description": "Ti apro il cofano dei tuoi soldi e ti mostro cosa non funziona. Psicologia del denaro, bias cognitivi e finanza comportamentale spiegati da una meccanico.",
+  "url": "https://ondameccanica.github.io/neve-website",
+  "author": {
+    "name": "Neve",
+    "email": "",
+    "url": "https://ondameccanica.github.io/neve-website"
+  },
+  "brandColors": {
+    "primary": "#1a1a2e",
+    "secondary": "#16213e",
+    "accent": "#c9a84c",
+    "text": "#e0e0e0",
+    "textMuted": "#a0a0a0",
+    "background": "#0f0f1a",
+    "cardBg": "#1a1a2e",
+    "border": "#2a2a4e"
+  },
+  "social": {
+    "youtube": "",
+    "tiktok": "",
+    "instagram": "",
+    "linkedin": "",
+    "twitter": ""
+  }
+}

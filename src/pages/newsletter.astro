@@ -1,0 +1,188 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+
+<SiteLayout title="Newsletter" description="Iscriviti alla newsletter di Neve per ricevere analisi su psicologia del denaro e finanza comportamentale.">
+  <section class="newsletter-page">
+    <div class="container">
+      <div class="newsletter-content">
+        <h1>La <span class="highlight">Newsletter</span> di Neve</h1>
+        <p class="subtitle">Ogni settimana, un'analisi su bias cognitivi, errori finanziari e psicologia del denaro.</p>
+        
+        <div class="benefits">
+          <div class="benefit">
+            <span class="benefit-icon">📧</span>
+            <div>
+              <h3>Una email a settimana</h3>
+              <p>Niente spam. Solo un'analisi approfondita ogni settimana.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <span class="benefit-icon">🧠</span>
+            <div>
+              <h3>Contenuti esclusivi</h3>
+              <p>Analisi che non trovi sui social. Approfondimenti e framework pratici.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <span class="benefit-icon">🔧</span>
+            <div>
+              <h3>Strumenti pratici</h3>
+              <p>Checklist, template e guide da scaricare e usare subito.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <span class="benefit-icon">💰</span>
+            <div>
+              <h3>100% Gratis</h3>
+              <p>Per sempre. Puoi cancellarti quando vuoi.</p>
+            </div>
+          </div>
+        </div>
+        
+        <form class="signup-form" action="#" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Il tuo nome" aria-label="Nome" />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="La tua email" required aria-label="Email" />
+          </div>
+          <button type="submit" class="btn-submit">Iscriviti Gratis</button>
+          <p class="form-note">Niente spam. Unsubscribe quando vuoi.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</SiteLayout>
+
+<style>
+  .newsletter-page {
+    padding: 4rem 2rem;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .newsletter-content {
+    text-align: center;
+  }
+
+  .newsletter-content h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+
+  .highlight {
+    color: var(--accent);
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+  }
+
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+
+  .benefit {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+
+  .benefit-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .benefit h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: var(--text);
+  }
+
+  .benefit p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  .signup-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+  }
+
+  .form-group input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  .form-group input::placeholder {
+    color: var(--text-muted);
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+  }
+
+  .btn-submit:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(201, 168, 76, 0.3);
+  }
+
+  .form-note {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 768px) {
+    .newsletter-page {
+      padding: 3rem 1.5rem;
+    }
+  }
+</style>

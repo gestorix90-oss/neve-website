@@ -1,0 +1,23 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ContentPillars from '../components/ContentPillars.astro';
+import LatestPosts from '../components/LatestPosts.astro';
+import NewsletterCTA from '../components/NewsletterCTA.astro';
+import VideoSection from '../components/VideoSection.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const posts = allPosts
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
+---
+
+<SiteLayout title="Home" description="Neve - La meccanica della finanza comportamentale. Bias cognitivi, psicologia del denaro e decisioni finanziarie spiegati da una meccanico.">
+  <HeroSection />
+  <ContentPillars />
+  <VideoSection />
+  <LatestPosts posts={posts} />
+  <NewsletterCTA />
+</SiteLayout>

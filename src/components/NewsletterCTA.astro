@@ -1,0 +1,124 @@
+---
+---
+
+<section class="newsletter-cta">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Non perderti un colpo</h2>
+      <p>Ogni settimana ricevi un'analisi su bias cognitivi, errori finanziari e psicologia del denaro. Niente spam, solo roba utile.</p>
+      
+      <form class="newsletter-form" action="#" method="POST">
+        <div class="form-group">
+          <input 
+            type="email" 
+            name="email" 
+            placeholder="La tua email" 
+            required 
+            aria-label="Indirizzo email"
+          />
+          <button type="submit" class="btn-submit">Iscriviti</button>
+        </div>
+        <p class="form-note">Gratis. Puoi cancellarti quando vuoi.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  .newsletter-cta {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+
+  .cta-content p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+  }
+
+  .newsletter-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .form-group input {
+    flex: 1;
+    padding: 0.875rem 1.25rem;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+  }
+
+  .form-group input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  .form-group input::placeholder {
+    color: var(--text-muted);
+  }
+
+  .btn-submit {
+    padding: 0.875rem 2rem;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+
+  .btn-submit:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+  }
+
+  .form-note {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 768px) {
+    .newsletter-cta {
+      padding: 4rem 1.5rem;
+    }
+
+    .cta-content h2 {
+      font-size: 2rem;
+    }
+
+    .form-group {
+      flex-direction: column;
+    }
+
+    .btn-submit {
+      width: 100%;
+    }
+  }
+</style>

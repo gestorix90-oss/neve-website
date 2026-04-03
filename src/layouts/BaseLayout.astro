@@ -1,0 +1,107 @@
+---
+const { title, description, image, canonical } = Astro.props;
+
+const site = {
+  name: "Neve",
+  title: "Neve — La Meccanica della Finanza Comportamentale",
+  description: "Ti apro il cofano dei tuoi soldi e ti mostro cosa non funziona.",
+  url: "https://ondameccanica.github.io/neve-website",
+};
+
+const pageTitle = title ? `${title} | ${site.name}` : site.title;
+const pageDesc = description || site.description;
+const pageImage = image || `${site.url}/og-image.png`;
+const pageCanonical = canonical || Astro.url;
+---
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDesc} />
+    <link rel="canonical" href={pageCanonical} />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDesc} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={pageCanonical} />
+    <meta property="og:image" content={pageImage} />
+    <meta property="og:locale" content="it_IT" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDesc} />
+    <meta name="twitter:image" content={pageImage} />
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <style is:global>
+      :root {
+        --primary: #1a1a2e;
+        --secondary: #16213e;
+        --accent: #c9a84c;
+        --accent-hover: #d4b85c;
+        --text: #e0e0e0;
+        --text-muted: #a0a0a0;
+        --bg: #0f0f1a;
+        --card-bg: #1a1a2e;
+        --border: #2a2a4e;
+        --success: #4ade80;
+        --warning: #fbbf24;
+        --error: #f87171;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      a:hover {
+        color: var(--accent-hover);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      ::selection {
+        background: var(--accent);
+        color: var(--bg);
+      }
+    </style>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

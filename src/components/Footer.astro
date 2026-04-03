@@ -1,0 +1,125 @@
+---
+---
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <a href="/" class="logo">NEVE</a>
+      <p>Ti apro il cofano dei tuoi soldi e ti mostro cosa non funziona.</p>
+    </div>
+    
+    <div class="footer-links">
+      <div class="footer-section">
+        <h4>Navigazione</h4>
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/about">Chi Sono</a>
+        <a href="/newsletter">Newsletter</a>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Social</h4>
+        <a href="#" target="_blank" rel="noopener">YouTube</a>
+        <a href="#" target="_blank" rel="noopener">TikTok</a>
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Risorse</h4>
+        <a href="#">Guide Gratuite</a>
+        <a href="#">Template</a>
+        <a href="#">Community</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; {new Date().getFullYear()} Neve. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--primary);
+    border-top: 1px solid var(--border);
+    padding: 4rem 2rem 2rem;
+    margin-top: 6rem;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+  }
+
+  .footer-brand .logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .footer-brand p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    max-width: 300px;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .footer-section h4 {
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .footer-section a {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s ease;
+  }
+
+  .footer-section a:hover {
+    color: var(--accent);
+  }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .footer-links {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+      padding: 3rem 1.5rem 1.5rem;
+      margin-top: 4rem;
+    }
+  }
+</style>

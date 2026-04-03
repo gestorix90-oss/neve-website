@@ -1,0 +1,205 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import NewsletterCTA from '../components/NewsletterCTA.astro';
+---
+
+<SiteLayout title="Chi Sono" description="Chi è Neve — la meccanico che ti spiega la finanza comportamentale.">
+  <section class="about-page">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-intro">
+          <h1>Chi è <span class="highlight">Neve</span></h1>
+          <p class="tagline">Una meccanico che ti apre il cofano dei soldi.</p>
+        </div>
+        
+        <div class="about-body">
+          <p>
+            Ciao, sono Neve. Passo le giornate con le mani nel grasso a smontare motori 
+            e le serate a smontare i bias cognitivi che ti fregano il portafoglio.
+          </p>
+          
+          <p>
+            Perché una meccanico che parla di finanza? Perché i soldi funzionano come un motore: 
+            se non sai come sono fatti, prima o poi si rompono. E quando si rompono, 
+            il conto lo paghi tu.
+          </p>
+          
+          <p>
+            Questo blog nasce da un'idea semplice: <strong>la finanza comportamentale spiegata 
+            con metafore dall'officina</strong>. Niente gergo accademico, niente formule 
+            incomprensibili. Solo roba pratica che puoi usare da subito.
+          </p>
+        </div>
+        
+        <div class="about-topics">
+          <h2>Di cosa parlo</h2>
+          <div class="topics-grid">
+            <div class="topic">
+              <h3>🧠 Bias Cognitivi</h3>
+              <p>Le trappole mentali che ti fanno perdere soldi senza che te ne accorga.</p>
+            </div>
+            <div class="topic">
+              <h3>💰 Psicologia del Denaro</h3>
+              <p>Perché il tuo cervello ti frega quando si parla di soldi.</p>
+            </div>
+            <div class="topic">
+              <h3>📊 Finanza Comportamentale</h3>
+              <p>Le regole non scritte che governano le tue scelte economiche.</p>
+            </div>
+            <div class="topic">
+              <h3>🔧 Strumenti Pratici</h3>
+              <p>Checklist e framework per decisioni finanziarie migliori.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-channels">
+          <h2>Dove trovarmi</h2>
+          <div class="channels-grid">
+            <a href="#" class="channel-card">
+              <h3>YouTube</h3>
+              <p>Video lunghi e approfonditi su finanza comportamentale</p>
+            </a>
+            <a href="#" class="channel-card">
+              <h3>TikTok</h3>
+              <p>Pillole di psicologia del denaro in 60 secondi</p>
+            </a>
+            <a href="#" class="channel-card">
+              <h3>Instagram</h3>
+              <p>Carousel e contenuti visual su bias e decisioni</p>
+            </a>
+            <a href="#" class="channel-card">
+              <h3>LinkedIn</h3>
+              <p>Analisi e riflessioni per professionisti</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <NewsletterCTA />
+    </div>
+  </section>
+</SiteLayout>
+
+<style>
+  .about-page {
+    padding: 4rem 2rem;
+    min-height: calc(100vh - 80px);
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .about-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .about-intro h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+
+  .highlight {
+    color: var(--accent);
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+  }
+
+  .about-body p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+  }
+
+  .about-body strong {
+    color: var(--accent);
+  }
+
+  .about-topics,
+  .about-channels {
+    margin: 4rem 0;
+  }
+
+  .about-topics h2,
+  .about-channels h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .topic {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+
+  .topic h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+
+  .topic p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  .channels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .channel-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .channel-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+  }
+
+  .channel-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+  }
+
+  .channel-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .about-page {
+      padding: 2rem 1.5rem;
+    }
+
+    .topics-grid,
+    .channels-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
