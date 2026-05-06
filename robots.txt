@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nevenoir.com/sitemap.xml
+
+# Crawl-delay (opzionale)
+Crawl-delay: 1
