@@ -1,19 +1,28 @@
 {
-  "name": "neve-website",
-  "type": "module",
-  "version": "1.0.0",
-  "description": "Neve - La meccanica della finanza comportamentale",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/sitemap": "^3.2.0",
-    "@astrojs/mdx": "^4.0.0",
-    "@astrojs/rss": "^4.0.0",
-    "astro": "^5.1.0"
-  }
+    "name": "treasuryworks",
+    "description": "L'officina dove ripari la tua relazione con il denaro. Educazione finanziaria e finanza comportamentale.",
+    "version": "1.0.0",
+    "main": "index.html",
+    "scripts": {
+        "start": "python3 -m http.server 8080 --bind 0.0.0.0",
+        "serve": "npx serve .",
+        "lint": "echo 'Nessun linter configurato - sito statico HTML/CSS/JS'",
+        "test": "echo 'Nessun test configurato - sito statico'"
+    },
+    "keywords": [
+        "finanza",
+        "psicologia del denaro",
+        "finanza comportamentale",
+        "bias cognitivi",
+        "investimenti",
+        "educazione finanziaria",
+        "blog"
+    ],
+    "author": "TreasuryWorks",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TUO-USERNAME/treasuryworks.git"
+    },
+    "browserslist": "> 1%, last 2 versions, not dead"
 }
