@@ -4,12 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi Sono — TreasuryWorks</title>
-    <meta name="description" content="Scopri chi c'è dietro TreasuryWorks. Un meccanico finanziario che smonta i tuoi bias e rimonta la tua relazione con il denaro.">
+    <meta name="description" content="Scopri Antonio, il fondatore di TreasuryWorks. Meccanico dei soldi, divulgatore di finanza comportamentale e divulgatore scientifico.">
     <meta property="og:title" content="Chi Sono — TreasuryWorks">
-    <meta property="og:description" content="Un meccanico finanziario che smonta i tuoi bias e rimonta la tua relazione con il denaro.">
+    <meta property="og:description" content="Antonio è un divulgatore di psicologia del denaro. Con le metafore dell'officina meccanica, ti mostra come funziona davvero la tua mente quando decide di spendere, risparmiare o investire.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+    <style>
+        /* AVATAR STILIZZATO */
+        .avatar-container {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 2rem;
+            position: relative;
+        }
+        .avatar-gear {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--orange), var(--primary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4.5rem;
+            box-shadow: 0 0 40px rgba(249, 115, 22, 0.3), 0 0 80px rgba(59, 130, 246, 0.15);
+            animation: gearSpin 20s linear infinite;
+            border: 4px solid var(--border);
+        }
+        .avatar-gear::after {
+            content: 'A';
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--bg-primary);
+            position: absolute;
+        }
+        @keyframes gearSpin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .avatar-ring {
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border-radius: 50%;
+            border: 2px dashed var(--orange);
+            animation: ringSpin 10s linear infinite reverse;
+        }
+        .avatar-ring-2 {
+            position: absolute;
+            top: -16px;
+            left: -16px;
+            right: -16px;
+            bottom: -16px;
+            border-radius: 50%;
+            border: 1px solid var(--primary);
+            animation: ringSpin 15s linear infinite;
+            opacity: 0.4;
+        }
+        @keyframes ringSpin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* STATS PERSONALI */
+        .personal-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+        .personal-stat {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--border-radius);
+            padding: var(--space-lg);
+            text-align: center;
+            transition: transform var(--transition), border-color var(--transition);
+        }
+        .personal-stat:hover {
+            transform: translateY(-4px);
+            border-color: var(--orange);
+        }
+        .personal-stat .stat-num {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--orange);
+            font-family: var(--font-mono);
+        }
+        .personal-stat .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* SKILLS BARS */
+        .skills-section {
+            margin-top: var(--space-xl);
+        }
+        .skill-item {
+            margin-bottom: var(--space-lg);
+        }
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+        .skill-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .skill-pct {
+            color: var(--orange);
+            font-family: var(--font-mono);
+            font-weight: 700;
+        }
+        .skill-bar {
+            height: 8px;
+            background: var(--bg-secondary);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .skill-fill {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, var(--orange), var(--primary));
+            transition: width 1.5s ease;
+        }
+
+        /* TIMELIE FIX */
+        .timeline-grid {
+            display: grid;
+            gap: 0;
+            margin-top: var(--space-xl);
+        }
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: var(--space-md);
+            padding: var(--space-md) 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .timeline-item:last-child { border-bottom: none; }
+        .timeline-year {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--orange);
+            font-family: var(--font-mono);
+            display: flex;
+            align-items: center;
+        }
+        .timeline-content h3 { font-size: 1.15rem; margin-bottom: 4px; }
+        .timeline-content p { color: var(--text-secondary); font-size: 0.95rem; }
+
+        /* INTERESSI */
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+        .interest-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--border-radius);
+            padding: var(--space-md);
+            text-align: center;
+            transition: all var(--transition);
+        }
+        .interest-card:hover {
+            border-color: var(--orange);
+            transform: translateY(-2px);
+        }
+        .interest-icon { font-size: 2rem; margin-bottom: 8px; }
+        .interest-name { font-weight: 600; font-size: 0.95rem; }
+
+        /* TOOLING */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+        .tool-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: var(--border-radius);
+            padding: var(--space-md);
+            text-align: center;
+        }
+        .tool-icon { font-size: 1.8rem; margin-bottom: 6px; }
+        .tool-name { font-size: 0.85rem; color: var(--text-secondary); }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -33,143 +220,246 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero" style="min-height: 50vh;">
-        <div class="hero-content" style="text-align: left; max-width: 800px;">
-            <span class="hero-badge">👤 LA MIA STORIA</span>
-            <h1 class="hero-title" style="font-size: clamp(2rem, 5vw, 3.5rem);">
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 55vh;">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <span class="hero-badge">🔧 IL MECCANICO DEI TUOI SOLDI</span>
+            <div class="avatar-container" style="margin-bottom: 2rem;">
+                <div class="avatar-ring-2"></div>
+                <div class="avatar-ring"></div>
+                <div class="avatar-gear"></div>
+            </div>
+            <h1 class="hero-title">
                 <span class="title-line">Mi chiamo</span>
                 <span class="title-line accent">Antonio</span>
             </h1>
-            <p class="hero-subtitle" style="text-align: left; margin: 0;">
-                Mi chiamo Antonio e sono un appassionato di finanza comportamentale. 
-                Ho creato TreasuryWorks per aiutare le persone a capire e migliorare 
-                la propria relazione con il denaro, usando le metafore dell'officina meccanica.
+            <p class="hero-subtitle">
+                Sono un divulgatore di finanza comportamentale. Uso le metafore dell'officina meccanica
+                per spiegare come funziona (e come si rompe) la tua relazione con il denaro.
+                Smontiamo insieme i bias, ripariamo le cattive abitudini e rimontiamo il tuo futuro finanziario.
             </p>
+            <div class="hero-actions">
+                <a href="#la-mia-storia" class="btn btn-primary btn-lg">
+                    Scopri la mia storia →
+                </a>
+                <a href="blog.html" class="btn btn-outline btn-lg">
+                    Leggi il Blog
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scorri per esplorare</span>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Personal Stats -->
     <section class="section">
         <div class="container">
+            <div class="personal-stats">
+                <div class="personal-stat">
+                    <div class="stat-num" data-target="5">0</div>
+                    <div class="stat-label">Anni di studio<br>sulla finanza</div>
+                </div>
+                <div class="personal-stat">
+                    <div class="stat-num" data-target="200">0</div>
+                    <div class="stat-label">Articoli scritti<br>e pubblicati</div>
+                </div>
+                <div class="personal-stat">
+                    <div class="stat-num" data-target="50">0</div>
+                    <div class="stat-label">Bias cognitivi<br>smontati</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- La mia storia -->
+    <section class="section" id="la-mia-storia">
+        <div class="container">
             <div class="section-header">
-                <span class="section-tag">🔧 CHI SONO</span>
-                <h2 class="section-title">Antonio — <span class="accent">il meccanico</span> dei tuoi soldi</h2>
-                <p class="section-desc">Mi chiamo Antonio e non sono un consulente finanziario tradizionale. Sono un meccanico dei soldi.</p>
+                <span class="section-tag">📅 LA MIA STORIA</span>
+                <h2 class="section-title">Da dove vengo → Dove vado</h2>
+                <p class="section-desc">Ogni buon meccanico ha una storia. Eccola.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); align-items: center; margin-bottom: var(--space-2xl);">
-                <div>
-                    <div class="problem-icon" style="font-size: 4rem; margin-bottom: var(--space-sm);">🔧</div>
-<h3>La mia missione</h3>
-                    <p style="color: var(--text-secondary); line-height: 1.8;">
-                        Sono Antonio e credo che il denaro sia come un motore: se ogni ingranaggio è al posto giusto,
-                        tutto funziona. Se un ingranaggio è rotto — un bias, una paura, una cattiva abitudine —
-                        tutto si blocca. Il mio lavoro è trovare quell'ingranaggio rotto e sostituirlo.
-                    </p>
+            <div class="timeline-grid">
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <div class="timeline-content">
+                        <h3>La scintilla iniziale</h3>
+                        <p>Ho iniziato a interessarmi di finanza personale dopo aver commesso tutti gli errori possibili: acquisti impulsivi, zero risparmio, investimenti fatti "a sentimento". Il punto di svolta? Leggere "Pensieri lenti e veloci" di Daniel Kahneman.</p>
+                    </div>
                 </div>
-                <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--border-radius-lg); padding: var(--space-lg);">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); text-align: center;">
-                        <div>
-                            <div style="font-size: 2rem; margin-bottom: 8px;">📚</div>
-                            <div style="font-size: 1.8rem; font-weight: 800; color: var(--orange);">Auto-<br>didatta</div>
-                            <div style="font-size: 0.85rem; color: var(--text-muted);">Finanza da 5+ anni</div>
-                        </div>
-                        <div>
-                            <div style="font-size: 2rem; margin-bottom: 8px;">🤖</div>
-                            <div style="font-size: 1.8rem; font-weight: 800; color: var(--orange);">AI &<br>Automazione</div>
-                            <div style="font-size: 0.85rem; color: var(--text-muted);">Servizi attivi</div>
-                        </div>
-                        <div>
-                            <div style="font-size: 2rem; margin-bottom: 8px;">🎬</div>
-                            <div style="font-size: 1.8rem; font-weight: 800; color: var(--orange);">Video<br>Prodotti</div>
-                            <div style="font-size: 0.85rem; color: var(--text-muted);">Neve Noir</div>
-                        </div>
-                        <div>
-                            <div style="font-size: 2rem; margin-bottom: 8px;">🧠</div>
-                            <div style="font-size: 1.8rem; font-weight: 800; color: var(--orange);">Bias<br>Cognitivi</div>
-                            <div style="font-size: 0.85rem; color: var(--text-muted);">Studiati a fondo</div>
-                        </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h3>Lo studio sistematico</h3>
+                        <p>Ho iniziato a studiare finanza comportamentale in modo serio: corsi universitari, libri accademici, paper scientifici. Mi sono appassionato ai bias cognitivi — quei "bug" del cervello che ci fanno prendere decisioni finanziarie disastrose.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <h3>Nascita di Neve Noir</h3>
+                        <p>Ho creato il canale Neve Noir per divulgare la psicologia del denaro con un approccio diverso: metafore meccaniche. Il denaro è un motore, i bias sono ingranaggi rotti, e io sono il meccanico che li aggiusta.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3>Automazione e AI</h3>
+                        <p>Ho unito la mia passione per la tecnologia a quella per la finanza. Automazione di processi, content creation con AI, sviluppo di tool personalizzati. La tecnologia è il nuovo olio dell'officina.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-content">
+                        <h3>TreasuryWorks</h3>
+                        <p>È nato TreasuryWorks: il progetto completo per aiutare le persone a riparare la propria relazione con il denaro. Sito web, blog, video, automazioni — tutto sotto un unico tetto.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Timeline Section -->
+    <!-- Skills Section -->
     <section class="section" style="background: var(--bg-secondary);">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">📅 PERCORSO</span>
-                <h2 class="section-title">Come sono <span class="accent">arrivato qui</span></h2>
-                <p class="section-desc">La mia storia con la finanza comportamentale.</p>
+                <span class="section-tag">🔧 COMPETENZE</span>
+                <h2 class="section-title">Il mio <span class="accent">kit di attrezzi</span></h2>
+                <p class="section-desc">Le competenze che uso ogni giorno per smontare problemi finanziari.</p>
             </div>
 
-            <div class="process-timeline" style="max-width: 900px;">
-                <div class="process-step">
-                    <div class="step-number">2021</div>
-                    <div class="step-content">
-                        <h3>La scintilla</h3>
-                        <p>Ho iniziato a studiare finanza comportamentale dopo aver perso soldi per colpa delle mie stesse decisioni emotive.</p>
+            <div class="skills-section">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">🎯 Psicologia del denaro</span>
+                        <span class="skill-pct">95%</span>
                     </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
                 </div>
-                <div class="process-connector">→</div>
-                <div class="process-step">
-                    <div class="step-number">2022</div>
-                    <div class="step-content">
-                        <h3>Nascita di Neve</h3>
-                        <p>Ho creato il canale Neve Noir per condividere le mie scoperte sulla psicologia del denaro con le metafore dell'officina.</p>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">📊 Behavioral Economics</span>
+                        <span class="skill-pct">90%</span>
                     </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
                 </div>
-                <div class="process-connector">→</div>
-                <div class="process-step">
-                    <div class="step-number">2024</div>
-                    <div class="step-content">
-                        <h3>Automazione</h3>
-                        <p>Ho iniziato a costruire sistemi di automazione per la gestione finanziaria personale e non solo.</p>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">🤖 Automazione & AI</span>
+                        <span class="skill-pct">80%</span>
                     </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
                 </div>
-                <div class="process-connector">→</div>
-                <div class="process-step">
-                    <div class="step-number">2026</div>
-                    <div class="step-content">
-                        <h3>TreasuryWorks</h3>
-                        <p>È nato TreasuryWorks: il mio laboratorio completo per riparare la relazione con il denaro.</p>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">🎬 Video Production</span>
+                        <span class="skill-pct">75%</span>
                     </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">💻 Web Development</span>
+                        <span class="skill-pct">70%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">📝 Content Writing</span>
+                        <span class="skill-pct">88%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Values -->
+    <!-- Strumenti -->
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">💎 VALORI</span>
-                <h2 class="section-title">Cosa <span class="accent">guida</span> il lavoro</h2>
-                <p class="section-desc">I principi alla base di ogni contenuto e servizio.</p>
+                <span class="section-tag">🛠️ TOOLING</span>
+                <h2 class="section-title">Gli <span class="accent">strumenti</span> che uso</h2>
+                <p class="section-desc">La mia officina è digitale. Ecco cosa uso ogni giorno.</p>
             </div>
 
-            <div class="problems-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">🛡️</div>
-                    <h3>Niente fuffa</h3>
-                    <p>Zero promesse miracolose. Solo strategie basate su evidenze scientifiche e dati reali. Se qualcosa non funziona, te lo dico.</p>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <div class="tool-icon">🧠</div>
+                    <div class="tool-name">OpenAI / GPT</div>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🧪</div>
-                    <h3>Approccio scientifico</h3>
-                    <p>Ogni consiglio è basato su ricerche di behavioral economics, psicologia cognitiva e finanza comportamentale.</p>
+                <div class="tool-item">
+                    <div class="tool-icon">🎨</div>
+                    <div class="tool-name">Midjourney / DALL-E</div>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🤝</div>
-                    <h3>Accessibile a tutti</h3>
-                    <p>La conoscenza finanziaria non dovrebbe essere riservata a chi ha soldi per pagare consulenti. Qui tutto è gratuito.</p>
+                <div class="tool-item">
+                    <div class="tool-icon">🎬</div>
+                    <div class="tool-name">MoviePy / FFmpeg</div>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">⚙️</div>
-                    <h3>Pratico, non teorico</h3>
-                    <p>Niente teoria fine a sé stessa. Ogni contenuto ti lascia con qualcosa di concreto da fare subito.</p>
+                <div class="tool-item">
+                    <div class="tool-icon">🔄</div>
+                    <div class="tool-name">n8n / Make</div>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon">📊</div>
+                    <div class="tool-name">Google Analytics</div>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon">🚀</div>
+                    <div class="tool-name">Vercel / Cloudflare</div>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon">📱</div>
+                    <div class="tool-name">Telegram Bot API</div>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon">📋</div>
+                    <div class="tool-name">Notion / Obsidian</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interessi -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">🌍 AL DI FUORI DELL'OFFICINA</span>
+                <h2 class="section-title">I miei <span class="accent">interessi</span></h2>
+                <p class="section-desc">Oltre ai soldi, c'è una vita da vivere.</p>
+            </div>
+
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-icon">🏍️</div>
+                    <div class="interest-name">Moto & Meccanica</div>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">📚</div>
+                    <div class="interest-name">Divulgazione scientifica</div>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">🎮</div>
+                    <div class="interest-name">Gaming & Tech</div>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">☕</div>
+                    <div class="interest-name">Caffè & Tisane</div>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">🧘</div>
+                    <div class="interest-name">Meditazione & Mindfulness</div>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">🌱</div>
+                    <div class="interest-name">Crescita personale</div>
                 </div>
             </div>
         </div>
@@ -184,7 +474,7 @@
                         <span class="logo-icon">⚙️</span>
                         <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
                     </div>
-                    <p>L'officina dove ripari la tua relazione con il denaro. Meccanica + Psicologia = Ricchezza.</p>
+                    <p>L'officina dove ripari la tua relazione con il denaro.<br>Fondato da Antonio — 2026.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Navigazione</h4>
@@ -214,7 +504,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 TreasuryWorks. Tutti i diritti riservati.</p>
+                <p>© 2026 TreasuryWorks — Fondato da Antonio. Tutti i diritti riservati. ⚙️</p>
             </div>
         </div>
     </footer>
