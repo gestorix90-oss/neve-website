@@ -900,6 +900,39 @@ img {
     }
 }
 
+/* SVG Hero Images */
+.hero-svg {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    opacity: 0.85;
+    filter: drop-shadow(0 0 30px rgba(249, 115, 22, 0.2));
+}
+
+.blog-hero-svg {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+/* Section Icons */
+.section-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.section-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
 @media (max-width: 480px) {
     .footer-grid {
         grid-template-columns: 1fr;
@@ -907,5 +940,9 @@ img {
 
     .stats {
         flex-direction: column;
+    }
+
+    .hero-svg {
+        max-width: 300px;
     }
 }

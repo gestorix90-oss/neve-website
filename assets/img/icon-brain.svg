@@ -1,0 +1,10 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <circle cx="100" cy="100" r="95" fill="#a855f7" opacity="0.1"/>
+  <circle cx="100" cy="100" r="75" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.3"/>
+  <ellipse cx="100" cy="80" rx="50" ry="30" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.8"/>
+  <path d="M80,90 Q75,110 90,120 Q100,128 110,120 Q125,110 120,90" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.6"/>
+  <circle cx="95" cy="85" r="5" fill="#a855f7" opacity="0.4"/>
+  <circle cx="105" cy="85" r="5" fill="#a855f7" opacity="0.4"/>
+  <path d="M88,100 Q100,108 112,100" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+</svg>
