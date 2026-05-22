@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uscire dal Debito — TreasuryWorks</title>
+    <meta name="description" content="Il metodo in 5 step per uscire dal debito, ispirato alla logica meccanica. Smonta i debiti uno per uno, nel giusto ordine, senza ansia.">
+    <meta property="og:title" content="Uscire dal Debito — TreasuryWorks">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <button class="cookie-close" onclick="closeCookieBanner()">✕</button>
+        <div class="cookie-content">
+            <p>🍪 Utilizziamo cookie per migliorare la tua esperienza. <a href="privacy.html">Cookie Policy</a>.</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-sm btn-outline" onclick="closeCookieBanner()">Rifiuta</button>
+                <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accetta</button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/img/logo-gear-dollar.svg" alt="TreasuryWorks Logo" class="logo-img">
+                <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../chi-sono.html" class="nav-link">Chi Sono</a></li>
+                <li><a href="../blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="../strumenti.html" class="nav-link">🛠️ Strumenti</a></li>
+                <li><a href="../faq.html" class="nav-link">❓ FAQ</a></li>
+                <li><a href="../info.html" class="nav-link">📋 Info</a></li>
+                <li><a href="../news.html" class="nav-link">📰 News</a></li>
+                <li><a href="../risorse.html" class="nav-link">📚 Risorse</a></li>
+                <li><a href="../contatti.html" class="nav-link nav-cta">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <section class="hero" style="min-height: 35vh;">
+        <div class="hero-particles">
+            <div class="particle" style="left:10%;width:4px;height:4px;animation-duration:12s;"></div>
+            <div class="particle" style="left:25%;width:3px;height:3px;animation-duration:15s;"></div>
+            <div class="particle" style="left:40%;width:5px;height:5px;animation-duration:10s;"></div>
+            <div class="particle" style="left:65%;width:3px;height:3px;animation-duration:18s;"></div>
+            <div class="particle" style="left:85%;width:4px;height:4px;animation-duration:14s;"></div>
+            <div class="particle" style="left:95%;width:6px;height:6px;animation-duration:16s;"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-badge">🔧 USCITA DAL DEBITO</span>
+            <h1 class="hero-title">
+                <span class="title-line">Come uscire dal</span>
+                <span class="title-line accent">debito</span>
+            </h1>
+            <div class="blog-hero-image" style="text-align:center; margin:20px 0;">
+                <img src="../assets/img/blog-featured-5.svg" alt="Featured image - Uscire dal Debito" class="blog-hero-svg" style="margin:0 auto;">
+            </div>
+            <p class="hero-subtitle">
+                Il metodo dell'officina: 5 step per smontare i tuoi debiti, nel giusto ordine.
+            </p>
+            <div class="hero-actions">
+                <a href="#articolo" class="btn btn-primary btn-lg glow-btn">📖 Leggi l'articolo →</a>
+                <a href="../strumenti.html" class="btn btn-outline btn-lg">🧮 Calcolatore</a>
+            </div>
+            <div class="hero-trust">
+                <span class="trust-text">Strategia verificata</span>
+                <div class="trust-brands">
+                    <span class="brand-tag">Debt Snowball</span>
+                    <span class="brand-tag">Ramsey</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articolo" class="section">
+        <div class="container" style="max-width: 850px;">
+            <article style="color: var(--text-secondary); line-height: 1.9; font-size: 1.05rem;">
+                <p style="font-size: 1.2rem; color: var(--text-primary); font-weight: 600; margin-bottom: var(--space-lg);">
+                    I debiti sono come bulloni arrugginiti. Puoi forzarli, strapparli, ignorarli — ma se non li smonti <strong>nel giusto ordine</strong>, rischi di rovinare tutto il motore. Ecco il metodo che uso io, adattato dalla logica meccanica alla finanza personale.
+                </p>
+
+                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
+                    📊 Step 0 — Fai una diagnosi onesta
+                </h2>
+                <p style="margin-bottom: var(--space-lg);">
+                    Prima di toccare qualsiasi bullone, devi vedere <strong>tutta la situazione</strong> in un unico foglio:
+                </p>
+                <ul style="padding-left: 1.5rem; margin-bottom: var(--space-lg);">
+                    <li style="margin-bottom: var(--space-sm);">Scrivi <strong>ogni debito</strong>: carta di credito, prestito, mutuo, finanziamento, soldi a amici</li>
+                    <li style="margin-bottom: var(--space-sm);">Per ogni debito, annota: <strong>importo residuo, tasso di interesse, rata mensile</strong></li>
+                    <li>Calcola il <strong>totale</strong>: questo è il tuo "grado di usura"</li>
+                </ul>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: var(--space-lg);">
+                    💡 Usa il nostro <a href="../strumenti.html" style="color: var(--orange);">Calcolatore Debiti</a> — è gratis e fa i conti al posto tuo.
+                </p>
+
+                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
+                    🔩 Step 1 — Sostituisci i bulloni più pericolosi
+                </h2>
+                <p style="margin-bottom: var(--space-lg);">
+                    Non tutti i debiti sono uguali. I più pericolosi sono quelli con <strong>tasso di interesse alto</strong>: carte di credito revolving e prestiti personali possono avere tassi del 15-25%. Questi sono i "bulloni arrugginiti" che rischiano di bloccare tutto il sistema.
+                </p>
+                <p style="margin-bottom: var(--space-lg);">
+                    <strong>Cosa fare:</strong> Se hai il rating, chiedi un <strong>consolidamento debiti</strong> (un unico prestito a tasso più basso che estingue tutti i piccoli debiti). Oppure, passa a una carta di credito a <strong>rate fisse a tasso zero</strong> (molti istituti le offrono).
+                </p>
+
+                <div style="background: var(--bg-card); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-lg) 0; border-left: 4px solid var(--red);">
+                    <p style="font-size: 0.95rem;">
+                        <strong>⚡ Dato importante:</strong> se hai 5.000€ di debito su carta revolving al 20% di interesse, pagando solo il minimo ci metterai <strong>oltre 20 anni</strong> a estinguerli, versando più di 12.000€ di interessi.
+                    </p>
+                </div>
+
+                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
+                    🔩 Step 2 — Metodo "palla di neve" (debito più piccolo prima)
+                </h2>
+                <p style="margin-bottom: var(--space-lg);">
+                    Questa è la strategia che funziona meglio dal <strong>punto di vista psicologico</strong>:
+                </p>
+                <ol style="padding-left: 1.5rem; margin-bottom: var(--space-lg);">
+                    <li style="margin-bottom: var(--space-sm);">Fai il minimo su <strong>tutti</strong> i debiti</li>
+                    <li style="margin-bottom: var(--space-sm);">Ogni euro extra va sul <strong>debito più piccolo</strong></li>
+                    <li style="margin-bottom: var(--space-sm);">Quando il debito più piccolo è estinto, <strong>quella rata</strong> va sul secondo debito più piccolo</li>
+                    <li>Continui così — la "palla" diventa sempre più grande, e la motivazione cresce.</li>
+                </ol>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: var(--space-lg);">
+                    Perché funziona? Perché <strong>vedi risultati velocemente</strong>. Ogni debito estinto è un ingranaggio rimesso a posto. E la motivazione è il carburante dell'officina.
+                </p>
+
+                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
+                    🔩 Step 3 — Taglia le spese superflue
+                </h2>
+                <p style="margin-bottom: var(--space-lg);">
+                    Non ti sto dicendo di vivere come un monaco. Ti sto dicendo di <strong>smontare</strong> le spese che non ti rendono felice. Fai questo esercizio:
+                </p>
+                <div style="background: var(--bg-secondary); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-lg) 0;">
+                    <p style="font-size: 1rem; font-weight: 700; color: var(--primary); margin-bottom: var(--space-sm);">📋 L'esercizio dei 30 giorni:</p>
+                    <ul style="padding-left: 1.5rem; color: var(--text-secondary);">
+                        <li style="margin-bottom: var(--space-xs);">Ogni spesa che fai, scrivila con <strong>quanto ti ha reso felice</strong> (da 1 a 10)</li>
+                        <li style="margin-bottom: var(--space-xs);">Dopo 30 giorni, guarda la classifica: troverai sorprese</li>
+                        <li>Taglia le spese sotto il 4/10. Quelle sono i "bulloni inutili"</li>
+                    </ul>
+                </div>
+
+                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
+                    🔩 Step 4 — Genera una rendita extra
+                </h2>
+                <p style="margin-bottom: var(--space-lg);">
+                    Facile a dirsi, meno a farsi. Ma non devi reinventarti. Pensa in modo <strong>meccanico</strong>:
+                </p>
+                <ul style="padding-left: 1.5rem; margin-bottom: var(--space-lg);">
+                    <li style="margin-bottom: var(--space-sm);">🛠️ <strong>Vendi ciò che non usi</strong> — roba in casa, vestiti, strumenti. È denaro che dorme nell'officina</li>
+                    <li style="margin-bottom: var(--space-sm);">🛠️ <strong>Monetizza una competenza</strong> — se sai fare qualcosa meglio della media, qualcuno pagherà per imparare</li>
+                    <li style="margin-bottom: var(--space-sm);">🛠️ <strong>Fai lavoretti mirati</strong> — non per arricchirti, ma per avere un "riserva di carburante" per estinguere i debiti più velocemente</li>
+                </ul>
+
+                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
+                    🔩 Step 5 — Previeni il prossimo guasto
+                </h2>
+                <p style="margin-bottom: var(--space-lg);">
+                    Una volta fuori dal debito, il lavoro non è finito. Devi <strong>installare un sistema di allarme</strong>:
+                </p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); margin: var(--space-lg) 0;">
+                    <div style="background: var(--bg-card); border-radius: var(--border-radius); padding: var(--space-md); border: 1px solid var(--border);">
+                        <div style="font-size: 1.5rem; margin-bottom: var(--space-sm);">🚨</div>
+                        <h4 style="margin-bottom: var(--space-xs);">Fondo emergenze</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">3-6 mesi di spese in un conto separato. È il tuo "sensore di fumo"</p>
+                    </div>
+                    <div style="background: var(--bg-card); border-radius: var(--border-radius); padding: var(--space-md); border: 1px solid var(--border);">
+                        <div style="font-size: 1.5rem; margin-bottom: var(--space-sm);">📊</div>
+                        <h4 style="margin-bottom: var(--space-xs);">Regola 48 ore</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">Per ogni spesa sopra 50€: aspetta 48 ore prima di comprare. Spesso passa la voglia</p>
+                    </div>
+                    <div style="background: var(--bg-card); border-radius: var(--border-radius); padding: var(--space-md); border: 1px solid var(--border);">
+                        <div style="font-size: 1.5rem; margin-bottom: var(--space-sm);">🔄</div>
+                        <h4 style="margin-bottom: var(--space-xs);">Revisione mensile</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">Ogni mese, controlla i tuoi conti. 15 minuti bastano per evitare sorprese</p>
+                    </div>
+                    <div style="background: var(--bg-card); border-radius: var(--border-radius); padding: var(--space-md); border: 1px solid var(--border);">
+                        <div style="font-size: 1.5rem; margin-bottom: var(--space-sm);">🤝</div>
+                        <h4 style="margin-bottom: var(--space-xs);">Responsabilità sociale</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">Racconta il tuo percorso a qualcuno. La responsabilità verso gli altri è il miglior incentivo</p>
+                    </div>
+                </div>
+
+                <div style="background: var(--bg-secondary); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-xl) 0; text-align: center;">
+                    <p style="font-size: 1.3rem; font-weight: 700; color: var(--primary); margin-bottom: var(--space-sm);">
+                        "Un debito alla volta. Un ingranaggio alla volta.<br>La macchina si rimonta così."
+                    </p>
+                    <p style="color: var(--text-muted); font-size: 0.85rem;">— Antonio, TreasuryWorks</p>
+                </div>
+
+                <div style="background: var(--bg-card); border-radius: var(--border-radius); padding: var(--space-lg); margin-top: var(--space-xl); border-left: 4px solid var(--green);">
+                    <h3 style="margin-bottom: var(--space-sm); color: var(--green); font-size: 1.1rem;">📊 Prossimo passo</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: var(--space-sm);">
+                        Vuoi vedere <strong>quanto tempo ti serve</strong> per uscire dai debiti con il metodo palla di neve?
+                    </p>
+                    <a href="../strumenti.html" class="btn btn-sm btn-secondary">🧮 Calcola il tuo piano →</a>
+                </div>
+            </article>
+
+            <div style="display: flex; justify-content: space-between; margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--border); flex-wrap: wrap; gap: 8px;">
+                <a href="metodo-50-30-20.html" class="btn btn-outline">← Articolo precedente</a>
+                <a href="../blog.html" class="btn btn-primary">Torna al Blog →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="../assets/img/logo-gear-dollar.svg" alt="Logo" class="footer-logo-img"> <span class="logo-text">Treasury<span class="logo-accent">Works</span></span></div>
+                    <p>L'officina dove ripari la tua relazione con il denaro.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigazione</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../chi-sono.html">Chi Sono</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="https://youtube.com/@nevenoir90">📺 YouTube</a></li>
+                        <li><a href="#">💬 Telegram</a></li>
+                        <li><a href="https://www.instagram.com/nevenoir.official">📸 Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@neve.noir">📺 TikTok</a></li>
+                        <li><a href="#">🐦 X</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legale</h4>
+                    <ul>
+                        <li><a href="../privacy.html">Privacy</a></li>
+                        <li><a href="#">Cookie</a></li>
+                        <li><a href="#">Termini</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 TreasuryWorks — Tutti i diritti riservati</p></div>
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

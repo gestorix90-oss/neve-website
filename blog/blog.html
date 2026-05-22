@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — TreasuryWorks</title>
+    <meta name="description" content="Articoli di finanza personale, psicologia del denaro e investimenti. Scritti con la mentalità del meccanico: pratici, onesti, senza fuffa.">
+    <meta property="og:title" content="Blog — TreasuryWorks">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <button class="cookie-close" onclick="closeCookieBanner()">✕</button>
+        <div class="cookie-content">
+            <p>🍪 Utilizziamo cookie per migliorare la tua esperienza. <a href="privacy.html">Cookie Policy</a>.</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-sm btn-outline" onclick="closeCookieBanner()">Rifiuta</button>
+                <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accetta</button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/img/logo-gear-dollar.svg" alt="TreasuryWorks Logo" class="logo-img">
+                <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../chi-sono.html" class="nav-link">Chi Sono</a></li>
+                <li><a href="../blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="../strumenti.html" class="nav-link">🛠️ Strumenti</a></li>
+                <li><a href="../faq.html" class="nav-link">❓ FAQ</a></li>
+                <li><a href="../info.html" class="nav-link">📋 Info</a></li>
+                <li><a href="../news.html" class="nav-link">📰 News</a></li>
+                <li><a href="../risorse.html" class="nav-link">📚 Risorse</a></li>
+                <li><a href="../contatti.html" class="nav-link nav-cta">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 40vh; padding-bottom: var(--space-2xl);">
+        <div class="hero-particles">
+            <div class="particle" style="left:10%;width:4px;height:4px;animation-duration:12s;"></div>
+            <div class="particle" style="left:25%;width:3px;height:3px;animation-duration:15s;"></div>
+            <div class="particle" style="left:50%;width:5px;height:5px;animation-duration:10s;"></div>
+            <div class="particle" style="left:70%;width:4px;height:4px;animation-duration:16s;"></div>
+            <div class="particle" style="left:90%;width:3px;height:3px;animation-duration:14s;"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-badge">📝 ARTICOLI RECENTI</span>
+            <h1 class="hero-title">
+                <span class="title-line">Leggi gli ultimi</span>
+                <span class="title-line accent">articoli</span>
+            </h1>
+            <p class="hero-subtitle">
+                Psicolologia del denaro, budgeting, investimenti e debito — spiegati come parla l'officina.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">📖 Ultimi articoli</p>
+                <h2 class="section-title">Approfondimenti <span class="accent">selezionati</span></h2>
+                <p class="section-desc">Ogni articolo è scritto con un unico obiettivo: farti capire i soldi meglio, in meno tempo.</p>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Card 1 -->
+                <a href="perche-perdi-soldi.html" class="blog-card">
+                    <div class="blog-image-wrapper">
+                        <img src="../assets/img/blog-featured-1.svg" alt="Perché Perdi Soldi" class="blog-hero-svg">
+                        <span class="blog-category tag-bias">🧠 Bias Cognitivi</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Perché Perdi Soldi</h3>
+                        <p>I 7 errori psicologici che sabotano le tue finanze — bias della conferma, avversione alla perdita, effetto gregge e molto altro.</p>
+                        <div class="blog-meta">
+                            <span>⏱️ 7 min</span>
+                            <span>📅 21 Mag 2026</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="investire-senza-paura.html" class="blog-card">
+                    <div class="blog-image-wrapper">
+                        <img src="../assets/img/blog-featured-2.svg" alt="Investire Senza Paura" class="blog-hero-svg">
+                        <span class="blog-category tag-invest">📈 Investimenti</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Investire Senza Paura</h3>
+                        <p>La paura ti costa più del rischio. 5 passi concreti per iniziare a investire anche con poco, senza ansia e senza errori comuni.</p>
+                        <div class="blog-meta">
+                            <span>⏱️ 8 min</span>
+                            <span>📅 21 Mag 2026</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="psicologia-denaro-pensiero-diverso.html" class="blog-card">
+                    <div class="blog-image-wrapper">
+                        <img src="../assets/img/blog-featured-3.svg" alt="Pensiero Diverso = Soldi Diversi" class="blog-hero-svg">
+                        <span class="blog-category tag-psych">🧠 Psicologia</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Perché i ricchi pensano diversamente</h3>
+                        <p>7 differenze di mentalità basate sulla ricerca di Thomas Stanley. Il denaro come strumento, le entrate multiple e il potere delle scelte.</p>
+                        <div class="blog-meta">
+                            <span>⏱️ 6 min</span>
+                            <span>📅 21 Mag 2026</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="metodo-50-30-20.html" class="blog-card">
+                    <div class="blog-image-wrapper">
+                        <img src="../assets/img/blog-featured-4.svg" alt="Metodo 50/30/20" class="blog-hero-svg">
+                        <span class="blog-category tag-budget">💰 Budget</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Il Metodo 50/30/20 Spiegato Bene</h3>
+                        <p>Il sistema di budgeting più semplice al mondo. Con esempi reali, varianti per ogni situazione e la checklist per iniziare oggi.</p>
+                        <div class="blog-meta">
+                            <span>⏱️ 6 min</span>
+                            <span>📅 21 Mag 2026</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 5 -->
+                <a href="uscire-dal-debito.html" class="blog-card">
+                    <div class="blog-image-wrapper">
+                        <img src="../assets/img/blog-featured-5.svg" alt="Uscire dal Debito" class="blog-hero-svg">
+                        <span class="blog-category tag-debt">🔧 Debito</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Come Uscire dal Debito</h3>
+                        <p>Il metodo in 5 step ispirato alla logica meccanica. Smonta i debiti uno per uno, nel giusto ordine. Senza ansia.</p>
+                        <div class="blog-meta">
+                            <span>⏱️ 8 min</span>
+                            <span>📅 21 Mag 2026</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Newsletter Banner -->
+            <div class="newsletter-banner" style="margin-top: var(--space-2xl);">
+                <h3>📬 Nuovi articoli ogni settimana</h3>
+                <p>Iscriviti alla newsletter di TreasuryWorks. Zero spam, solo finanza pratica.</p>
+                <form class="newsletter-form-inline" onsubmit="event.preventDefault(); alert('Grazie per l'iscrizione! 🎉');">
+                    <input type="email" placeholder="La tua email" required>
+                    <button type="submit" class="btn btn-primary">Iscriviti</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-box">
+                <svg class="hero-svg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="cta-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.2"/>
+                            <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.2"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="400" height="200" rx="20" fill="url(#cta-gradient)"/>
+                    <text x="200" y="85" font-family="Inter" font-size="16" fill="#94a3b8" text-anchor="middle" font-weight="600">⚙️ TREASURYWORKS</text>
+                    <text x="200" y="120" font-family="Inter" font-size="22" fill="#fbbf24" text-anchor="middle" font-weight="800">L'Officina dei Soldi</text>
+                    <text x="200" y="150" font-family="Inter" font-size="13" fill="#64748b" text-anchor="middle">Costruisci ricchezza con metodo meccanico 🔧</text>
+                </svg>
+                <h2>Pronto a riparare i tuoi soldi?</h2>
+                <p>Inizia dagli strumenti gratuiti o leggi gli articoli. La tua officina è aperta.</p>
+                <div class="cta-buttons">
+                    <a href="../strumenti.html" class="btn btn-primary btn-lg glow-btn">🛠️ Vai agli Strumenti</a>
+                    <a href="../index.html" class="btn btn-outline btn-lg">🏠 Torna alla Home</a>
+                </div>
+                <p class="cta-note">Tutto gratis. Niente email obbligatoria. Solo finanza pratica.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="../assets/img/logo-gear-dollar.svg" alt="Logo" class="footer-logo-img"> <span class="logo-text">Treasury<span class="logo-accent">Works</span></span></div>
+                    <p>L'officina dove ripari la tua relazione con il denaro.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigazione</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../chi-sono.html">Chi Sono</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="https://youtube.com/@nevenoir90">📺 YouTube</a></li>
+                        <li><a href="#">💬 Telegram</a></li>
+                        <li><a href="https://www.instagram.com/nevenoir.official">📸 Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@neve.noir">📺 TikTok</a></li>
+                        <li><a href="#">🐦 X</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legale</h4>
+                    <ul>
+                        <li><a href="../privacy.html">Privacy</a></li>
+                        <li><a href="#">Cookie</a></li>
+                        <li><a href="#">Termini</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 TreasuryWorks — Tutti i diritti riservati</p></div>
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

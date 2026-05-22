@@ -1,0 +1,73 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="ogGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="ogAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#ogGrad)"/>
+  
+  <!-- Decorative grid -->
+  <g opacity="0.04" stroke="#f97316" stroke-width="0.5">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  
+  <!-- Gears decoration -->
+  <g transform="translate(100,315) rotate(0)" opacity="0.1">
+    <circle r="80" fill="none" stroke="#f97316" stroke-width="2"/>
+    <circle r="30" fill="#0f172a" stroke="#f97316" stroke-width="1.5"/>
+    <path d="M0,-80 L12,-70 L18,-55 L25,-60 L30,-45 L40,-40 L42,-26 L50,-22 L56,-10 L60,2 L60,16 L66,22 L70,34 L66,44 L60,50 L50,54 L40,52 L30,60 L18,54 L12,64 L6,62 L0,68 L-6,62 L-12,64 L-18,54 L-30,60 L-40,52 L-50,54 L-60,50 L-66,44 L-60,34 L-66,22 L-60,16 L-60,2 L-56,-10 L-50,-22 L-42,-26 L-40,-40 L-30,-45 L-25,-60 L-18,-55 L-12,-70 Z" fill="none" stroke="#f97316" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(1100,150) rotate(45)" opacity="0.08">
+    <circle r="60" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle r="22" fill="#0f172a" stroke="#3b82f6" stroke-width="1"/>
+    <path d="M0,-60 L9,-52 L14,-40 L19,-43 L23,-32 L30,-28 L31,-19 L38,-15 L42,-6 L45,2 L45,12 L49,16 L52,24 L49,32 L45,36 L38,40 L30,42 L23,48 L14,42 L9,50 L5,49 L0,52 L-5,49 L-14,50 L-19,42 L-23,48 L-30,42 L-38,40 L-45,36 L-49,32 L-45,24 L-49,16 L-45,12 L-45,2 L-42,-6 L-38,-15 L-31,-19 L-30,-28 L-23,-32 L-19,-43 L-14,-40 L-9,-52 Z" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+  </g>
+  
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="6" height="630" fill="url(#ogAccent)"/>
+  
+  <!-- Content -->
+  <text x="150" y="220" font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#94a3b8" letter-spacing="4">
+    PSICOLOGIA DEL DENARO
+  </text>
+  <text x="150" y="290" font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="64" font-weight="900" fill="#fff" letter-spacing="1">
+    TREASURYWORKS
+  </text>
+  <text x="150" y="350" font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="24" font-weight="300" fill="#cbd5e1" letter-spacing="2">
+    L'officina dove ripari la tua relazione con il denaro
+  </text>
+  
+  <!-- Divider -->
+  <rect x="150" y="380" width="300" height="3" rx="1.5" fill="url(#ogAccent)" opacity="0.6"/>
+  
+  <!-- Bottom text -->
+  <text x="150" y="430" font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="18" fill="#64748b">
+    🔧 Meccanica + 💰 Psicologia = 💎 Ricchezza
+  </text>
+  <text x="150" y="580" font-family="'Segoe UI', Inter, Arial, sans-serif" font-size="14" fill="#475569">
+    gestorix90-oss.github.io/neve-website
+  </text>
+  
+  <!-- Logo in corner -->
+  <g transform="translate(1050, 30)">
+    <circle r="55" fill="none" stroke="url(#ogAccent)" stroke-width="2"/>
+    <text x="0" y="8" text-anchor="middle" font-family="Arial" font-size="40" fill="url(#ogAccent)">⚙️</text>
+  </g>
+</svg>

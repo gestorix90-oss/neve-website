@@ -1,0 +1,40 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="gearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="moneyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="190" fill="#111827" stroke="url(#gearGrad)" stroke-width="4" filter="url(#shadow)"/>
+  <circle cx="200" cy="200" r="170" fill="none" stroke="url(#gearGrad)" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Gear outer -->
+  <g transform="translate(200,200)">
+    <!-- Gear body -->
+    <path d="M0,-70 L12,-60 L18,-45 L25,-50 L30,-35 L40,-30 L42,-18 L50,-15 L55,-5 L60,5 L60,15 L65,20 L70,30 L65,40 L60,45 L50,50 L40,48 L30,55 L20,50 L15,60 L8,58 L0,65 L-8,58 L-15,60 L-20,50 L-30,55 L-40,48 L-50,50 L-60,45 L-65,40 L-60,30 L-65,20 L-60,15 L-60,5 L-55,-5 L-50,-15 L-42,-18 L-40,-30 L-30,-35 L-25,-50 L-18,-45 L-12,-60 Z" fill="url(#gearGrad)" filter="url(#glow)" stroke="#fff" stroke-width="1.5"/>
+    <!-- Gear inner hole -->
+    <circle r="30" fill="#111827" stroke="url(#gearGrad)" stroke-width="2"/>
+    <!-- Wrench tool across center -->
+    <rect x="-6" y="-45" width="12" height="30" rx="2" fill="#fbbf24" transform="rotate(0)"/>
+    <rect x="-6" y="-45" width="12" height="30" rx="2" fill="#fbbf24" transform="rotate(60)"/>
+    <rect x="-6" y="-45" width="12" height="30" rx="2" fill="#fbbf24" transform="rotate(120)"/>
+    <!-- Dollar sign -->
+    <text x="0" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#fbbf24" filter="url(#shadow)" style="dominant-baseline:central">$</text>
+  </g>
+</svg>

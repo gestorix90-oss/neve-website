@@ -4,220 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog — TreasuryWorks</title>
-    <meta name="description" content="Articoli scritti da Antonio su psicologia del denaro, finanza comportamentale, bias cognitivi e strategie pratiche per gestire meglio i tuoi soldi.">
+    <meta name="description" content="Blog di finanza comportamentale di TreasuryWorks. Articoli su psicologia del denaro, bias cognitivi, investimenti, risparmio e debito.">
     <meta property="og:title" content="Blog — TreasuryWorks">
-    <meta property="og:description" content="Articoli sulla psicologia del denaro e la finanza comportamentale.">
+    <meta property="og:image" content="https://gestorix90-oss.github.io/neve-website/assets/img/og-image.svg">
+    <meta property="og:description" content="Articoli approfonditi sulla psicologia del denaro, bias cognitivi e finanza comportamentale. Leggi, impara, cambia mentalità.">
+    <meta name="twitter:card" content="summary_large_image">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+    <link rel="icon" href="assets/img/favicon-star.svg">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <span class="logo-icon">⚙️</span>
+                <img src="assets/img/logo-gear-dollar.svg" alt="TreasuryWorks Logo" class="logo-img" width="42" height="42">
                 <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="chi-sono.html" class="nav-link">Chi Sono</a></li>
                 <li><a href="blog.html" class="nav-link active">Blog</a></li>
-                <li><a href="contatti.html" class="nav-link nav-cta">Contatti</a></li>
+                <li><a href="strumenti.html" class="nav-link">🛠️ Strumenti</a></li>
+                <li><a href="faq.html" class="nav-link">❓ FAQ</a></li>
+                <li><a href="info.html" class="nav-link">📋 Info</a></li>
+                <li><a href="news.html" class="nav-link">📰 News</a></li>
+                <li><a href="risorse.html" class="nav-link">📚 Risorse</a></li>
+                <li><a href="contatti.html" class="nav-link nav-cta">📩 Contatti</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section class="hero" style="min-height: 40vh;">
-        <div class="hero-content" style="text-align: left; max-width: 800px;">
-            <span class="hero-badge">📝 IL BLOG</span>
-            <h1 class="hero-title" style="font-size: clamp(2rem, 4vw, 3rem);">
-                <span class="title-line">Gli articoli di Antonio sulla</span>
-                <span class="title-line accent">psicologia del denaro</span>
+    <section class="hero" id="hero" style="min-height:35vh;">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <span class="hero-badge">📝 IL BLOG DI ANTONIO</span>
+            <h1 class="hero-title">
+                <span class="title-line anim-text">Articoli che</span>
+                <span class="title-line accent anim-text-delayed">smontano il denaro</span>
             </h1>
-            <p class="hero-subtitle" style="text-align: left; margin: 0;">
-                Guide, analisi e riflessioni su bias cognitivi, comportamento finanziario 
-                e strategie pratiche per prendere decisioni migliori con i tuoi soldi.
+            <p class="hero-subtitle">
+                Guide, analisi e riflessioni sulla psicologia del denaro.<br>Ogni articolo è un ingranaggio della tua educazione finanziaria.
             </p>
         </div>
+        <div class="hero-visual" id="heroVisual">
+            <img src="assets/img/blog-hero.svg" alt="Blog TreasuryWorks" class="hero-svg">
+        </div>
     </section>
 
-    <!-- Blog Articles -->
-    <section class="section">
+    <!-- Blog Articles Preview -->
+    <section class="section blog-preview-section" style="margin-top:-40px;">
         <div class="container">
-            <div class="blog-grid" style="grid-template-columns: 1fr;">
-
+            <div class="section-header">
+                <span class="section-tag">🎯 APPROFONDIMENTI</span>
+                <h2 class="section-title">Gli articoli più <span class="accent">letti</span></h2>
+                <p class="section-desc">Ogni articolo è un pezzo del motore della tua educazione finanziaria.</p>
+            </div>
+            <div class="blog-grid">
                 <!-- Articolo 1 -->
-                <article class="blog-card" style="max-width: 800px; margin: 0 auto;">
-                    <div class="blog-image" style="background: linear-gradient(135deg, #f97316 0%, #ef4444 100%); min-height: 200px;">
-                        <span class="blog-category">Bias Cognitivi</span>
+                <article class="blog-card" data-aos="fade-up">
+                    <div class="blog-image-wrapper">
+                        <img src="assets/img/blog-featured-1.svg" alt="Perché perdi soldi" class="blog-hero-svg">
+                        <span class="blog-category tag-bias">🧠 Bias Cognitivi</span>
                     </div>
                     <div class="blog-content">
-                        <h3><a href="#">Perché perdi soldi (e non è colpa tua)</a></h3>
-                        <p>
-                            I bias cognitivi sono come virus nella tua mente: si insinuano silenziosamente 
-                            e distorcono ogni tua decisione finanziaria. In questo articolo analizziamo i 5 
-                            bias più pericolosi e come difenderti.
-                        </p>
-                        <p><strong>In questo articolo:</strong></p>
-                        <ul style="color: var(--text-secondary); margin: 1rem 0; padding-left: 1.5rem;">
-                            <li>Il bias di conferma — perché cerchi solo ciò che conferma le tue idee</li>
-                            <li>L'avversione alla perdita — perdere fa più male che vincere fa piacere</li>
-                            <li>L'effetto ancoraggio — il primo numero che vedi influenza tutto</li>
-                            <li>L'illusione del controllo — credere di controllare ciò che non puoi controllare</li>
-                            <li>L'effetto gregge — seguire la massa è quasi sempre un errore</li>
-                        </ul>
+                        <h3><a href="blog/perche-perdi-soldi.html">Perché perdi soldi (e non è colpa tua)</a></h3>
+                        <p>Scopri i 5 bias cognitivi che ti fanno spendere di più e risparmiare meno. Spiegazione semplice con esempi pratici.</p>
                         <div class="blog-meta">
-                            <span>📅 15 Maggio 2026</span>
-                            <span>|</span>
-                            <span>⏱️ 6 min lettura</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Articolo 2 -->
-                <article class="blog-card" style="max-width: 800px; margin: 0 auto;">
-                    <div class="blog-image" style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); min-height: 200px;">
-                        <span class="blog-category">Investimenti</span>
-                    </div>
-                    <div class="blog-content">
-                        <h3><a href="#">Investire senza paura: la guida pratica</a></h3>
-                        <p>
-                            La paura è il nemico numero uno dell'investitore. In questa guida pratica 
-                            ti mostro come superare la paura del mercato e iniziare a investire con 
-                            metodo, dati e consapevolezza — niente formule magiche, solo buon senso meccanico.
-                        </p>
-                        <p><strong>In questo articolo:</strong></p>
-                        <ul style="color: var(--text-secondary); margin: 1rem 0; padding-left: 1.5rem;">
-                            <li>Peré investire è importante (anche con piccole somme)</li>
-                            <li>I 3 pilastri dell'investimento consapevole</li>
-                            <li>Come costruire un portafoglio diversificato senza essere un esperto</li>
-                            <li>Strategie per gestire l'ansia quando il mercato scende</li>
-                        </ul>
-                        <div class="blog-meta">
-                            <span>📅 08 Maggio 2026</span>
-                            <span>|</span>
+                            <span>📅 15 Mag 2026</span>
                             <span>⏱️ 8 min lettura</span>
+                            <span>👁️ 1.2k views</span>
                         </div>
                     </div>
                 </article>
-
+                <!-- Articolo 2 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image-wrapper">
+                        <img src="assets/img/blog-featured-2.svg" alt="Investire Senza Paura" class="blog-hero-svg">
+                        <span class="blog-category tag-invest">📈 Investimenti</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="blog/investire-senza-paura.html">Investire senza paura: guida per principianti</a></h3>
+                        <p>Come superare la paura del mercato. ETF, PAC, azioni: tutto quello che devi sapere per iniziare.</p>
+                        <div class="blog-meta">
+                            <span>📅 08 Mag 2026</span>
+                            <span>⏱️ 12 min lettura</span>
+                            <span>👁️ 890 views</span>
+                        </div>
+                    </div>
+                </article>
                 <!-- Articolo 3 -->
-                <article class="blog-card" style="max-width: 800px; margin: 0 auto;">
-                    <div class="blog-image" style="background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%); min-height: 200px;">
-                        <span class="blog-category">Psicologia</span>
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image-wrapper">
+                        <img src="assets/img/blog-featured-3.svg" alt="Psicologia del Denaro" class="blog-hero-svg">
+                        <span class="blog-category tag-psych">💭 Psicologia</span>
                     </div>
                     <div class="blog-content">
-                        <h3><a href="#">Psicologia del denaro: perché i ricchi pensano diversamente</a></h3>
-                        <p>
-                            Non è questione di quanto guadagni ma di come pensi ai soldi. 
-                            In questo articolo esploriamo le differenze di mentalità tra chi 
-                            gestisce bene le proprie finanze e chi lotta ogni mese.
-                        </p>
-                        <p><strong>In questo articolo:</strong></p>
-                        <ul style="color: var(--text-secondary); margin: 1rem 0; padding-left: 1.5rem;">
-                            <li>La mentalità della scarsità vs. dell'abbondanza</li>
-                            <li>Come le convinzioni su i soldi si formano nell'infanzia</li>
-                            <li>5 esercizi pratici per cambiare la tua mentalità finanziaria</li>
-                            <li>Il ruolo delle emozioni nelle decisioni di spesa</li>
-                        </ul>
+                        <h3><a href="blog/psicologia-denaro-pensiero-diverso.html">Psicologia del denaro: 7 differenze tra ricchi e poveri di mentalità</a></h3>
+                        <p>Le differenze tra chi gestisce bene i soldi e chi lotta ogni mese. Non è questione di stipendio, è questione di ingranaggi mentali.</p>
                         <div class="blog-meta">
-                            <span>📅 01 Maggio 2026</span>
-                            <span>|</span>
+                            <span>📅 01 Mag 2026</span>
                             <span>⏱️ 10 min lettura</span>
+                            <span>👁️ 2.1k views</span>
                         </div>
                     </div>
                 </article>
-
                 <!-- Articolo 4 -->
-                <article class="blog-card" style="max-width: 800px; margin: 0 auto;">
-                    <div class="blog-image" style="background: linear-gradient(135deg, #10b981 0%, #047857 100%); min-height: 200px;">
-                        <span class="blog-category">Risparmio</span>
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image-wrapper">
+                        <img src="assets/img/blog-featured-4.svg" alt="Metodo 50/30/20" class="blog-hero-svg">
+                        <span class="blog-category tag-budget">💰 Budget</span>
                     </div>
                     <div class="blog-content">
-                        <h3><a href="#">Il metodo 50/30/20: budget che funziona davvero</a></h3>
-                        <p>
-                            Il metodo 50/30/20 è uno dei sistemi di budgeting più semplici ed efficaci. 
-                            In questo articolo ti spiego come adattarlo alla tua situazione e perché 
-                            funziona meglio di qualsiasi app di budgeting.
-                        </p>
-                        <p><strong>In questo articolo:</strong></p>
-                        <ul style="color: var(--text-secondary); margin: 1rem 0; padding-left: 1.5rem;">
-                            <li>Cos'è il metodo 50/30/20 e come funziona</li>
-                            <li>Come categorizzare le tue spese</li>
-                            <li>Template scaricabile per il tuo budget mensile</li>
-                            <li>Errori comuni e come evitarli</li>
-                        </ul>
+                        <h3><a href="blog/metodo-50-30-20.html">Il Metodo 50/30/20: budget semplice che funziona davvero</a></h3>
+                        <p>Il 50% per vivere, il 30% per te, il 20% per costruire il tuo futuro. Semplice ma potente.</p>
                         <div class="blog-meta">
-                            <span>📅 25 Aprile 2026</span>
-                            <span>|</span>
-                            <span>⏱️ 5 min lettura</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Articolo 5 -->
-                <article class="blog-card" style="max-width: 800px; margin: 0 auto;">
-                    <div class="blog-image" style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); min-height: 200px;">
-                        <span class="blog-category">Debito</span>
-                    </div>
-                    <div class="blog-content">
-                        <h3><a href="#">Come uscire dal debito: il metodo dell'officina</a></h3>
-                        <p>
-                            Il debito è come un motore con un ingranaggio rotto: 
-                            continua a girare ma non va da nessuna parte. In questo articolo 
-                            ti presento un metodo pratico basato sulla psicologia comportamentale 
-                            per uscire dal debito definitivamente.
-                        </p>
-                        <p><strong>In questo articolo:</strong></p>
-                        <ul style="color: var(--text-secondary); margin: 1rem 0; padding-left: 1.5rem;">
-                            <li>Perché il "debito buono" e il "debito cattivo" è una semplificazione</li>
-                            <li>La strategia a valanga vs. la strategia a pallina di neve</li>
-                            <li>Come gestire l'ansia del debito giorno per giorno</li>
-                            <li>Il piano in 5 fasi per diventare libero dal debito</li>
-                        </ul>
-                        <div class="blog-meta">
-                            <span>📅 18 Aprile 2026</span>
-                            <span>|</span>
+                            <span>📅 25 Apr 2026</span>
                             <span>⏱️ 7 min lettura</span>
+                            <span>👁️ 1.5k views</span>
                         </div>
                     </div>
                 </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section cta-section">
-        <div class="container">
-            <div class="cta-box">
-                <h2>Vuoi <span class="accent">restare aggiornato</span>?</h2>
-                <p>Iscriviti alla newsletter e ricevi ogni settimana un articolo esclusivo nella tua casella.</p>
-                <form class="newsletter-form" onsubmit="handleNewsletter(event)">
-                    <div class="form-group">
-                        <input type="email" id="newsletter-email" placeholder="La tua email migliore" required>
-                        <button type="submit" class="btn btn-primary">Iscriviti →</button>
+                <!-- Articolo 5 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="blog-image-wrapper">
+                        <img src="assets/img/blog-featured-5.svg" alt="Uscire dal Debito" class="blog-hero-svg">
+                        <span class="blog-category tag-debt">💳 Debito</span>
                     </div>
+                    <div class="blog-content">
+                        <h3><a href="blog/uscire-dal-debito.html">Uscire dal debito ✊ — Il metodo dell'officina</a></h3>
+                        <p>Avalanche vs Snowball: due metodi per spezzare le catene del debito. Quale scegliere? Te lo spiego.</p>
+                        <div class="blog-meta">
+                            <span>📅 18 Apr 2026</span>
+                            <span>⏱️ 9 min lettura</span>
+                            <span>👁️ 780 views</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Categorie -->
+            <div class="categories-bar" style="margin-top:40px;">
+                <h3 style="margin-bottom:15px;color:var(--text-primary);">📂 Filtra per categoria:</h3>
+                <div class="category-tags">
+                    <span class="cat-tag active" onclick="filterBlog('tutti')">🔴 Tutti</span>
+                    <span class="cat-tag" onclick="filterBlog('bias')">🧠 Bias Cognitivi</span>
+                    <span class="cat-tag" onclick="filterBlog('investimenti')">📈 Investimenti</span>
+                    <span class="cat-tag" onclick="filterBlog('psicologia')">💭 Psicologia</span>
+                    <span class="cat-tag" onclick="filterBlog('budget')">💰 Budget</span>
+                    <span class="cat-tag" onclick="filterBlog('debito')">💳 Debito</span>
+                </div>
+            </div>
+
+            <!-- CTA Finale -->
+            <div class="text-center" style="margin-top:50px;">
+                <h3 style="margin-bottom:15px;">📬 Vuoi restare aggiornato?</h3>
+                <p style="margin-bottom:20px;color:var(--text-secondary);">Iscriviti alla newsletter per ricevere i nuovi articoli prima di tutti!</p>
+                <form class="newsletter-form-inline" onsubmit="handleNewsletter(event)">
+                    <input type="email" placeholder="La tua email..." required style="max-width:350px;">
+                    <button type="submit" class="btn btn-primary">Iscriviti →</button>
                 </form>
-                <p class="cta-note">Niente spam. Solo roba utile. Puoi cancellarti quando vuoi.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Blog Stats -->
+    <section class="section" style="background:var(--bg-secondary);">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-icon">📝</div>
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Articoli Pubblicati</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">📖</div>
+                    <div class="stat-value">8k+</div>
+                    <div class="stat-label">Letture Totali</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-value">50+</div>
+                    <div class="stat-label">Minuti di Lettura Medi</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">💬</div>
+                    <div class="stat-value">120+</div>
+                    <div class="stat-label">Commenti</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <span class="logo-icon">⚙️</span>
+                        <img src="assets/img/logo-gear-dollar.svg" alt="TreasuryWorks" class="footer-logo-img" width="36" height="36">
                         <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
                     </div>
                     <p>L'officina dove ripari la tua relazione con il denaro.</p>
@@ -225,27 +212,23 @@
                 <div class="footer-col">
                     <h4>Navigazione</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="chi-sono.html">Chi Sono</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contatti.html">Contatti</a></li>
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li><a href="chi-sono.html">👤 Chi Sono</a></li>
+                        <li><a href="strumenti.html">🛠️ Strumenti</a></li>
+                        <li><a href="faq.html">❓ FAQ</a></li>
+                        <li><a href="info.html">📋 Info</a></li>
+                        <li><a href="news.html">📰 News</a></li>
+                        <li><a href="risorse.html">📚 Risorse</a></li>
+                        <li><a href="contatti.html">📩 Contatti</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Social</h4>
                     <ul>
-                        <li><a href="#">📺 YouTube</a></li>
-                        <li><a href="#">💬 Telegram</a></li>
-                        <li><a href="#">📸 Instagram</a></li>
-                        <li><a href="#">🐦 X / Twitter</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Legale</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                        <li><a href="#">Termini di Servizio</a></li>
+                        <li><a href="https://youtube.com/@nevenoir90" target="_blank">📺 YouTube — 93+ video</a></li>
+                        <li><a href="https://www.tiktok.com/@neve.noir" target="_blank">🎵 TikTok — @neve.noir</a></li>
+                        <li><a href="https://www.instagram.com/nevenoir.official" target="_blank">📸 Instagram</a></li>
+                        <li><a href="#">🐦 X — Coming soon</a></li>
                     </ul>
                 </div>
             </div>
@@ -255,6 +238,18 @@
         </div>
     </footer>
 
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <p>🍪 Utilizziamo cookie tecnici per offrirti la migliore esperienza. Nessun tracciamento pubblicitario. <a href="privacy.html">Scopri di più</a></p>
+            <div class="cookie-buttons">
+                <button class="btn btn-small btn-primary" onclick="acceptCookies()">Accetta ✅</button>
+                <button class="btn btn-small btn-outline" onclick="declineCookies()">Rifiuta ❌</button>
+            </div>
+        </div>
+        <button class="cookie-close" onclick="declineCookies()">✕</button>
+    </div>
+
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/cookie.js"></script>
 </body>
 </html>

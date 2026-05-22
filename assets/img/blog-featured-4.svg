@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" class="blog-hero-svg">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#2e1515"/>
+    </linearGradient>
+    <filter id="glow4">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg4)"/>
+  <!-- Mountain/obstacle metaphor -->
+  <polygon points="50,260 150,180 250,220 350,140 450,200 550,120 650,190 750,150 800,180 800,260" fill="rgba(239,68,68,0.08)" stroke="#ef4444" stroke-width="1" opacity="0.5"/>
+  <!-- Person climbing -->
+  <circle cx="400" cy="130" r="12" fill="#f97316" opacity="0.8"/>
+  <line x1="400" y1="142" x2="400" y2="180" stroke="#f97316" stroke-width="2" opacity="0.6"/>
+  <line x1="400" y1="155" x2="375" y2="170" stroke="#f97316" stroke-width="1.5" opacity="0.5"/>
+  <line x1="400" y1="155" x2="425" y2="170" stroke="#f97316" stroke-width="1.5" opacity="0.5"/>
+  <line x1="400" y1="180" x2="385" y2="205" stroke="#f97316" stroke-width="1.5" opacity="0.5"/>
+  <line x1="400" y1="180" x2="415" y2="205" stroke="#f97316" stroke-width="1.5" opacity="0.5"/>
+  <!-- Rope line -->
+  <path d="M200,260 Q300,240 400,230 Q500,220 600,240 Q700,260 800,250" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.3" stroke-dasharray="8,4"/>
+  <!-- Falling debris -->
+  <rect x="250" y="270" width="4" height="12" rx="2" fill="#ef4444" opacity="0.3"/>
+  <rect x="500" y="275" width="3" height="10" rx="2" fill="#ef4444" opacity="0.2"/>
+  <rect x="600" y="268" width="5" height="8" rx="2" fill="#ef4444" opacity="0.25"/>
+  <!-- Dollar signs (obstacles) -->
+  <text x="180" y="210" font-size="22" fill="#ef4444" opacity="0.3">$</text>
+  <text x="300" y="200" font-size="18" fill="#ef4444" opacity="0.25">$</text>
+  <text x="540" y="180" font-size="20" fill="#ef4444" opacity="0.3">$</text>
+  <text x="700" y="210" font-size="16" fill="#ef4444" opacity="0.2">$</text>
+  <!-- Base camp / goal -->
+  <rect x="680" y="140" width="80" height="40" rx="6" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="1" opacity="0.5"/>
+  <text x="720" y="164" font-size="11" fill="#10b981" text-anchor="middle" opacity="0.7">TRAGUARDO</text>
+  <!-- Checkpoints -->
+  <polygon points="100,240 106,230 112,240" fill="#fbbf24" opacity="0.4"/>
+  <polygon points="280,215 286,205 292,215" fill="#fbbf24" opacity="0.3"/>
+  <polygon points="560,225 566,215 572,225" fill="#fbbf24" opacity="0.35"/>
+  <!-- Title -->
+  <text x="400" y="295" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#ef4444" text-anchor="middle" filter="url(#glow4)">Come Uscire dal Debito</text>
+  <text x="400" y="320" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle" opacity="0.5">"Un passo alla volta. Nessun salto nel buio."</text>
+</svg>

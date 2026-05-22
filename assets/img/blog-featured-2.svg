@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" class="blog-hero-svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0f2a1a"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg2)"/>
+  <!-- Shield/protection symbol -->
+  <path d="M400,80 L520,140 L520,240 Q520,310 400,330 Q280,310 280,240 L280,140 Z" fill="none" stroke="#10b981" stroke-width="3" opacity="0.4"/>
+  <path d="M400,110 L500,160 L500,240 Q500,295 400,310 Q300,295 300,240 L300,160 Z" fill="none" stroke="#10b981" stroke-width="2" opacity="0.5"/>
+  <path d="M400,140 L480,180 L480,240 Q480,280 400,292 Q320,280 320,240 L320,180 Z" fill="rgba(16,185,129,0.08)" stroke="#10b981" stroke-width="1" opacity="0.6"/>
+  <!-- Checkmark inside -->
+  <polyline points="370,185 400,215 440,175" fill="none" stroke="#10b981" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <!-- Coins flying in safely -->
+  <circle cx="150" cy="280" r="14" fill="rgba(16,185,129,0.1)" stroke="#10b981" stroke-width="1" opacity="0.5"/>
+  <text x="150" y="285" text-anchor="middle" font-size="14" fill="#10b981" opacity="0.6">€</text>
+  <circle cx="660" cy="260" r="12" fill="rgba(16,185,129,0.1)" stroke="#10b981" stroke-width="1" opacity="0.4"/>
+  <text x="660" y="265" text-anchor="middle" font-size="12" fill="#10b981" opacity="0.5">€</text>
+  <circle cx="120" cy="180" r="10" fill="rgba(16,185,129,0.08)" stroke="#10b981" stroke-width="1" opacity="0.3"/>
+  <text x="120" y="184" text-anchor="middle" font-size="10" fill="#10b981" opacity="0.4">€</text>
+  <!-- Safety net lines -->
+  <path d="M100,100 Q250,130 400,115 Q550,100 700,120" fill="none" stroke="#10b981" stroke-width="0.8" opacity="0.15"/>
+  <path d="M100,130 Q250,160 400,145 Q550,130 700,150" fill="none" stroke="#10b981" stroke-width="0.8" opacity="0.1"/>
+  <!-- Title -->
+  <text x="400" y="285" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#10b981" text-anchor="middle" filter="url(#glow2)">Investire Senza Paura</text>
+  <!-- Subtitle -->
+  <text x="400" y="312" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle" opacity="0.6">"I soldi non fanno paura. È la paura che fa paura."</text>
+</svg>

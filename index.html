@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TreasuryWorks — Officina della Tua Ricchezza</title>
     <meta name="description" content="TreasuryWorks è il tuo laboratorio di finanza comportamentale. Scopri come riparare la tua relazione con il denaro attraverso la psicologia e le metafore meccaniche.">
-    <meta name="keywords" content="finanza comportamentale, psicologia del denaro, educazione finanziaria, investimenti, risparmio, bias cognitivi">
+    <meta name="keywords" content="finanza comportamentale, psicologia del denaro, educazione finanziaria, investimenti, risparmio, bias cognitivi, benessere finanziario">
     <meta name="author" content="TreasuryWorks">
     <meta property="og:title" content="TreasuryWorks — Officina della Tua Ricchezza">
+    <meta property="og:image" content="https://gestorix90-oss.github.io/neve-website/assets/img/og-image.svg">
     <meta property="og:description" content="Scopri come riparare la tua relazione con il denaro attraverso la psicologia e le metafore meccaniche.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://treasuryworks.it">
@@ -16,14 +17,16 @@
     <meta name="twitter:description" content="Finanza comportamentale con le metafore dell'officina.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+    <style>.logo-img{height:42px;width:42px;vertical-align:middle;margin-right:10px;filter:drop-shadow(0 0 8px rgba(249,115,22,0.6))}
+    .nav-link.active{color:#f97316!important;position:relative}.nav-link.active::after{content:'';position:absolute;bottom:-4px;left:0;width:100%;height:2px;background:#f97316;border-radius:2px;animation:glowLine 2s ease infinite alternate}@keyframes glowLine{0%{opacity:.5}100%{opacity:1}}</style>
+    <link rel="icon" href="assets/img/favicon-star.svg">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <span class="logo-icon">⚙️</span>
+                <img src="assets/img/logo-gear-dollar.svg" alt="TreasuryWorks Logo" class="logo-img" width="42" height="42">
                 <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -35,7 +38,12 @@
                 <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="chi-sono.html" class="nav-link">Chi Sono</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contatti.html" class="nav-link nav-cta">Contatti</a></li>
+                <li><a href="strumenti.html" class="nav-link">🛠️ Strumenti</a></li>
+                <li><a href="faq.html" class="nav-link">❓ FAQ</a></li>
+                <li><a href="info.html" class="nav-link">📋 Info</a></li>
+                <li><a href="news.html" class="nav-link">📰 News</a></li>
+                <li><a href="risorse.html" class="nav-link">📚 Risorse</a></li>
+                <li><a href="contatti.html" class="nav-link nav-cta">📩 Contatti</a></li>
             </ul>
         </div>
     </nav>
@@ -44,42 +52,60 @@
     <section class="hero" id="hero">
         <div class="hero-particles" id="particles"></div>
         <div class="hero-content">
-            <span class="hero-badge">🚧 OFFICINA APERTA</span>
+            <span class="hero-badge">🚧 OFFICINA APERTA 24/7</span>
             <h1 class="hero-title">
-                <span class="title-line">Ripariamo la tua</span>
-                <span class="title-line accent">relazione con il denaro</span>
+                <span class="title-line anim-text">Ripariamo la tua</span>
+                <span class="title-line accent anim-text-delayed">relazione con il denaro</span>
             </h1>
             <p class="hero-subtitle">
-                Sono Antonio e questo è TreasuryWorks — il mio laboratorio dove meccanica e psicologia si incontrano.
-                Smontiamo i tuoi bias finanziari, li ripariamo e rimontiamo un futuro più ricco.
+                Sono Antonio e questo è <strong>TreasuryWorks</strong> — il mio laboratorio dove meccanica e psicologia si incontrano.
+                <br>Smontiamo i tuoi bias finanziari, li ripariamo e rimontiamo un futuro più ricco.
             </p>
             <div class="hero-actions">
-                <a href="chi-sono.html" class="btn btn-primary btn-lg">
+                <a href="chi-sono.html" class="btn btn-primary btn-lg glow-btn">
                     Scopri di più →
                 </a>
                 <a href="blog.html" class="btn btn-outline btn-lg">
                     Leggi il Blog
                 </a>
+                <a href="strumenti.html" class="btn btn-secondary btn-lg">
+                    🛠️ Usa gli Strumenti
+                </a>
             </div>
+            <!-- Trusted by / Stats -->
             <div class="hero-stats">
-                <div class="stat">
+                <div class="stat fade-up-1">
                     <span class="stat-number" data-target="500">0</span><span class="stat-unit">+</span>
                     <span class="stat-label">Lettori del Blog</span>
                 </div>
                 <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number" data-target="2">0</span>
-                    <span class="stat-label">Video Prodotti</span>
+                <div class="stat fade-up-2">
+                    <span class="stat-number" data-target="93">0</span><span class="stat-unit">+</span>
+                    <span class="stat-label">Video su YouTube</span>
                 </div>
                 <div class="stat-divider"></div>
-                <div class="stat">
+                <div class="stat fade-up-3">
                     <span class="stat-number" data-target="100">0</span><span class="stat-unit">%</span>
-                    <span class="stat-label">Gratuito</span>
+                    <span class="stat-label">Gratuito & Sincero</span>
                 </div>
+                <div class="stat-divider"></div>
+                <div class="stat fade-up-4">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Playlist Attive</span>
+                </div>
+            </div>
+            <!-- Social proof line -->
+            <div class="hero-trust fade-up-delayed">
+                <span class="trust-text">Visto su</span>
+                <span class="trust-brands">
+                    <span class="brand-tag">YouTube</span>
+                    <span class="brand-tag">Instagram</span>
+                    <span class="brand-tag">TikTok</span>
+                </span>
             </div>
         </div>
         <div class="hero-visual" id="heroVisual">
-            <!-- Animated gear -->
+            <img src="assets/img/hero-visual.svg" alt="TreasuryWorks - Officina Finanziaria" class="hero-svg">
         </div>
         <div class="scroll-indicator">
             <div class="mouse">
@@ -87,6 +113,8 @@
             </div>
             <span>Scorri per esplorare</span>
         </div>
+        <!-- Scroll progress bar -->
+        <div class="scroll-progress" id="scrollProgress"></div>
     </section>
 
     <!-- Problem Section -->
@@ -95,26 +123,34 @@
             <div class="section-header">
                 <span class="section-tag">🔍 IL PROBLEMA</span>
                 <h2 class="section-title">Perché <span class="accent">sbagli</span> con i soldi?</h2>
-                <p class="section-desc">Non sei tu, Antonio lo sa bene. È il tuo cervello.</p>
+                <p class="section-desc">Non sei tu. È il tuo cervello. Antonio lo sa bene — è colpa dei bias cognitivi.</p>
             </div>
             <div class="problems-grid">
                 <div class="problem-card" data-aos="fade-up">
-                    <div class="problem-icon">🧠</div>
+                    <div class="problem-icon icon-wrapper orange">
+                        <svg viewBox="0 0 200 200" width="48" height="48"><circle cx="100" cy="100" r="90" fill="none" stroke="#f97316" stroke-width="2" opacity="0.3"/><path d="M100,30 L112,55 L140,55 L118,70 L126,95 L100,80 L74,95 L82,70 L60,55 L88,55 Z" fill="#f97316" opacity="0.8"/></svg>
+                    </div>
                     <h3>Bias Cognitivi</h3>
                     <p>Il tuo cervello prende decisioni finanziarie basate su emozioni, non su dati. È progettato per sopravvivere, non per investire.</p>
                 </div>
                 <div class="problem-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="problem-icon">💸</div>
-                    <h3>Spending Without Thinking</h3>
+                    <div class="problem-icon icon-wrapper blue">
+                        <svg viewBox="0 0 200 200" width="48" height="48"><circle cx="100" cy="100" r="90" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.3"/><rect x="55" y="60" width="40" height="50" rx="5" fill="none" stroke="#3b82f6" stroke-width="2"/><path d="M75,45 L90,60 L105,45" fill="none" stroke="#3b82f6" stroke-width="2"/><circle cx="70" cy="120" r="8" fill="none" stroke="#3b82f6" stroke-width="1.5"/><circle cx="100" cy="125" r="8" fill="none" stroke="#3b82f6" stroke-width="1.5"/><circle cx="130" cy="120" r="8" fill="none" stroke="#3b82f6" stroke-width="1.5"/></svg>
+                    </div>
+                    <h3>Spesa Impulsiva</h3>
                     <p>Compri cose che non ti servono per colmare bisogni emotivi. Il denaro è uno strumento, non un cerotto.</p>
                 </div>
                 <div class="problem-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="problem-icon">⚠️</div>
+                    <div class="problem-icon icon-wrapper green">
+                        <svg viewBox="0 0 200 200" width="48" height="48"><circle cx="100" cy="100" r="90" fill="none" stroke="#10b981" stroke-width="2" opacity="0.3"/><rect x="50" y="80" width="100" height="40" rx="5" fill="none" stroke="#10b981" stroke-width="2"/><line x1="80" y1="120" x2="120" y2="120" stroke="#10b981" stroke-width="2"/><rect x="70" y="50" width="60" height="8" rx="4" fill="none" stroke="#10b981" stroke-width="2" opacity="0.6"/><line x1="80" y1="120" x2="75" y2="150" stroke="#10b981" stroke-width="2" opacity="0.6"/><line x1="120" y1="120" x2="125" y2="150" stroke="#10b981" stroke-width="2" opacity="0.6"/></svg>
+                    </div>
                     <h3>Paura del Rischio</h3>
                     <p>Hai paura di perdere, quindi non investi. Ma non investire è la perdita più grande di tutte.</p>
                 </div>
                 <div class="problem-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="problem-icon">🔄</div>
+                    <div class="problem-icon icon-wrapper red">
+                        <svg viewBox="0 0 200 200" width="48" height="48"><circle cx="100" cy="100" r="90" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.3"/><path d="M60,70 Q60,40 100,40 Q140,40 140,70 L140,100 Q140,130 100,130 Q60,130 60,100 Z" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.6"/><path d="M80,75 L120,75 M80,95 L120,95 M80,115 L110,115" stroke="#ef4444" stroke-width="2" opacity="0.4"/><path d="M40,100 Q40,130 60,140" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.5"/><path d="M160,100 Q160,130 140,140" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.5"/></svg>
+                    </div>
                     <h3>Effetto Ciclo</h3>
                     <p>Guadagni → Spendi tutto → Panico → Risparmi troppo → Ti senti privato → Spendi di nuovo. Il loop infinito.</p>
                 </div>
@@ -122,89 +158,58 @@
         </div>
     </section>
 
-    <!-- Services / Cosa Facciamo -->
-    <section class="section services-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">🔧 COSA FACCIAMO</span>
-                <h2 class="section-title">Le nostre <span class="accent">attività</span></h2>
-                <p class="section-desc">Ogni ingranaggio ha un ruolo. Ecco come Antonio lavora.</p>
-            </div>
-            <div class="services-grid">
-                <a href="blog.html" class="service-card">
-                    <div class="service-icon">📝</div>
-                    <h3>Articoli di Psicologia del Denaro</h3>
-                    <p>Guide, analisi e approfondimenti sui bias cognitivi che influenzano le tue decisioni finanziarie.</p>
-                    <span class="service-link">Leggi gli articoli →</span>
-                </a>
-                <a href="#" class="service-card">
-                    <div class="service-icon">🎬</div>
-                    <h3>Video — Neve Noir</h3>
-                    <p>Il canale YouTube dove la meccanica incontra la finanza. Metafore dell'officina per capire i soldi.</p>
-                    <span class="service-link">Guarda i video →</span>
-                </a>
-                <a href="#" class="service-card">
-                    <div class="service-icon">🤖</div>
-                    <h3>Automazione Finanziaria</h3>
-                    <p>Bot, tool e workflow per automatizzare le tue finanze personali. Meno fatica, più risultati.</p>
-                    <span class="service-link">Scopri le automazioni →</span>
-                </a>
-                <a href="#" class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>Monitoraggio Bandi</h3>
-                    <p>Tieni sotto controllo i bandi e le opportunità finanziarie. Non perdere più nessuna scadenza.</p>
-                    <span class="service-link">Vedi il monitoraggio →</span>
-                </a>
-                <a href="contatti.html" class="service-card">
-                    <div class="service-icon">💡</div>
-                    <h3>Consulenza Finanziaria</h3>
-                    <p>Un percorso personalizzato per riparare la tua relazione con il denaro. 1-on-1 o in gruppo.</p>
-                    <span class="service-link">Prenota una sessione →</span>
-                </a>
-                <a href="#" class="service-card">
-                    <div class="service-icon">📚</div>
-                    <h3>Risorse Gratuite</h3>
-                    <p>Template, checklist, PDF scaricabili. Strumenti pratici per iniziare subito a gestire meglio i tuoi soldi.</p>
-                    <span class="service-link">Scarica le risorse →</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Come Funziona -->
+    <!-- How It Works Section -->
     <section class="section process-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">⚙️ COME FUNZIONA</span>
                 <h2 class="section-title">Il processo di <span class="accent">riparazione</span></h2>
-                <p class="section-desc">Come Antonio in officina: diagnosi, smontaggio, riparazione, rimontaggio.</p>
+                <p class="section-desc">Come Antonio in officina: diagnosi, smontaggio, riparazione, rimontaggio. Semplice ed efficace.</p>
             </div>
             <div class="process-timeline">
-                <div class="process-step">
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 60 60" width="40" height="40"><circle cx="30" cy="30" r="26" fill="none" stroke="#f97316" stroke-width="2"/><path d="M25,18 L35,18 L35,30 L25,30 Z M25,36 L35,36 L35,42 L25,42 Z" fill="#f97316" opacity="0.6"/></svg>
+                    </div>
                     <div class="step-number">01</div>
                     <div class="step-content">
                         <h3>Diagnosi</h3>
                         <p>Analizziamo il tuo comportamento finanziario attuale. Dove perdi soldi? Quali bias ti frenano?</p>
                     </div>
                 </div>
-                <div class="process-connector">→</div>
-                <div class="process-step">
+                <div class="process-connector">
+                    <svg width="50" height="30" viewBox="0 0 50 30"><line x1="0" y1="15" x2="50" y2="15" stroke="#f97316" stroke-width="2" stroke-dasharray="5,5"/><polygon points="42,10 50,15 42,20" fill="#f97316"/></svg>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 60 60" width="40" height="40"><circle cx="30" cy="30" r="26" fill="none" stroke="#ef4444" stroke-width="2"/><path d="M20,20 L40,20 L40,25 L20,25 Z M20,30 L40,30 L40,35 L20,35 Z" fill="#ef4444" opacity="0.6"/></svg>
+                    </div>
                     <div class="step-number">02</div>
                     <div class="step-content">
                         <h3>Smontaggio</h3>
                         <p>Smontiamo le cattive abitudini. Identifichiamo ogni ingranaggio rotto nella tua gestione del denaro.</p>
                     </div>
                 </div>
-                <div class="process-connector">→</div>
-                <div class="process-step">
+                <div class="process-connector">
+                    <svg width="50" height="30" viewBox="0 0 50 30"><line x1="0" y1="15" x2="50" y2="15" stroke="#f97316" stroke-width="2" stroke-dasharray="5,5"/><polygon points="42,10 50,15 42,20" fill="#f97316"/></svg>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 60 60" width="40" height="40"><circle cx="30" cy="30" r="26" fill="none" stroke="#10b981" stroke-width="2"/><path d="M25,15 L35,15 L30,30 Z" fill="#10b981" opacity="0.6"/><circle cx="30" cy="40" r="5" fill="none" stroke="#10b981" stroke-width="1.5"/></svg>
+                    </div>
                     <div class="step-number">03</div>
                     <div class="step-content">
                         <h3>Riparazione</h3>
                         <p>Sostituiamo i pezzi difettosi con strategie basate su evidenze scientifiche e dati reali.</p>
                     </div>
                 </div>
-                <div class="process-connector">→</div>
-                <div class="process-step">
+                <div class="process-connector">
+                    <svg width="50" height="30" viewBox="0 0 50 30"><line x1="0" y1="15" x2="50" y2="15" stroke="#f97316" stroke-width="2" stroke-dasharray="5,5"/><polygon points="42,10 50,15 42,20" fill="#f97316"/></svg>
+                </div>
+                <div class="process-step" data-aos="fade-left">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 60 60" width="40" height="40"><circle cx="30" cy="30" r="26" fill="none" stroke="#3b82f6" stroke-width="2"/><path d="M20,25 L30,18 L40,25 L35,38 L25,38 Z" fill="#3b82f6" opacity="0.6"/></svg>
+                    </div>
                     <div class="step-number">04</div>
                     <div class="step-content">
                         <h3>Rimontaggio</h3>
@@ -215,7 +220,48 @@
         </div>
     </section>
 
-    <!-- Blog Preview -->
+    <!-- Impact Numbers Section -->
+    <section class="section impact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">📊 I NOSTRI NUMERI</span>
+                <h2 class="section-title">L'impatto che <span class="accent">facciamo insieme</span></h2>
+                <p class="section-desc">Dati reali di una community che sta imparando a gestire meglio i propri soldi.</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card fade-up" data-target="1500">
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 100 100" width="50" height="50"><path d="M50,15 L65,45 L95,45 L72,62 L82,92 L50,75 L18,92 L28,62 L5,45 L35,45 Z" fill="none" stroke="#fbbf24" stroke-width="2"/></svg>
+                    </div>
+                    <div class="impact-number"><span class="counter" data-target="1500">0</span>+</div>
+                    <div class="impact-label">Lettori Attivi</div>
+                </div>
+                <div class="impact-card fade-up" data-target="48">
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 100 100" width="50" height="50"><circle cx="50" cy="50" r="35" fill="none" stroke="#3b82f6" stroke-width="2"/><circle cx="50" cy="50" r="18" fill="none" stroke="#3b82f6" stroke-width="2"/><circle cx="50" cy="50" r="8" fill="#3b82f6" opacity="0.3"/></svg>
+                    </div>
+                    <div class="impact-number"><span class="counter" data-target="48">0</span>+</div>
+                    <div class="impact-label">Articoli Pubblicati</div>
+                </div>
+                <div class="impact-card fade-up" data-target="93">
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 100 100" width="50" height="50"><rect x="20" y="15" width="60" height="70" rx="5" fill="none" stroke="#10b981" stroke-width="2"/><line x1="20" y1="30" x2="80" y2="30" stroke="#10b981" stroke-width="1.5"/><rect x="28" y="40" width="44" height="6" rx="3" fill="#10b981" opacity="0.4"/><rect x="28" y="52" width="30" height="6" rx="3" fill="#10b981" opacity="0.4"/></svg>
+                    </div>
+                    <div class="impact-number"><span class="counter" data-target="93">0</span>+</div>
+                    <div class="impact-label">Video su YouTube</div>
+                </div>
+                <div class="impact-card fade-up" data-target="25000">
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 100 100" width="50" height="50"><path d="M20,70 Q20,20 50,15 Q80,20 80,70 Z" fill="none" stroke="#a855f7" stroke-width="2"/><path d="M30,40 Q32,25 50,23 Q68,25 70,40" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/><circle cx="42" cy="38" r="4" fill="#a855f7" opacity="0.4"/><circle cx="58" cy="38" r="4" fill="#a855f7" opacity="0.4"/><path d="M35,50 Q50,58 65,50" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.4"/></svg>
+                    </div>
+                    <div class="impact-number"><span class="counter" data-target="25000">0</span>+</div>
+                    <div class="impact-label">Visualizzazioni Totali</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview with Images -->
     <section class="section blog-preview-section">
         <div class="container">
             <div class="section-header">
@@ -225,49 +271,186 @@
             </div>
             <div class="blog-grid">
                 <article class="blog-card" data-aos="fade-up">
-                    <div class="blog-image" style="background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);">
-                        <span class="blog-category">Bias</span>
+                    <div class="blog-image-wrapper">
+                        <img src="assets/img/blog-featured-1.svg" alt="Perché perdi soldi" class="blog-hero-svg">
+                        <span class="blog-category tag-bias">🧠 Bias Cognitivi</span>
                     </div>
                     <div class="blog-content">
-                        <h3><a href="blog.html#perché-perdi-soldi">Perché perdi soldi (e non è colpa tua)</a></h3>
-                        <p>Scopri i 5 bias cognitivi che ti fanno spendere di più e risparmiare meno, e come difenderti.</p>
+                        <h3><a href="blog/perche-perdi-soldi.html">Perché perdi soldi (e non è colpa tua)</a></h3>
+                        <p>Scopri i 5 bias cognitivi che ti fanno spendere di più e risparmiare meno, e come difenderti dal tuo stesso cervello.</p>
                         <div class="blog-meta">
                             <span>📅 15 Mag 2026</span>
-                            <span>⏱️ 6 min lettura</span>
+                            <span>⏱️ 8 min lettura</span>
+                            <span>👁️ 1.2k views</span>
                         </div>
                     </div>
                 </article>
                 <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="blog-image" style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);">
-                        <span class="blog-category">Investimenti</span>
+                    <div class="blog-image-wrapper">
+                        <img src="assets/img/blog-featured-2.svg" alt="Investire Senza Paura" class="blog-hero-svg">
+                        <span class="blog-category tag-invest">📈 Investimenti</span>
                     </div>
                     <div class="blog-content">
-                        <h3><a href="blog.html#investire-senza-paura">Investire senza paura: la guida pratica</a></h3>
-                        <p>Come superare la paura del mercato e iniziare a investire con metodo e consapevolezza.</p>
+                        <h3><a href="blog/investire-senza-paura.html">Investire senza paura: guida per principianti</a></h3>
+                        <p>Come superare la paura del mercato e iniziare a investire con metodo, ETF e la giusta mentalità.</p>
                         <div class="blog-meta">
                             <span>📅 08 Mag 2026</span>
-                            <span>⏱️ 8 min lettura</span>
+                            <span>⏱️ 12 min lettura</span>
+                            <span>👁️ 890 views</span>
                         </div>
                     </div>
                 </article>
                 <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="blog-image" style="background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);">
-                        <span class="blog-category">Psicologia</span>
+                    <div class="blog-image-wrapper">
+                        <img src="assets/img/blog-featured-3.svg" alt="Psicologia del Denaro" class="blog-hero-svg">
+                        <span class="blog-category tag-psych">💭 Psicologia</span>
                     </div>
                     <div class="blog-content">
-                        <h3><a href="blog.html#psicologia-denaro">Psicologia del denaro: perché i ricchi pensano diversamente</a></h3>
-                        <p>Le differenze di mentalità tra chi gestisce bene i soldi e chi lotta ogni mese.</p>
+                        <h3><a href="blog/psicologia-denaro-pensiero-diverso.html">Psicologia del denaro: perché i ricchi pensano diversamente</a></h3>
+                        <p>Le 7 differenze di mentalità tra chi gestisce bene i soldi e chi lotta ogni mese.</p>
                         <div class="blog-meta">
                             <span>📅 01 Mag 2026</span>
                             <span>⏱️ 10 min lettura</span>
+                            <span>👁️ 2.1k views</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image-wrapper">
+                        <img src="assets/img/blog-featured-4.svg" alt="Metodo 50/30/20" class="blog-hero-svg">
+                        <span class="blog-category tag-budget">💰 Budget</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="blog/metodo-50-30-20.html">Il Metodo 50/30/20: budget semplice che funziona</a></h3>
+                        <p>Il 50% per vivere, il 30% per te, il 20% per costruire il tuo futuro. Funziona davvero.</p>
+                        <div class="blog-meta">
+                            <span>📅 25 Apr 2026</span>
+                            <span>⏱️ 7 min lettura</span>
+                            <span>👁️ 1.5k views</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="blog-image-wrapper">
+                        <img src="assets/img/blog-featured-5.svg" alt="Uscire dal Debito" class="blog-hero-svg">
+                        <span class="blog-category tag-debt">💳 Debito</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="blog/uscire-dal-debito.html">Uscire dal debito ✊ — Il metodo dell'officina</a></h3>
+                        <p>Avalanche vs Snowball: hai debiti? Ecco come spezzare le catene e ricominciare a correre.</p>
+                        <div class="blog-meta">
+                            <span>📅 18 Apr 2026</span>
+                            <span>⏱️ 9 min lettura</span>
+                            <span>👁️ 780 views</span>
                         </div>
                     </div>
                 </article>
             </div>
-            <div class="text-center">
+            <div class="text-center" style="margin-top: 40px;">
                 <a href="blog.html" class="btn btn-outline btn-lg">
                     Tutti gli articoli del Blog →
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Preview Section -->
+    <section class="section tools-preview-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">🛠️ STRUMENTI</span>
+                <h2 class="section-title">Strumenti <span class="accent">gratuiti</span> per te</h2>
+                <p class="section-desc">Calcolatori, tracker e tool interattivi per prendere il controllo delle tue finanze.</p>
+            </div>
+            <div class="tools-grid">
+                <a href="strumenti.html#budget" class="tool-card">
+                    <div class="tool-icon" style="background: rgba(249,115,22,0.15);">
+                        <svg viewBox="0 0 40 40" width="28" height="28"><rect x="8" y="12" width="24" height="16" rx="3" fill="none" stroke="#f97316" stroke-width="2"/><line x1="15" y1="18" x2="25" y2="18" stroke="#f97316" stroke-width="1.5"/><line x1="15" y1="23" x2="21" y2="23" stroke="#f97316" stroke-width="1.5"/></svg>
+                    </div>
+                    <h4>Calcolatore Budget</h4>
+                    <p>50/30/20 personalizzato</p>
+                </a>
+                <a href="strumenti.html#debt" class="tool-card">
+                    <div class="tool-icon" style="background: rgba(239,68,68,0.15);">
+                        <svg viewBox="0 0 40 40" width="28" height="28"><path d="M15,10 L25,10 L28,20 L12,20 Z" fill="none" stroke="#ef4444" stroke-width="2"/><line x1="10" y1="24" x2="30" y2="24" stroke="#ef4444" stroke-width="2"/><circle cx="15" cy="28" r="2" fill="#ef4444"/><circle cx="25" cy="28" r="2" fill="#ef4444"/></svg>
+                    </div>
+                    <h4>Debt Tracker</h4>
+                    <p>Piano di uscita dai debiti</p>
+                </a>
+                <a href="strumenti.html#compound" class="tool-card">
+                    <div class="tool-icon" style="background: rgba(16,185,129,0.15);">
+                        <svg viewBox="0 0 40 40" width="28" height="28"><polyline points="8,30 15,20 22,25 29,12 32,18" fill="none" stroke="#10b981" stroke-width="2.5"/><line x1="8" y1="30" x2="32" y2="30" stroke="#10b981" stroke-width="1" opacity="0.5"/></svg>
+                    </div>
+                    <h4>Interesse Composto</h4>
+                    <p>Vedi crescere i tuoi investimenti</p>
+                </a>
+                <a href="strumenti.html#bias" class="tool-card">
+                    <div class="tool-icon" style="background: rgba(59,130,246,0.15);">
+                        <svg viewBox="0 0 40 40" width="28" height="28"><circle cx="20" cy="20" r="14" fill="none" stroke="#3b82f6" stroke-width="2"/><circle cx="20" cy="20" r="6" fill="none" stroke="#3b82f6" stroke-width="1.5"/><path d="M20,6 L20,10 M20,30 L20,34 M6,20 L10,20 M30,20 L34,20" stroke="#3b82f6" stroke-width="1.5"/></svg>
+                    </div>
+                    <h4>Bias Detector</h4>
+                    <p>Scopri i tuoi bias finanziari</p>
+                </a>
+                <a href="strumenti.html#emergency" class="tool-card">
+                    <div class="tool-icon" style="background: rgba(168,85,247,0.15);">
+                        <svg viewBox="0 0 40 40" width="28" height="28"><path d="M20,8 L26,16 L34,18 L28,24 L29,33 L20,29 L11,33 L12,24 L6,18 L14,16 Z" fill="none" stroke="#a855f7" stroke-width="2"/></svg>
+                    </div>
+                    <h4>Fondo Emergenza</h4>
+                    <p>Quanto ti serve per dormire tranquillo</p>
+                </a>
+                <a href="strumenti.html#savings" class="tool-card">
+                    <div class="tool-icon" style="background: rgba(251,191,36,0.15);">
+                        <svg viewBox="0 0 40 40" width="28" height="28"><ellipse cx="20" cy="28" rx="12" ry="6" fill="none" stroke="#fbbf24" stroke-width="2"/><path d="M8,28 Q8,14 20,10 Q32,14 32,28" fill="none" stroke="#fbbf24" stroke-width="2"/><circle cx="20" cy="16" r="3" fill="none" stroke="#fbbf24" stroke-width="1.5"/></svg>
+                    </div>
+                    <h4>Risparmio Settimanale</h4>
+                    <p>Piano risparmio personalizzato</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonianze -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">💬 COSA DICONO</span>
+                <h2 class="section-title">La community di <span class="accent">TreasuryWorks</span></h2>
+                <p class="section-desc">Chi ci segue ha già iniziato a cambiare mentalità.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-up">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Ho capito perché continuavo a spendere soldi in cose inutili. Ora risparmio 300€ al mese senza neanche accorgermene."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <strong>Marco R.</strong>
+                            <span class="testimonial-role">Milano, 28 anni</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-up" data-aos-delay="100">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"La metafora dell'officina è geniale. Finalmente la finanza la capisco davvero. Ho iniziato il mio primo ETF solo grazie a voi."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <strong>Sara T.</strong>
+                            <span class="testimonial-role">Roma, 35 anni</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-up" data-aos-delay="200">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Seguo Antonio su YouTube da mesi. Il suo approccio è unico: zero tecnicismi, solo verità. Il debito l'ho quasi azzerato."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">L</div>
+                        <div>
+                            <strong>Luca P.</strong>
+                            <span class="testimonial-role">Napoli, 22 anni</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -276,15 +459,24 @@
     <section class="section cta-section">
         <div class="container">
             <div class="cta-box">
+                <div class="cta-visual">
+                    <svg viewBox="0 0 200 100" width="200" height="100" class="cta-svg"><rect x="10" y="20" width="180" height="60" rx="10" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.3"/><text x="100" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#fbbf24" font-weight="600" opacity="0.5">OFFERTA LIMITATA</text></svg>
+                </div>
                 <h2>Pronto a <span class="accent">riparare</span> i tuoi soldi?</h2>
-                <p>Iscriviti alla newsletter gratuita e ricevi ogni settimana contenuti esclusivi sulla psicologia del denaro.</p>
+                <p>Iscriviti alla newsletter gratuita e ricevi ogni settimana contenuti esclusivi sulla psicologia del denaro, tool gratuiti e aggiornamenti.</p>
                 <form class="newsletter-form" onsubmit="handleNewsletter(event)">
                     <div class="form-group">
                         <input type="email" id="newsletter-email" placeholder="La tua email migliore" required>
-                        <button type="submit" class="btn btn-primary">Iscriviti →</button>
+                        <button type="submit" class="btn btn-primary glow-btn">Iscriviti Gratis →</button>
                     </div>
                 </form>
-                <p class="cta-note">Niente spam. Solo roba utile. Puoi cancellarti quando vuoi.</p>
+                <p class="cta-note">🔒 Niente spam. Solo roba utile. Puoi cancellarti quando vuoi.</p>
+                <!-- Social links in CTA -->
+                <div class="cta-social-links">
+                    <a href="https://youtube.com/@nevenoir90" target="_blank" class="social-link" title="YouTube">📺</a>
+                    <a href="https://www.tiktok.com/@neve.noir" target="_blank" class="social-link" title="TikTok">🎵</a>
+                    <a href="https://www.instagram.com/nevenoir.official" target="_blank" class="social-link" title="Instagram">📸</a>
+                </div>
             </div>
         </div>
     </section>
@@ -295,44 +487,67 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <span class="logo-icon">⚙️</span>
+                        <img src="assets/img/logo-gear-dollar.svg" alt="TreasuryWorks" class="footer-logo-img" width="36" height="36">
                         <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
                     </div>
-                    <p>L'officina dove ripari la tua relazione con il denaro. Meccanica + Psicologia = Ricchezza.</p>
+                    <p>L'officina dove ripari la tua relazione con il denaro.<br>Meccanica + Psicologia = Ricchezza.</p>
+                    <div class="footer-social">
+                        <a href="https://youtube.com/@nevenoir90" target="_blank" class="social-icon" title="YouTube">📺</a>
+                        <a href="https://www.tiktok.com/@neve.noir" target="_blank" class="social-icon" title="TikTok">🎵</a>
+                        <a href="https://www.instagram.com/nevenoir.official" target="_blank" class="social-icon" title="Instagram">📸</a>
+                        <a href="#" class="social-icon" title="X/Twitter">🐦</a>
+                    </div>
                 </div>
                 <div class="footer-col">
                     <h4>Navigazione</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="chi-sono.html">Chi Sono</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contatti.html">Contatti</a></li>
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li><a href="chi-sono.html">👤 Chi Sono</a></li>
+                        <li><a href="blog.html">📝 Blog</a></li>
+                        <li><a href="strumenti.html">🛠️ Strumenti</a></li>
+                        <li><a href="faq.html">❓ FAQ</a></li>
+                        <li><a href="info.html">📋 Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Risorse</h4>
+                    <ul>
+                        <li><a href="news.html">📰 News</a></li>
+                        <li><a href="risorse.html">📚 Risorse</a></li>
+                        <li><a href="privacy.html">🔒 Privacy Policy</a></li>
+                        <li><a href="contatti.html">📩 Contatti</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Social</h4>
                     <ul>
-                        <li><a href="#" target="_blank">📺 YouTube</a></li>
-                        <li><a href="#" target="_blank">💬 Telegram</a></li>
-                        <li><a href="#" target="_blank">📸 Instagram</a></li>
-                        <li><a href="#" target="_blank">🐦 X / Twitter</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Legale</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                        <li><a href="#">Termini di Servizio</a></li>
+                        <li><a href="https://youtube.com/@nevenoir90" target="_blank">📺 YouTube — 93+ video</a></li>
+                        <li><a href="https://www.tiktok.com/@neve.noir" target="_blank">🎵 TikTok — @neve.noir</a></li>
+                        <li><a href="https://www.instagram.com/nevenoir.official" target="_blank">📸 Instagram — @nevenoir.official</a></li>
+                        <li><a href="#">🐦 X — Coming soon</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 TreasuryWorks. Tutti i diritti riservati. P.IVA in fase di registrazione.</p>
+                <p>© 2026 TreasuryWorks. Tutti i diritti riservati.</p>
+                <p>P.IVA in fase di registrazione — Partita IVA & Codice Fiscale in fase di richiesta</p>
             </div>
         </div>
     </footer>
 
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <p>🍪 Utilizziamo cookie tecnici per offrirti la migliore esperienza. Nessun tracciamento pubblicitario. <a href="privacy.html">Scopri di più</a></p>
+            <div class="cookie-buttons">
+                <button class="btn btn-small btn-primary" onclick="acceptCookies()">Accetta ✅</button>
+                <button class="btn btn-small btn-outline" onclick="declineCookies()">Rifiuta ❌</button>
+            </div>
+        </div>
+        <button class="cookie-close" onclick="declineCookies()">✕</button>
+    </div>
+
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/cookie.js"></script>
 </body>
 </html>

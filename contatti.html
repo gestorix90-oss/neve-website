@@ -4,145 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatti — TreasuryWorks</title>
-    <meta name="description" content="Contatta TreasuryWorks. Scrivici per consulenze, collaborazioni o semplicemente per dire ciao.">
+    <meta name="description" content="Contatta TreasuryWorks. Scrivici, manda un messaggio, proponi una collaborazione. Rispondiamo a tutti (davvero).">
     <meta property="og:title" content="Contatti — TreasuryWorks">
-    <meta property="og:description" content="Contatta il team TreasuryWorks per consulenze e collaborazioni.">
+    <meta property="og:image" content="https://gestorix90-oss.github.io/neve-website/assets/img/og-image.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+    <link rel="icon" href="assets/img/favicon-star.svg">
 </head>
 <body>
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <button class="cookie-close" onclick="closeCookieBanner()">✕</button>
+        <div class="cookie-content">
+            <p>🍪 Utilizziamo cookie per migliorare la tua esperienza. <a href="privacy.html">Cookie Policy</a>.</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-sm btn-outline" onclick="closeCookieBanner()">Rifiuta</button>
+                <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accetta</button>
+            </div>
+        </div>
+    </div>
+
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <span class="logo-icon">⚙️</span>
+                <img src="assets/img/logo-gear-dollar.svg" alt="TreasuryWorks Logo" class="logo-img" width="42" height="42">
                 <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="chi-sono.html" class="nav-link">Chi Sono</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contatti.html" class="nav-link active">Contatti</a></li>
+                <li><a href="strumenti.html" class="nav-link">🛠️ Strumenti</a></li>
+                <li><a href="faq.html" class="nav-link">❓ FAQ</a></li>
+                <li><a href="info.html" class="nav-link">📋 Info</a></li>
+                <li><a href="news.html" class="nav-link">📰 News</a></li>
+                <li><a href="risorse.html" class="nav-link">📚 Risorse</a></li>
+                <li><a href="contatti.html" class="nav-link active">📩 Contatti</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="hero" style="min-height: 40vh;">
-        <div class="hero-content" style="text-align: left; max-width: 800px;">
-            <span class="hero-badge">📬 CONTATTACI</span>
-            <h1 class="hero-title" style="font-size: clamp(2rem, 4vw, 3rem);">
-                <span class="title-line">Iniziamo a</span>
-                <span class="title-line accent">lavorare insieme</span>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <section class="hero" id="hero" style="min-height:35vh;">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <span class="hero-badge">📩 CONTATTI</span>
+            <h1 class="hero-title">
+                <span class="title-line">Parliamo di</span>
+                <span class="title-line accent">soldi</span>
             </h1>
-            <p class="hero-subtitle" style="text-align: left; margin: 0;">
-                Hai domande, proposte di collaborazione o vuoi semplicemente dire ciao? 
-                Compila il form o scrivici direttamente sui nostri canali.
-            </p>
+            <p class="hero-subtitle">Hai una domanda, un'idea, una proposta di collaborazione? Scrivimi. Rispondo personalmente.</p>
+        </div>
+        <div class="hero-visual" id="heroVisual">
+            <img src="assets/img/hero-contatti.svg" alt="Contatti TreasuryWorks" class="hero-svg">
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); margin-bottom: var(--space-2xl);">
-                
-                <!-- Contact Info -->
-                <div>
-                    <div class="section-header" style="text-align: left;">
-                        <span class="section-tag">💬 CANALI</span>
-                        <h2 class="section-title" style="text-align: left;">Raggiungici</h2>
-                        <p class="section-desc" style="margin: 0; text-align: left;">
-                            Scegli il canale che preferisci. Rispondiamo entro 24 ore.
-                        </p>
+            <div class="section-header">
+                <span class="section-tag">✉️ SCRIVIMI</span>
+                <h2 class="section-title">Sono qui per <span class="accent">aiutarti</span></h2>
+                <p class="section-desc">Collaborazioni, domande, suggerimenti per nuovi contenuti — scrivimi, ti rispondo entro 24-48 ore.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-section fade-up">
+                    <h3>📬 Social</h3>
+                    <div class="contact-social-links">
+                        <a href="https://youtube.com/@nevenoir90" target="_blank" class="contact-social-btn">
+                            <span class="cs-icon">📺</span>
+                            <span class="cs-text">YouTube</span>
+                            <span class="cs-handle">@nevenoir90</span>
+                        </a>
+                        <a href="https://www.instagram.com/nevenoir.official" target="_blank" class="contact-social-btn">
+                            <span class="cs-icon">📸</span>
+                            <span class="cs-text">Instagram</span>
+                            <span class="cs-handle">@nevenoir.official</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@neve.noir" target="_blank" class="contact-social-btn">
+                            <span class="cs-icon">🎵</span>
+                            <span class="cs-text">TikTok</span>
+                            <span class="cs-handle">@neve.noir</span>
+                        </a>
+                        <a href="https://t.me/treasuryworks" target="_blank" class="contact-social-btn">
+                            <span class="cs-icon">💬</span>
+                            <span class="cs-text">Telegram</span>
+                            <span class="cs-handle">@treasuryworks</span>
+                        </a>
                     </div>
 
-                    <div style="display: flex; flex-direction: column; gap: var(--space-md); margin-top: var(--space-lg);">
-                        <div style="display: flex; align-items: center; gap: var(--space-md); background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--border-radius); padding: var(--space-md);">
-                            <span style="font-size: 2rem;">📧</span>
-                            <div>
-                                <h4 style="font-size: 1rem; font-weight: 600;">Email</h4>
-                                <p style="color: var(--text-secondary); font-size: 0.9rem;">contatto@treasuryworks.it</p>
-                            </div>
-                        </div>
-                        
-                        <div style="display: flex; align-items: center; gap: var(--space-md); background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--border-radius); padding: var(--space-md);">
-                            <span style="font-size: 2rem;">💬</span>
-                            <div>
-                                <h4 style="font-size: 1rem; font-weight: 600;">Telegram</h4>
-                                <p style="color: var(--text-secondary); font-size: 0.9rem;">@treasuryworks_official</p>
-                            </div>
-                        </div>
-                        
-                        <div style="display: flex; align-items: center; gap: var(--space-md); background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--border-radius); padding: var(--space-md);">
-                            <span style="font-size: 2rem;">🎬</span>
-                            <div>
-                                <h4 style="font-size: 1rem; font-weight: 600;">YouTube</h4>
-                                <p style="color: var(--text-secondary); font-size: 0.9rem;">@TreasuryWorks</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; align-items: center; gap: var(--space-md); background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--border-radius); padding: var(--space-md);">
-                            <span style="font-size: 2rem;">📷</span>
-                            <div>
-                                <h4 style="font-size: 1rem; font-weight: 600;">Instagram</h4>
-                                <p style="color: var(--text-secondary); font-size: 0.9rem;">@treasuryworks</p>
-                            </div>
-                        </div>
+                    <h3 style="margin-top:30px;">📍 Dove trovi TreasuryWorks</h3>
+                    <div class="contact-detail">
+                        <span class="cd-icon">🌐</span>
+                        <span><strong>Sito web:</strong> <a href="https://gestorix90-oss.github.io/neve-website/" style="color:var(--orange);">gestorix90-oss.github.io/neve-website</a></span>
                     </div>
+                    <div class="contact-detail">
+                        <span class="cd-icon">📧</span>
+                        <span><strong>Email:</strong> antonio@treasuryworks.it</span>
+                    </div>
+
+                    <h3 style="margin-top:30px;">🤝 Collaborazioni</h3>
+                    <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.7;">
+                        Sono disponibile per collaborazioni su:<br>
+                        • 📝 Articoli sponsorizzati e partnership<br>
+                        • 🎬 Creazione di contenuti video<br>
+                        • 📊 Consulenze su finanza comportamentale<br>
+                        • 🛠️ Sviluppo di tool finanziari
+                    </p>
                 </div>
 
-                <!-- Contact Form -->
-                <div>
-                    <div class="section-header" style="text-align: left;">
-                        <span class="section-tag">✉️ SCRIVICI</span>
-                        <h2 class="section-title" style="text-align: left;">Invia un messaggio</h2>
-                        <p class="section-desc" style="margin: 0; text-align: left;">
-                            Compila il modulo e ti risponderemo al più presto.
-                        </p>
-                    </div>
-
-                    <form class="contact-form" onsubmit="handleContact(event)" style="margin-top: var(--space-lg);">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); margin-bottom: var(--space-md);">
-                            <div>
-                                <label for="contact-name" style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px; color: var(--text-secondary);">Nome *</label>
-                                <input type="text" id="contact-name" required style="width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: var(--border-radius); background: var(--bg-card); color: var(--text-primary); font-family: var(--font-main); font-size: 0.95rem; outline: none; transition: border-color var(--transition);">
-                            </div>
-                            <div>
-                                <label for="contact-email" style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px; color: var(--text-secondary);">Email *</label>
-                                <input type="email" id="contact-email" required style="width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: var(--border-radius); background: var(--bg-card); color: var(--text-primary); font-family: var(--font-main); font-size: 0.95rem; outline: none; transition: border-color var(--transition);">
-                            </div>
+                <div class="contact-form-section fade-up" data-aos-delay="100">
+                    <form class="contact-form" onsubmit="handleContactForm(event)">
+                        <div class="form-group">
+                            <label for="contact-name">Nome *</label>
+                            <input type="text" id="contact-name" placeholder="Il tuo nome" required>
                         </div>
-                        <div style="margin-bottom: var(--space-md);">
-                            <label for="contact-subject" style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px; color: var(--text-secondary);">Oggetto</label>
-                            <input type="text" id="contact-subject" style="width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: var(--border-radius); background: var(--bg-card); color: var(--text-primary); font-family: var(--font-main); font-size: 0.95rem; outline: none; transition: border-color var(--transition);">
+                        <div class="form-group">
+                            <label for="contact-email">Email *</label>
+                            <input type="email" id="contact-email" placeholder="tua@email.com" required>
                         </div>
-                        <div style="margin-bottom: var(--space-md);">
-                            <label for="contact-message" style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px; color: var(--text-secondary);">Messaggio *</label>
-                            <textarea id="contact-message" rows="6" required style="width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: var(--border-radius); background: var(--bg-card); color: var(--text-primary); font-family: var(--font-main); font-size: 0.95rem; outline: none; transition: border-color var(--transition); resize: vertical;"></textarea>
+                        <div class="form-group">
+                            <label for="contact-subject">Oggetto</label>
+                            <input type="text" id="contact-subject" placeholder="Es: Collaborazione">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Invia Messaggio →</button>
-                        <p class="cta-note" style="text-align: center; margin-top: var(--space-xs);">I tuoi dati sono al sicuro. Non li condivideremo mai con terze parti.</p>
+                        <div class="form-group">
+                            <label for="contact-message">Messaggio *</label>
+                            <textarea id="contact-message" rows="6" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">📩 Invia Messaggio</button>
+                        <p class="form-note">* campi obbligatori. I dati non vengono memorizzati — vengono solo inoltrati via email.</p>
                     </form>
+                    <div id="contact-success" class="success-message hidden">
+                        <div class="success-icon">✅</div>
+                        <h3>Messaggio inviato!</h3>
+                        <p>Grazie per avermi scritto. Ti risponderò il prima possibile.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Map placeholder section -->
-    <section class="section" style="background: var(--bg-secondary); padding: var(--space-xl) 0;">
-        <div class="container" style="text-align: center;">
-            <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--border-radius-lg); padding: var(--space-xl); max-width: 800px; margin: 0 auto;">
-                <span style="font-size: 3rem; display: block; margin-bottom: var(--space-sm);">📍</span>
-                <h3 style="margin-bottom: var(--space-xs);">Disponibile ovunque</h3>
-                <p style="color: var(--text-secondary);">
-                    Lavoriamo online con clienti in tutta Italia. 
-                    Se vuoi incontrarci di persona, organizziamo meeting a 
-                    <strong style="color: var(--orange);">Bari</strong> e dintorni.
-                </p>
+            <!-- Social Proof / Stats -->
+            <div class="cta-box" style="margin-top:40px;">
+                <svg class="hero-svg" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="cpa" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.2"/>
+                            <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.2"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="400" height="160" rx="16" fill="url(#cpa)"/>
+                    <text x="200" y="55" font-family="Inter" font-size="28" fill="#fbbf24" text-anchor="middle" font-weight="900">📩 TREASURYWORKS</text>
+                    <text x="200" y="90" font-family="Inter" font-size="15" fill="#fff" text-anchor="middle" font-weight="600">Oltre 1.000 follower · 93+ video · 5 articoli</text>
+                    <text x="200" y="120" font-family="Inter" font-size="12" fill="#94a3b8" text-anchor="middle">Unisciti alla community →</text>
+                </svg>
             </div>
         </div>
     </section>
@@ -151,45 +168,43 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="footer-logo">
-                        <span class="logo-icon">⚙️</span>
-                        <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
-                    </div>
+                    <div class="footer-logo"><img src="assets/img/logo-gear-dollar.svg" alt="Logo" class="footer-logo-img" width="32" height="32"> <span class="logo-text">Treasury<span class="logo-accent">Works</span></span></div>
                     <p>L'officina dove ripari la tua relazione con il denaro.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Navigazione</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="chi-sono.html">Chi Sono</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contatti.html">Contatti</a></li>
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li><a href="chi-sono.html">👤 Chi Sono</a></li>
+                        <li><a href="blog.html">📝 Blog</a></li>
+                        <li><a href="strumenti.html">🛠️ Strumenti</a></li>
+                        <li><a href="faq.html">❓ FAQ</a></li>
+                        <li><a href="info.html">📋 Info</a></li>
+                        <li><a href="news.html">📰 News</a></li>
+                        <li><a href="risorse.html">📚 Risorse</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Social</h4>
                     <ul>
-                        <li><a href="#">📺 YouTube</a></li>
-                        <li><a href="#">💬 Telegram</a></li>
-                        <li><a href="#">📸 Instagram</a></li>
-                        <li><a href="#">🐦 X / Twitter</a></li>
+                        <li><a href="https://youtube.com/@nevenoir90" target="_blank">📺 YouTube</a></li>
+                        <li><a href="https://t.me/treasuryworks" target="_blank">💬 Telegram</a></li>
+                        <li><a href="https://www.instagram.com/nevenoir.official" target="_blank">📸 Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@neve.noir" target="_blank">📺 TikTok</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Legale</h4>
                     <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                        <li><a href="#">Termini di Servizio</a></li>
+                        <li><a href="privacy.html">🔒 Privacy</a></li>
+                        <li><a href="#">🍪 Cookie</a></li>
+                        <li><a href="#">📋 Termini</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>© 2026 TreasuryWorks. Tutti i diritti riservati.</p>
-            </div>
+            <div class="footer-bottom"><p>© 2026 TreasuryWorks — Tutti i diritti riservati</p></div>
         </div>
     </footer>
-
     <script src="assets/js/script.js"></script>
 </body>
 </html>

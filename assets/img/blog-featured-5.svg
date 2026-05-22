@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" class="blog-hero-svg">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#1a2a1a"/>
+    </linearGradient>
+    <filter id="glow5">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg5)"/>
+  <!-- Three stacked sections: 50 / 30 / 20 -->
+  <rect x="150" y="60" width="500" height="80" rx="8" fill="rgba(249,115,22,0.08)" stroke="#f97316" stroke-width="1.5" opacity="0.6"/>
+  <text x="400" y="100" font-family="Inter" font-size="24" font-weight="800" fill="#f97316" text-anchor="middle" opacity="0.8">50% — NECESSITÀ</text>
+  <text x="400" y="82" font-family="Inter" font-size="12" fill="#94a3b8" text-anchor="middle" opacity="0.5">affitto, bollette, cibo, trasporti</text>
+
+  <rect x="150" y="155" width="500" height="80" rx="8" fill="rgba(59,130,246,0.08)" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+  <text x="400" y="195" font-family="Inter" font-size="24" font-weight="800" fill="#3b82f6" text-anchor="middle" opacity="0.8">30% — DESIDERI</text>
+  <text x="400" y="177" font-family="Inter" font-size="12" fill="#94a3b8" text-anchor="middle" opacity="0.5">hobby, svaghi, cene fuori, viaggi</text>
+
+  <rect x="150" y="250" width="500" height="80" rx="8" fill="rgba(16,185,129,0.08)" stroke="#10b981" stroke-width="1.5" opacity="0.6"/>
+  <text x="400" y="290" font-family="Inter" font-size="24" font-weight="800" fill="#10b981" text-anchor="middle" opacity="0.8">20% — RISPARMIO</text>
+  <text x="400" y="272" font-family="Inter" font-size="12" fill="#94a3b8" text-anchor="middle" opacity="0.5">emergenza, investimenti, futuro</text>
+
+  <!-- Ingot flowing between sections -->
+  <rect x="0" y="108" width="800" height="2" fill="rgba(255,255,255,0.03)"/>
+  <rect x="0" y="200" width="800" height="2" fill="rgba(255,255,255,0.03)"/>
+
+  <!-- Gold coins flowing into savings -->
+  <circle cx="650" cy="290" r="12" fill="#fbbf24" opacity="0.3"/>
+  <text x="650" y="295" text-anchor="middle" font-size="12" fill="#fff" opacity="0.5">€</text>
+  <circle cx="130" cy="290" r="8" fill="#fbbf24" opacity="0.2"/>
+  <circle cx="680" cy="100" r="8" fill="#fbbf24" opacity="0.2"/>
+
+  <!-- Calculator / gear icon -->
+  <circle cx="400" cy="40" r="18" fill="none" stroke="#f97316" stroke-width="1.5" opacity="0.4"/>
+  <text x="400" y="45" text-anchor="middle" font-size="18" fill="#f97316" opacity="0.5">🔧</text>
+  <!-- Small cogs -->
+  <path d="M25,140 Q40,130 50,145 Q40,160 25,150Z" fill="none" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+  <path d="M750,140 Q735,130 725,145 Q735,160 750,150Z" fill="none" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="325" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="#fbbf24" text-anchor="middle" filter="url(#glow5)">Il Metodo 50/30/20 Spiegato Bene</text>
+
+  <!-- Decorative dots -->
+  <circle cx="100" cy="50" r="2" fill="#f97316" opacity="0.3"/>
+  <circle cx="700" cy="55" r="3" fill="#3b82f6" opacity="0.25"/>
+  <circle cx="200" cy="30" r="2" fill="#10b981" opacity="0.2"/>
+  <circle cx="600" cy="40" r="2" fill="#fbbf24" opacity="0.2"/>
+</svg>

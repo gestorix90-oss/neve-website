@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" class="hero-svg-img">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg)"/>
+  <text x="300" y="135" font-family="Inter, sans-serif" font-size="42" font-weight="800" fill="#3b82f6" text-anchor="middle" opacity="0.9">❓</text>
+  <text x="300" y="185" font-family="Inter, sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">DOMANDE FREQUENTI</text>
+  <circle cx="200" cy="230" r="6" fill="#3b82f6" opacity="0.4"/>
+  <circle cx="230" cy="235" r="4" fill="#3b82f6" opacity="0.3"/>
+  <circle cx="370" cy="228" r="5" fill="#3b82f6" opacity="0.3"/>
+  <circle cx="400" cy="235" r="3" fill="#3b82f6" opacity="0.2"/>
+  <path d="M30,255 Q130,230 230,245 Q330,260 430,240 Q530,220 600,235" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.15"/>
+</svg>

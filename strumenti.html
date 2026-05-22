@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strumenti Gratuiti — TreasuryWorks</title>
+    <meta name="description" content="Calcolatori interattivi gratuiti: budget 50/30/20, piano debiti, interesse composto, fondo emergenza, obiettivi di risparmio. Strumenti di finanza personale creati con logica meccanica.">
+    <meta property="og:title" content="Strumenti Gratuiti — TreasuryWorks">
+    <meta property="og:image" content="https://gestorix90-oss.github.io/neve-website/assets/img/og-image.svg">
+    <meta property="og:description" content="Calcolatori e tool interattivi per gestire meglio le tue finanze. Gratis, senza registrazione, zero fuffa.">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/tools.css">
+    <link rel="icon" href="assets/img/favicon-star.svg">
+</head>
+<body>
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <button class="cookie-close" onclick="closeCookieBanner()">✕</button>
+        <div class="cookie-content">
+            <p>🍪 Utilizziamo cookie per migliorare la tua esperienza. <a href="privacy.html">Cookie Policy</a>.</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-sm btn-outline" onclick="closeCookieBanner()">Rifiuta</button>
+                <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accetta</button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/img/logo-gear-dollar.svg" alt="TreasuryWorks Logo" class="logo-img" width="42" height="42">
+                <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="chi-sono.html" class="nav-link">Chi Sono</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="strumenti.html" class="nav-link active">🛠️ Strumenti</a></li>
+                <li><a href="faq.html" class="nav-link">❓ FAQ</a></li>
+                <li><a href="info.html" class="nav-link">📋 Info</a></li>
+                <li><a href="news.html" class="nav-link">📰 News</a></li>
+                <li><a href="risorse.html" class="nav-link">📚 Risorse</a></li>
+                <li><a href="contatti.html" class="nav-link nav-cta">📩 Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <span class="hero-badge">🛠️ TOOL GRATUITI</span>
+            <h1 class="hero-title">
+                <span class="title-line">Strumenti per</span>
+                <span class="title-line accent">decidere meglio</span>
+            </h1>
+            <p class="hero-subtitle">
+                Calcolatori interattivi ispirati alla logica meccanica: mettici i dati, togliti i dubbi.
+            </p>
+            <div class="hero-actions">
+                <a href="#calcolatori" class="btn btn-primary btn-lg glow-btn">🧮 Inizia a Calcolare →</a>
+                <a href="blog.html" class="btn btn-outline btn-lg">📝 Scopri di più</a>
+            </div>
+        </div>
+        <div class="hero-visual" id="heroVisual">
+            <img src="assets/img/hero-strumenti.svg" alt="Strumenti TreasuryWorks" class="hero-svg">
+        </div>
+    </section>
+
+    <!-- Stat Impact -->
+    <section class="section" style="background:var(--bg-secondary);">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-icon">🧮</div>
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Calcolatori</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Registrazione</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🔒</div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Dati locali</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🆓</div>
+                    <div class="stat-number">Gratis</div>
+                    <div class="stat-label">Sempre</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCOLATORI -->
+    <section class="section" id="calcolatori">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">🛠️ I TUOI TOOL</span>
+                <h2 class="section-title">Calcolatori <span class="accent">interattivi</span></h2>
+                <p class="section-desc">Nessuna registrazione, nessun dato raccolto. Inserisci i numeri, ottieni risultati. Punto.</p>
+            </div>
+
+            <div class="tools-grid">
+
+                <!-- CALCOLATORE 1: BUDGET 50/30/20 -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon" style="background: linear-gradient(135deg, #f97316, #ea580c);">💰</div>
+                        <h3>Budget 50/30/20</h3>
+                        <p class="tool-desc">Il metodo più semplice per gestire i soldi. Senza complicazioni.</p>
+                    </div>
+                    <div class="tool-body">
+                        <div class="input-group">
+                            <label>Reddito mensile netto (€)</label>
+                            <input type="number" id="budget-income" placeholder="Es. 2000" min="0" step="50">
+                        </div>
+                        <button class="btn btn-primary" onclick="calcBudget()" style="width:100%;margin-top:12px;">Calcola Budget</button>
+                        <div class="budget-results" id="budget-results" style="display:none;">
+                            <div class="budget-result-bar">
+                                <span class="br-label" style="--c:var(--red)">🍽️ Bisogni (50%)</span>
+                                <div class="br-bar"><div class="br-fill" id="needs-bar" style="width:0%;background:var(--red);"></div></div>
+                                <span class="br-value" id="needs-amount">—</span>
+                            </div>
+                            <div class="budget-result-bar">
+                                <span class="br-label" style="--c:var(--blue)">🎮 Voglie (30%)</span>
+                                <div class="br-bar"><div class="br-fill" id="wants-bar" style="width:0%;background:var(--blue);"></div></div>
+                                <span class="br-value" id="wants-amount">—</span>
+                            </div>
+                            <div class="budget-result-bar">
+                                <span class="br-label" style="--c:var(--green)">💰 Risparmio (20%)</span>
+                                <div class="br-bar"><div class="br-fill" id="savings-bar" style="width:0%;background:var(--green);"></div></div>
+                                <span class="br-value" id="savings-amount">—</span>
+                            </div>
+                            <p class="tool-tip" id="budget-tip" style="margin-top:16px;"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CALCOLATORE 2: PIANO DEBITO -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);">🔧</div>
+                        <h3>Piano Debito</h3>
+                        <p class="tool-desc">Quanto ci metti a uscire dal debito? Scopriamolo.</p>
+                    </div>
+                    <div class="tool-body">
+                        <div class="input-group">
+                            <label>Debito totale (€)</label>
+                            <input type="number" id="debt-total" placeholder="Es. 10000" min="0" step="100">
+                        </div>
+                        <div class="input-group">
+                            <label>Tasso di interesse annuo (%)</label>
+                            <input type="number" id="debt-rate" placeholder="Es. 8" min="0" step="0.1" value="8">
+                        </div>
+                        <div class="input-group">
+                            <label>Rata mensile (€)</label>
+                            <input type="number" id="debt-monthly" placeholder="Es. 300" min="0" step="10">
+                        </div>
+                        <button class="btn btn-secondary" onclick="calcDebt()" style="width:100%;margin-top:12px;">Calcola Piano Debito</button>
+                        <div class="debt-results" id="debt-results" style="display:none;">
+                            <div class="result-row">
+                                <span class="result-label">⏱️ Mesi necessari</span>
+                                <span class="result-value highlight" id="debt-months">—</span>
+                            </div>
+                            <div class="result-row">
+                                <span class="result-label">💸 Interessi totali</span>
+                                <span class="result-value" id="debt-interest">—</span>
+                            </div>
+                            <div class="result-row">
+                                <span class="result-label">📊 Totale rimborsato</span>
+                                <span class="result-value" id="debt-total-paid">—</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CALCOLATORE 3: INTERESSE COMPOSTO -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">📈</div>
+                        <h3>Interesse Composto</h3>
+                        <p class="tool-desc">L'ottava meraviglia del mondo. Fai lavorare i soldi per te.</p>
+                    </div>
+                    <div class="tool-body">
+                        <div class="input-group">
+                            <label>Capitale iniziale (€)</label>
+                            <input type="number" id="compound-principal" placeholder="Es. 5000" min="0" step="100">
+                        </div>
+                        <div class="input-group">
+                            <label>Contributo mensile (€)</label>
+                            <input type="number" id="compound-monthly" placeholder="Es. 200" min="0" step="10">
+                        </div>
+                        <div class="input-group-inline">
+                            <div>
+                                <label>Tasso annuo (%)</label>
+                                <input type="number" id="compound-rate" placeholder="Es. 7" min="0" step="0.1" value="7">
+                            </div>
+                            <div>
+                                <label>Anni</label>
+                                <input type="number" id="compound-years" placeholder="Es. 10" min="1" max="50" value="10">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="calcCompound()" style="width:100%;margin-top:12px;">Proiezione Composto</button>
+                        <div class="compound-results" id="compound-results" style="display:none;">
+                            <div class="result-row" style="margin-top:16px;">
+                                <span class="result-label">💰 Totale finale</span>
+                                <span class="result-value large" id="compound-total">—</span>
+                            </div>
+                            <div class="result-row">
+                                <span class="result-label">📈 Interessi guadagnati</span>
+                                <span class="result-value" id="compound-interest">—</span>
+                            </div>
+                            <div class="result-row">
+                                <span class="result-label">✅ Rendimento effettivo</span>
+                                <span class="result-value" id="compound-gain">—</span>
+                            </div>
+                            <div id="compound-chart" class="chart-container"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calcolatori hidden -->
+                <div style="display:none;">
+                    <!-- Fondo Emergenza -->
+                    <div id="emergency-calc">
+                        <div class="input-group">
+                            <label>Spese mensili (€)</label>
+                            <input type="number" id="emergency-expense" placeholder="Es. 1500" min="0" step="50">
+                        </div>
+                        <div class="input-group">
+                            <label>Mesi di copertura</label>
+                            <select id="emergency-months">
+                                <option value="3">3 mesi</option>
+                                <option value="4">4 mesi</option>
+                                <option value="6" selected>6 mesi</option>
+                                <option value="9">9 mesi</option>
+                                <option value="12">12 mesi</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" onclick="calcEmergency()">Calcola</button>
+                        <div id="emergency-results" style="display:none;">
+                            <div class="result-row"><span class="result-label">🎯 Obiettivo</span><span class="result-value highlight" id="emergency-total">—</span></div>
+                            <div class="result-row"><span class="result-label">💰 Risparmia</span><span class="result-value" id="emergency-monthly-text">—/mese</span></div>
+                            <div class="result-row"><span class="result-label">⏱️ Tempo</span><span class="result-value" id="emergency-timeline">—</span></div>
+                            <div id="emergency-breakdown"></div>
+                        </div>
+                    </div>
+                    <!-- Savings Goal -->
+                    <div id="savings-calc">
+                        <div class="input-group">
+                            <label>Obiettivo (€)</label>
+                            <input type="number" id="savings-goal" placeholder="Es. 10000" min="0" step="100">
+                        </div>
+                        <div class="input-group">
+                            <label>Risparmio mensile (€)</label>
+                            <input type="number" id="savings-monthly" placeholder="Es. 300" min="0" step="10">
+                        </div>
+                        <button class="btn btn-primary" onclick="calcSavings()">Calcola</button>
+                        <div id="savings-results" style="display:none;">
+                            <div class="result-row"><span class="result-label">⏱️ Tempo necessario</span><span class="result-value highlight" id="savings-timeline-text">—</span></div>
+                            <div class="result-row"><span class="result-label">🏃 Ritmo</span><span class="result-value" id="savings-pace">—/mese</span></div>
+                            <div class="result-row"><span class="result-label">📊 Progresso extra</span><span class="result-value" id="savings-total-pct">—</span></div>
+                            <div id="savings-timeline"></div>
+                        </div>
+                    </div>
+                    <!-- Interest Calculator -->
+                    <div id="interest-calc">
+                        <div class="input-group">
+                            <label>Capitale (€)</label>
+                            <input type="number" id="interest-principal" placeholder="Es. 10000" min="0" step="100">
+                        </div>
+                        <div class="input-group-inline">
+                            <div><label>Tasso annuo (%)</label><input type="number" id="interest-rate" placeholder="Es. 5" min="0" step="0.1" value="5"></div>
+                            <div><label>Anni</label><input type="number" id="interest-years" placeholder="Es. 5" min="1" max="30" value="5"></div>
+                        </div>
+                        <button class="btn btn-primary" onclick="calcInterest()">Calcola</button>
+                        <div id="interest-results" style="display:none;">
+                            <div class="result-row"><span class="result-label">💰 Totale</span><span class="result-value large" id="interest-final">—</span></div>
+                            <div class="result-row"><span class="result-label">📈 Guadagnato</span><span class="result-value" id="interest-earned">—</span></div>
+                            <div class="result-row"><span class="result-label">✅ Rendimento</span><span class="result-value" id="interest-eff">—</span></div>
+                            <div class="result-row"><span class="result-label">✖️ Moltiplicatore</span><span class="result-value" id="interest-multiplier">—</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-box" style="margin-top:40px;">
+                <svg class="hero-svg" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="cta-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.2"/>
+                            <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.2"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="400" height="180" rx="16" fill="url(#cta-grad)"/>
+                    <text x="200" y="70" font-family="Inter" font-size="18" fill="#fbbf24" text-anchor="middle" font-weight="800">⚙️ TREASURYWORKS</text>
+                    <text x="200" y="110" font-family="Inter" font-size="24" fill="#fff" text-anchor="middle" font-weight="900">SPARA. INVESTI. RIPETI.</text>
+                    <text x="200" y="145" font-family="Inter" font-size="12" fill="#94a3b8" text-anchor="middle">I numeri non mentono. Mai.</text>
+                </svg>
+                <h2>Pronto a fare i conti (nel senso letterale)?</h2>
+                <p>Usa i nostri strumenti gratuiti. Nessuna email, nessun dato raccolto. Solo numeri e risultati.</p>
+                <div class="cta-buttons"><a href="index.html" class="btn btn-outline btn-lg">🏠 Home</a> <a href="blog.html" class="btn btn-primary btn-lg">📝 Impara di più</a></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="assets/img/logo-gear-dollar.svg" alt="Logo" class="footer-logo-img" width="32" height="32"> <span class="logo-text">Treasury<span class="logo-accent">Works</span></span></div>
+                    <p>L'officina dove ripari la tua relazione con il denaro.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigazione</h4>
+                    <ul>
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li><a href="chi-sono.html">👤 Chi Sono</a></li>
+                        <li><a href="blog.html">📝 Blog</a></li>
+                        <li><a href="contatti.html">📩 Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="https://youtube.com/@nevenoir90">📺 YouTube</a></li>
+                        <li><a href="#">💬 Telegram</a></li>
+                        <li><a href="https://www.instagram.com/nevenoir.official">📸 Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@neve.noir">📺 TikTok</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legale</h4>
+                    <ul>
+                        <li><a href="privacy.html">🔒 Privacy</a></li>
+                        <li><a href="#">🍪 Cookie</a></li>
+                        <li><a href="#">📋 Termini</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 TreasuryWorks — Tutti i diritti riservati</p></div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

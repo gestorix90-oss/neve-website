@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" class="hero-svg-img">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg)"/>
+  <text x="300" y="135" font-family="Inter, sans-serif" font-size="42" font-weight="800" fill="#fbbf24" text-anchor="middle" opacity="0.9">📰</text>
+  <text x="300" y="185" font-family="Inter, sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">NOTIZIE SPIEGATE BENE</text>
+  <rect x="160" y="210" width="280" height="50" rx="6" fill="none" stroke="#fbbf24" stroke-width="1" opacity="0.15"/>
+  <line x1="200" y1="230" x2="380" y2="230" stroke="#fbbf24" stroke-width="1" opacity="0.3"/>
+  <line x1="200" y1="242" x2="320" y2="242" stroke="#fbbf24" stroke-width="1" opacity="0.2"/>
+  <line x1="200" y1="254" x2="260" y2="254" stroke="#fbbf24" stroke-width="1" opacity="0.15"/>
+  <path d="M20,270 Q120,250 220,260 Q320,270 420,255 Q520,240 580,250" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.15"/>
+</svg>

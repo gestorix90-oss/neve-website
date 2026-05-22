@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" class="blog-hero-svg">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg1)"/>
+  <!-- Brain with gears -->
+  <circle cx="400" cy="140" r="70" fill="none" stroke="#f97316" stroke-width="2" opacity="0.3"/>
+  <circle cx="400" cy="140" r="50" fill="none" stroke="#f97316" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="400" cy="140" r="30" fill="none" stroke="#f97316" stroke-width="1" opacity="0.5"/>
+  <!-- Gear teeth around brain -->
+  <rect x="395" y="60" width="10" height="20" rx="2" fill="#f97316" opacity="0.6"/>
+  <rect x="395" y="220" width="10" height="20" rx="2" fill="#f97316" opacity="0.6"/>
+  <rect x="310" y="135" width="20" height="10" rx="2" fill="#f97316" opacity="0.6"/>
+  <rect x="470" y="135" width="20" height="10" rx="2" fill="#f97316" opacity="0.6"/>
+  <rect x="335" y="90" width="16" height="8" rx="2" fill="#f97316" opacity="0.5" transform="rotate(-45 343 94)"/>
+  <rect x="450" y="90" width="16" height="8" rx="2" fill="#f97316" opacity="0.5" transform="rotate(45 458 94)"/>
+  <rect x="335" y="212" width="16" height="8" rx="2" fill="#f97316" opacity="0.5" transform="rotate(45 343 216)"/>
+  <rect x="450" y="212" width="16" height="8" rx="2" fill="#f97316" opacity="0.5" transform="rotate(-45 458 216)"/>
+  <!-- Warning signs -->
+  <text x="200" y="120" font-family="Inter" font-size="18" fill="#ef4444" opacity="0.6">⚠️</text>
+  <text x="560" y="160" font-family="Inter" font-size="22" fill="#ef4444" opacity="0.5">⚠️</text>
+  <text x="160" y="200" font-family="Inter" font-size="14" fill="#ef4444" opacity="0.4">⚠️</text>
+  <text x="600" y="240" font-family="Inter" font-size="16" fill="#ef4444" opacity="0.4">⚠️</text>
+  <!-- Title text -->
+  <text x="400" y="280" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#f97316" text-anchor="middle" filter="url(#glow1)">5 Bias che Ti Rubano i Soldi</text>
+  <!-- Decorative lines -->
+  <path d="M50,320 Q200,300 400,310 Q600,320 750,305" fill="none" stroke="#f97316" stroke-width="1" opacity="0.2"/>
+  <path d="M80,335 Q250,320 400,325 Q550,330 730,320" fill="none" stroke="#3b82f6" stroke-width="0.8" opacity="0.15"/>
+  <!-- Coin icons -->
+  <circle cx="130" cy="270" r="10" fill="none" stroke="#fbbf24" stroke-width="1" opacity="0.3"/>
+  <text x="130" y="274" font-size="12" text-anchor="middle" fill="#fbbf24" opacity="0.5">€</text>
+  <circle cx="670" cy="270" r="10" fill="none" stroke="#fbbf24" stroke-width="1" opacity="0.3"/>
+  <text x="670" y="274" font-size="12" text-anchor="middle" fill="#fbbf24" opacity="0.5">€</text>
+</svg>

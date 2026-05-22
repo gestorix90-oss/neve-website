@@ -4,154 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy — TreasuryWorks</title>
-    <meta name="description" content="Privacy Policy di TreasuryWorks. Informativa sul trattamento dei dati personali ai sensi del GDPR (Regolamento UE 2016/679).">
+    <meta name="description" content="Privacy Policy di TreasuryWorks. Trasparenza totale su come trattiamo i tuoi dati. Nessun dato raccolto, nessun tracciamento.">
     <meta property="og:title" content="Privacy Policy — TreasuryWorks">
+    <meta property="og:image" content="https://gestorix90-oss.github.io/neve-website/assets/img/og-image.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+    <link rel="icon" href="assets/img/favicon-star.svg">
 </head>
 <body>
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <button class="cookie-close" onclick="closeCookieBanner()">✕</button>
+        <div class="cookie-content">
+            <p>🍪 Utilizziamo cookie per migliorare la tua esperienza. <a href="privacy.html">Cookie Policy</a>.</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-sm btn-outline" onclick="closeCookieBanner()">Rifiuta</button>
+                <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accetta</button>
+            </div>
+        </div>
+    </div>
+
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <span class="logo-icon">⚙️</span>
+                <img src="assets/img/logo-gear-dollar.svg" alt="TreasuryWorks Logo" class="logo-img" width="42" height="42">
                 <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="chi-sono.html" class="nav-link">Chi Sono</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+                <li><a href="strumenti.html" class="nav-link">🛠️ Strumenti</a></li>
+                <li><a href="faq.html" class="nav-link">❓ FAQ</a></li>
+                <li><a href="info.html" class="nav-link">📋 Info</a></li>
+                <li><a href="news.html" class="nav-link">📰 News</a></li>
+                <li><a href="risorse.html" class="nav-link">📚 Risorse</a></li>
+                <li><a href="contatti.html" class="nav-link nav-cta">📩 Contatti</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="hero" style="min-height: 30vh;">
-        <div class="hero-content" style="text-align: left; max-width: 800px;">
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <section class="hero" id="hero" style="min-height:35vh;">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
             <span class="hero-badge">🔒 PRIVACY</span>
-            <h1 class="hero-title" style="font-size: clamp(1.8rem, 4vw, 2.8rem);">
-                <span class="title-line">Informativa sul</span>
-                <span class="title-line accent">trattamento dei dati</span>
+            <h1 class="hero-title">
+                <span class="title-line">I tuoi dati</span>
+                <span class="title-line accent">sono tuoi</span>
             </h1>
-            <p class="hero-subtitle" style="text-align: left; margin: 0;">
-                Questa informativa descrive come TreasuryWorks raccoglie, utilizza e protegge i tuoi dati personali, 
-                in conformità con il Regolamento Generale sulla Protezione dei Dati (GDPR - UE 2016/679).
-            </p>
+            <p class="hero-subtitle">Trasparenza totale. Ecco esattamente cosa facciamo (e cosa NON facciamo) con le tue informazioni.</p>
+        </div>
+        <div class="hero-visual" id="heroVisual">
+            <img src="assets/img/hero-privacy.svg" alt="Privacy" class="hero-svg">
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="privacy-content" style="max-width: 850px; margin: 0 auto;">
+            <div class="section-header">
+                <span class="section-tag">🔐 TRASPARENZA</span>
+                <h2 class="section-title">La nostra <span class="accent">politica sulla privacy</span></h2>
+                <p class="section-desc">Ultimo aggiornamento: Maggio 2026. Nessuna voce nascosta, nessun giro di parole.</p>
+            </div>
 
-                <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">1. Titolare del trattamento</h2>
-                <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
-                    <strong>TreasuryWorks — Antonio</strong><br>
-                    Email: antonio@treasuryworks.it<br>
-                    P.IVA: in fase di registrazione<br>
-                    Sede legale: Italia
-                </p>
+            <div class="privacy-section">
+                <h3>📌 Titolare del trattamento</h3>
+                <p><strong>TreasuryWorks</strong> — Antonio [Cognome], con sede in [Città], Italia. Email: <a href="mailto:antonio@treasuryworks.it" style="color:var(--orange);">antonio@treasuryworks.it</a></p>
 
-                <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">2. Dati raccolti</h2>
-                <p style="color: var(--text-secondary); margin-bottom: var(--space-md);">
-                    Attraverso il presente sito web, il Titolare raccoglie i seguenti dati:
-                </p>
-                <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: var(--space-lg);">
-                    <li><strong>Dati di navigazione:</strong> indirizzo IP, tipo di browser, sistema operativo, pagine visitate, orario di accesso. Questi dati vengono raccolti in modo automatico dal servizio di hosting e di analisi web.</li>
-                    <li style="margin-top: 8px;"><strong>Dati forniti volontariamente:</strong> nome, email e messaggio tramite i moduli di contatto e iscrizione alla newsletter.</li>
-                    <li style="margin-top: 8px;"><strong>Cookie:</strong> piccoli file di testo utilizzati per il corretto funzionamento del sito e per analisi aggregate del traffico (vedi sezione dedicata).</li>
+                <h3 style="margin-top:24px;">📌 Dati che raccogliamo</h3>
+                <p><strong>Nessun dato personale.</strong> Ecco la verità:</p>
+                <ul style="padding-left:1.5rem; margin:12px 0;">
+                    <li style="margin-bottom:6px;">✅ <strong>Nessun cookie di profilazione</strong> — usiamo solo cookie tecnici essenziali per il funzionamento del sito</li>
+                    <li style="margin-bottom:6px;">✅ <strong>Nessun account utente</strong> — non raccogliamo email, nomi o dati personali</li>
+                    <li style="margin-bottom:6px;">✅ <strong>Nessun tracciamento di terze parti</strong> — niente Google Analytics, niente pixel Facebook</li>
+                    <li style="margin-bottom:6px;">✅ <strong>Calcolatori locali</strong> — tutti i calcoli avvengono nel tuo browser, nessun dato esce dalla tua macchina</li>
+                    <li>✅ <strong>Analytics anonimizzati</strong> — utilizziamo solo statistiche aggregate e anonime del server di hosting</li>
                 </ul>
 
-                <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">3. Finalità del trattamento</h2>
-                <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
-                    I dati vengono trattati per le seguenti finalità:
-                </p>
-                <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: var(--space-lg);">
-                    <li>Rispondere a richieste ricevute tramite i moduli di contatto;</li>
-                    <li>Inviare comunicazioni tramite newsletter (solo previo consenso esplicito);</li>
-                    <li>Garantire il corretto funzionamento del sito web;</li>
-                    <li>Analizzare in forma aggregata le statistiche di navigazione per migliorare i contenuti;</li>
-                    <li>Adempiere a obblighi di legge.</li>
+                <h3 style="margin-top:24px;">📌 Cookie</h3>
+                <p>Utilizziamo esclusivamente <strong>cookie tecnici</strong> per:</p>
+                <ul style="padding-left:1.5rem; margin:12px 0;">
+                    <li style="margin-bottom:6px;">🔧 Garantire il corretto funzionamento del sito</li>
+                    <li style="margin-bottom:6px;">🍪 Ricordare la tua preferenza sui cookie (banner)</li>
+                    <li>📐 Analisi anonimizzata del traffico (senza identificazione personale)</li>
                 </ul>
-
-                <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">4. Base giuridica del trattamento</h2>
-                <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
-                    Il trattamento dei dati si basa su:
-                </p>
-                <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: var(--space-lg);">
-                    <li><strong>Consenso:</strong> per l'iscrizione alla newsletter e il contatto volontario;</li>
-                    <li><strong>Legittimo interesse:</strong> per il funzionamento tecnico del sito e l'analisi aggregata;</li>
-                    <li><strong>Obbligo legale:</strong> per gli adempimenti previsti dalla normativa vigente.</li>
-                </ul>
-
-                <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">5. Conservazione dei dati</h2>
-                <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
-                    I dati personali saranno conservati per il tempo strettamente necessario al perseguimento delle finalità indicate:
-                </p>
-                <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: var(--space-lg);">
-                    <li>Dati di contatto: per tutta la durata necessaria a soddisfare la richiesta, e comunque non oltre 24 mesi dall'ultimo contatto;</li>
-                    <li>Dati di navigazione: per un periodo massimo di 12 mesi;</li>
-                    <li>Dati della newsletter: fino alla cancellazione dell'iscrizione da parte dell'utente.</li>
-                </ul>
-
-                <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">6. Diritti dell'interessato</h2>
-                <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
-                    Ai sensi degli articoli 15-22 del GDPR, l'utente ha il diritto di:
-                </p>
-                <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: var(--space-lg);">
-                    <li>Accedere ai propri dati personali;</li>
-                    <li>Richiedere la rettifica o cancellazione dei dati;</li>
-                    <li>Richiedere la limitazione del trattamento;</li>
-                    <li>Opporsi al trattamento;</li>
-                    <li>Richiedere la portabilità dei dati;</li>
-                    <li>Revocare il consenso in qualsiasi momento, senza pregiudizio per la liceità del trattamento effettuato prima della revoca.</li>
-                </ul>
-                <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
-                    Per esercitare i propri diritti, l'utente può scrivere a: <strong style="color: var(--orange);">contatto@treasuryworks.it</strong>
+                <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:8px;">
+                    Puoi gestire le tue preferenze cliccando su "Cookie" nel footer, oppure attraverso le impostazioni del tuo browser.
                 </p>
 
-                <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">7. Cookie</h2>
-                <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
-                    Il presente sito utilizza:
-                </p>
-                <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: var(--space-lg);">
-                    <li><strong>Cookie tecnici:</strong> necessari al funzionamento del sito (es. sessione, sicurezza). Non richiedono consenso;</li>
-                    <li><strong>Cookie analitici:</strong> utilizzati in forma aggregata e anonimizzata per comprendere come gli utenti utilizzano il sito (Google Analytics o alternativa privacy-friendly).</li>
-                </ul>
-                <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
-                    Non vengono utilizzati cookie di profilazione né cookie di terze parti per finalità di marketing.
-                </p>
+                <h3 style="margin-top:24px;">📌 Contenuti incorporati</h3>
+                <p>Alcuni articoli possono contenere video incorporati da YouTube o immagini da servizi esterni. Questi servizi possono impostare i propri cookie. Per informazioni dettagliate, consulta le rispettive privacy policy dei servizi terzi.</p>
 
-                <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">8. Trasferimento dei dati</h2>
-                <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
-                    I dati potrebbero essere trasferiti su server situati al di fuori dell'Unione Europea. 
-                    In tal caso, il Titolare garantisce che il trasferimento avverrà in conformità 
-                    alle disposizioni di legge applicabili, inclusa l'adozione di clausole contrattuali standard approvate dalla Commissione Europea.
-                </p>
-
-                <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">9. Modifiche alla presente informativa</h2>
-                <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
-                    Il Titolare si riserva il diritto di aggiornare la presente informativa in qualsiasi momento. 
-                    Si invita l'utente a controllare periodicamente questa pagina per essere informato sulle eventuali modifiche.
-                </p>
-
-                <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">10. Contatti</h2>
-                <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
-                    Per qualsiasi domanda relativa alla presente informativa sulla privacy, 
-                    puoi contattare Antonio all'indirizzo email: <strong style="color: var(--orange);">antonio@treasuryworks.it</strong>
-                </p>
-
-                <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--border-radius); padding: var(--space-md); margin-top: var(--space-lg);">
-                    <p style="color: var(--text-muted); font-size: 0.85rem; text-align: center; margin: 0;">
-                        ⚙️ Ultimo aggiornamento: <strong style="color: var(--orange);">Maggio 2026</strong>
-                    </p>
+                <h3 style="margin-top:24px;">📌 I tuoi diritti</h3>
+                <p>In qualità di interessato, hai i seguenti diritti ai sensi del GDPR (Regolamento UE 2016/679):</p>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;">
+                    <div class="privacy-right-card">
+                        <strong>Diritto di accesso</strong>
+                        <p>Puoi chiedere conferma dell'esistenza di dati che ti riguardano</p>
+                    </div>
+                    <div class="privacy-right-card">
+                        <strong>Diritto di rettifica</strong>
+                        <p>Puoi chiedere la rettifica dei dati inesatti</p>
+                    </div>
+                    <div class="privacy-right-card">
+                        <strong>Diritto alla cancellazione</strong>
+                        <p>Diritto all'oblio — cancellazione dei dati</p>
+                    </div>
+                    <div class="privacy-right-card">
+                        <strong>Diritto di opposizione</strong>
+                        <p>Puoi opporti al trattamento dei tuoi dati</p>
+                    </div>
                 </div>
+                <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:8px;">
+                    Per esercitare i tuoi diritti, contattaci a <a href="mailto:antonio@treasuryworks.it" style="color:var(--orange);">antonio@treasuryworks.it</a>. Risposta entro 30 giorni.
+                </p>
 
+                <h3 style="margin-top:24px;">📌 Trasferimento dei dati</h3>
+                <p>I dati raccolti (se presenti) possono essere trasferiti e trattati in paesi dell'Unione Europea. Non effettuiamo trasferimenti extra-UE senza adeguate garanzie.</p>
+
+                <h3 style="margin-top:24px;">📌 Conservazione</h3>
+                <p>Non conserviamo dati personali degli utenti. I log tecnici del server vengono cancellati automaticamente dopo 30 giorni.</p>
+
+                <h3 style="margin-top:24px;">📌 Modifiche alla presente policy</h3>
+                <p>Ci riserviamo il diritto di aggiornare la presente Privacy Policy in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina. Ti consigliamo di consultarla periodicamente.</p>
+            </div>
+
+            <!-- Cookie Consent Detail -->
+            <div class="privacy-cookie-section">
+                <h3>🍪 Dettaglio Cookie</h3>
+                <div class="cookie-table">
+                    <div class="cookie-table-header">
+                        <span>Nome</span>
+                        <span>Tipo</span>
+                        <span>Durata</span>
+                        <span>Scopo</span>
+                    </div>
+                    <div class="cookie-table-row">
+                        <span>treasuryworks_consent</span>
+                        <span>Proprio</span>
+                        <span>1 anno</span>
+                        <span>Preferenza cookie</span>
+                    </div>
+                    <div class="cookie-table-row">
+                        <span>PHPSESSID</span>
+                        <span>Tecnico</span>
+                        <span>Sessione</span>
+                        <span>Funzionamento sito</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-box" style="margin-top:40px;">
+                <h3>💬 Hai domande sulla privacy?</h3>
+                <p>Scrivici a <a href="mailto:antonio@treasuryworks.it" style="color:var(--orange); font-weight:600;">antonio@treasuryworks.it</a> — rispondiamo sempre.</p>
+                <div class="cta-buttons" style="margin-top:16px;">
+                    <a href="contatti.html" class="btn btn-primary btn-lg glow-btn">📩 Contattaci</a>
+                    <a href="index.html" class="btn btn-outline btn-lg">🏠 Home</a>
+                </div>
             </div>
         </div>
     </section>
@@ -160,45 +173,41 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="footer-logo">
-                        <span class="logo-icon">⚙️</span>
-                        <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
-                    </div>
+                    <div class="footer-logo"><img src="assets/img/logo-gear-dollar.svg" alt="Logo" class="footer-logo-img" width="32" height="32"> <span class="logo-text">Treasury<span class="logo-accent">Works</span></span></div>
                     <p>L'officina dove ripari la tua relazione con il denaro.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Navigazione</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="chi-sono.html">Chi Sono</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contatti.html">Contatti</a></li>
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li><a href="blog.html">📝 Blog</a></li>
+                        <li><a href="strumenti.html">🛠️ Strumenti</a></li>
+                        <li><a href="faq.html">❓ FAQ</a></li>
+                        <li><a href="info.html">📋 Info</a></li>
+                        <li><a href="privacy.html">🔒 Privacy</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Social</h4>
                     <ul>
-                        <li><a href="#">📺 YouTube</a></li>
+                        <li><a href="https://youtube.com/@nevenoir90" target="_blank">📺 YouTube</a></li>
                         <li><a href="#">💬 Telegram</a></li>
-                        <li><a href="#">📸 Instagram</a></li>
-                        <li><a href="#">🐦 X / Twitter</a></li>
+                        <li><a href="https://www.instagram.com/nevenoir.official" target="_blank">📸 Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@neve.noir" target="_blank">📺 TikTok</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Legale</h4>
                     <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                        <li><a href="#">Termini di Servizio</a></li>
+                        <li><a href="privacy.html">🔒 Privacy</a></li>
+                        <li><a href="#">🍪 Cookie</a></li>
+                        <li><a href="#">📋 Termini</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>© 2026 TreasuryWorks. Tutti i diritti riservati.</p>
-            </div>
+            <div class="footer-bottom"><p>© 2026 TreasuryWorks — Tutti i diritti riservati</p></div>
         </div>
     </footer>
-
     <script src="assets/js/script.js"></script>
 </body>
 </html>

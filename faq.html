@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — Domande Frequenti — TreasuryWorks</title>
+    <meta name="description" content="Risposte alle domande più frequenti su TreasuryWorks, finanza comportamentale, strumenti e contenuti.">
+    <meta property="og:title" content="FAQ — TreasuryWorks">
+    <meta property="og:image" content="https://gestorix90-oss.github.io/neve-website/assets/img/og-image.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/favicon-star.svg">
+</head>
+<body>
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <button class="cookie-close" onclick="closeCookieBanner()">✕</button>
+        <div class="cookie-content">
+            <p>🍪 Utilizziamo cookie per migliorare la tua esperienza. <a href="privacy.html">Cookie Policy</a>.</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-sm btn-outline" onclick="closeCookieBanner()">Rifiuta</button>
+                <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accetta</button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/img/logo-gear-dollar.svg" alt="TreasuryWorks Logo" class="logo-img" width="42" height="42">
+                <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="chi-sono.html" class="nav-link">Chi Sono</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="strumenti.html" class="nav-link">🛠️ Strumenti</a></li>
+                <li><a href="faq.html" class="nav-link active">❓ FAQ</a></li>
+                <li><a href="info.html" class="nav-link">📋 Info</a></li>
+                <li><a href="news.html" class="nav-link">📰 News</a></li>
+                <li><a href="risorse.html" class="nav-link">📚 Risorse</a></li>
+                <li><a href="contatti.html" class="nav-link nav-cta">📩 Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <section class="hero" id="hero" style="min-height:35vh;">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <span class="hero-badge">❓ DOMANDE FREQUENTI</span>
+            <h1 class="hero-title">
+                <span class="title-line">Domande? Risposte</span>
+                <span class="title-line accent">pratiche</span>
+            </h1>
+            <p class="hero-subtitle">Qui trovi le risposte a tutto quello che ti sei sempre chiesto su soldi, debito e investimenti.</p>
+        </div>
+        <div class="hero-visual" id="heroVisual">
+            <img src="assets/img/hero-faq.svg" alt="FAQ" class="hero-svg">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">🧠 LE TUE DOMANDE</span>
+                <h2 class="section-title">Risposte <span class="accent">dirette</span></h2>
+                <p class="section-desc">Niente giri di parole. Le risposte sono chiare, pratiche e scritte nella tua lingua.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>💰 Cos'è TreasuryWorks?</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>TreasuryWorks è il tuo laboratorio di finanza personale. Usiamo le metafore dell'officina meccanica per spiegare concetti finanziari complessi in modo semplice e pratico. Niente termini tecnici, niente fuffa — solo quello che ti serve davvero.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>📖 Come funzionano i calcolatori?</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Funzionano direttamente nel tuo browser. Nessun dato viene inviato a nessun server. Inserisci i tuoi numeri, clicca "Calcola" e ottieni il risultato. Niente registrazione, niente email, niente tracciamento.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>🎓 Sono un principiante, è per me?</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Assolutamente sì! TreasuryWorks è nato proprio per chi parte da zero. I nostri articoli partono dalle basi e i calcolatori guidano passo passo. Non serve nessuna conoscenza pregressa.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>📰 Come si aggiorna il blog?</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Pubblichiamo nuovi articoli regolarmente, circa una volta a settimana. Ci trovi anche su YouTube (93+ video), Instagram, TikTok e Telegram per contenuti quotidiani.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>🔒 I miei dati sono al sicuro?</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Tutto ciò che fai sul sito resta nel tuo browser. Non raccogliamo dati personali, non usiamo cookie di profilazione (solo quelli tecnici essenziali) e non condividiamo nulla con terze parti.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>🆓 È tutto gratuito?</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Sì, al 100%. Blog, strumenti, calcolatori — tutto gratuito, per sempre. Potremmo in futuro creare contenuti premium (corsi, guide avanzate), ma il cuore di TreasuryWorks resterà sempre gratuito.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>📧 Come posso contattarvi?</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Usa il modulo nella pagina <a href="contatti.html" style="color:var(--orange);">Contatti</a>, scrivici su Telegram, oppure lascia un commento sotto qualsiasi video YouTube. Rispondiamo a tutti!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>🏦 I consigli sono personalizzati?</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>No. I contenuti sono di tipo educativo e generale. Ogni situazione finanziaria è diversa: per consulenze personalizzate, ti consigliamo di rivolgerti a un professionista abilitato (consulente finanziario iscritto all'albo OCF).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="assets/img/logo-gear-dollar.svg" alt="Logo" class="footer-logo-img" width="32" height="32"> <span class="logo-text">Treasury<span class="logo-accent">Works</span></span></div>
+                    <p>L'officina dove ripari la tua relazione con il denaro.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigazione</h4>
+                    <ul>
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li><a href="blog.html">📝 Blog</a></li>
+                        <li><a href="strumenti.html">🛠️ Strumenti</a></li>
+                        <li><a href="contatti.html">📩 Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="https://youtube.com/@nevenoir90">📺 YouTube</a></li>
+                        <li><a href="https://www.instagram.com/nevenoir.official">📸 Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@neve.noir">📺 TikTok</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legale</h4>
+                    <ul>
+                        <li><a href="privacy.html">🔒 Privacy</a></li>
+                        <li><a href="#">🍪 Cookie</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 TreasuryWorks — Tutti i diritti riservati</p></div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

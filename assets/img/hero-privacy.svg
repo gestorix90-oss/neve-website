@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" class="hero-svg-img">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg)"/>
+  <text x="300" y="135" font-family="Inter, sans-serif" font-size="42" font-weight="800" fill="#10b981" text-anchor="middle" opacity="0.9">🔒</text>
+  <text x="300" y="185" font-family="Inter, sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">I TUOI DATI SONO AL SICURO</text>
+  <rect x="180" y="215" width="240" height="50" rx="10" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.2"/>
+  <rect x="210" y="225" width="30" height="12" rx="3" fill="#10b981" opacity="0.3"/>
+  <rect x="210" y="243" width="20" height="12" rx="3" fill="#10b981" opacity="0.2"/>
+  <rect x="245" y="225" width="25" height="28" rx="3" fill="none" stroke="#10b981" stroke-width="1" opacity="0.25"/>
+  <rect x="280" y="225" width="20" height="12" rx="3" fill="#10b981" opacity="0.2"/>
+  <rect x="280" y="243" width="30" height="12" rx="3" fill="#10b981" opacity="0.15"/>
+  <path d="M30,275 Q130,255 230,265 Q330,275 430,260 Q530,245 580,260" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.12"/>
+</svg>

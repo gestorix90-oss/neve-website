@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info — TreasuryWorks</title>
+    <meta name="description" content="Informazioni su TreasuryWorks: missione, metodo, valori e contatti. Scopri perché esistiamo e cosa ci guida.">
+    <meta property="og:title" content="Info — TreasuryWorks">
+    <meta property="og:image" content="https://gestorix90-oss.github.io/neve-website/assets/img/og-image.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/info.css">
+    <link rel="icon" href="assets/img/favicon-star.svg">
+</head>
+<body>
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <button class="cookie-close" onclick="closeCookieBanner()">✕</button>
+        <div class="cookie-content">
+            <p>🍪 Utilizziamo cookie per migliorare la tua esperienza. <a href="privacy.html">Cookie Policy</a>.</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-sm btn-outline" onclick="closeCookieBanner()">Rifiuta</button>
+                <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accetta</button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/img/logo-gear-dollar.svg" alt="TreasuryWorks Logo" class="logo-img" width="42" height="42">
+                <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="chi-sono.html" class="nav-link">Chi Sono</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="strumenti.html" class="nav-link">🛠️ Strumenti</a></li>
+                <li><a href="faq.html" class="nav-link">❓ FAQ</a></li>
+                <li><a href="info.html" class="nav-link active">📋 Info</a></li>
+                <li><a href="news.html" class="nav-link">📰 News</a></li>
+                <li><a href="risorse.html" class="nav-link">📚 Risorse</a></li>
+                <li><a href="contatti.html" class="nav-link nav-cta">📩 Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <section class="hero" id="hero" style="min-height:35vh;">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <span class="hero-badge">📋 INFORMAZIONI</span>
+            <h1 class="hero-title">
+                <span class="title-line">Chi siamo e</span>
+                <span class="title-line accent">cosa facciamo</span>
+            </h1>
+            <p class="hero-subtitle">
+                Trasparenza totale: ecco come funziona TreasuryWorks, perché esistiamo e cosa ci guida ogni giorno.
+            </p>
+        </div>
+        <div class="hero-visual" id="heroVisual">
+            <img src="assets/img/hero-info.svg" alt="Info TreasuryWorks" class="hero-svg">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">🧭 CHI SIAMO</span>
+                <h2 class="section-title">La nostra <span class="accent">missione</span></h2>
+                <p class="section-desc">Non siamo una banca, non siamo un fondo. Siamo un'officina per la tua relazione con il denaro.</p>
+            </div>
+
+            <div class="info-mission">
+                <div class="info-mission-text">
+                    <h3>🔧 La nostra missione</h3>
+                    <p>Rendere la finanza comprensibile a tutti, usando il linguaggio della vita reale. Qui i soldi non sono numeri astratti — sono ingranaggi da rimettere a posto.</p>
+                    <p><strong>TreasuryWorks</strong> nasce dalla convinzione che la finanza personale non debba essere riservata a chi ha studiato economia. Anzi: più sei lontano dall'economia, più hai bisogno di capire come funzionano i soldi.</p>
+                    <h3>⚙️ Il nostro metodo</h3>
+                    <p>Usiamo le <strong>metafore meccaniche</strong>: ingranaggi, bulloni, motori, officine. Perché è così che funzionano i soldi — se smonti un pezzo alla volta, alla fine capisci tutto il motore.</p>
+                    <p>Ogni articolo, ogni strumento, ogni video è progettato per <strong>rimuovere un ingranaggio in più</strong> dalla tua confusione finanziaria.</p>
+                </div>
+                <div class="info-mission-visual">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:500px;">
+                        <circle cx="200" cy="150" r="130" fill="none" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+                        <circle cx="200" cy="150" r="100" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+                        <circle cx="200" cy="150" r="70" fill="none" stroke="#10b981" stroke-width="1" opacity="0.3"/>
+                        <circle cx="200" cy="150" r="40" fill="#f97316" opacity="0.15"/>
+                        <circle cx="200" cy="150" r="8" fill="#fbbf24" opacity="0.8"/>
+                        <text x="200" y="20" font-family="Inter" font-size="14" fill="#f97316" text-anchor="middle" font-weight="700">PSICOLOGIA</text>
+                        <text x="340" y="155" font-family="Inter" font-size="12" fill="#3b82f6" text-anchor="middle" font-weight="600">PRATICA</text>
+                        <text x="200" y="290" font-family="Inter" font-size="12" fill="#10b981" text-anchor="middle" font-weight="600">ACCESSIBILITÀ</text>
+                        <text x="60" y="155" font-family="Inter" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="600">METAFORA</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background:var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">📊 COSA OFFRIAMO</span>
+                <h2 class="section-title">I nostri <span class="accent">servizi</span></h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-up">
+                    <div class="service-icon">📝</div>
+                    <h3>Blog</h3>
+                    <p>Articoli settimanali su psicologia del denaro, budgeting e investimenti. Pratici, onesti, leggibili.</p>
+                </div>
+                <div class="service-card fade-up" data-aos-delay="100">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Calcolatori</h3>
+                    <p>Strumenti interattivi gratuiti per gestire budget, debiti, risparmi e proiezioni di investimento.</p>
+                </div>
+                <div class="service-card fade-up" data-aos-delay="200">
+                    <div class="service-icon">🎬</div>
+                    <h3>Video</h3>
+                    <p>Oltre 90 video su YouTube che spiegano la finanza come parla l'officina. Nessuna teoria inutile.</p>
+                </div>
+                <div class="service-card fade-up" data-aos-delay="300">
+                    <div class="service-icon">🧠</div>
+                    <h3>Bias Detector</h3>
+                    <p>Scopri quali bias cognitivi stanno sabotando le tue decisioni finanziarie. Con quiz interattivi.</p>
+                </div>
+                <div class="service-card fade-up" data-aos-delay="400">
+                    <div class="service-icon">📰</div>
+                    <h3>News</h3>
+                    <p>Notizie economiche spiegate in modo chiaro, con numeri reali e nessun allarmismo. Settimanali.</p>
+                </div>
+                <div class="service-card fade-up" data-aos-delay="500">
+                    <div class="service-icon">🤝</div>
+                    <h3>Community</h3>
+                    <p>Telegram, Instagram, TikTok — una community che parla di soldi senza tabù e senza giudizio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">📜 TRASPARENZA</span>
+                <h2 class="section-title">Come <span class="accent">funzioniamo</span></h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item fade-up">
+                    <div class="timeline-dot" style="background:#f97316;"></div>
+                    <div class="timeline-content">
+                        <h3>🎯 Nessuna pubblicità</h3>
+                        <p>Non vendiamo banner pubblicitari. Mai. I contenuti non sono influenzati da nessun sponsor.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-up" data-aos-delay="100">
+                    <div class="timeline-dot" style="background:#3b82f6;"></div>
+                    <div class="timeline-content">
+                        <h3>🔒 Zero dati raccolti</h3>
+                        <p>I nostri calcolatori funzionano interamente nel tuo browser. Nessun dato esce dalla tua macchina.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-up" data-aos-delay="200">
+                    <div class="timeline-dot" style="background:#10b981;"></div>
+                    <div class="timeline-content">
+                        <h3>💰 Gratuito per sempre</h3>
+                        <p>Il core di TreasuryWorks sarà sempre gratuito. Nessuna paywall, nessun abbonamento obbligatorio.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-up" data-aos-delay="300">
+                    <div class="timeline-dot" style="background:#a855f7;"></div>
+                    <div class="timeline-content">
+                        <h3>⚖️ Solo educazione</h3>
+                        <p>Non siamo consulenti finanziari. Non diamo consigli personalizzati. Formiamo menti critiche sul denaro.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-up" data-aos-delay="400">
+                    <div class="timeline-dot" style="background:#fbbf24;"></div>
+                    <div class="timeline-content">
+                        <h3>🤖 Open source</h3>
+                        <p>Il codice del sito è aperto e trasparente. Puoi verificare cosa c'è dietro ogni pagina.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="assets/img/logo-gear-dollar.svg" alt="Logo" class="footer-logo-img" width="32" height="32"> <span class="logo-text">Treasury<span class="logo-accent">Works</span></span></div>
+                    <p>L'officina dove ripari la tua relazione con il denaro.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigazione</h4>
+                    <ul>
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li><a href="blog.html">📝 Blog</a></li>
+                        <li><a href="strumenti.html">🛠️ Strumenti</a></li>
+                        <li><a href="contatti.html">📩 Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="https://youtube.com/@nevenoir90">📺 YouTube</a></li>
+                        <li><a href="#">💬 Telegram</a></li>
+                        <li><a href="https://www.instagram.com/nevenoir.official">📸 Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@neve.noir">📺 TikTok</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legale</h4>
+                    <ul>
+                        <li><a href="privacy.html">🔒 Privacy</a></li>
+                        <li><a href="#">🍪 Cookie</a></li>
+                        <li><a href="#">📋 Termini</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 TreasuryWorks — Tutti i diritti riservati</p></div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
