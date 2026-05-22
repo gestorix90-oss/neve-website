@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" class="blog-hero-svg">
   <defs>
     <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -47,4 +48,63 @@
   <!-- Title -->
   <text x="400" y="290" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#a855f7" text-anchor="middle" filter="url(#glow3)">Pensiero Diverso = Soldi Diversi</text>
   <text x="400" y="315" font-family="Inter, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle" opacity="0.5">"Cambia il modo di pensare, cambiano i risultati"</text>
+=======
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="blogGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#blogGrad3)"/>
+  
+  <!-- Brain/gear abstract -->
+  <g transform="translate(100,200)" opacity="0.12">
+    <path d="M-70,-40 Q-30,-80 30,-70 Q60,-65 70,-30 Q80,5 60,35 Q30,55 0,50 Q-30,60 -55,40 Q-75,25 -73,0 Z" fill="none" stroke="#fbbf24" stroke-width="2"/>
+    <path d="M-30,-40 Q-15,-65 15,-60 Q30,-58 35,-35 Q38,-15 28,-5" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.5"/>
+    <path d="M-5,-40 Q10,-55 35,-50 L30,-30" fill="none" stroke="#fbbf24" stroke-width="1" opacity="0.4"/>
+  </g>
+  
+  <!-- Gear -->
+  <g transform="translate(700,200) rotate(20)" opacity="0.12">
+    <circle r="55" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle r="22" fill="#0f172a" stroke="#3b82f6" stroke-width="1"/>
+    <path d="M0,-55 L6,-48 L10,-38 L14,-41 L17,-28 L24,-24 L25,-16 L31,-12 L34,-4 L37,3 L38,11 L42,15 L44,22 L42,29 L38,33 L31,36 L24,38 L17,44 L10,40 L7,46 L2,44 L-2,46 L-7,44 L-14,46 L-20,40 L-24,38 L-31,44 L-38,36 L-44,29 L-42,22 L-44,15 L-42,11 L-37,3 L-34,-4 L-31,-12 L-25,-16 L-24,-24 L-17,-28 L-14,-41 L-10,-38 L-6,-48 Z" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+  </g>
+  
+  <!-- Stats visualization -->
+  <g transform="translate(400, 160)" opacity="0.15">
+    <polygon points="-80,40 -50,-40 -20,20 10,-50 40,30 70,-30 100,10" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Category -->
+  <rect x="60" y="40" width="160" height="32" rx="16" fill="rgba(249,115,22,0.2)" stroke="#f97316" stroke-width="1"/>
+  <text x="140" y="61" text-anchor="middle" font-family="Inter, Arial" font-size="13" font-weight="600" fill="#f97316">PSICOLOGIA</text>
+  
+  <!-- Title -->
+  <text x="60" y="135" font-family="Inter, 'Segoe UI', Arial" font-size="34" font-weight="800" fill="#fff">
+    7 Differenze di
+  </text>
+  <text x="60" y="175" font-family="Inter, 'Segoe UI', Arial" font-size="34" font-weight="800" fill="#fbbf24">
+    Mentalità 💰
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="60" y="220" font-family="Inter, 'Segoe UI', Arial" font-size="15" fill="#94a3b8">
+    Perché chi ha soldi pensa in modo diverso — e come
+  </text>
+  <text x="60" y="245" font-family="Inter, 'Segoe UI', Arial" font-size="15" fill="#94a3b8">
+    puoi allenare la tua mente finanziaria
+  </text>
+  
+  <!-- Author -->
+  <g transform="translate(60, 315)">
+    <circle cx="20" cy="12" r="12" fill="#334155" stroke="#fbbf24" stroke-width="2"/>
+    <text x="38" y="16" font-family="Inter, Arial" font-size="13" fill="#cbd5e1">Antonio — TreasuryWorks</text>
+  </g>
+  
+  <!-- Date -->
+  <text x="60" y="365" font-family="Inter, Arial" font-size="12" fill="#475569">18 Maggio 2026 • 6 min di lettura</text>
+>>>>>>> 2ff4d769b2ea92988b651e66a7ae85cc157f2c58
 </svg>

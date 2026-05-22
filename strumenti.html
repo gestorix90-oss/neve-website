@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Strumenti Gratuiti — TreasuryWorks</title>
     <meta name="description" content="Calcolatori interattivi gratuiti: budget 50/30/20, piano debiti, interesse composto, fondo emergenza, obiettivi di risparmio. Strumenti di finanza personale creati con logica meccanica.">
     <meta property="og:title" content="Strumenti Gratuiti — TreasuryWorks">
@@ -45,10 +46,34 @@
                 <li><a href="news.html" class="nav-link">📰 News</a></li>
                 <li><a href="risorse.html" class="nav-link">📚 Risorse</a></li>
                 <li><a href="contatti.html" class="nav-link nav-cta">📩 Contatti</a></li>
+=======
+    <title>Strumenti — TreasuryWorks</title>
+    <meta name="description" content="Strumenti gratuiti per gestire i tuoi soldi: budget calculator, tracker debiti, calcolatore risparmio. Creati con intelligenza artificiale.">
+    <meta name="keywords" content="strumenti finanza, calcolatore budget, tracker debiti, risparmio, TreasuryWorks">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/tools.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">⚙️ Treasury<span class="accent">Works</span></a>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../chi-sono.html" class="nav-link">Chi Sono</a></li>
+                <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                <li><a href="strumenti.html" class="nav-link">🛠️ Strumenti</a></li>
+                <li><a href="faq.html" class="nav-link active">❓ FAQ</a></li>
+                <li><a href="info.html" class="nav-link">📋 Info</a></li>
+                <li><a href="news.html" class="nav-link">📰 News</a></li>
+                <li><a href="risorse.html" class="nav-link">📚 Risorse</a></li>
+                <li><a href="../contatti.html" class="nav-link">Contatti</a></li>
+>>>>>>> 2ff4d769b2ea92988b651e66a7ae85cc157f2c58
             </ul>
         </div>
     </nav>
 
+<<<<<<< HEAD
     <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- Hero -->
@@ -289,10 +314,174 @@
                             <div class="result-row"><span class="result-label">📈 Guadagnato</span><span class="result-value" id="interest-earned">—</span></div>
                             <div class="result-row"><span class="result-label">✅ Rendimento</span><span class="result-value" id="interest-eff">—</span></div>
                             <div class="result-row"><span class="result-label">✖️ Moltiplicatore</span><span class="result-value" id="interest-multiplier">—</span></div>
+=======
+    <section class="hero-tools">
+        <div class="particles" id="particles"></div>
+        <div class="container hero-content">
+            <span class="hero-badge">🛠️ IL TUO LABORATORIO FINANZIARIO</span>
+            <h1 class="hero-title">
+                <span class="title-line">Strumenti che</span>
+                <span class="title-line accent">lavorano per te</span>
+            </h1>
+            <p class="hero-subtitle">Calcolatori, tracker e dashboard per prendere il controllo dei tuoi soldi. Gratuiti, sempre.</p>
+        </div>
+        <div class="hero-visual" id="heroVisual">
+            <img src="assets/img/hero-visual.svg" alt="TreasuryWorks - Officina Finanziaria" class="hero-svg" style="max-width:100%;height:auto;">
+        </div>
+    </section>
+
+    <main>
+        <section class="tools-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">🔧 GRATUITI</span>
+                    <h2>I tuoi strumenti finanziari</h2>
+                    <p class="section-subtitle">Ogni ingranaggio è progettato per darti chiarezza sui tuoi soldi</p>
+                </div>
+
+                <div class="tools-grid">
+                    <!-- TOOL 1: Budget Calculator -->
+                    <div class="tool-card">
+                        <div class="tool-icon">📊</div>
+                        <h3>Budget Calculator</h3>
+                        <p>Scopri dove vanno i tuoi soldi con il metodo 50/30/20</p>
+                        <div class="tool-preview">
+                            <div class="mini-chart">
+                                <div class="bar" style="--h: 50%; background: var(--orange);" title="Necessità 50%"></div>
+                                <div class="bar" style="--h: 30%; background: var(--blue);" title="Piaceri 30%"></div>
+                                <div class="bar" style="--h: 20%; background: var(--gold);" title="Risparmio 20%"></div>
+                            </div>
+                        </div>
+                        <button class="tool-btn" onclick="openTool('budget')">Apri ▸</button>
+                    </div>
+
+                    <!-- TOOL 2: Debt Tracker -->
+                    <div class="tool-card">
+                        <div class="tool-icon">📉</div>
+                        <h3>Debt Tracker</h3>
+                        <p>Monitora i tuoi debiti e vedi il piano di uscita</p>
+                        <div class="tool-preview">
+                            <div class="mini-chart">
+                                <div class="debt-progress">
+                                    <div class="progress-fill" style="width: 65%;"></div>
+                                </div>
+                                <span class="progress-label">65% verso la libertà</span>
+                            </div>
+                        </div>
+                        <button class="tool-btn" onclick="openTool('debt')">Apri ▸</button>
+                    </div>
+
+                    <!-- TOOL 3: Savings Goal -->
+                    <div class="tool-card">
+                        <div class="tool-icon">🎯</div>
+                        <h3>Obiettivo di Risparmio</h3>
+                        <p>Imposta un traguardo e calcola quanto devi mettere da parte</p>
+                        <div class="tool-preview">
+                            <div class="mini-chart">
+                                <div class="savings-piggy">
+                                    <div class="piggy-body"></div>
+                                    <div class="piggy-coin" id="piggyCoin">€</div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="tool-btn" onclick="openTool('savings')">Apri ▸</button>
+                    </div>
+
+                    <!-- TOOL 4: Bias Detector -->
+                    <div class="tool-card">
+                        <div class="tool-icon">🧠</div>
+                        <h3>Bias Detector</h3>
+                        <p>Scopri quali bias cognitivi influenzano le tue decisioni finanziarie</p>
+                        <div class="tool-preview">
+                            <div class="mini-chart">
+                                <div class="bias-radar">
+                                    <div class="radar-dot" style="--angle: 0deg; --dist: 80%;"></div>
+                                    <div class="radar-dot" style="--angle: 72deg; --dist: 60%;"></div>
+                                    <div class="radar-dot" style="--angle: 144deg; --dist: 90%;"></div>
+                                    <div class="radar-dot" style="--angle: 216deg; --dist: 40%;"></div>
+                                    <div class="radar-dot" style="--angle: 288deg; --dist: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="tool-btn" onclick="openTool('bias')">Apri ▸</button>
+                    </div>
+
+                    <!-- TOOL 5: Compound Interest Calculator -->
+                    <div class="tool-card">
+                        <div class="tool-icon">📈</div>
+                        <h3>Interesse Composto</h3>
+                        <p>Vedi come i tuoi soldi crescono nel tempo con la magia del compound interest</p>
+                        <div class="tool-preview">
+                            <div class="mini-chart">
+                                <svg viewBox="0 0 200 80" class="growth-chart">
+                                    <polyline points="0,80 20,75 40,68 60,58 80,45 100,30 120,20 140,12 160,6 180,2" 
+                                              fill="none" stroke="var(--orange)" stroke-width="2.5" class="growth-line"/>
+                                    <circle r="4" fill="var(--orange)" class="growth-dot">
+                                        <animate attributeName="cx" values="0;180" dur="3s" repeatCount="indefinite"/>
+                                        <animate attributeName="cy" values="80;2" dur="3s" repeatCount="indefinite"/>
+                                    </circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <button class="tool-btn" onclick="openTool('compound')">Apri ▸</button>
+                    </div>
+
+                    <!-- TOOL 6: Emergency Fund Calculator -->
+                    <div class="tool-card">
+                        <div class="tool-icon">🛟</div>
+                        <h3>Fondo Emergenza</h3>
+                        <p>Calcola quanto ti serve per dormire sonni tranquilli</p>
+                        <div class="tool-preview">
+                            <div class="mini-chart">
+                                <div class="emergency-meter">
+                                    <div class="meter-fill" style="width: 40%;"></div>
+                                    <span class="meter-text">40% coperto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="tool-btn" onclick="openTool('emergency')">Apri ▸</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Calculator Widget -->
+        <section class="live-calculator">
+            <div class="container">
+                <div class="calc-wrapper">
+                    <h3>⚡ Calcolatore Budget Istantaneo</h3>
+                    <div class="calc-inputs">
+                        <div class="calc-field">
+                            <label for="income">Reddito Mensile (€)</label>
+                            <input type="number" id="income" placeholder="Es: 2000" oninput="calcBudget()">
+                        </div>
+                        <div class="calc-field">
+                            <label for="debt">Debiti Mensili (€)</label>
+                            <input type="number" id="debt" placeholder="Es: 300" oninput="calcBudget()">
+                        </div>
+                    </div>
+                    <div class="calc-results" id="calcResults">
+                        <div class="calc-result-card">
+                            <span class="result-label">Necessità</span>
+                            <span class="result-value" id="resultNeeds">—</span>
+                        </div>
+                        <div class="calc-result-card">
+                            <span class="result-label">Piaceri</span>
+                            <span class="result-value" id="resultWants">—</span>
+                        </div>
+                        <div class="calc-result-card">
+                            <span class="result-label">Risparmio</span>
+                            <span class="result-value" id="resultSavings">—</span>
+                        </div>
+                        <div class="calc-result-card">
+                            <span class="result-label">Libertà</span>
+                            <span class="result-value" id="resultFree">—</span>
+>>>>>>> 2ff4d769b2ea92988b651e66a7ae85cc157f2c58
                         </div>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 
             <div class="cta-box" style="margin-top:40px;">
                 <svg class="hero-svg" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
@@ -352,5 +541,17 @@
         </div>
     </footer>
     <script src="assets/js/script.js"></script>
+=======
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Same footer as other pages -->
+    </footer>
+
+    <script></script>
+    <script src="../assets/js/tools.js"></script>
+    <script src="../assets/js/script.js"></script>
+>>>>>>> 2ff4d769b2ea92988b651e66a7ae85cc157f2c58
 </body>
 </html>

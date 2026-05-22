@@ -1242,7 +1242,41 @@ img {
     .blog-hero-svg { max-width: 350px; margin-left: auto; margin-right: auto; }
 }
 
+/* SVG Hero Images */
+.hero-svg {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    opacity: 0.85;
+    filter: drop-shadow(0 0 30px rgba(249, 115, 22, 0.2));
+}
+
+.blog-hero-svg {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+/* Section Icons */
+.section-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.section-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
 @media (max-width: 480px) {
+<<<<<<< HEAD
     .footer-grid { grid-template-columns: 1fr; }
     .hero-svg { max-width: 250px; }
     .skills-grid { grid-template-columns: 1fr; }
@@ -1252,4 +1286,17 @@ img {
     .tools-grid { grid-template-columns: 1fr; }
     .tool-inputs { flex-direction: column; }
     .input-group { min-width: 100%; }
+=======
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .hero-svg {
+        max-width: 300px;
+    }
+>>>>>>> 2ff4d769b2ea92988b651e66a7ae85cc157f2c58
 }
