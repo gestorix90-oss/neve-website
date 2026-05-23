@@ -1,110 +1,22 @@
-<<<<<<< HEAD
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" class="blog-hero-svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360">
   <defs>
-    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e"/>
-      <stop offset="100%" style="stop-color:#1a2a1a"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1220"/>
+      <stop offset="100%" style="stop-color:#111d35"/>
     </linearGradient>
-    <filter id="glow5">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <radialGradient id="glow" cx="50%" cy="80%">
+      <stop offset="0%" style="stop-color:rgba(16,185,129,0.1)"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </radialGradient>
   </defs>
-  <rect width="800" height="350" fill="url(#bg5)"/>
-  <!-- Three stacked sections: 50 / 30 / 20 -->
-  <rect x="150" y="60" width="500" height="80" rx="8" fill="rgba(249,115,22,0.08)" stroke="#f97316" stroke-width="1.5" opacity="0.6"/>
-  <text x="400" y="100" font-family="Inter" font-size="24" font-weight="800" fill="#f97316" text-anchor="middle" opacity="0.8">50% — NECESSITÀ</text>
-  <text x="400" y="82" font-family="Inter" font-size="12" fill="#94a3b8" text-anchor="middle" opacity="0.5">affitto, bollette, cibo, trasporti</text>
-
-  <rect x="150" y="155" width="500" height="80" rx="8" fill="rgba(59,130,246,0.08)" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
-  <text x="400" y="195" font-family="Inter" font-size="24" font-weight="800" fill="#3b82f6" text-anchor="middle" opacity="0.8">30% — DESIDERI</text>
-  <text x="400" y="177" font-family="Inter" font-size="12" fill="#94a3b8" text-anchor="middle" opacity="0.5">hobby, svaghi, cene fuori, viaggi</text>
-
-  <rect x="150" y="250" width="500" height="80" rx="8" fill="rgba(16,185,129,0.08)" stroke="#10b981" stroke-width="1.5" opacity="0.6"/>
-  <text x="400" y="290" font-family="Inter" font-size="24" font-weight="800" fill="#10b981" text-anchor="middle" opacity="0.8">20% — RISPARMIO</text>
-  <text x="400" y="272" font-family="Inter" font-size="12" fill="#94a3b8" text-anchor="middle" opacity="0.5">emergenza, investimenti, futuro</text>
-
-  <!-- Ingot flowing between sections -->
-  <rect x="0" y="108" width="800" height="2" fill="rgba(255,255,255,0.03)"/>
-  <rect x="0" y="200" width="800" height="2" fill="rgba(255,255,255,0.03)"/>
-
-  <!-- Gold coins flowing into savings -->
-  <circle cx="650" cy="290" r="12" fill="#fbbf24" opacity="0.3"/>
-  <text x="650" y="295" text-anchor="middle" font-size="12" fill="#fff" opacity="0.5">€</text>
-  <circle cx="130" cy="290" r="8" fill="#fbbf24" opacity="0.2"/>
-  <circle cx="680" cy="100" r="8" fill="#fbbf24" opacity="0.2"/>
-
-  <!-- Calculator / gear icon -->
-  <circle cx="400" cy="40" r="18" fill="none" stroke="#f97316" stroke-width="1.5" opacity="0.4"/>
-  <text x="400" y="45" text-anchor="middle" font-size="18" fill="#f97316" opacity="0.5">🔧</text>
-  <!-- Small cogs -->
-  <path d="M25,140 Q40,130 50,145 Q40,160 25,150Z" fill="none" stroke="#f97316" stroke-width="1" opacity="0.3"/>
-  <path d="M750,140 Q735,130 725,145 Q735,160 750,150Z" fill="none" stroke="#f97316" stroke-width="1" opacity="0.3"/>
-
-  <!-- Title -->
-  <text x="400" y="325" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="#fbbf24" text-anchor="middle" filter="url(#glow5)">Il Metodo 50/30/20 Spiegato Bene</text>
-
-  <!-- Decorative dots -->
-  <circle cx="100" cy="50" r="2" fill="#f97316" opacity="0.3"/>
-  <circle cx="700" cy="55" r="3" fill="#3b82f6" opacity="0.25"/>
-  <circle cx="200" cy="30" r="2" fill="#10b981" opacity="0.2"/>
-  <circle cx="600" cy="40" r="2" fill="#fbbf24" opacity="0.2"/>
-=======
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <defs>
-    <linearGradient id="blogGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e293b"/>
-      <stop offset="100%" style="stop-color:#0f172a"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="400" fill="url(#blogGrad5)"/>
-  
-  <!-- Breaking chains visual -->
-  <g transform="translate(400,180)" opacity="0.2">
-    <!-- Chain links -->
-    <path d="M-120,-10 Q-110,-30 -90,-25 Q-70,-20 -60,-35 Q-50,-50 -30,-40 Q-10,-30 0,-15" fill="none" stroke="#f97316" stroke-width="3"/>
-    <path d="M0,-15 Q10,-30 30,-40 Q50,-50 60,-35 Q70,-20 90,-25 Q110,-30 120,-10" fill="none" stroke="#f97316" stroke-width="3"/>
-    <path d="M-120,10 Q-110,-10 -90,-5 Q-70,0 -60,15 Q-50,30 -30,20 Q-10,10 0,25" fill="none" stroke="#3b82f6" stroke-width="3"/>
-    <path d="M0,25 Q10,10 30,20 Q50,30 60,15 Q70,0 90,-5 Q110,-10 120,10" fill="none" stroke="#3b82f6" stroke-width="3"/>
-    <!-- Broken chain -->
-    <line x1="-120" y1="50" x2="120" y2="50" stroke="#10b981" stroke-width="2.5" stroke-dasharray="8,4" opacity="0.5"/>
-  </g>
-  
-  <!-- Wrench icon -->
-  <g transform="translate(350,160)" opacity="0.3">
-    <rect x="-80" y="-5" width="160" height="10" rx="5" fill="none" stroke="#fbbf24" stroke-width="2"/>
-    <path d="M-90,-5 L-100,-20 L-85,-25 L-70,-10" fill="none" stroke="#fbbf24" stroke-width="2"/>
-    <path d="M90,-5 L100,-20 L85,-25 L70,-10" fill="none" stroke="#fbbf24" stroke-width="2"/>
-  </g>
-  
-  <!-- Category -->
-  <rect x="60" y="40" width="140" height="32" rx="16" fill="rgba(239,68,68,0.2)" stroke="#ef4444" stroke-width="1"/>
-  <text x="130" y="61" text-anchor="middle" font-family="Inter, Arial" font-size="13" font-weight="600" fill="#ef4444">DEBITO</text>
-  
-  <!-- Title -->
-  <text x="60" y="135" font-family="Inter, 'Segoe UI', Arial" font-size="34" font-weight="800" fill="#fff">
-    Uscire dal
-  </text>
-  <text x="60" y="175" font-family="Inter, 'Segoe UI', Arial" font-size="34" font-weight="800" fill="#ef4444">
-    Debito ✊
-  </text>
-  
-  <!-- Subtitle -->
-  <text x="60" y="220" font-family="Inter, 'Segoe UI', Arial" font-size="15" fill="#94a3b8">
-    Il metodo dell'officina: Avalanche vs Snowball per spezzare
-  </text>
-  <text x="60" y="245" font-family="Inter, 'Segoe UI', Arial" font-size="15" fill="#94a3b8">
-    le catene del debito e ricominciare a correre
-  </text>
-  
-  <!-- Author -->
-  <g transform="translate(60, 315)">
-    <circle cx="20" cy="12" r="12" fill="#334155" stroke="#ef4444" stroke-width="2"/>
-    <text x="38" y="16" font-family="Inter, Arial" font-size="13" fill="#cbd5e1">Antonio — TreasuryWorks</text>
-  </g>
-  
-  <!-- Date -->
-  <text x="60" y="365" font-family="Inter, Arial" font-size="12" fill="#475569">18 Maggio 2026 • 8 min di lettura</text>
->>>>>>> 2ff4d769b2ea92988b651e66a7ae85cc157f2c58
+  <rect width="800" height="360" fill="url(#bg)"/>
+  <rect width="800" height="360" fill="url(#glow)"/>
+  <!-- Downward-breaking arc — freedom from debt -->
+  <path d="M120 160 Q300 280 400 220 Q500 160 680 280" fill="none" stroke="#10b981" stroke-width="3" opacity="0.5"/>
+  <path d="M140 150 Q300 260 400 210 Q500 150 660 260" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.25"/>
+  <!-- Breaking point marker -->
+  <circle cx="400" cy="220" r="10" fill="#10b981" opacity="0.6"/>
+  <circle cx="400" cy="220" r="20" fill="none" stroke="#10b981" stroke-width="1" opacity="0.3"/>
+  <!-- Subtle arrow up -->
+  <path d="M380 120 L400 90 L420 120" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.3"/>
 </svg>

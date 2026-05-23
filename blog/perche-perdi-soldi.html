@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perché Perdi Soldi — TreasuryWorks</title>
-<<<<<<< HEAD
-    <meta name="description" content="I 7 errori psicologici che ti fanno perdere soldi ogni mese. Scopri i bias cognitivi che sabotano le tue finanze e come eliminarli.">
+    <meta name="description" content="I 7 errori psicologici che ti fanno perdere soldi ogni mese. Scopri i bias cognitivi che sabotano le tue finanze e come rimediare partendo da oggi.">
     <meta property="og:title" content="Perché Perdi Soldi — TreasuryWorks">
+    <meta property="og:description" content="I 7 bias cognitivi che ti fanno spendere di più e risparmiare meno. Scopri come difenderti dal tuo stesso cervello.">
+    <meta property="og:image" content="https://gestorix90-oss.github.io/neve-website/assets/img/blog-featured-1.svg">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Perché Perdi Soldi — TreasuryWorks">
+    <meta name="twitter:description" content="I 7 bias cognitivi che sabotano le tue finanze.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="icon" href="../assets/img/favicon-star.svg">
 </head>
 <body>
+    <!-- Cookie Banner -->
     <div id="cookie-banner" class="cookie-banner hidden">
         <button class="cookie-close" onclick="closeCookieBanner()">✕</button>
         <div class="cookie-content">
-            <p>🍪 Utilizziamo cookie per migliorare la tua esperienza. Continuando la navigazione accetti la nostra <a href="privacy.html">Cookie Policy</a>.</p>
+            <p>🍪 Utilizziamo cookie per migliorare la tua esperienza. Proseguendo accetti la nostra <a href="privacy.html">Cookie Policy</a>.</p>
             <div class="cookie-buttons">
                 <button class="btn btn-sm btn-outline" onclick="closeCookieBanner()">Rifiuta</button>
                 <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accetta</button>
@@ -22,25 +30,11 @@
         </div>
     </div>
 
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">
                 <img src="../assets/img/logo-gear-dollar.svg" alt="TreasuryWorks Logo" class="logo-img">
-=======
-    <meta name="description" content="Scopri i 5 bias cognitivi che ti fanno perdere soldi ogni giorno. Spiegazione semplice con esempi pratici e soluzioni concrete.">
-    <meta property="og:title" content="Perché Perdi Soldi — TreasuryWorks">
-    <meta property="og:image" content="https://gestorix90-oss.github.io/neve-website/assets/img/blog-featured-1.svg">
-    <meta property="og:description" content="I bias cognitivi che ti fanno spendere, procrastinare e prendere decisioni finanziarie sbagliate. Leggi l'articolo completo.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
-</head>
-<body>
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">
-                <span class="logo-icon">⚙️</span>
->>>>>>> 2ff4d769b2ea92988b651e66a7ae85cc157f2c58
                 <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -55,38 +49,30 @@
                 <li><a href="../info.html" class="nav-link">📋 Info</a></li>
                 <li><a href="../news.html" class="nav-link">📰 News</a></li>
                 <li><a href="../risorse.html" class="nav-link">📚 Risorse</a></li>
-                <li><a href="../contatti.html" class="nav-link nav-cta">Contatti</a></li>
+                <li><a href="../contatti.html" class="nav-link nav-cta">📩 Contatti</a></li>
             </ul>
         </div>
     </nav>
 
-<<<<<<< HEAD
     <div class="scroll-progress" id="scrollProgress"></div>
 
-    <section class="hero" style="min-height: 35vh;">
-        <div class="hero-particles">
-            <div class="particle" style="left:10%;width:4px;height:4px;animation-duration:12s;"></div>
-            <div class="particle" style="left:25%;width:3px;height:3px;animation-duration:15s;"></div>
-            <div class="particle" style="left:40%;width:5px;height:5px;animation-duration:10s;"></div>
-            <div class="particle" style="left:60%;width:3px;height:3px;animation-duration:18s;"></div>
-            <div class="particle" style="left:75%;width:4px;height:4px;animation-duration:14s;"></div>
-            <div class="particle" style="left:90%;width:6px;height:6px;animation-duration:16s;"></div>
+    <!-- Blog Hero -->
+    <section class="hero blog-hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="blog-hero-image">
+            <img src="../assets/img/blog-featured-1.svg" alt="Featured image - Perché Perdi Soldi">
         </div>
-        <div class="hero-content">
-            <span class="hero-badge">🧠 BIAS COGNITIVI</span>
-            <h1 class="hero-title">
-                <span class="title-line">Perché Perdi</span>
-                <span class="title-line accent">Soldi</span>
+        <div class="blog-hero-content">
+            <span class="blog-hero-badge">🧠 BIAS COGNITIVI</span>
+            <h1 class="blog-hero-title">
+                Perché perdi soldi
+                <span class="title-line accent">e non è colpa tua</span>
             </h1>
-            <div class="blog-hero-image" style="text-align:center; margin:20px 0;">
-                <img src="../assets/img/blog-featured-1.svg" alt="Featured image - Perché Perdi Soldi" class="blog-hero-svg" style="margin:0 auto;">
-            </div>
-            <p class="hero-subtitle">
-                7 errori psicologici che sabotano le tue finanze — e come rimediare partendo da oggi.
+            <p class="blog-hero-subtitle">
+                Il tuo cervello è stato programmato per sopravvivere, non per investire. Scopri i 7 bias che sabotano le tue finanze e come rimediare.
             </p>
             <div class="hero-actions">
-                <a href="#articolo" class="btn btn-primary btn-lg glow-btn">📖 Leggi l'articolo →</a>
-                <a href="../strumenti.html" class="btn btn-outline btn-lg">🛠️ Usa gli strumenti</a>
+                <a href="#articolo" class="btn btn-primary btn-lg glow-btn">📖 Inizia a leggere</a>
             </div>
             <div class="hero-trust">
                 <span class="trust-text">Fonti verificate</span>
@@ -97,304 +83,339 @@
                 </div>
             </div>
         </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>Scorri per leggere</span>
+        </div>
     </section>
 
     <section id="articolo" class="section">
-        <div class="container" style="max-width: 850px;">
-            <article style="color: var(--text-secondary); line-height: 1.9; font-size: 1.05rem;">
-                <p style="font-size: 1.2rem; color: var(--text-primary); font-weight: 600; margin-bottom: var(--space-lg);">
-                    Non è colpa tua. Lo dico seriamente. Il tuo cervello è stato programmato per 200.000 anni 
-                    in un mondo dove il cibo <strong>scadeva domani</strong>. Quello stesso cervello ora deve 
-                    gestire conti correnti, mutui e mercati finanziari. E il risultato? Errori ovunque.
-                </p>
-                <p style="margin-bottom: var(--space-lg);">
-                    Daniel Kahneman — Nobel per l'economia — ha dimostrato che il 90% delle nostre decisioni 
-                    finanziarie è guidato da scorciatoie mentali (<em>bias</em>), non da logica. 
-                    Ecco i 7 più pericolosi.
-                </p>
+        <div class="container">
 
-                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
-                    1️⃣ Avversione alla perdita — Il dolore pesa il doppio
-                </h2>
-                <p style="margin-bottom: var(--space-lg);">
-                    Perdere 100€ fa stare peggio di quanto faccia piacere guadagnarne 100€. 
-                    Questo bias, scoperto da Kahneman e Tversky, spiega perché:
-                </p>
-                <ul style="padding-left: 1.5rem; margin-bottom: var(--space-lg);">
-                    <li style="margin-bottom: var(--space-sm);">🏭 Trattenete azioni che crollano, <strong>nella speranza</strong> che tornino su (spesso non tornano mai)</li>
-                    <li style="margin-bottom: var(--space-sm);">🛒 Avete paura di investire perché temete di perdere, e così <strong>perdete l'inflazione</strong></li>
-                    <li>💔 Rimanete in abbonamenti o contratti costosi perché "tanto ho già pagato"</li>
-                </ul>
-                <div style="background: var(--bg-card); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-lg) 0; border-left: 4px solid var(--red);">
-                    <p style="font-size: 0.95rem;">
-                        <strong>⚡ Il dato:</strong> gli investitori retail che vendono in perdita hanno rendimenti annuali del <strong>35% in meno</strong> rispetto a chi tiene (studio Brad Barber, UC Davis).
-=======
-    <section class="hero" style="min-height: 35vh;">
-        <div class="hero-content">
-            <span class="hero-badge">🧠 BIAS COGNITIVI</span>
-            <h1 class="hero-title" style="font-size: clamp(1.8rem, 4vw, 3rem);">
-                <span class="title-line">Perché perdi</span>
-                <span class="title-line accent">soldi</span>
-            </h1>
-            <div class="blog-hero-image" style="text-align:center; margin:20px 0;">
-                <img src="../assets/img/blog-featured-1.svg" alt="Featured image - Perché Perdi Soldi" class="blog-hero-svg">
-            </div>
-            <p class="hero-subtitle">(E non è colpa tua — è colpa del tuo cervello)</p>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container" style="max-width: 850px;">
-            <article style="color: var(--text-secondary); line-height: 1.9; font-size: 1.05rem;">
-                <p style="font-size: 1.2rem; color: var(--text-primary); font-weight: 600; margin-bottom: var(--space-lg);">
-                    Immagina questa scena: è venerdì sera. Sei stanco, hai avuto una settimana pesante. 
-                    Apri l'app dello shopping online "solo per dare un'occhiata". Due ore dopo, 
-                    hai speso 150€ in cose che non ti servivano.
-                </p>
-                <p style="margin-bottom: var(--space-lg);">
-                    Ti è mai successo? Se sì, non sei un caso perso. Il tuo cervello è stato 
-                    <strong>progettato per fare esattamente quello</strong>, milioni di anni fa, quando 
-                    l'energia e il cibo erano scarsi e ogni opportunità andava colta subito. Il problema? 
-                    Quel software è ancora in esecuzione, ma il mondo è cambiato.
-                </p>
-
-                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
-                    🧠 Ecco i 5 bias che ti fanno perdere soldi
-                </h2>
-
-                <div style="background: var(--bg-card); border-left: 4px solid var(--orange); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-lg) 0;">
-                    <h3 style="margin-bottom: var(--space-sm);">1. 👁️ Bias di Conferma</h3>
-                    <p style="color: var(--text-secondary);">
-                        Cerchi solo le informazioni che confermano ciò che già credi. Se pensi che "le azioni salgono sempre", 
-                        leggerai solo articoli che lo confermano, ignorando i segnali di pericolo.
-                    </p>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: var(--space-sm);">
-                        <strong>Soluzione meccanica:</strong> Ogni volta che prendi una decisione finanziaria, scrivi 
-                        3 ragioni per cui potresti avere torto. È come controllare un bullone da entrambi i lati.
-                    </p>
-                </div>
-
-                <div style="background: var(--bg-card); border-left: 4px solid var(--primary); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-lg) 0;">
-                    <h3 style="margin-bottom: var(--space-sm);">2. 🐑 Effetto Gregge</h3>
-                    <p style="color: var(--text-secondary);">
-                        Compri Bitcoin perché tutti lo comprano. Investi in cripto perché tuo cugino ha fatto 
-                        soldi. Ma quando tutti vanno nella stessa direzione, spesso è lì che si forma la bolla.
-                    </p>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: var(--space-sm);">
-                        <strong>Soluzione meccanica:</strong> Se tutti fanno la stessa cosa, fermati e fai domande. 
-                        In officina, quando tutti corrono nella stessa direzione, di solito c'è un incendio.
-                    </p>
-                </div>
-
-                <div style="background: var(--bg-card); border-left: 4px solid var(--accent); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-lg) 0;">
-                    <h3 style="margin-bottom: var(--space-sm);">3. 💔 Avversione alla Perdita</h3>
-                    <p style="color: var(--text-secondary);">
-                        Perdere 100€ ti fa sentire peggio di quanto guadagnarne 100€ ti faccia sentire bene. 
-                        Questo ti porta a tenere investimenti in perdita troppo a lungo (perché "magari torna su") 
-                        e vendere quelli in guadagno troppo presto ("è meglio assicurarsi").
-                    </p>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: var(--space-sm);">
-                        <strong>Soluzione meccanica:</strong> Stabilisci un punto di stop-loss PRIMA di investire. 
-                        È come mettere il blocca-tasti su una macchina: decide il limite prima di guidare.
-                    </p>
-                </div>
-
-                <div style="background: var(--bg-card); border-left: 4px solid var(--orange); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-lg) 0;">
-                    <h3 style="margin-bottom: var(--space-sm);">4. 🎰 Illusione del Controllo</h3>
-                    <p style="color: var(--text-secondary);">
-                        Pensi di avere controllo sui mercati. Fai trading attivo perché "tu sai quando comprare". 
-                        La realtà? Il 90% dei trader retail perde soldi, secondo uno studio della SEC.
-                    </p>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: var(--space-sm);">
-                        <strong>Soluzione meccanica:</strong> Distingui tra ciò che puoi controllare (il tuo comportamento, 
-                        i tuoi costi, la tua strategia) e ciò che non puoi (il mercato). Concentrati solo sulla prima parte.
-                    </p>
-                </div>
-
-                <div style="background: var(--bg-card); border-left: 4px solid var(--primary); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-lg) 0;">
-                    <h3 style="margin-bottom: var(--space-sm);">5. ⏳ Sconto Temporale</h3>
-                    <p style="color: var(--text-secondary);">
-                        100€ oggi valgono più di 100€ tra un anno. Per questo rimandi sempre: "Inizio a risparmiare 
-                        da gennaio", "Investo quando ho uno stipendio più alto". Ma il tempo è il tuo alleato 
-                        più potente — più lo aspetti, più perdi.
-                    </p>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: var(--space-sm);">
-                        <strong>Soluzione meccanica:</strong> Automatizza. Imposta un bonifico ricorrente il giorno 
-                        dopo lo stipendio. "Paga prima te stesso" — non è un consiglio, è un ingranaggio che gira da solo.
->>>>>>> 2ff4d769b2ea92988b651e66a7ae85cc157f2c58
-                    </p>
-                </div>
-
-                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
-<<<<<<< HEAD
-                    2️⃣ Bias di ancoraggio — Il primo numero che vedi ti frega
-                </h2>
-                <p style="margin-bottom: var(--space-lg);">
-                    Il cervello aggancia ogni decisione al <strong>primo numero</strong> che incontra, anche se è assurdo. 
-                    Esempio: vedi un prodotto a 200€ scontato a 120€. "Affare!" — Ma se il prezzo reale è 80€, 
-                    non hai risparmiato, hai speso in più.
-                </p>
-
-                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
-                    3️⃣ Effetto alone — Giudichi dalle apparenze
-                </h2>
-                <p style="margin-bottom: var(--space-lg);">
-                    Se un'azienda ha un bel logo e un CEO carismatico, il cervello "riempie" automaticamente 
-                    le lacune con qualità positive. <strong>Quel bel packaging nasconde bilanci disastrosi.</strong>
-                    Questo è il bias che finanzia miliardi di campagne marketing.
-                </p>
-
-                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
-                    4️⃣ Bias di conferma — Cercate solo ciò che volete sentire
-                </h2>
-                <p style="margin-bottom: var(--space-lg);">
-                    Leggete solo articoli che confermano le vostre idee di investimento? 
-                    Seguite solo "guru" che dicono ciò che volete sentire? 
-                    <strong>State scambiando la realtà per una bolla.</strong>
-                </p>
-
-                <div style="background: var(--bg-secondary); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-lg) 0;">
-                    <h3 style="margin-bottom: var(--space-sm); color: var(--purple);">🧪 Esercizio pratico:</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary);">
-                        La prossima volta che leggete un'analisi finanziaria, <strong>cercate deliberatamente un'opinione contraria</strong>. 
-                        Se non la trovate, state probabilmente nella bolla.
-                    </p>
-                </div>
-
-                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
-                    5️⃣ Illusione del controllo — "Tanto ho studiato..."
-                </h2>
-                <p style="margin-bottom: var(--space-lg);">
-                    Avere più informazioni <strong>non</strong> significa prendere decisioni migliori. 
-                    Anche gli analisti di Wall Street non battono il mercato in modo costante. 
-                    Più dati guardate, più il cervello crede di "capire" — ma spesso è solo <strong>falsa sicurezza</strong>.
-                </p>
-
-                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
-                    6️⃣ Istinto di gregge — Quando tutti corrono, fermati
-                </h2>
-                <p style="margin-bottom: var(--space-lg);">
-                    "Tutti stanno comprando Bitcoin!" — e così compri anche tu al massimo. 
-                    "Le azioni tech sono morte!" — e così vendi al minimo. <strong>Il gregge è sempre in ritardo.</strong>
-                </p>
-                <div style="background: var(--bg-card); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-lg) 0; border-left: 4px solid var(--yellow);">
-                    <p style="font-size: 0.95rem;">
-                        <strong>⚡ Ricorda:</strong> Warren Buffett diceva "Sii spaventato quando gli altri sono golosi, 
-                        e goloso quando gli altri sono spaventati." Lo capisci con 30 anni di ritardo, e poi dici "lo sapevo".
-                    </p>
-                </div>
-
-                <h2 style="color: var(--orange); margin: var(--space-xl) 0 var(--space-md); font-size: 1.4rem;">
-                    7️⃣ Sconto iperbolico — 10€ oggi valgono più di 100€ domani
-                </h2>
-                <p style="margin-bottom: var(--space-lg);">
-                    Questo è il <strong>bias del "lo merito"</strong>. Preferisci 10€ adesso a 100€ tra un anno. 
-                    È lo stesso meccanismo che ti fa comprare cose inutili "tanto costa solo 9,99€". 
-                    Sommando 100 acquisti da 9,99€, hai speso quasi <strong>1.000€ che avrebbero potuto lavorare per te</strong>.
-                </p>
-
-                <div style="background: var(--bg-card); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-lg) 0;">
-                    <h3 style="margin-bottom: var(--space-sm);">🔧 Come difendersi — Il metodo meccanico:</h3>
-                    <ul style="padding-left: 1.5rem; color: var(--text-secondary);">
-                        <li style="margin-bottom: var(--space-sm);">🤖 <strong>Automatizza tutto:</strong> investimenti ricorrenti, risparmio automatico. Meno decisioni = meno errori</li>
-                        <li style="margin-bottom: var(--space-sm);">⏳ <strong>Regola dei 30 giorni:</strong> vuoi un acquisto non essenziale? Aspetta 30 giorni. Se lo vuoi ancora, rivaluta.</li>
-                        <li style="margin-bottom: var(--space-sm);">📊 <strong>Registro delle decisioni:</strong> scrivi <em>perché</em> prendi ogni decisione finanziaria. Rileggi dopo 6 mesi.</li>
-                        <li style="margin-bottom: var(--space-sm);">🔄 <strong>Cambia prospettiva:</strong> prima di comprare, chiediti "lo farei se il prezzo fosse il doppio?"</li>
-                        <li>🧮 <strong>Usa i nostri strumenti:</strong> i calcolatori di TreasuryWorks togliono le emozioni dai numeri.</li>
-                    </ul>
-                </div>
-
-                <div style="background: var(--bg-secondary); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-xl) 0; text-align: center;">
-                    <p style="font-size: 1.3rem; font-weight: 700; color: var(--primary); margin-bottom: var(--space-sm);">
-                        "Conoscere i bias non li elimina. Ma ti dà almeno la possibilità di <strong>vederli arrivare</strong>."
-                    </p>
-                    <p style="color: var(--text-muted); font-size: 0.85rem;">— Meccanico dei soldi, TreasuryWorks</p>
-                </div>
-            </article>
-
-            <div style="display: flex; justify-content: space-between; margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--border); flex-wrap: wrap; gap: 8px;">
-                <a href="metodo-50-30-20.html" class="btn btn-outline">← Articolo precedente</a>
-=======
-                    🔧 Il punto di vista dell'officina
-                </h2>
-                <p style="margin-bottom: var(--space-lg);">
-                    Ogni bias cognitivo è come un ingranaggio fuori posto. Non è colpa tua che si è rotto — 
-                    il motore è stato progettato così. Ma ora che lo sai, puoi smontarlo, guardarlo, 
-                    capire cosa non va, e rimontarlo meglio.
-                </p>
-                <p style="margin-bottom: var(--space-lg);">
-                    Non servono superpoteri. Servono consapevolezza e un metodo. Ecco il mio consiglio:
-                </p>
-                <ol style="padding-left: 1.5rem; margin-bottom: var(--space-xl);">
-                    <li style="margin-bottom: var(--space-sm);"><strong>Riconosci il bias</strong> — Quando stai per prendere una decisione finanziaria, fermati 10 secondi e chiediti: "Sto decidendo con i dati o con l'emozione?"</li>
-                    <li style="margin-bottom: var(--space-sm);"><strong>Scrivilo</strong> — Tieni un diario delle tue decisioni finanziarie. Dopo 3 mesi, rileggi e cerca i pattern.</li>
-                    <li style="margin-bottom: var(--space-sm);"><strong>Automatizza</strong> — Meno decisioni da prendere, meno bias da attivare. Imposta investimenti automatici e budget automatici.</li>
-                    <li><strong>Fatti una domanda</strong> — "Tra 10 anni, questa decisione mi sembrerà importante?" Se la risposta è no, probabilmente il bias sta guidando.</li>
+            <!-- TOC -->
+            <nav class="toc-container">
+                <div class="toc-title">📑 Indice dell'articolo</div>
+                <ol class="toc-list">
+                    <li class="toc-item"><a href="#intro" class="toc-link">Perché sbagli con i soldi</a></li>
+                    <li class="toc-item"><a href="#bias1" class="toc-link">Bias di conferma — Cerchi solo ciò che vuoi sentire</a></li>
+                    <li class="toc-item"><a href="#bias2" class="toc-link">Effetto gregge — Quando tutti comprano, tu compri</a></li>
+                    <li class="toc-item"><a href="#bias3" class="toc-link">Avversione alla perdita — Perdere pesa il doppio</a></li>
+                    <li class="toc-item"><a href="#bias4" class="toc-link">Illusione del controllo — "Tanto ho studiato"</a></li>
+                    <li class="toc-item"><a href="#bias5" class="toc-link">Sconto temporale — 10€ oggi > 100€ domani</a></li>
+                    <li class="toc-item"><a href="#difesa" class="toc-link">Come difendersi — Il metodo meccanico</a></li>
+                    <li class="toc-item"><a href="#riflessione" class="toc-link">Il punto di vista dell'officina</a></li>
                 </ol>
+            </nav>
 
-                <div style="background: var(--bg-secondary); border-radius: var(--border-radius); padding: var(--space-lg); margin: var(--space-xl) 0;">
-                    <p style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: var(--space-sm);">📌 Da ricordare:</p>
-                    <p style="color: var(--text-secondary);">
-                        "Il problema non sei tu. È il software di 100.000 anni che gira su un hardware del 2026." <br>
-                        <strong style="color: var(--orange);">— Antonio, TreasuryWorks</strong>
-                    </p>
+            <!-- Intro -->
+            <div id="intro" class="article-section">
+                <p class="article-intro">
+                    Immagina questa scena: è venerdì sera. Sei stanco, hai avuto una settimana pesante. Apri l'app dello shopping online "solo per dare un'occhiata". Due ore dopo, hai speso 150€ in cose che non ti servivano.
+                </p>
+                <p style="margin-bottom: var(--space-lg);">
+                    Ti è mai successo? Se sì, non sei un caso perso. Il tuo cervello è stato progettato per fare esattamente quello, milioni di anni fa, quando l'energia e il cibo erano scarsi e ogni opportunità andava colta subito. Il problema? Quel software è ancora in esecuzione, ma il mondo è cambiato.
+                </p>
+
+                <div class="callout callout-quote">
+                    <p>Il 90% delle decisioni finanziarie è guidato da scorciatoie mentali, non da logica.</p>
+                    <cite>— Daniel Kahneman, Nobel per l'economia</cite>
                 </div>
-            </article>
 
-            <div style="display: flex; justify-content: space-between; margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--border);">
-                <a href="../blog.html" class="btn btn-outline">← Torna al Blog</a>
->>>>>>> 2ff4d769b2ea92988b651e66a7ae85cc157f2c58
-                <a href="investire-senza-paura.html" class="btn btn-primary">Articolo successivo →</a>
+                <p style="margin-bottom: var(--space-lg);">
+                    Kahneman ha dimostrato che il nostro cervello usa <strong>bias cognitivi</strong> — scorciatoie mentali automatiche — per prendere decisioni. Questo andava bene nella savana 200.000 anni fa. Nel mondo moderno, dove gestiamo conti correnti, mutui e mercati finanziari, diventa pericoloso.
+                </p>
+                <p>
+                    Ecco i 5 bias più pericolosi per il tuo portafoglio — e le soluzioni pratiche per neutralizzarli.
+                </p>
             </div>
+
+            <!-- Bias 1 -->
+            <div id="bias1" class="article-section">
+                <h2>👁️ Bias di conferma — Cerchi solo ciò che vuoi sentire</h2>
+                <p>
+                    Cerchi solo le informazioni che confermano ciò che già credi. Se pensi che "le azioni salgono sempre", leggerai solo articoli che lo confermano, ignorando i segnali di pericolo. Sui social, gli algoritmi amplificano questo effetto creandoti una <strong>bolla di conferma</strong> su misura.
+                </p>
+
+                <div class="callout callout-warning">
+                    <h3>⚠️ Attenzione</h3>
+                    <p>Il 67% degli investitori retail ammette di cercare solo opinioni che confermano le proprie scelte, secondo uno studio della CFA Institute.</p>
+                </div>
+
+                <div class="callout callout-tip">
+                    <h3>🔧 Soluzione meccanica</h3>
+                    <p>Ogni volta che prendi una decisione finanziaria, scrivi 3 ragioni per cui potresti avere torto. È come controllare un bullone da entrambi i lati — se stringi solo da un lato, non si allinea.</p>
+                </div>
+            </div>
+
+            <!-- Bias 2 -->
+            <div id="bias2" class="article-section">
+                <h2>🐑 Effetto gregge — Quando tutti comprano, tu compri</h2>
+                <p>
+                    Compri Bitcoin perché tutti lo comprano. Investi in cripto perché tuo cugino ha fatto soldi. Ma quando tutti vanno nella stessa direzione, spesso è lì che si forma la bolla.
+                </p>
+                <p>
+                    L'effetto gregge è <strong>il bias più antico del mondo</strong>. Funzionava quando i predatori attaccavano il branco: sopravviveva chi restava nel gruppo. Oggi, nel mercato finanziario, è la ricetta per comprare al massimo e vendere al minimo.
+                </p>
+
+                <div class="callout callout-data">
+                    <h3>⚡ Il dato</h3>
+                    <p>Il flusso netto di investimenti nei fondi speculativi aumenta del 300% nei mesi prima dei crolli di mercato. I dati storici lo confermano: chi segue il gregge paga il prezzo più alto.</p>
+                </div>
+
+                <div class="callout callout-tip">
+                    <h3>🔧 Soluzione meccanica</h3>
+                    <p>Se tutti fanno la stessa cosa, fermati e fai domande. In officina, quando tutti corrono nella stessa direzione, di solito c'è un incendio.</p>
+                </div>
+            </div>
+
+            <!-- Bias 3 -->
+            <div id="bias3" class="article-section">
+                <h2>💔 Avversione alla perdita — Perdere 100€ fa più male che piacere guadagnarne 100€</h2>
+                <p>
+                    Perdere 100€ ti fa sentire peggio di quanto guadagnarne 100€ ti faccia sentire bene. Questo ti porta a tenere investimenti in perdita troppo a lungo — <strong>"magari torna su"</strong> — e vendere quelli in guadagno troppo presto — <strong>"è meglio assicurarsi"</strong>.
+                </p>
+                <p>
+                    È il bias che ti tiene aggrappato a un titolo che crolla, a un abbonamento che non usi, a un investimento che non rende. Perché il cervello <strong>odia perdere più di ama guadagnare</strong>.
+                </p>
+
+                <div class="callout callout-quote">
+                    <p>"Le perdite pesano circa il doppio dei guadagni equivalenti nella mente umana."</p>
+                    <cite>— Kahneman & Tversky, Prospect Theory (1979)</cite>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="article-table">
+                        <thead>
+                            <tr>
+                                <th>Comportamento</th>
+                                <th>Cosa pensi</th>
+                                <th>La realtà</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tenere azioni in perdita</td>
+                                <td>"Torna su, ha sempre funzionato"</td>
+                                <td class="text-red">Molte aziende non tornano su. Mai.</td>
+                            </tr>
+                            <tr>
+                                <td>Vendere azioni in guadagno</td>
+                                <td>"Meglio assicurare il profitto"</td>
+                                <td class="text-green">Avresti potuto guadagnare 10x di più restando dentro.</td>
+                            </tr>
+                            <tr>
+                                <td>Mantenere abbonamenti inutili</td>
+                                <td>"Tanto ho già pagato"</td>
+                                <td class="text-red">Il denaro già speso è perso. Ferma l'emorragia.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout callout-tip">
+                    <h3>🔧 Soluzione meccanica</h3>
+                    <p>Stabilisci un punto di stop-loss <strong>PRIMA</strong> di investire. È come mettere il blocca-tasti su una macchina: decidi il limite prima di guidare, non mentre stai già schivando il traffico.</p>
+                </div>
+            </div>
+
+            <!-- Bias 4 -->
+            <div id="bias4" class="article-section">
+                <h2>🎰 Illusione del controllo — "Tanto ho studiato, so quando comprare"</h2>
+                <p>
+                    Pensi di avere controllo sui mercati. Fai trading attivo perché "tu sai quando comprare". La realtà? Il 92% dei trader retail perde soldi nel tempo, secondo uno studio della SEC.
+                </p>
+                <p>
+                    Avere più informazioni <strong>non</strong> significa prendere decisioni migliori. Anche gli analisti di Wall Street, con i loro supercomputer e i loro modelli, non battono il mercato in modo costante. Più dati guardi, più il cervello crede di "capire" — ma spesso è solo <strong>falsa sicurezza</strong>.
+                </p>
+
+                <div class="comparison-grid">
+                    <div class="comparison-card color-danger">
+                        <div class="emoji">🎰</div>
+                        <h4 class="color-danger">Trading attivo</h4>
+                        <p>87% dei trader retail perde soldi sul lungo periodo</p>
+                    </div>
+                    <div class="comparison-card color-success">
+                        <div class="emoji">📈</div>
+                        <h4 class="color-success">Investimento passivo</h4>
+                        <p>ETFs globali rendono ~7% annuo medio storico</p>
+                    </div>
+                </div>
+
+                <div class="callout callout-tip">
+                    <h3>🔧 Soluzione meccanica</h3>
+                    <p>Distingui tra ciò che puoi controllare (il tuo comportamento, i costi, la tua strategia) e ciò che non puoi (il mercato). Concentrati <strong>solo sulla prima parte</strong>. Non puoi guidare il mercato, ma puoi decidere come reagire.</p>
+                </div>
+            </div>
+
+            <!-- Bias 5 -->
+            <div id="bias5" class="article-section">
+                <h2>⏳ Sconto temporale — 100€ oggi valgono più di 100€ tra un anno</h2>
+                <p>
+                    Preferisci 100€ adesso a 100€ tra un anno. Questo è il bias del <strong>"lo merito"</strong>. È lo stesso meccanismo che ti fa dire <em>"Inizio a risparmiare da gennaio"</em>, <em>"Investo quando ho uno stipendio più alto"</em>, <em>"Compra ora, è in offerta"</em>.
+                </p>
+                <p>
+                    Sommando 100 acquisti da 9,99€, hai speso quasi <strong>1.000€ che avrebbero potuto lavorare per te</strong>. Il tempo è il tuo alleato più potente — ma solo se lo usi.
+                </p>
+
+                <div class="stats-row">
+                    <div class="stat-inline">
+                        <div class="stat-num">100€</div>
+                        <div class="stat-label">oggi</div>
+                    </div>
+                    <div class="stat-inline">
+                        <div class="stat-num" style="color:var(--red)">-3%</div>
+                        <div class="stat-label">inflazione annua ≈</div>
+                    </div>
+                    <div class="stat-inline">
+                        <div class="stat-num">≈97€</div>
+                        <div class="stat-label">valore tra 1 anno</div>
+                    </div>
+                </div>
+
+                <div class="callout callout-warning">
+                    <h3>⚠️ Il cerchio vizioso</h3>
+                    <p>Più rimandi, più perdi. Il tempo non è dalla tua parte: <strong>ogni mese perso costa denaro reale</strong>. Non stai solo rimandando un bonifico — stai rimandando la tua libertà finanziaria.</p>
+                </div>
+
+                <div class="callout callout-tip">
+                    <h3>🔧 Soluzione meccanica</h3>
+                    <p><strong>Automatizza tutto.</strong> Imposta un bonifico ricorrente il giorno dopo lo stipendio. "Paga prima te stesso" — non è un consiglio, è un ingranaggio che gira da solo. Il denaro esce dal tuo conto prima che tu possa spendere impulsivamente.</p>
+                </div>
+            </div>
+
+            <!-- Conclusione -->
+            <div id="difesa" class="article-section">
+                <h2>🔧 Come difendersi — Il metodo meccanico</h2>
+                <p>
+                    Ora che conosci i 5 bias, ecco il tuo kit di riparazione. Non serve forza di volontà — serve un <strong>sistema</strong> che funzioni anche quando il tuo cervello cerca di sabotarti.
+                </p>
+
+                <div class="step-box" data-step="1">
+                    <h3>Automatizza tutto</h3>
+                    <p>Investimenti ricorrenti, risparmio automatico. Meno decisioni = meno errori. Imposta bonifici ricorrenti il giorno dopo lo stipendio.</p>
+                </div>
+
+                <div class="step-box" data-step="2">
+                    <h3>Regola dei 30 giorni</h3>
+                    <p>Vuoi un acquisto non essenziale? Aspetta 30 giorni. Se lo vuoi ancora, rivaluta. Se non lo ricordi, non ti serviva davvero.</p>
+                </div>
+
+                <div class="step-box" data-step="3">
+                    <h3>Registro delle decisioni</h3>
+                    <p>Scrivi <strong>perché</strong> prendi ogni decisione finanziaria. Rileggi dopo 6 mesi. I pattern diventeranno evidenti e potrai correggerti.</p>
+                </div>
+
+                <div class="step-box" data-step="4">
+                    <h3>Cambia prospettiva</h3>
+                    <p>Prima di comprare, chiediti: <em>"Lo farei se il prezzo fosse il doppio?"</em> Questa domanda filtra l'impulso dall'esigenza reale.</p>
+                </div>
+
+                <div class="step-box" data-step="5">
+                    <h3>Usa gli strumenti giusti</h3>
+                    <p>I <a href="../strumenti.html">calcolatori di TreasuryWorks</a> tolgono le emozioni dai numeri. Lascia che la matematica parli, non il panico.</p>
+                </div>
+            </div>
+
+            <!-- Riflessione finale -->
+            <div id="riflessione" class="article-section">
+                <div class="callout callout-quote">
+                    <p>"Conoscere i bias non li elimina. Ma ti dà almeno la possibilità di <strong>vederli arrivare</strong>."</p>
+                    <cite>— Il meccanico dei soldi, TreasuryWorks</cite>
+                </div>
+            </div>
+
+            <!-- CTA Fine Articolo -->
+            <div class="cta-end">
+                <h3>Vuoi approfondire?</h3>
+                <p>Ora che conosci i bias, impara come investire con metodo senza farti frenare dalla paura.</p>
+                <a href="../strumenti.html" class="btn btn-primary glow-btn">🧮 Prova i calcolatori gratuiti</a>
+                <a href="../blog.html" class="btn btn-outline">📝 Esplora il blog</a>
+            </div>
+
+            <!-- Articoli correlati -->
+            <div class="related-articles">
+                <div class="related-title">📚 Articoli correlati</div>
+                <div class="related-grid">
+                    <div class="related-card">
+                        <div class="rc-badge">💰 Budget</div>
+                        <h4><a href="metodo-50-30-20.html">Il metodo 50/30/20: budget semplice che funziona</a></h4>
+                        <p>Il sistema di budgeting più semplice al mondo, con un calcolatore interattivo.</p>
+                    </div>
+                    <div class="related-card">
+                        <div class="rc-badge">📈 Investimenti</div>
+                        <h4><a href="investire-senza-paura.html">Investire senza paura: guida per principianti</a></h4>
+                        <p>Come superare la paura del mercato e iniziare a investire con metodo.</p>
+                    </div>
+                    <div class="related-card">
+                        <div class="rc-badge">💳 Debito</div>
+                        <h4><a href="uscire-dal-debito.html">Come uscire dal debito — Il metodo dell'officina</a></h4>
+                        <p>Avalanche vs Snowball: come spezzare le catene del debito.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigazione articoli -->
+            <div class="article-nav">
+                <a href="index.html">&larr; Torna al Blog</a>
+                <a href="investire-senza-paura.html">Articolo successivo →</a>
+            </div>
+
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-<<<<<<< HEAD
-                    <div class="footer-logo"><img src="../assets/img/logo-gear-dollar.svg" alt="Logo" class="footer-logo-img"> <span class="logo-text">Treasury<span class="logo-accent">Works</span></span></div>
-=======
-                    <div class="footer-logo"><span class="logo-icon">⚙️</span><span class="logo-text">Treasury<span class="logo-accent">Works</span></span></div>
->>>>>>> 2ff4d769b2ea92988b651e66a7ae85cc157f2c58
-                    <p>L'officina dove ripari la tua relazione con il denaro.</p>
+                    <div class="footer-logo">
+                        <img src="../assets/img/logo-gear-dollar.svg" alt="TreasuryWorks" class="footer-logo-img">
+                        <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
+                    </div>
+                    <p>L'officina dove ripari la tua relazione con il denaro.<br>Meccanica + Psicologia = Ricchezza.</p>
+                    <div class="footer-social" style="margin-top: var(--space-md);">
+                        <a href="https://youtube.com/@nevenoir90" class="social-icon" title="YouTube">📺</a>
+                        <a href="https://www.instagram.com/nevenoir.official" class="social-icon" title="Instagram">📸</a>
+                        <a href="https://www.tiktok.com/@neve.noir" class="social-icon" title="TikTok">🎵</a>
+                        <a href="#" class="social-icon" title="X/Twitter">🐦</a>
+                    </div>
                 </div>
                 <div class="footer-col">
                     <h4>Navigazione</h4>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../chi-sono.html">Chi Sono</a></li>
-                        <li><a href="../blog.html">Blog</a></li>
-                        <li><a href="../contatti.html">Contatti</a></li>
+                        <li><a href="../index.html">🏠 Home</a></li>
+                        <li><a href="../chi-sono.html">👤 Chi Sono</a></li>
+                        <li><a href="../blog.html">📝 Blog</a></li>
+                        <li><a href="../strumenti.html">🛠️ Strumenti</a></li>
+                        <li><a href="../faq.html">❓ FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Social</h4>
+                    <h4>Articoli</h4>
                     <ul>
-                        <li><a href="https://youtube.com/@nevenoir90">📺 YouTube</a></li>
-                        <li><a href="#">💬 Telegram</a></li>
-                        <li><a href="https://www.instagram.com/nevenoir.official">📸 Instagram</a></li>
-                        <li><a href="https://www.tiktok.com/@neve.noir">📺 TikTok</a></li>
-                        <li><a href="#">🐦 X</a></li>
+                        <li><a href="perche-perdi-soldi.html">Perché perdi soldi</a></li>
+                        <li><a href="investire-senza-paura.html">Investire senza paura</a></li>
+                        <li><a href="psicologia-denaro-pensiero-diverso.html">Psicologia del denaro</a></li>
+                        <li><a href="metodo-50-30-20.html">Metodo 50/30/20</a></li>
+                        <li><a href="uscire-dal-debito.html">Uscire dal debito</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Legale</h4>
                     <ul>
-                        <li><a href="../privacy.html">Privacy</a></li>
-                        <li><a href="#">Cookie</a></li>
-                        <li><a href="#">Termini</a></li>
+                        <li><a href="../privacy.html">🔒 Privacy</a></li>
+                        <li><a href="../privacy.html#cookies">🍪 Cookie</a></li>
+                        <li><a href="#">📄 Termini</a></li>
+                        <li><a href="../contatti.html">📩 Contatti</a></li>
                     </ul>
                 </div>
             </div>
-<<<<<<< HEAD
-            <div class="footer-bottom"><p>© 2026 TreasuryWorks — Tutti i diritti riservati</p></div>
-=======
-            <div class="footer-bottom"><p>© 2026 TreasuryWorks</p></div>
->>>>>>> 2ff4d769b2ea92988b651e66a7ae85cc157f2c58
+            <div class="footer-bottom">
+                <p>© 2026 TreasuryWorks — Tutti i diritti riservati.</p>
+            </div>
         </div>
     </footer>
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/cookie.js"></script>
 </body>
 </html>
