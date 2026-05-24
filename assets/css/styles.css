@@ -149,6 +149,47 @@ li {
   white-space: nowrap;
 }
 
+/* Footer buttons - styled to match links for semantic correctness */
+.footer-btn {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  transition: color var(--transition);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-btn:hover {
+  color: var(--orange);
+}
+
+/* Social buttons - styled to match social-icon class */
+.social-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: all var(--transition);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.social-btn:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
 .btn-primary {
   background: var(--orange);
   color: #fff;

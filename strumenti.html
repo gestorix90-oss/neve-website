@@ -62,26 +62,76 @@
 
         <section class="tools-section">
             <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">🛠️ CALCOLATORI</span>
+                    <h2 class="section-title">Strumenti <span class="accent">concreti</span> per i soldi</h2>
+                    <p class="section-desc">Niente teoria. Solo strumenti che funzionano. Calcola, pianifica, agisci.</p>
+                </div>
+
                 <div class="tools-grid">
                     <div class="tool-card">
-                        <h3>📊 Budget 50/30/20</h3>
-                        <p>Calcola la distribuzione ottimale del tuo reddito tra necessità, desideri e risparmio.</p>
+                        <div class="tool-icon">📊</div>
+                        <h3>Budget 50/30/20</h3>
+                        <p class="tool-desc">La regola d'oro per distribuire il tuo reddito. Niente budget complicati, solo numeri semplici.</p>
+                        <div class="tool-features">
+                            <span>50% necessità</span>
+                            <span>30% desideri</span>
+                            <span>20% risparmi</span>
+                        </div>
                         <button class="btn btn-primary" onclick="openBudgetTool()">Apri Strumento</button>
                     </div>
+                    
                     <div class="tool-card">
-                        <h3>💳 Piano Debiti</h3>
-                        <p>Organizza i tuoi debiti con strategie di pagamento efficaci e interesse minimo.</p>
+                        <div class="tool-icon">💳</div>
+                        <h3>Piano Debiti</h3>
+                        <p class="tool-desc">Organizza i tuoi debiti con metodo. Paghi meno interessi e liberi prima.</p>
+                        <div class="tool-features">
+                            <span>Metodo valanga</span>
+                            <span>Interesse minimo</span>
+                            <span>Scadenza chiara</span>
+                        </div>
                         <button class="btn btn-primary" onclick="openDebtTool()">Apri Strumento</button>
                     </div>
+                    
                     <div class="tool-card">
-                        <h3>📈 Interesse Composto</h3>
-                        <p>Visualizza la crescita esponenziale del tuo capitale nel tempo.</p>
+                        <div class="tool-icon">📈</div>
+                        <h3>Interesse Composto</h3>
+                        <p class="tool-desc">Vedi come i soldi fanno soldi. La magia dell'interesse composto in azione.</p>
+                        <div class="tool-features">
+                            <span>Grafico crescita</span>
+                            <span>Parametri editabili</span>
+                            <span>Confronto anni</span>
+                        </div>
                         <button class="btn btn-primary" onclick="openCompoundTool()">Apri Strumento</button>
                     </div>
+                    
                     <div class="tool-card">
-                        <h3>🛡️ Fondo Emergenza</h3>
-                        <p>Calcola l'ammontare ideale per il tuo fondo di emergenza personale.</p>
+                        <div class="tool-icon">🛡️</div>
+                        <h3>Fondo Emergenza</h3>
+                        <p class="tool-desc">Calcola quanto ti serve per dormire sonni tranquilli. 3-6 mesi di spese.</p>
+                        <div class="tool-features">
+                            <span>Spese mensili</span>
+                            <span>Mesi coperti</span>
+                            <span>Totale necessario</span>
+                        </div>
                         <button class="btn btn-primary" onclick="openEmergencyTool()">Apri Strumento</button>
+                    </div>
+                </div>
+
+                <div class="tools-info">
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4>🔒 Sicuro</h4>
+                            <p>Nessun dato salvato. Tutto avviene nel tuo browser.</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>🆓 Gratuito</h4>
+                            <p>Zero costi. Zero registrazione. Zero pubblicità.</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>🎯 Preciso</h4>
+                            <p>Calcoli basati su formule finanziarie standard.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,18 +151,23 @@
                 <div class="footer-col">
                     <h4>Navigazione</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="strumenti.html">Strumenti</a></li>
-                        <li><a href="risorse.html">Risorse</a></li>
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li><a href="chi-sono.html">👤 Chi Sono</a></li>
+                        <li><a href="blog.html">📝 Blog</a></li>
+                        <li><a href="strumenti.html" class="nav-link active">🛠️ Strumenti</a></li>
+                        <li><a href="faq.html">❓ FAQ</a></li>
+                        <li><a href="info.html">📋 Info</a></li>
+                        <li><a href="news.html">📰 News</a></li>
+                        <li><a href="risorse.html">📚 Risorse</a></li>
+                        <li><a href="contatti.html">📩 Contatti</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Social</h4>
                     <ul>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Newsletter</a></li>
+                        <li><button class="footer-btn" onclick="alert('Twitter: ancora non disponibile')" aria-label="Twitter">Twitter</button></li>
+                        <li><button class="footer-btn" onclick="alert('LinkedIn: ancora non disponibile')" aria-label="LinkedIn">LinkedIn</button></li>
+                        <li><button class="footer-btn" onclick="alert('Newsletter: iscriviti nella homepage')" aria-label="Newsletter">Newsletter</button></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -132,5 +187,23 @@
 
     <script src="assets/js/script.js"></script>
     <script src="assets/js/tools.js"></script>
+    <script>
+        // Tool Functions - Simple placeholders for now
+        function openBudgetTool() {
+            alert('Budget Tool: in sviluppo. Prova il calcolo manuale: 50% necessità, 30% desideri, 20% risparmi.');
+        }
+        
+        function openDebtTool() {
+            alert('Debt Tool: in sviluppo. Usa il metodo valanga: paga prima il debito con interesse più alto.');
+        }
+        
+        function openCompoundTool() {
+            alert('Compound Tool: in sviluppo. Formula: Capitale x (1 + tasso)^tempo = Valore futuro.');
+        }
+        
+        function openEmergencyTool() {
+            alert('Emergency Fund: in sviluppo. Calcolo: Spese mensili x 3-6 mesi = Fondo necessario.');
+        }
+    </script>
 </body>
 </html>
