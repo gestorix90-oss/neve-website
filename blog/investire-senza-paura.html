@@ -4,7 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investire Senza Paura — TreasuryWorks</title>
+    <meta name="description" content="La paura del mercato ti tiene fermo mentre l'inflazione erode i risparmi. Metodo semplice in 4 bulloni: fondo emergenza, PAC, ETF, orizzonte lungo.">
+    <meta property="og:title" content="Investire Senza Paura — TreasuryWorks">
+    <meta property="og:description" content="Come superare la paura del mercato e iniziare a investire con metodo, orizzonte lungo e strumenti semplici.">
+    <meta property="og:image" content="https://gestorix90-oss.github.io/neve-website/assets/img/blog-featured-2.svg">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Investire Senza Paura — TreasuryWorks">
+    <meta name="twitter:description" content="Il metodo in 4 bulloni per iniziare senza panico.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="icon" href="../assets/img/favicon-star.svg">
+    <!-- Google AdSense: script caricato senza SRI perché Google serve contenuto dinamico -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <button class="cookie-close" onclick="closeCookieBanner()">✕</button>
+        <div class="cookie-content">
+            <p>🍪 Utilizziamo cookie per migliorare la tua esperienza. Proseguendo accetti la nostra <a href="../privacy.html">Cookie Policy</a>.</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-sm btn-outline" onclick="closeCookieBanner()">Rifiuta</button>
+                <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accetta</button>
+            </div>
+        </div>
+    </div>
 
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/img/logo-gear-dollar.svg" alt="TreasuryWorks Logo" class="logo-img">
                 <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -19,55 +51,220 @@
                 <li><a href="../info.html" class="nav-link">📋 Info</a></li>
                 <li><a href="../news.html" class="nav-link">📰 News</a></li>
                 <li><a href="../risorse.html" class="nav-link">📚 Risorse</a></li>
-                <li><a href="../contatti.html" class="nav-link nav-cta">Contatti</a></li>
+                <li><a href="../contatti.html" class="nav-link nav-cta">📩 Contatti</a></li>
             </ul>
         </div>
     </nav>
 
-                <a href="perche-perdi-soldi.html" class="btn btn-outline">← Articolo precedente</a>
-                <a href="psicologia-denaro-pensiero-diverso.html" class="btn btn-primary">Articolo successivo →</a>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Blog Hero -->
+    <section class="hero blog-hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="blog-hero-image">
+            <img src="../assets/img/blog-featured-2.svg" alt="Featured image - Investire Senza Paura">
+        </div>
+        <div class="blog-hero-content">
+            <span class="blog-hero-badge">📈 INVESTIMENTI</span>
+            <h1 class="blog-hero-title">
+                Investire senza paura:
+                <span class="title-line accent">guida per principianti</span>
+            </h1>
+            <p class="blog-hero-subtitle">
+                La paura ti tiene fermo, l'inflazione no. Ecco il metodo in 4 bulloni per partire con calma.
+            </p>
+            <div class="hero-actions">
+                <a href="#articolo" class="btn btn-primary btn-lg glow-btn">📖 Inizia a leggere</a>
             </div>
+            <div class="hero-trust">
+                <span class="trust-text">Fonti verificate</span>
+                <div class="trust-brands">
+                    <span class="brand-tag">Kahneman</span>
+                    <span class="brand-tag">Malkiel</span>
+                    <span class="brand-tag">Bogle</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>Scorri per leggere</span>
         </div>
     </section>
 
+    <section id="articolo" class="section">
+        <div class="container">
+
+            <!-- TOC -->
+            <nav class="toc-container">
+                <div class="toc-title">📑 Indice dell'articolo</div>
+                <ol class="toc-list">
+                    <li class="toc-item"><a href="#intro" class="toc-link">Il vero nemico non è il mercato</a></li>
+                    <li class="toc-item"><a href="#bullone1" class="toc-link">Bullone 1 — Fondo emergenza prima di tutto</a></li>
+                    <li class="toc-item"><a href="#bullone2" class="toc-link">Bullone 2 — Piccole somme automatiche (PAC)</a></li>
+                    <li class="toc-item"><a href="#bullone3" class="toc-link">Bullone 3 — Strumenti semplici e diversificati</a></li>
+                    <li class="toc-item"><a href="#bullone4" class="toc-link">Bullone 4 — Orizzonte lungo, mani ferme</a></li>
+                    <li class="toc-item"><a href="#errori" class="toc-link">I 3 errori che fanno mollare tutti</a></li>
+                    <li class="toc-item"><a href="#officina" class="toc-link">Il punto di vista dell'officina</a></li>
+                </ol>
+            </nav>
+
+            <!-- Intro -->
+            <div id="intro" class="article-section">
+                <p class="article-intro">
+                    Hai 5.000€ fermi sul conto da due anni. Sai che l'inflazione li sta mangiando. Ogni tanto apri l'app della banca, guardi i grafici, ti spaventi e richiudi tutto.
+                </p>
+                <p style="margin-bottom: var(--space-lg);">
+                    Non sei codardo: sei umano. Il tuo cervello pesa una perdita il doppio di un guadagno equivalente — si chiama <strong>avversione alla perdita</strong> (Kahneman e Tversky). Il mercato sale e scende ogni giorno, ma il tuo cervello registra solo le discese. Risultato: stai fermo. E stare fermi costa: con inflazione al 2-3% annuo, 5.000€ perdono oltre 1.000€ di potere d'acquisto in dieci anni.
+                </p>
+
+                <div class="callout callout-quote">
+                    <p>Il rischio più grande non è investire. È non investire restando esposti al 100% all'inflazione.</p>
+                    <cite>— Il manuale dell'officina, regola n.1</cite>
+                </div>
+
+                <p>
+                    Non serve coraggio: serve un metodo che tolga le emozioni dal circuito. Quattro bulloni, in ordine.
+                </p>
+            </div>
+
+            <!-- Bullone 1 -->
+            <div id="bullone1" class="article-section">
+                <h2>🔩 Bullone 1 — Fondo emergenza prima di tutto</h2>
+                <p>
+                    Prima di investire un euro, metti da parte <strong>3-6 mesi di spese essenziali</strong> su un conto separato e liquido. Non è un investimento: è il paracadute che ti permette di non toccare mai gli investimenti quando la vita succede (l'auto si rompe, il lavoro balla).
+                </p>
+                <p>
+                    Senza paracadute, ogni emergenza ti costringe a vendere nel momento peggiore. Con il paracadute, puoi permetterti di ignorare le discese. La paura cala del 70% solo per questo.
+                </p>
+            </div>
+
+            <!-- Bullone 2 -->
+            <div id="bullone2" class="article-section">
+                <h2>🔩 Bullone 2 — Piccole somme automatiche (PAC)</h2>
+                <p>
+                    Non investire una cifra grossa tutta insieme se ti tremano le mani. Versa <strong>poco ogni mese, in automatico</strong> (50€, 100€, quello che puoi). Quando i prezzi scendono compri più quote, quando salgono ne compri meno: si chiama <strong>PAC</strong> (piano di accumulo) e trasforma la volatilità da nemica ad alleata.
+                </p>
+                <p>
+                    Il vantaggio psicologico è enorme: non devi mai decidere "se è il momento giusto". Il bonifico parte da solo, tu vivi la tua vita.
+                </p>
+            </div>
+
+            <!-- In-article AdSense -->
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center; margin: 2rem 0;"
+                 data-ad-client="ca-pub-8921798913364952"
+                 data-ad-slot="4787969344"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+            <!-- Bullone 3 -->
+            <div id="bullone3" class="article-section">
+                <h2>🔩 Bullone 3 — Strumenti semplici e diversificati</h2>
+                <p>
+                    Dimentica azioni singole, cripto alla moda e consigli del cugino. Un principiante ha bisogno di una cosa sola: <strong>un fondo diversificato a basso costo</strong> che replica centinaia di aziende in tutto il mondo (ETF globali azionari). Un solo strumento, migliaia di aziende dentro: se una fallisce, nemmeno te ne accorgi.
+                </p>
+                <p>
+                    Regola dell'officina: se non sai spiegare a tua nonna come funziona quello che hai comprato, non comprarlo.
+                </p>
+            </div>
+
+            <!-- Bullone 4 -->
+            <div id="bullone4" class="article-section">
+                <h2>🔩 Bullone 4 — Orizzonte lungo, mani ferme</h2>
+                <p>
+                    I soldi che investi non devono servirti per almeno <strong>5 anni</strong>. Su orizzonti lunghi, ogni crollo della storia è stato finora un buco temporaneo nel grafico. Chi ha venduto nel panico ha trasformato perdite temporanee in perdite vere; chi è rimasto fermo ha recuperato.
+                </p>
+                <p>
+                    Trucco pratico: controlla il portafoglio <strong>una volta al trimestre</strong>, non ogni giorno. Meno lo guardi, meno soffri, meglio rendi.
+                </p>
+            </div>
+
+            <!-- Errori -->
+            <div id="errori" class="article-section">
+                <h2>⚠️ I 3 errori che fanno mollare tutti</h2>
+                <p><strong>1. Partire troppo grossi.</strong> Versi 10.000€ subito, il mercato scende del 10%, perdi 1.000€ in una settimana e giuri di non investire mai più. Parti piccolo.</p>
+                <p><strong>2. Inseguire la performance.</strong> Compri quello che è già salito (effetto gregge) e vendi quello che è sceso. È il modo più veloce per comprare alto e vendere basso.</p>
+                <p><strong>3. Nessun piano scritto.</strong> Senza una regola scritta ("verso 100€ al mese per 10 anni"), ogni notizia ti fa cambiare idea. Scrivi il piano su un foglio e firmalo.</p>
+
+                <div class="callout callout-quote">
+                    <p>Questo articolo è educazione finanziaria generale, non una raccomandazione personalizzata. Per scelte specifiche rivolgiti a un professionista abilitato.</p>
+                </div>
+            </div>
+
+            <!-- Officina -->
+            <div id="officina" class="article-section">
+                <h2>🔧 Il punto di vista dell'officina</h2>
+                <p>
+                    In officina nessuno ha paura del motore: ha paura perché non sa come funziona. Appena capisci i pezzi — fondo emergenza, versamenti automatici, diversificazione, tempo — la paura si smonta come un bullone arrugginito: con l'attrezzo giusto e senza fretta.
+                </p>
+                <p>
+                    Prossimo passo: leggi <a href="metodo-50-30-20.html">il metodo 50/30/20</a> per trovare ogni mese i soldi da versare nel tuo piano.
+                </p>
+            </div>
+
+            <!-- Prev/Next -->
+            <div class="article-nav">
+                <a href="perche-perdi-soldi.html" class="btn btn-outline">← Articolo precedente</a>
+                <a href="psicologia-denaro-pensiero-diverso.html" class="btn btn-primary">Articolo successivo →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-
-                    <p>L'officina dove ripari la tua relazione con il denaro.</p>
+                    <div class="footer-logo">
+                        <img src="../assets/img/logo-gear-dollar.svg" alt="TreasuryWorks" class="footer-logo-img">
+                        <span class="logo-text">Treasury<span class="logo-accent">Works</span></span>
+                    </div>
+                    <p>L'officina dove ripari la tua relazione con il denaro.<br>Meccanica + Psicologia = Ricchezza.</p>
+                    <div class="footer-social" style="margin-top: var(--space-md);">
+                        <a href="https://youtube.com/@nevenoir90" class="social-icon" title="YouTube">📺</a>
+                        <a href="https://www.instagram.com/nevenoir.official" class="social-icon" title="Instagram">📸</a>
+                        <a href="https://www.tiktok.com/@neve.noir" class="social-icon" title="TikTok">🎵</a>
+                        <a href="#" class="social-icon" title="X/Twitter">🐦</a>
+                    </div>
                 </div>
                 <div class="footer-col">
                     <h4>Navigazione</h4>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../chi-sono.html">Chi Sono</a></li>
-                        <li><a href="../blog.html">Blog</a></li>
-                        <li><a href="../contatti.html">Contatti</a></li>
+                        <li><a href="../index.html">🏠 Home</a></li>
+                        <li><a href="../chi-sono.html">👤 Chi Sono</a></li>
+                        <li><a href="../blog.html">📝 Blog</a></li>
+                        <li><a href="../strumenti.html">🛠️ Strumenti</a></li>
+                        <li><a href="../faq.html">❓ FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Social</h4>
+                    <h4>Articoli</h4>
                     <ul>
-                        <li><a href="https://youtube.com/@nevenoir90">📺 YouTube</a></li>
-                        <li><a href="#">💬 Telegram</a></li>
-                        <li><a href="https://www.instagram.com/nevenoir.official">📸 Instagram</a></li>
-                        <li><a href="https://www.tiktok.com/@neve.noir">📺 TikTok</a></li>
-                        <li><a href="#">🐦 X</a></li>
+                        <li><a href="perche-perdi-soldi.html">Perché perdi soldi</a></li>
+                        <li><a href="investire-senza-paura.html">Investire senza paura</a></li>
+                        <li><a href="psicologia-denaro-pensiero-diverso.html">Psicologia del denaro</a></li>
+                        <li><a href="metodo-50-30-20.html">Metodo 50/30/20</a></li>
+                        <li><a href="uscire-dal-debito.html">Uscire dal debito</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Legale</h4>
                     <ul>
-                        <li><a href="../privacy.html">Privacy</a></li>
-                        <li><a href="#">Cookie</a></li>
-                        <li><a href="#">Termini</a></li>
+                        <li><a href="../privacy.html">🔒 Privacy</a></li>
+                        <li><a href="../privacy.html#cookies">🍪 Cookie</a></li>
+                        <li><a href="#">📄 Termini</a></li>
+                        <li><a href="../contatti.html">📩 Contatti</a></li>
                     </ul>
                 </div>
             </div>
-
+            <div class="footer-bottom">
+                <p>© 2026 TreasuryWorks — Tutti i diritti riservati.</p>
+            </div>
         </div>
     </footer>
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/cookie.js"></script>
 </body>
 </html>
