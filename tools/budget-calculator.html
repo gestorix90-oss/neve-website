@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatore Budget Famiglia — TreasuryWorks</title>
+    <meta name="description" content="Calcola il tuo budget mensile: entra entrate, debiti e scopri quanto puoi risparmiare ogni mese.">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">⚙️ Treasury<span class="accent">Works</span></a>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../chi-sono.html" class="nav-link">Chi Sono</a></li>
+                <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                <li><a href="../strumenti.html" class="nav-link">Strumenti</a></li>
+                <li><a href="../faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="../info.html" class="nav-link">Info</a></li>
+                <li><a href="../news.html" class="nav-link">News</a></li>
+                <li><a href="../risorse.html" class="nav-link">Risorse</a></li>
+                <li><a href="../privacy.html" class="nav-link">Privacy</a></li>
+                <li><a href="../bandi.html" class="nav-link">Bandi di Gara</a></li>
+                <li><a href="../contatti.html" class="nav-link">Contatti</a></li>
+                <li><a href="../enti.html" class="nav-link">Enti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="particles" id="particles"></div>
+        <div class="container hero-content">
+            <span class="hero-badge">🧮 STRUMENTO</span>
+            <h1 class="hero-title">
+                <span class="title-line">Calcolatore Budget Famiglia</span>
+                <span class="title-line accent">conosci il tuo risparmio mensile</span>
+            </h1>
+            <p class="hero-subtitle">Inserisci le tue entrate mensili e i debiti per scoprire quanto puoi destinare a bisogni, desideri e risparmio secondo la regola 50/30/20.</p>
+        </div>
+        <div class="hero-visual" id="heroVisual"></div>
+    </section>
+
+    <main>
+        <section class="tool-section">
+            <div class="container">
+                <div class="tool-card">
+                    <h2>Come funziona</h2>
+                    <p>Inserisci il tuo reddito mensile netto e l'ammontare totale delle rate di debito mensili (prestiti, carte, finanziamenti). Il calcolatore applicherà la regola 50/30/20 sul reddito disponibile (reddito - debiti) per mostrarti quanto dovresti allocare a bisogni, desideri e risparmio.</p>
+                </div>
+
+                <div class="tool-form">
+                    <div class="form-group">
+                        <label for="income">Reddito mensile netto (€)</label>
+                        <input type="number" id="income" placeholder="Es. 2500" min="0" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <label for="debt">Rate debiti mensili totali (€)</label>
+                        <input type="number" id="debt" placeholder="Es. 300" min="0" step="0.01">
+                    </div>
+                    <button class="btn-primary" onclick="calcBudget()">Calcola Budget</button>
+                </div>
+
+                <div class="tool-result" id="budgetResult">
+                    <!-- Risultati verranno inseriti qui -->
+                </div>
+
+                <div class="tool-chart">
+                    <svg class="growth-chart" width="100%" height="120">
+                        <polyline class="growth-line" fill="none" stroke="var(--orange)" stroke-width="2"></polyline>
+                    </svg>
+                </div>
+
+                <a href="../contatti.html" class="btn-primary btn-large mt-4">Hai bisogno di aiuto con il tuo budget? Contattaci</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="../assets/img/logo-gear-dollar.svg" alt="TreasuryWorks Logo" class="logo-img" width="42" height="42">
+                    <span class="logo-text">Treasury<span class="accent">Works</span></span></div>
+                    <p>L'officina dove ripari la tua relazione con il denaro.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigazione</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../chi-sono.html">Chi Sono</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../strumenti.html">🛠️ Strumenti</a></li>
+                        <li><a href="../faq.html">❓ FAQ</a></li>
+                        <li><a href="../info.html">📋 Info</a></li>
+                        <li><a href="../news.html">📰 News</a></li>
+                        <li><a href="../risorse.html">📚 Risorse</a></li>
+                        <li><a href="../privacy.html">⚖️ Privacy</a></li>
+                        <li><a href="../bandi.html">📋 Bandi di Gara</a></li>
+                        <li><a href="../contatti.html">📧 Contatti</a></li>
+                        <li><a href="../enti.html">🏢 Enti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="https://youtube.com/@nevenoir90" target="_blank">📺 YouTube</a></li>
+                        <li><a href="https://www.tiktok.com/@neve.noir" target="_blank">📺 TikTok</a></li>
+                        <li><a href="https://www.instagram.com/nevenoir.official" target="_blank">📸 Instagram</a></li>
+                        <li><a href="#" target="_blank">🐦 X</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legale</h4>
+                    <ul>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Termini di Servizio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear">2026</span> TreasuryWorks. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookieConsent" class="cookie-banner">
+        <div class="cookie-content">
+            <p>🍪 Utilizziamo i cookie per migliorare la tua esperienza. Continuando la navigazione accetti la nostra <a href="../privacy.html">Privacy Policy</a>.</p>
+            <div class="cookie-buttons">
+                <button class="btn-cookie-accept" onclick="acceptCookies()">Accetta ✅</button>
+                <button class="btn-cookie-decline" onclick="declineCookies()">Rifiuta ❌</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/tools.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

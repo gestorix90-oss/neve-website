@@ -44,6 +44,8 @@
                 <li><a href="info.html" class="nav-link">📋 Info</a></li>
                 <li><a href="news.html" class="nav-link">📰 News</a></li>
                 <li><a href="risorse.html" class="nav-link">📚 Risorse</a></li>
+                <li><a href="bandi.html" class="nav-link">📋 Bandi</a></li>
+                <li><a href="enti.html" class="nav-link">🏢 Enti</a></li>
             </ul>
         </div>
     </nav>
@@ -79,7 +81,7 @@
                             <span>30% desideri</span>
                             <span>20% risparmi</span>
                         </div>
-                        <button class="btn btn-primary" onclick="openBudgetTool()">Apri Strumento</button>
+                        <button class="btn btn-primary" onclick="location.href='tools/budget-calculator.html'">Apri Strumento</button>
                     </div>
                     
                     <div class="tool-card">
@@ -91,31 +93,31 @@
                             <span>Interesse minimo</span>
                             <span>Scadenza chiara</span>
                         </div>
-                        <button class="btn btn-primary" onclick="openDebtTool()">Apri Strumento</button>
+                        <button class="btn btn-primary" onclick="location.href='tools/debt-tracker.html'">Apri Strumento</button>
                     </div>
                     
                     <div class="tool-card">
                         <div class="tool-icon">📈</div>
-                        <h3>Interesse Composto</h3>
-                        <p class="tool-desc">Vedi come i soldi fanno soldi. La magia dell'interesse composto in azione.</p>
+                        <h3>Simulatore Risparmio</h3>
+                        <p class="tool-desc">Capitale iniziale + versamenti mensili: vedi il futuro con l'interesse composto.</p>
                         <div class="tool-features">
+                            <span>Capitale futuro</span>
+                            <span>Versamenti mensili</span>
                             <span>Grafico crescita</span>
-                            <span>Parametri editabili</span>
-                            <span>Confronto anni</span>
                         </div>
-                        <button class="btn btn-primary" onclick="openCompoundTool()">Apri Strumento</button>
+                        <button class="btn btn-primary" onclick="location.href='tools/savings-simulator.html'">Apri Strumento</button>
                     </div>
                     
                     <div class="tool-card">
-                        <div class="tool-icon">🛡️</div>
-                        <h3>Fondo Emergenza</h3>
-                        <p class="tool-desc">Calcola quanto ti serve per dormire sonni tranquilli. 3-6 mesi di spese.</p>
+                        <div class="tool-icon">📋</div>
+                        <h3>Bandi di Gara</h3>
+                        <p class="tool-desc">Fondi europei, nazionali e regionali per enti e imprese. Guida gratuita inclusa.</p>
                         <div class="tool-features">
-                            <span>Spese mensili</span>
-                            <span>Mesi coperti</span>
-                            <span>Totale necessario</span>
+                            <span>Bandi attivi</span>
+                            <span>Guida PDF gratis</span>
+                            <span>Supporto enti</span>
                         </div>
-                        <button class="btn btn-primary" onclick="openEmergencyTool()">Apri Strumento</button>
+                        <button class="btn btn-primary" onclick="location.href='bandi.html'">Apri Strumento</button>
                     </div>
                 </div>
 
@@ -188,23 +190,5 @@
 
     <script src="assets/js/script.js"></script>
     <script src="assets/js/tools.js"></script>
-    <script>
-        // Tool Functions - Simple placeholders for now
-        function openBudgetTool() {
-            alert('Budget Tool: in sviluppo. Prova il calcolo manuale: 50% necessità, 30% desideri, 20% risparmi.');
-        }
-        
-        function openDebtTool() {
-            alert('Debt Tool: in sviluppo. Usa il metodo valanga: paga prima il debito con interesse più alto.');
-        }
-        
-        function openCompoundTool() {
-            alert('Compound Tool: in sviluppo. Formula: Capitale x (1 + tasso)^tempo = Valore futuro.');
-        }
-        
-        function openEmergencyTool() {
-            alert('Emergency Fund: in sviluppo. Calcolo: Spese mensili x 3-6 mesi = Fondo necessario.');
-        }
-    </script>
 </body>
 </html>

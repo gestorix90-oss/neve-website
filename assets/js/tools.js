@@ -127,6 +127,33 @@ function calcEmergency() {
     `;
 }
 
+// --- Savings Goal Simulator (capitale iniziale + versamenti mensili) ---
+function calcSavings() {
+    const initial = parseFloat(document.getElementById('initial').value) || 0;
+    const monthly = parseFloat(document.getElementById('monthly').value) || 0;
+    const rate = parseFloat(document.getElementById('rate').value) || 0;
+    const years = parseFloat(document.getElementById('years').value) || 0;
+
+    if (initial <= 0 && monthly <= 0) return;
+    if (years <= 0) return;
+
+    const r = rate / 100 / 12;
+    const n = Math.round(years * 12);
+    let total = initial;
+
+    for (let i = 0; i < n; i++) {
+        total = total * (1 + r) + monthly;
+    }
+
+    const versato = initial + monthly * n;
+    const gain = total - versato;
+    document.getElementById('savingsResult').innerHTML = `
+        <p><strong>🎯 Capitale futuro:</strong> €${Math.round(total).toLocaleString()}</p>
+        <p><strong>💰 Totale versato:</strong> €${Math.round(versato).toLocaleString()}</p>
+        <p><strong>💹 Guadagno da interessi:</strong> €${Math.round(gain).toLocaleString()}</p>
+    `;
+}
+
 // --- Tool Open/Close ---
 function openTool(toolName) {
     // Close all tool panels
