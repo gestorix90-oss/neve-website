@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952"
+     crossorigin="anonymous"></script>
+    <title>Calcolo Busta Paga Netto 2026 — Calcolatore Stipendio Netto e TFR Online</title>
+    <meta name="description" content="Calcola online gratis il tuo stipendio netto mensile dal lordo (RAL) aggiornato con le aliquote IRPEF 2026 a 3 scaglioni, taglio cuneo fiscale, detrazioni lavoro dipendente e stima TFR.">
+    <meta name="keywords" content="calcolo stipendio netto, calcolo netto lordo 2026, ral netto mensile, calcolatore busta paga, irpef 2026, detrazioni lavoro dipendente, calcolo tfr">
+    <link rel="canonical" href="https://bustepaghecalculator.netlify.app/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --card-border: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-green: #10b981;
+            --accent-yellow: #f59e0b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 24px;
+            padding: 16px 0;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* Banner Pubblicitario Mockup / Ready for AdSense */
+        .ad-banner-top {
+            width: 100%;
+            min-height: 90px;
+            background: #1e293b88;
+            border: 1px dashed #475569;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            font-size: 0.85rem;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        input[type="number"], select {
+            width: 100%;
+            padding: 12px 14px;
+            background-color: #0f172a;
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input[type="number"]:focus, select:focus {
+            border-color: var(--primary);
+        }
+
+        .btn-calc {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 8px;
+        }
+
+        .btn-calc:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .results-box {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .highlight-res {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e293b 100%);
+            border: 1px solid #3b82f6;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .highlight-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #93c5fd;
+            margin-bottom: 4px;
+        }
+
+        .highlight-val {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #38bdf8;
+        }
+
+        .breakdown-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #334155;
+            font-size: 0.95rem;
+        }
+
+        .breakdown-row:last-child {
+            border-bottom: none;
+        }
+
+        .val-minus {
+            color: #f87171;
+            font-weight: 600;
+        }
+
+        .val-plus {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .val-neutral {
+            color: #f8fafc;
+            font-weight: 600;
+        }
+
+        /* Affiliate Card */
+        .affiliate-box {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .affiliate-text h3 {
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+            color: #fff;
+        }
+
+        .affiliate-text p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .btn-affiliate {
+            padding: 10px 20px;
+            background-color: var(--accent-green);
+            color: #0f172a;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            white-space: nowrap;
+        }
+
+        /* FAQ & Informative Section for SEO Ranking */
+        .seo-content {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 32px;
+        }
+
+        .seo-content h2 {
+            font-size: 1.4rem;
+            margin-bottom: 14px;
+            color: #fff;
+        }
+
+        .seo-content h3 {
+            font-size: 1.1rem;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            color: #38bdf8;
+        }
+
+        .seo-content p, .seo-content ul {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .seo-content ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px 0;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Calcolo Stipendio Netto 2026</h1>
+        <p>Stima online gratuita dal lordo annuale (RAL) al netto mensile in busta paga</p>
+    </header>
+
+    <!-- header bustepaghe -->
+    <ins class="adsbygoogle"
+         style="display:block; width:100%; min-height:90px;"
+         data-ad-client="ca-pub-8921798913364952"
+         data-ad-slot="4787969344"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+
+    <div class="main-grid">
+        <!-- Input Form -->
+        <div class="card">
+            <h2 class="card-title">Parametri di Calcolo</h2>
+            <form id="calc-form" onsubmit="event.preventDefault(); calcolaNetto();">
+                <div class="form-group">
+                    <label for="ral">Reddito Annuo Lordo (RAL in €):</label>
+                    <input type="number" id="ral" value="28000" min="1000" max="500000" step="500" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensilita">Numero Mensilità:</label>
+                    <select id="mensilita">
+                        <option value="13" selected>13 Mensilità (Commercio, Terziario, ecc.)</option>
+                        <option value="14">14 Mensilità (CCNL Metalmeccanico, Bancari, ecc.)</option>
+                        <option value="12">12 Mensilità</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo_contratto">Tipologia Contratto:</label>
+                    <select id="tipo_contratto">
+                        <option value="tempo_indeterminato" selected>Tempo Indeterminato</option>
+                        <option value="tempo_determinato">Tempo Determinato</option>
+                        <option value="apprendistato">Apprendistato (INPS agevolata)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="regione">Addizionale Regionale (Media stimata):</label>
+                    <select id="regione">
+                        <option value="1.73" selected>Media Nazionale (1.73%)</option>
+                        <option value="1.23">Lombardia (1.23% - 1.73%)</option>
+                        <option value="2.03">Lazio (2.03% - 3.33%)</option>
+                        <option value="2.03">Campania (2.03%)</option>
+                        <option value="1.40">Veneto (1.23% - 1.73%)</option>
+                        <option value="1.70">Piemonte (1.62% - 2.05%)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-calc">Calcola Stipendio Netto</button>
+            </form>
+        </div>
+
+        <!-- Output Card -->
+        <div class="card">
+            <h2 class="card-title">Risultato Busta Paga</h2>
+            <div class="results-box">
+                <div class="highlight-res">
+                    <div class="highlight-label">Stipendio Netto Mensile</div>
+                    <div class="highlight-val" id="res-mensile">€ 1.632</div>
+                </div>
+
+                <div class="breakdown-row">
+                    <span>Stipendio Netto Annuo:</span>
+                    <span class="val-neutral" id="res-annuo">€ 21.216</span>
+                </div>
+                <div class="breakdown-row">
+                    <span>Contributi INPS a carico dipendente (c.a. 9.19%):</span>
+                    <span class="val-minus" id="res-inps">- € 2.573</span>
+                </div>
+                <div class="breakdown-row">
+                    <span>IRPEF Lorda:</span>
+                    <span class="val-minus" id="res-irpef-lorda">- € 6.180</span>
+                </div>
+                <div class="breakdown-row">
+                    <span>Detrazioni da Lavoro Dipendente:</span>
+                    <span class="val-plus" id="res-detrazioni">+ € 2.450</span>
+                </div>
+                <div class="breakdown-row">
+                    <span>IRPEF Netta Effettiva:</span>
+                    <span class="val-minus" id="res-irpef-netta">- € 3.730</span>
+                </div>
+                <div class="breakdown-row">
+                    <span>Addizionali Regionali e Comunali stimate:</span>
+                    <span class="val-minus" id="res-addizionali">- € 481</span>
+                </div>
+                <div class="breakdown-row">
+                    <span>TFR Annuo Accantonato (Liquidazione):</span>
+                    <span class="val-neutral" id="res-tfr">€ 2.074</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spazio Affiliazione Bancaria / Finanziaria ad Alta Conversione -->
+    <div class="affiliate-box">
+        <div class="affiliate-text">
+            <h3>Vuoi far fruttare il tuo stipendio netto?</h3>
+            <p>Confronta i migliori conti deposito e carte con cashback e rendimento fino al 4% annuo.</p>
+        </div>
+        <a href="#affiliate-link" class="btn-affiliate" onclick="alert('Qui inserisci il tuo link affiliato (es. Revolut, Conto Deposito, Trade Republic)');">Scopri le Opzioni &rarr;</a>
+    </div>
+
+    <!-- Contenuto SEO Long-Form per posizionamento Google organico -->
+    <article class="seo-content">
+        <h2>Come Funziona il Calcolo dello Stipendio Netto nel 2026?</h2>
+        <p>Passare dalla Retribuzione Annua Lorda (<strong>RAL</strong>) allo stipendio effettivo che arriva sul conto corrente ogni mese richiede l'applicazione precisa di diverse trattenute di legge:</p>
+        
+        <h3>1. Contributi Previdenziali INPS</h3>
+        <p>Il primo prelievo è costituito dai contributi previdenziali a carico del lavoratore dipendente (generalmente pari al <strong>9,19%</strong> per il settore privato ordinario, con riduzioni per contratti di apprendistato al 5,84%). Questo importo riduce la base imponibile su cui viene calcolata l'IRPEF.</p>
+
+        <h3>2. Scaglioni IRPEF 2026</h3>
+        <p>L'IRPEF viene calcolata sull'imponibile fiscale applicando gli scaglioni vigenti:</p>
+        <ul>
+            <li><strong>Fino a 28.000 €:</strong> aliquota al 23%</li>
+            <li><strong>Da 28.001 € a 50.000 €:</strong> aliquota al 35%</li>
+            <li><strong>Oltre 50.000 €:</strong> aliquota al 43%</li>
+        </ul>
+
+        <h3>3. Detrazioni da Lavoro Dipendente</h3>
+        <p>L'imposta calcolata non è quella finale: per i lavoratori dipendenti spetta una detrazione d'imposta che diminuisce progressivamente al crescere del reddito, garantendo la no-tax area fino a circa 8.500 euro annui.</p>
+
+        <h3>4. Trattamento di Fine Rapporto (TFR)</h3>
+        <p>Il TFR corrisponde a circa il <strong>7,41%</strong> della RAL (RAL divisa per 13,5). Questo importo non entra nella busta paga mensile ordinaria ma viene accantonato dall'azienda o versato a un fondo pensione complementare.</p>
+    </article>
+
+    <!-- Spazio AdSense Footer -->
+    <ins class="adsbygoogle"
+         style="display:block; width:100%; min-height:90px;"
+         data-ad-client="ca-pub-8921798913364952"
+         data-ad-slot="4787969344"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+
+    <section class="seo-content" style="margin-top:24px">
+        <h2>Guide stipendio e busta paga 2026</h2>
+        <ul>
+        <li><a href="blog/ral-25000-netto-mese.html" style="color:#38bdf8">RAL 25.000: quanto è netto al mese?</a></li>
+        <li><a href="blog/ral-30000-netto-mese.html" style="color:#38bdf8">RAL 30.000: quanto è netto al mese?</a></li>
+        <li><a href="blog/ral-40000-netto-mese.html" style="color:#38bdf8">RAL 40.000: quanto è netto al mese?</a></li>
+        <li><a href="blog/14-mensilita-conviene.html" style="color:#38bdf8">14 mensilità conviene davvero?</a></li>
+        <li><a href="blog/cuneo-fiscale-2026.html" style="color:#38bdf8">Cuneo fiscale 2026: quanto aumenta lo stipendio?</a></li>
+        <li><a href="blog/tfr-meglio-azienda-fondo.html" style="color:#38bdf8">TFR meglio in azienda o fondo pensione?</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BustePagheCalculator — <a href="privacy.html" style="color:#38bdf8">Privacy e Cookie</a> · <a href="contatti.html" style="color:#38bdf8">Contatti</a></p>
+        <p style="margin-top:8px">Strumento di simulazione indicativo senza valore di consulenza fiscale ufficiale.</p>
+        <nav style="margin-top:12px;font-size:0.85rem">
+        Guide: <a href="blog/ral-25000-netto-mese.html" style="color:#38bdf8">RAL 25k</a> · <a href="blog/ral-30000-netto-mese.html" style="color:#38bdf8">RAL 30k</a> · <a href="blog/ral-40000-netto-mese.html" style="color:#38bdf8">RAL 40k</a> · <a href="blog/14-mensilita-conviene.html" style="color:#38bdf8">14 mensilità</a> · <a href="blog/cuneo-fiscale-2026.html" style="color:#38bdf8">Cuneo fiscale</a> · <a href="blog/tfr-meglio-azienda-fondo.html" style="color:#38bdf8">TFR</a>
+        </nav>
+    </footer>
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#0f172a;border-top:1px solid #334155;padding:14px 18px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;font-size:0.85rem;color:#cbd5e1;z-index:9999">
+<span>Usiamo cookie tecnici e — con consenso — cookie di Google AdSense per annunci. <a href="privacy.html" style="color:#38bdf8">Leggi informativa</a></span>
+<span><button onclick="document.getElementById('cookie-banner').style.display='none';localStorage.setItem('cookie-ok','1')" style="background:#2563eb;color:#fff;border:none;border-radius:8px;padding:8px 16px;font-weight:700;cursor:pointer">Accetta</button>
+<button onclick="document.getElementById('cookie-banner').style.display='none'" style="background:transparent;color:#94a3b8;border:1px solid #334155;border-radius:8px;padding:8px 16px;cursor:pointer;margin-left:8px">Rifiuta</button></span>
+</div>
+<script>if(localStorage.getItem('cookie-ok')==='1'){document.getElementById('cookie-banner').style.display='none'}</script>
+</div>
+
+<script>
+    function calcolaNetto() {
+        const ral = parseFloat(document.getElementById('ral').value);
+        const mensilita = parseInt(document.getElementById('mensilita').value);
+        const tipoContratto = document.getElementById('tipo_contratto').value;
+        const addRegPercent = parseFloat(document.getElementById('regione').value);
+
+        if (isNaN(ral) || ral <= 0) return;
+
+        // 1. Contributi INPS
+        let inpsRate = 0.0919;
+        if (tipoContratto === 'apprendistato') {
+            inpsRate = 0.0584;
+        }
+        const inpsAnnuo = ral * inpsRate;
+        const imponibileIrpef = ral - inpsAnnuo;
+
+        // 2. Calcolo IRPEF Lorda (Scaglioni 2026: 23% fino a 28k, 35% tra 28k e 50k, 43% oltre 50k)
+        let irpefLorda = 0;
+        if (imponibileIrpef <= 28000) {
+            irpefLorda = imponibileIrpef * 0.23;
+        } else if (imponibileIrpef <= 50000) {
+            irpefLorda = (28000 * 0.23) + ((imponibileIrpef - 28000) * 0.35);
+        } else {
+            irpefLorda = (28000 * 0.23) + (22000 * 0.35) + ((imponibileIrpef - 50000) * 0.43);
+        }
+
+        // 3. Detrazioni Lavoro Dipendente (formula standard TUIR)
+        let detrazioni = 0;
+        if (imponibileIrpef <= 15000) {
+            detrazioni = 1955;
+        } else if (imponibileIrpef <= 28000) {
+            detrazioni = 1910 + 1190 * ((28000 - imponibileIrpef) / 13000);
+        } else if (imponibileIrpef <= 50000) {
+            detrazioni = 1910 * ((50000 - imponibileIrpef) / 22000);
+        } else {
+            detrazioni = 0;
+        }
+
+        // IRPEF Netta
+        let irpefNetta = Math.max(0, irpefLorda - detrazioni);
+
+        // 4. Addizionali Regionale e Comunale (stima totale attorno a % scelta + 0.8% comunale)
+        const aliquotaAddizionali = (addRegPercent + 0.8) / 100;
+        const addizionaliTotali = imponibileIrpef * aliquotaAddizionali;
+
+        // 5. Netto Annuo e Mensile
+        const nettoAnnuo = imponibileIrpef - irpefNetta - addizionaliTotali;
+        const nettoMensile = nettoAnnuo / mensilita;
+
+        // 6. Stima TFR Annuo
+        const tfrAnnuo = ral / 13.5;
+
+        // Aggiorna UI
+        document.getElementById('res-mensile').innerText = '€ ' + Math.round(nettoMensile).toLocaleString('it-IT');
+        document.getElementById('res-annuo').innerText = '€ ' + Math.round(nettoAnnuo).toLocaleString('it-IT');
+        document.getElementById('res-inps').innerText = '- € ' + Math.round(inpsAnnuo).toLocaleString('it-IT');
+        document.getElementById('res-irpef-lorda').innerText = '- € ' + Math.round(irpefLorda).toLocaleString('it-IT');
+        document.getElementById('res-detrazioni').innerText = '+ € ' + Math.round(detrazioni).toLocaleString('it-IT');
+        document.getElementById('res-irpef-netta').innerText = '- € ' + Math.round(irpefNetta).toLocaleString('it-IT');
+        document.getElementById('res-addizionali').innerText = '- € ' + Math.round(addizionaliTotali).toLocaleString('it-IT');
+        document.getElementById('res-tfr').innerText = '€ ' + Math.round(tfrAnnuo).toLocaleString('it-IT');
+    }
+
+    // Esegui calcolo iniziale all'apertura
+    window.onload = calcolaNetto;
+
+    // AdSense initialization
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</body>
+</html>
