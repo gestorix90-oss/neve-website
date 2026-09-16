@@ -1,42 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-    <url>
-        <loc>https://treasuryworks.it/</loc>
-        <lastmod>2026-05-17</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
-        <loc>https://treasuryworks.it/chi-sono.html</loc>
-        <lastmod>2026-05-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://treasuryworks.it/blog.html</loc>
-        <lastmod>2026-05-17</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <url>
-        <loc>https://treasuryworks.it/contatti.html</loc>
-        <lastmod>2026-05-17</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://treasuryworks.it/privacy.html</loc>
-        <lastmod>2026-05-17</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url><loc>https://gestorix90-oss.github.io/neve-website/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/chi-sono.html</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/blog.html</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/contatti.html</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/privacy.html</loc><lastmod>2026-09-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/faq.html</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/info.html</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/news.html</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/risorse.html</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/strumenti.html</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/blog/perche-perdi-soldi.html</loc><lastmod>2026-05-15</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/blog/investire-senza-paura.html</loc><lastmod>2026-05-08</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/blog/psicologia-denaro-pensiero-diverso.html</loc><lastmod>2026-05-01</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/blog/metodo-50-30-20.html</loc><lastmod>2026-04-25</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://gestorix90-oss.github.io/neve-website/blog/uscire-dal-debito.html</loc><lastmod>2026-04-18</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
 </urlset>

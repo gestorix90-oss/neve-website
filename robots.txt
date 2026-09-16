@@ -1,33 +1,14 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://treasuryworks.it/sitemap.xml
+Sitemap: https://gestorix90-oss.github.io/neve-website/sitemap.xml
 
-# Blocca percorsi di sistema
 Disallow: /admin/
 Disallow: /node_modules/
 Disallow: /.git/
 
-# Crawl delay
-Crawl-delay: 10
-
-# Indica il file XML della mappa del sito
-# Per Google: invia a https://search.google.com/search-console
-
-# User-agent specifici
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-# Evita che AI crawler copino contenuti senza permesso
-# (togli il commento se vuoi bloccarli)
-# User-agent: GPTBot
-# Disallow: /
-# User-agent: ClaudeBot
-# Disallow: /
