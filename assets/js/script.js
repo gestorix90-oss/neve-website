@@ -170,7 +170,7 @@
     if (countersAnimated) return;
     countersAnimated = true;
 
-    document.querySelectorAll('.stat-number').forEach(function (el) {
+    document.querySelectorAll('.stat-number, .counter').forEach(function (el) {
       var target = parseInt(el.getAttribute('data-target'), 10);
       if (isNaN(target)) return;
 
@@ -439,7 +439,7 @@
     initScrollReveal();
 
     // Counter observer
-    document.querySelectorAll('.stat-number').forEach(function (el) {
+    document.querySelectorAll('.stat-number, .counter').forEach(function (el) {
       counterObserver.observe(el);
     });
   });
