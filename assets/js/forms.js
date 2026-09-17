@@ -1,12 +1,12 @@
 /* =====================================================
-   TreasuryWorks — Form reali (newsletter + contatti)
+   SoldiChiari — Form reali (newsletter + contatti)
    Invia via FormSubmit (gratis, senza backend).
    ATTIVA: cambia TW_EMAIL con la tua email, fai un
    invio di prova e clicca il link di attivazione
    che FormSubmit manda a quell'indirizzo.
    ===================================================== */
 
-const TW_EMAIL = "antonio@treasuryworks.it"; // <-- CAMBIA con la tua email
+const TW_EMAIL = "antonio@soldichiari.com"; // <-- CAMBIA con la tua email
 const TW_FORMSUBMIT = "https://formsubmit.co/ajax/" + TW_EMAIL;
 
 function twSaveLocal(key, obj) {
@@ -71,7 +71,7 @@ function handleContactForm(event) {
         oggetto: subject ? subject.value : "",
         messaggio: message.value,
         pagina: location.pathname,
-        _subject: "Nuovo contatto da TreasuryWorks: " + (subject && subject.value ? subject.value : name.value)
+        _subject: "Nuovo contatto da SoldiChiari: " + (subject && subject.value ? subject.value : name.value)
     };
 
     const ok = () => {

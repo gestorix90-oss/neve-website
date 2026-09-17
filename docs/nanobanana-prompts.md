@@ -1,4 +1,4 @@
-# 🍌 PROMPT PER NANO BANANA — TreasuryWorks
+# 🍌 PROMPT PER NANO BANANA — SoldiChiari
 # Copia-incolla questi prompt su nanobanana.io o nell'app Google
 # Genera immagini professionali in pochi secondi!
 
@@ -8,12 +8,12 @@
 
 **Prompt 1 — Logo principale (Tuttofare)**
 ```
-Create a professional digital logo for "TreasuryWorks" — a personal finance behavioral coaching brand. The design must feature a stylized mechanical gear interlocked with a brain silhouette. Color palette: burnt orange (#f97316) and deep navy blue (#3b82f6) on a dark charcoal background (#0f172a). Include subtle gold (#fbbf24) accent lines inside the gear teeth. The text "TreasuryWorks" should be in modern sans-serif font (like Inter or Montserrat) with the word "Works" in orange gradient. Style: clean, minimalist, corporate. No cartoon elements. Vector-style flat design.
+Create a professional digital logo for "SoldiChiari" — a personal finance behavioral coaching brand. The design must feature a stylized mechanical gear interlocked with a brain silhouette. Color palette: burnt orange (#f97316) and deep navy blue (#3b82f6) on a dark charcoal background (#0f172a). Include subtle gold (#fbbf24) accent lines inside the gear teeth. The text "SoldiChiari" should be in modern sans-serif font (like Inter or Montserrat) with the word "Works" in orange gradient. Style: clean, minimalist, corporate. No cartoon elements. Vector-style flat design.
 ```
 
 **Prompt 2 — Logo alternativo semplice**
 ```
-Minimalist monogram logo for "TW" (TreasuryWorks). A single gear icon with a small star/spark element integrated into the center tooth. Dark background, burnt orange and navy blue dual-tone. Clean geometric style, suitable for favicon and social media avatar. Flat vector design, no gradients, no shadows.
+Minimalist monogram logo for "TW" (SoldiChiari). A single gear icon with a small star/spark element integrated into the center tooth. Dark background, burnt orange and navy blue dual-tone. Clean geometric style, suitable for favicon and social media avatar. Flat vector design, no gradients, no shadows.
 ```
 
 **Prompt 3 — Logo con pugno (potere)**
@@ -61,7 +61,7 @@ A dramatic image of heavy metallic chains made of old coins being shattered into
 
 **Prompt 10 — Copertina Facebook/Twitter**
 ```
-Wide landscape banner for a financial coaching brand called "TreasuryWorks". Features an elegant arrangement of golden gears, coins, and brain circuitry floating in a dark navy space. Text space on the left for "TreasuryWorks — L'officina della tua ricchezza". Style: premium, dark, sophisticated. Color palette: burnt orange, navy blue, gold accents. Aspect ratio 16:9, 1920x1080px.
+Wide landscape banner for a financial coaching brand called "SoldiChiari". Features an elegant arrangement of golden gears, coins, and brain circuitry floating in a dark navy space. Text space on the left for "SoldiChiari — L'officina della tua ricchezza". Style: premium, dark, sophisticated. Color palette: burnt orange, navy blue, gold accents. Aspect ratio 16:9, 1920x1080px.
 ```
 
 **Prompt 11 — Copertina Instagram Stories**

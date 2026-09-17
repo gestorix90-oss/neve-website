@@ -1,9 +1,9 @@
-# TreasuryWorks Hardening - Configurazione OpenCode v3.2 CALIBRATO
+# SoldiChiari Hardening - Configurazione OpenCode v3.2 CALIBRATO
 
-## Agent Configuration for TreasuryWorks Repository
+## Agent Configuration for SoldiChiari Repository
 
 ### Custom Agent Rules - VERSIONE CALIBRATA
-Aggiungere queste regole obbligatorie a tutti gli agenti che lavorano sul repository TreasuryWorks:
+Aggiungere queste regole obbligatorie a tutti gli agenti che lavorano sul repository SoldiChiari:
 
 ```yaml
 rules:
@@ -50,7 +50,7 @@ Configurare questi comandi nel file `.opencode/.opencode/commands/`:
 #### `/treasury-validate` - Validation Script v3.2 CALIBRATO
 ```bash
 #!/bin/bash
-echo "=== TreasuryWorks Validation v3.2 CALIBRATO ==="
+echo "=== SoldiChiari Validation v3.2 CALIBRATO ==="
 /home/gestorix/workspace/projects/treasuryworks/scripts/pre-push-validation.sh
 if [ $? -ne 0 ]; then
     echo "❌ Validation BLOCKING failed - non committare"
@@ -63,7 +63,7 @@ echo "⚠️  Controlla i warning (non bloccanti)"
 #### `/treasury-commit` - Smart Commit con Regole CALIBRATE
 ```bash
 #!/bin/bash
-echo "=== TreasuryWorks Commit ==="
+echo "=== SoldiChiari Commit ==="
 git add .
 
 # Leggi commit message
@@ -96,7 +96,7 @@ echo "✅ Committed con successo"
 #### `/treasury-quick-check` - Controllo Rapido BLOCKING
 ```bash
 #!/bin/bash
-echo "=== Quick TreasuryWorks Check (BLOCKING ONLY) ==="
+echo "=== Quick SoldiChiari Check (BLOCKING ONLY) ==="
 # Solo i controlli BLOCKING più critici
 find . -name "*.html" -o -name "*.css" -o -name "*.js" | xargs grep -lE '^<<<<<<< |^>>>>>>> |^=======$' && exit 1
 echo "✅ No merge conflict"
@@ -115,7 +115,7 @@ echo "✅ Quick check BLOCKING superato"
 Aggiungere a `~/.hermes/skills/treasuryworks-hardening-v3/SKILL.md`:
 
 ```markdown
-description: TreasuryWorks repository hardening v3.2 - calibrated validation workflow
+description: SoldiChiari repository hardening v3.2 - calibrated validation workflow
 mode: subagent
 model: anthropic/claude-opus-4-6
 temperature: 0.05
@@ -189,7 +189,7 @@ error_prevention:
 ### 4. Post-Push Verifica
 ```bash
 # Verifica deploy
-/open-browser https://treasuryworks.it
+/open-browser https://soldichiari.com
 
 # Monitora errori
 /agent quality-monitor --check-live-site
@@ -200,7 +200,7 @@ Configurare `~/.git/hooks/pre-commit`:
 
 ```bash
 #!/bin/bash
-echo "=== TreasuryWorks Pre-Commit v3.2 CALIBRATO ==="
+echo "=== SoldiChiari Pre-Commit v3.2 CALIBRATO ==="
 
 # Esegui validazione (solo BLOCKING checks)
 /home/gestorix/workspace/projects/treasuryworks/scripts/pre-push-validation.sh --check-message "$1"
@@ -301,7 +301,7 @@ constraints_warning:
 
 ### Incident Report Template - Separated by Severity
 ```markdown
-## Incident Report - TreasuryWorks Hardening v3.2 CALIBRATO
+## Incident Report - SoldiChiari Hardening v3.2 CALIBRATO
 **Data:** [data]
 **Tipo:** [blocking_error / warning_issue]
 **Severità:** [BLOCKING / WARNING]
@@ -351,5 +351,5 @@ constraints_warning:
 
 **Versione:** v3.2 - CALIBRATO (BLOCKING vs WARNING)  
 **Ultimo aggiornamento:** 2026-05-24  
-**Responsabile:** TreasuryWorks Team  
+**Responsabile:** SoldiChiari Team  
 **Prossima revisione:** Dopo ogni incidente significativo

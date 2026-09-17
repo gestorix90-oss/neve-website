@@ -1,5 +1,5 @@
 /* =====================================================
-   TreasuryWorks — JavaScript v3.1 (Polish Pass)
+   SoldiChiari — JavaScript v3.1 (Polish Pass)
    Navbar, Cookie, FAQ, Scroll Reveal, Counters
    ===================================================== */
 
@@ -10,7 +10,7 @@
   function initCookieBanner() {
     const banner = document.getElementById('cookieBanner');
     if (!banner) return;
-    const consent = localStorage.getItem('treasuryworks_cookies');
+    const consent = localStorage.getItem('soldichiari_cookies');
     if (consent === 'accepted') {
       banner.classList.add('hidden');
     } else {
@@ -20,7 +20,7 @@
   }
 
   window.acceptCookies = function () {
-    localStorage.setItem('treasuryworks_cookies', 'accepted');
+    localStorage.setItem('soldichiari_cookies', 'accepted');
     const banner = document.getElementById('cookieBanner');
     if (banner) {
       banner.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
@@ -31,7 +31,7 @@
   };
 
   window.declineCookies = function () {
-    localStorage.setItem('treasuryworks_cookies', 'declined');
+    localStorage.setItem('soldichiari_cookies', 'declined');
     const banner = document.getElementById('cookieBanner');
     if (banner) {
       banner.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
@@ -427,7 +427,7 @@
       e.preventDefault();
       var email = newsletterForm.querySelector('input').value;
       if (email) {
-        alert('Grazie per l\'iscrizione! 🎉 Ti terremo aggiornato sulle novità di TreasuryWorks.');
+        alert('Grazie per l\'iscrizione! 🎉 Ti terremo aggiornato sulle novità di SoldiChiari.');
         newsletterForm.reset();
       }
     });
@@ -454,4 +454,4 @@
   window.filterNews = filterNews;
 })();
 
-console.log('TreasuryWorks v3.1 — Sistema attivo ✅');
+console.log('SoldiChiari v3.1 — Sistema attivo ✅');

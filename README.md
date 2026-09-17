@@ -1,10 +1,10 @@
-# TreasuryWorks
+# SoldiChiari
 
 **L'officina dove ripari la tua relazione con il denaro.**
 
-TreasuryWorks è un progetto di educazione finanziaria basato sulla psicologia comportamentale. Usando metafore meccaniche e la scienza dei bias cognitivi, aiutiamo le persone a prendere decisioni finanziarie migliori.
+SoldiChiari è un progetto di educazione finanziaria basato sulla psicologia comportamentale. Usando metafore meccaniche e la scienza dei bias cognitivi, aiutiamo le persone a prendere decisioni finanziarie migliori.
 
-🌐 **Live:** [https://treasuryworks.it](https://treasuryworks.it)
+🌐 **Live:** [https://soldichiari.com](https://soldichiari.com)
 
 ---
 
@@ -135,4 +135,4 @@ MIT License — vedi il file `LICENSE`
 
 ---
 
-**© 2026 TreasuryWorks** — L'officina della tua ricchezza. ⚙️💰
+**© 2026 SoldiChiari** — L'officina della tua ricchezza. ⚙️💰

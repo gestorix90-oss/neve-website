@@ -1,5 +1,5 @@
 /* =====================================================
-   TreasuryWorks — Resources JavaScript
+   SoldiChiari — Resources JavaScript
    ===================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {

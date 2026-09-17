@@ -1,5 +1,5 @@
 # ═══════════════════════════════════════════════════
-# 📊 ANALISI SOCIAL COMPLETA — Antonio / TreasuryWorks
+# 📊 ANALISI SOCIAL COMPLETA — Antonio / SoldiChiari
 # Data: Maggio 2026
 # ═══════════════════════════════════════════════════
 
@@ -55,7 +55,7 @@ ma il link è stato confermato: tiktok.com/@neve.noir
 # ═══════════════════════════════════════════════
 
 PROBLEMA ATTUALE:
-  ❌ Username "nevenoir90" non comunica il brand TreasuryWorks
+  ❌ Username "nevenoir90" non comunica il brand SoldiChiari
   ❌ Playlist YouTube non hanno il brand name
   ❌ Bio diverse su ogni piattaforma
   ❌ Nessuna CTA verso il sito web
@@ -66,9 +66,9 @@ SOLUZIONE — Rebranding progressivo:
    ma cambia la BIO e la DESCRIZIONE del canale
 
 2. INSTAGRAM: Se possibile, cambia username in @treasuryworks
-   o aggiungi TreasuryWorks nel nome visualizzato
+   o aggiungi SoldiChiari nel nome visualizzato
 
-3. TIKTOK: Aggiungi TreasuryWorks nel nome del profilo
+3. TIKTOK: Aggiungi SoldiChiari nel nome del profilo
 
 # ═══════════════════════════════════════════════
 # ✍️ BIO PER OGNI PIATTAFORMA
@@ -118,7 +118,7 @@ Blog + video sulla finanza comportamentale.
 💬 TELEGRAM — Descrizione canale
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🔧 TreasuryWorks — L'officina del denaro
+🔧 SoldiChiari — L'officina del denaro
 
 Qui parliamo di:
 • Psicologia del denaro
@@ -135,7 +135,7 @@ Niente guru. Niente cazzate. Solo meccanica applicata ai soldi.
 # ═══════════════════════════════════════════════
 
 BASE (usa in OGNI post):
-  #TreasuryWorks #PsicologiaDelDenaro #FinanzaComportamentale
+  #SoldiChiari #PsicologiaDelDenaro #FinanzaComportamentale
 
 ROTAZIONE (3-4 per post):
   #Denaro #Investimenti #Mindset #Soldi
@@ -175,10 +175,10 @@ DESCRITTIVA (About/Chi Sono):
 1. [ ] Aggiornare la BIO YouTube con quella consigliata sopra
 2. [ ] Aggiornare la BIO Instagram con quella consigliata
 3. [ ] Aggiornare la BIO TikTok con quella consigliata
-4. [ ] Rinominare le playlist YouTube col brand "TreasuryWorks"
+4. [ ] Rinominare le playlist YouTube col brand "SoldiChiari"
 5. [ ] Aggiungere il link del sito in TUTTE le bio
-6. [ ] Cambiare il watermark nei video con "TreasuryWorks"
+6. [ ] Cambiare il watermark nei video con "SoldiChiari"
 7. [ ] Creare un banner YouTube professionale (10€ su Fiverr)
-8. [ ] Unificare lo username: se possibile → @TreasuryWorks ovunque
+8. [ ] Unificare lo username: se possibile → @SoldiChiari ovunque
 9. [ ] Pubblicare un video di "presentazione del brand"
-10. [ ] Aggiungere la playlist "TreasuryWorks" come prima playlist in evidenza
+10. [ ] Aggiungere la playlist "SoldiChiari" come prima playlist in evidenza

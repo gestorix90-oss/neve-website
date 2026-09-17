@@ -1,5 +1,5 @@
 /* =====================================================
-   TreasuryWorks — News JavaScript
+   SoldiChiari — News JavaScript
    ===================================================== */
 
 // --- Newsletter Modal ---
@@ -105,9 +105,9 @@ function subscribeNewsletter(e) {
 
     setTimeout(() => {
         // Store in localStorage
-        const subscribers = JSON.parse(localStorage.getItem('treasuryworks_subscribers') || '[]');
+        const subscribers = JSON.parse(localStorage.getItem('soldichiari_subscribers') || '[]');
         subscribers.push({ email, name, date: new Date().toISOString() });
-        localStorage.setItem('treasuryworks_subscribers', JSON.stringify(subscribers));
+        localStorage.setItem('soldichiari_subscribers', JSON.stringify(subscribers));
 
         // Show success
         const form = document.getElementById('newsletterForm');

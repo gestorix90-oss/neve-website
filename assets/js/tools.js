@@ -1,5 +1,5 @@
 /* =====================================================
-   TreasuryWorks — Strumenti Interattivi JS
+   SoldiChiari — Strumenti Interattivi JS
    ===================================================== */
 
 // --- Budget Calculator ---

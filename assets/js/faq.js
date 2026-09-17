@@ -1,5 +1,5 @@
 /* =====================================================
-   TreasuryWorks — FAQ Accordion & Interactions
+   SoldiChiari — FAQ Accordion & Interactions
    ===================================================== */
 
 // --- Accordion FAQ Toggle ---
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.faq-question').forEach(btn => {
         btn.addEventListener('click', () => {
             const question = btn.querySelector('span').textContent;
-            console.log(`[TreasuryWorks] FAQ aperta: ${question}`);
+            console.log(`[SoldiChiari] FAQ aperta: ${question}`);
             // In futuro: invia evento a analytics
         });
     });

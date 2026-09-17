@@ -1,5 +1,5 @@
 /* =====================================================
-   TreasuryWorks — Newsletter JavaScript
+   SoldiChiari — Newsletter JavaScript
    ===================================================== */
 
 // --- Inline newsletter handler (used on any page with .newsletter-inline) ---

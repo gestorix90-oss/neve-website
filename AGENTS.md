@@ -1,4 +1,4 @@
-# AGENTS.md - Workflow TreasuryWorks v3.2 CALIBRATO
+# AGENTS.md - Workflow SoldiChiari v3.2 CALIBRATO
 
 ## Checklist Pre-Push (OBBLIGATORIA)
 
@@ -176,7 +176,7 @@ if [ "$1" = "--check-message" ]; then
 fi
 ```
 
-## Workflow Standard TreasuryWorks
+## Workflow Standard SoldiChiari
 
 ### Fase 1: Edit (Modifica)
 ```bash
@@ -351,6 +351,6 @@ git push
 
 ---
 
-**Versione:** TreasuryWorks v3.2 Hardening CALIBRATO  
+**Versione:** SoldiChiari v3.2 Hardening CALIBRATO  
 **Ultimo aggiornamento:** 2026-05-24  
 **Prossima revisione:** Dopo ogni incidente significativo
