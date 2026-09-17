@@ -445,12 +445,10 @@
   });
 
   // Expose for global use
-  window.calcBudget = calcBudget;
-  window.calcDebt = calcDebt;
-  window.calcCompound = calcCompound;
-  window.calcEmergency = calcEmergency;
-  window.calcSavings = calcSavings;
-  window.calcInterest = calcInterest;
+  // NOTA: calcBudget/calcDebt/calcSavings reali vivono in tools.js (id HTML
+  // corrispondenti). Queste versioni interne usano id inesistenti sul sito
+  // (budget-income, debt-total, savings-goal) e sovrascrivendo window.*
+  // rompevano i tool. Non riesportarle qui.
   window.filterNews = filterNews;
 })();
 

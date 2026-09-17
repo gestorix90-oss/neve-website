@@ -387,3 +387,36 @@
     .calc-results { grid-template-columns: 1fr; }
     .calc-wrapper { padding: 25px; }
 }
+/* ===== Componenti tool page (aggiunti 2026-09-17) ===== */
+.tool-section { padding: 60px 0; }
+.tool-form {
+  background: var(--card, #111a2e);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 16px;
+  padding: 28px;
+  margin: 24px 0;
+}
+.tool-form .form-group { margin-bottom: 18px; }
+.tool-form label { display:block; font-weight:600; margin-bottom:8px; color: var(--text-secondary,#94a3b8); font-size:.95rem; }
+.tool-form input[type="number"] {
+  width: 100%; padding: 13px 16px; border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: var(--bg-input, #131f36); color: var(--foreground,#e2e8f0);
+  font-size: 1.05rem; font-family: inherit;
+}
+.tool-form input[type="number"]:focus { outline:none; border-color: var(--orange,#f59e0b); box-shadow: 0 0 0 3px rgba(245,158,11,.15); }
+.tool-result {
+  background: linear-gradient(135deg, rgba(245,158,11,.08), rgba(245,158,11,.02));
+  border: 1px solid rgba(245,158,11,.25);
+  border-radius: 16px; padding: 24px; margin: 24px 0;
+}
+.calc-results { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:16px; }
+.calc-result-card { background: var(--bg-input,#131f36); border-radius:12px; padding:18px; text-align:center; border:1px solid rgba(255,255,255,.06); }
+.result-label { display:block; font-size:.85rem; color:var(--text-secondary,#94a3b8); margin-bottom:8px; }
+.result-value { display:block; font-size:1.5rem; font-weight:800; color:var(--foreground,#e2e8f0); }
+.highlight-green { color:#10b981 !important; }
+.highlight-blue { color:#3b82f6 !important; }
+.highlight-orange { color:#f59e0b !important; }
+.tool-chart { background: var(--card,#111a2e); border-radius:16px; padding:20px; margin:24px 0; border:1px solid rgba(255,255,255,.06); }
+.btn-large { padding: 15px 32px; font-size: 1.05rem; display:inline-block; text-align:center; border-radius:12px; }
+.mt-4 { margin-top: 32px; }
