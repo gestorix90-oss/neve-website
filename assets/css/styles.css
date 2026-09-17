@@ -1447,3 +1447,25 @@ li {
 /* hero compatto (pagine interne) */
 .hero-compact { min-height: auto; padding: 160px 0 44px; }
 .hero-compact .hero-content { max-width: 760px; margin: 0 auto; text-align: center; }
+
+/* ===== MERCATI — cruscotto dati ===== */
+.mkt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px}
+.mkt-card{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;transition:transform .2s,border-color .2s}
+.mkt-card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.mkt-name{font-weight:800;font-size:1rem;color:var(--text-primary)}
+.mkt-ticker{font-family:var(--font-mono);font-size:.72rem;color:var(--text-muted);margin-top:4px;letter-spacing:.04em}
+.mkt-price{font-family:var(--font-mono);font-size:1.45rem;font-weight:700;color:var(--text-primary);margin-top:12px}
+.mkt-price small{font-size:.7rem;color:var(--text-muted);font-weight:400}
+.mkt-change{margin-top:6px;font-family:var(--font-mono);font-size:.85rem;font-weight:700}
+.mkt-up{color:#34d399}
+.mkt-down{color:#f87171}
+.mkt-note{margin-top:10px;font-size:.82rem;line-height:1.55;color:var(--text-secondary)}
+.mkt-source{margin-top:14px;font-size:.78rem;color:var(--text-muted);line-height:1.6}
+.mkt-static .mkt-price{font-size:1.05rem;color:var(--accent)}
+.mkt-geo-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.mkt-geo{background:var(--bg-secondary);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:12px;padding:22px 24px}
+.mkt-geo h3{font-size:1rem;margin:0 0 10px}
+.mkt-geo p{margin:0;font-size:.9rem;line-height:1.65;color:var(--text-secondary)}
+.mkt-disclaimer{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.3);border-radius:12px;padding:18px 22px;font-size:.88rem;line-height:1.6;color:var(--text-secondary)}
+@media(max-width:768px){.mkt-geo-grid{grid-template-columns:1fr}.mkt-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.mkt-grid{grid-template-columns:1fr}}

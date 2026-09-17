@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercati &amp; Tassi — SoldiChiari | Il cruscotto dei tuoi soldi</title>
+    <meta name="description" content="Tassi BCE, BTP, indici mondiali, cripto live, ETF e geopolitica: i numeri veri che muovono il tuo portafoglio, aggiornati ogni giorno con fonti citate.">
+    <meta name="author" content="SoldiChiari">
+    <meta property="og:title" content="Mercati &amp; Tassi — SoldiChiari">
+    <meta property="og:description" content="Il cruscotto dell'officina: tassi, indici, cripto live, ETF e geopolitica spiegata coi numeri veri.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://soldichiari.com/mercati.html">
+    <meta property="og:image" content="https://gestorix90-oss.github.io/neve-website/assets/img/og-image.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/favicon-star.svg">
+    <link rel="canonical" href="https://gestorix90-oss.github.io/neve-website/mercati.html">
+    <!-- NOTE: script AdSense di Google: SRI non applicabile (file dinamico richiesto dal network pubblicitario) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sc-ticker" aria-label="Novità e calcoli rapidi">
+    <div class="sc-ticker-track">
+        <a href="tools/calcolo-stipendio-netto.html">💶 RAL 30.000€ → netto ~1.632€/mese: calcola il tuo</a><span class="sep">⚙️</span>
+        <a href="mercati.html">📈 Tassi, indici e cripto: il cruscotto aggiornato ogni giorno</a><span class="sep">⚙️</span>
+        <a href="tools/budget-calculator.html">🔧 50/30/20: scopri se il tuo stipendio regge</a><span class="sep">⚙️</span>
+        <a href="blog/cuneo-fiscale-2026.html">📈 Cuneo fiscale 2026: più soldi in busta da gennaio</a><span class="sep">⚙️</span>
+        <a href="bandi.html">🏛️ Bandi: fondi a fondo perduto aggiornati</a><span class="sep">⚙️</span>
+        <a href="tools/calcolo-stipendio-netto.html">💶 RAL 30.000€ → netto ~1.632€/mese: calcola il tuo</a><span class="sep">⚙️</span>
+        <a href="mercati.html">📈 Tassi, indici e cripto: il cruscotto aggiornato ogni giorno</a><span class="sep">⚙️</span>
+        <a href="tools/budget-calculator.html">🔧 50/30/20: scopri se il tuo stipendio regge</a><span class="sep">⚙️</span>
+        <a href="blog/cuneo-fiscale-2026.html">📈 Cuneo fiscale 2026: più soldi in busta da gennaio</a><span class="sep">⚙️</span>
+        <a href="bandi.html">🏛️ Bandi: fondi a fondo perduto aggiornati</a><span class="sep">⚙️</span>
+    </div>
+</div>
+<nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/img/logo-gear-dollar.svg" alt="SoldiChiari Logo" class="logo-img" width="42" height="42">
+                <span class="logo-text">Soldi<span class="logo-accent">Chiari</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+                                    <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="chi-sono.html" class="nav-link">Chi Sono</a></li>
+                <li><a href="blog/blog.html" class="nav-link">Blog</a></li>
+                <li><a href="strumenti.html" class="nav-link">🛠️ Strumenti</a></li>
+                <li><a href="mercati.html" class="nav-link active">📈 Mercati</a></li>
+                <li><a href="bandi.html" class="nav-link">📋 Bandi</a></li>
+                <li><a href="faq.html" class="nav-link">❓ FAQ</a></li>
+                <li><a href="contatti.html" class="nav-link nav-cta">📩 Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <section class="hero hero-compact" id="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <span class="hero-badge">📈 IL CRUSCOTTO DELL'OFFICINA</span>
+            <h1 class="hero-title">
+                <span class="title-line">Mercati, tassi e</span>
+                <span class="title-line accent">geopolitica</span>
+            </h1>
+            <p class="hero-subtitle">Niente opinioni urlate: solo numeri veri, fonti citate e la spiegazione di come ognuno di questi si infila nel tuo conto corrente. Aggiornamento automatico ogni mattina alle 7:30.</p>
+        </div>
+    </section>
+
+    <!-- ===== TASSI CHIAVE ===== -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" style="margin-top:0">🔑 I tassi che decidono tutto</h2>
+            <p class="section-subtitle">Quando la BCE alza il denaro costa di più: mutui, prestiti, rendimenti dei conti. È la vite principale del motore.</p>
+            <div class="mkt-grid" id="tassi-grid">
+                <div class="mkt-card"><div class="mkt-name">Caricamento…</div></div>
+            </div>
+            <p class="mkt-source" id="tassi-source"></p>
+        </div>
+    </section>
+
+    <!-- ===== INDICI / VALUTE / MATERIE ===== -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <h2 class="section-title">🌍 Indici, valute e materie prime</h2>
+            <p class="section-subtitle">Il termometro dell'economia mondiale. Dati Yahoo Finance, aggiornati automaticamente.</p>
+            <div class="mkt-grid" id="indici-grid">
+                <div class="mkt-card"><div class="mkt-name">Caricamento…</div></div>
+            </div>
+            <p class="mkt-source" id="indici-source"></p>
+        </div>
+    </section>
+
+    <!-- ===== CRIPTO LIVE ===== -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <h2 class="section-title">₿ Criptovalute — in tempo reale <button id="crypto-refresh" class="mkt-refresh" type="button" style="background:transparent;border:1px solid var(--accent);color:var(--accent);border-radius:8px;padding:6px 14px;cursor:pointer;font-size:.75rem;font-weight:700;vertical-align:middle;margin-left:10px">🔄 Aggiorna ora</button></h2>
+            <p class="section-subtitle">Prezzi live da CoinGecko, aggiornati nel tuo browser adesso. Alta volatilità: qui dentro si entra solo con soldi che puoi permetterti di perdere.</p>
+            <div class="mkt-grid" id="cripto-grid">
+                <div class="mkt-card"><div class="mkt-name">Caricamento…</div></div>
+            </div>
+            <p class="mkt-source" id="cripto-source">Fonte: CoinGecko</p>
+        </div>
+    </section>
+
+    <!-- ===== ETF E FONDI ===== -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <h2 class="section-title">📦 ETF e fondi: i pezzi di ricambio</h2>
+            <p class="section-subtitle">Un ETF è un cestello di azioni/obbligazioni che compri con un clic. Costa poco (TER = commissione annua) e diversifica. Esempi reali e famosi — verifica sempre il KID prima di comprare:</p>
+            <div class="mkt-grid">
+                <div class="mkt-card mkt-static">
+                    <div class="mkt-name">iShares Core MSCI World</div>
+                    <div class="mkt-ticker">SWDA · Azionario globale paesi sviluppati</div>
+                    <div class="mkt-price">TER 0,20%/anno</div>
+                    <div class="mkt-note">~1.400 aziende di 23 paesi in un solo strumento. Il "motore" più usato dai piani di accumulo.</div>
+                </div>
+                <div class="mkt-card mkt-static">
+                    <div class="mkt-name">Vanguard S&amp;P 500 UCITS</div>
+                    <div class="mkt-ticker">VUAA · Azionario USA large cap</div>
+                    <div class="mkt-price">TER 0,22%/anno</div>
+                    <div class="mkt-note">Le 500 aziende più grandi d'America. Concentrato sugli USA: rende se l'America corre.</div>
+                </div>
+                <div class="mkt-card mkt-static">
+                    <div class="mkt-name">iShares Core MSCI EM IMI</div>
+                    <div class="mkt-ticker">EIMI · Azionario paesi emergenti</div>
+                    <div class="mkt-price">TER 0,18%/anno</div>
+                    <div class="mkt-note">Cina, India, Brasile e compagnia. La quota "scommessa sulla crescita futura" del pianeta.</div>
+                </div>
+                <div class="mkt-card mkt-static">
+                    <div class="mkt-name">ETF monetari / BOT</div>
+                    <div class="mkt-ticker">Es. XEON, BOT italiani a breve</div>
+                    <div class="mkt-price">Rendono ≈ tasso BCE</div>
+                    <div class="mkt-note">Il "parcheggio" della liquidità: poco rischio, poco rendimento. Se la BCE taglia, tagliano anche loro.</div>
+                </div>
+            </div>
+            <p class="mkt-source">Non è consulenza finanziaria. TER e composizione cambiano: controlla sempre il documento KID sul sito dell'emittente. Per capire <em>come</em> si investe senza farsi male: <a href="blog/investire-senza-paura.html" style="color:var(--accent)">leggi la guida dell'officina</a>.</p>
+        </div>
+    </section>
+
+    <!-- ===== GEOPOLITICA ===== -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <h2 class="section-title">🌍 Geopolitica: la cinghia di trasmissione</h2>
+            <p class="section-subtitle">La guerra dall'altra parte del mondo arriva sul tuo scontrino attraverso catene precise. Eccole:</p>
+            <div class="mkt-geo-grid">
+                <div class="mkt-geo">
+                    <h3>⛽ Energia → Inflazione → BCE → Il tuo mutuo</h3>
+                    <p>Tensioni internazionali → petrolio e gas salgono → tutto costa di più (ad agosto 2026 l'inflazione italiana è tornata al <strong>+3,3%</strong> proprio spinta dall'energia a +17%, <a href="blog/inflazione-agosto-2026-3-3.html" style="color:var(--accent)">analisi completa qui</a>) → la BCE non può tagliare i tassi → mutui variabili e prestiti restano cari.</p>
+                </div>
+                <div class="mkt-geo">
+                    <h3>🚢 Dazi e rotte → Prezzi → Industria italiana</h3>
+                    <p>Dazi, blocchi dei canali (Suez, Panama), sanzioni: le merci fanno giri più lunghi e costano di più. L'Italia vive di export manifatturiero — ogni attrito commerciale colpisce ordini, ore di lavoro e quindi buste paga.</p>
+                </div>
+                <div class="mkt-geo">
+                    <h3>🏛️ Politica → Spread → Le tue banche</h3>
+                    <p>Se i mercati dubitano dei conti pubblici italiani, il BTP rende di più (spread su). Le banche italiane sono piene di BTP: quando lo spread sale, i titoli bancari scendono e il credito si stringe. Il debito pubblico non è un astratto: è il tuo prestito in banca.</p>
+                </div>
+                <div class="mkt-geo">
+                    <h3>🗳️ Elezioni e banche centrali</h3>
+                    <p>Le politiche fiscali dei governi (USA in testa) muovono dollaro, tassi e borse. Non serve indovinare i vincitori: serve sapere che <em>quando</em> cambiano le maggioranze, la volatilità sale — e chi ha un piano di accumulo compra a sconto invece di farsi prendere dal panico.</p>
+                </div>
+            </div>
+            <p class="mkt-source">Le notizie geopolitiche ed economiche verificate, con fonte e data, le trovi nella pagina <a href="news.html" style="color:var(--accent)">📰 News</a> — aggiornata ogni mattina alle 7:30 dal redattore automatico del sito.</p>
+        </div>
+    </section>
+
+    <!-- ===== DISCLAIMER ===== -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <div class="mkt-disclaimer">
+                <strong>⚠️ Regole dell'officina:</strong> nessun numero qui dentro è consulenza finanziaria. I dati arrivano da Yahoo Finance (aggiornamento automatico quotidiano) e CoinGecko (live). Le decisioni — e le conseguenze — restano tue: è così che funziona, e nessuno che ti dice il contrario merita fiducia.
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <div class="cta-box" style="text-align:center">
+                <h2 style="margin-top:0">🔧 I numeri li hai visti. Ora tocca ai tuoi.</h2>
+                <p>Calcola il netto reale del tuo stipendio, metti in ordine il budget e scopri il mese in cui chiudi con i debiti.</p>
+                <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px">
+                    <a href="tools/calcolo-stipendio-netto.html" class="btn btn-primary">💶 Calcola stipendio netto</a>
+                    <a href="tools/budget-calculator.html" class="btn btn-secondary">🔧 Budget 50/30/20</a>
+                    <a href="tools/debt-tracker.html" class="btn btn-secondary">⛓️ Piano anti-debiti</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="assets/img/logo-gear-dollar.svg" alt="Logo" class="footer-logo-img" width="32" height="32"> <span class="logo-text">Soldi<span class="logo-accent">Chiari</span></span></div>
+                    <p>L'officina dove ripari la tua relazione con il denaro.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigazione</h4>
+                    <ul>
+                        <li><a href="strumenti.html">🛠️ Strumenti</a></li>
+                        <li><a href="mercati.html">📈 Mercati</a></li>
+                        <li><a href="faq.html">❓ FAQ</a></li>
+                        <li><a href="news.html">📰 News</a></li>
+                        <li><a href="risorse.html">📚 Risorse</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="https://www.tiktok.com/@neve.noir" target="_blank" rel="noopener">🎵 TikTok</a></li>
+                        <li><a href="https://youtube.com/@nevenoir90" target="_blank" rel="noopener">📺 YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legale</h4>
+                    <ul>
+                        <li><a href="privacy.html">🔒 Privacy</a></li>
+                        <li><a href="privacy.html#cookie">🍪 Cookie</a></li>
+                        <li><a href="termini.html">📋 Termini</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 SoldiChiari — Tutti i diritti riservati</p></div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script>
+    /* ============ MERCATI: dati reali ============
+       innerHTML: i valori vengono SOLO da assets/data/mercati.json (scritto
+       dal nostro script con numeri Yahoo/CoinGecko) e da fetch CoinGecko
+       (solo numeri). Nessun input utente finisce in innerHTML → XSS non
+       applicabile. Nomi/campi sono costanti definite in questo file. */
+    function fmtNum(n, dec) {
+        return n.toLocaleString("it-IT", { minimumFractionDigits: dec, maximumFractionDigits: dec });
+    }
+    function varBadge(v) {
+        if (v === null || v === undefined) return "";
+        var cls = v >= 0 ? "mkt-up" : "mkt-down";
+        var sign = v >= 0 ? "▲ +" : "▼ ";
+        return '<span class="' + cls + '">' + sign + fmtNum(v, 2) + '%</span>';
+    }
+    function cardHTML(nome, ticker, prezzo, unita, badge, extra) {
+        return '<div class="mkt-card">' +
+            '<div class="mkt-name">' + nome + '</div>' +
+            '<div class="mkt-ticker">' + ticker + '</div>' +
+            '<div class="mkt-price">' + prezzo + ' <small>' + (unita || "") + '</small></div>' +
+            (badge ? '<div class="mkt-change">' + badge + '</div>' : "") +
+            (extra ? '<div class="mkt-note">' + extra + "</div>" : "") +
+            "</div>";
+    }
+
+    function renderMercati(d) {
+        /* Tassi chiave: tassi_italia (BCE/BTP/spread, compilato dal cron con fonte) + Treasury USA */
+        var tg = document.getElementById("tassi-grid");
+        var cards = [];
+        var ti = d.tassi_italia || {};
+        if (ti.bce_depositi !== undefined && ti.bce_depositi !== null) {
+            cards.push(cardHTML("Tasso depositi BCE", "Il costo del denaro in Europa", fmtNum(ti.bce_depositi, 2) + "%", "", "", "Muove mutui variabili e rendimenti conti deposito"));
+        }
+        if (ti.btp_10y !== undefined && ti.btp_10y !== null) {
+            cards.push(cardHTML("BTP 10 anni", "Rendimento titolo di Stato italiano", fmtNum(ti.btp_10y, 2) + "%", "", "", "Più sale, più lo Stato paga interessi — e più tremano le banche italiane"));
+        }
+        if (ti.spread !== undefined && ti.spread !== null) {
+            cards.push(cardHTML("Spread BTP-Bund", "Differenza con il decennale tedesco", fmtNum(ti.spread, 0) + " pb", "", "", "Il termometro della fiducia nei conti pubblici italiani"));
+        }
+        (d.tassi || []).forEach(function (t) {
+            cards.push(cardHTML(t.nome, t.simbolo, fmtNum(t.prezzo, 2), t.unita, varBadge(t.var_pct), "Se sale: credito più caro in tutto il mondo"));
+        });
+        if (!cards.length) {
+            tg.innerHTML = '<div class="mkt-card"><div class="mkt-note">Dati in arrivo col prossimo aggiornamento automatico (ogni mattina 7:30).</div></div>';
+        } else {
+            tg.innerHTML = cards.join("");
+        }
+        var ts = document.getElementById("tassi-source");
+        if (ti.fonte) ts.textContent = "Fonte tassi Italia: " + ti.fonte + " · Aggiornato: " + (ti.aggiornato || d.aggiornato);
+        else ts.textContent = "Aggiornato: " + d.aggiornato + " · " + d.fonte_indici;
+
+        /* Indici + valute + materie */
+        var ig = document.getElementById("indici-grid");
+        var ic = [];
+        ["indici", "valute", "materie"].forEach(function (k) {
+            (d[k] || []).forEach(function (t) {
+                var dec = t.prezzo > 1000 ? 0 : (t.prezzo > 10 ? 2 : 4);
+                ic.push(cardHTML(t.nome, t.simbolo, fmtNum(t.prezzo, dec), t.unita, varBadge(t.var_pct)));
+            });
+        });
+        ig.innerHTML = ic.length ? ic.join("") : '<div class="mkt-card"><div class="mkt-note">Nessun dato disponibile.</div></div>';
+        document.getElementById("indici-source").textContent = "Fonte: " + d.fonte_indici + " · Ultimo aggiornamento: " + d.aggiornato;
+    }
+
+    function renderCripto(list, live) {
+        var cg = document.getElementById("cripto-grid");
+        cg.innerHTML = list.map(function (c) {
+            return cardHTML(c.nome, c.ticker + (live ? " · live" : ""), "€ " + fmtNum(c.prezzo_eur, c.prezzo_eur > 1000 ? 0 : 2), "", varBadge(c.var_24h_pct), "24 ore");
+        }).join("");
+        document.getElementById("cripto-source").textContent = "Fonte: CoinGecko" + (live ? " · rilevazione live: " + new Date().toLocaleTimeString("it-IT") : " (fallback: dati del mattino)");
+    }
+
+    function loadCriptoLive() {
+        fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=eur&include_24hr_change=true")
+            .then(function (r) { if (!r.ok) throw new Error("cg " + r.status); return r.json(); })
+            .then(function (d) {
+                var map = { bitcoin: ["BTC", "Bitcoin"], ethereum: ["ETH", "Ethereum"], solana: ["SOL", "Solana"] };
+                var list = [];
+                Object.keys(map).forEach(function (id) {
+                    if (d[id]) list.push({ nome: map[id][1], ticker: map[id][0], prezzo_eur: d[id].eur, var_24h_pct: Math.round((d[id].eur_24h_change || 0) * 100) / 100 });
+                });
+                if (list.length) renderCripto(list, true);
+            })
+            .catch(function () { /* resta il fallback da mercati.json */ });
+    }
+
+    fetch("assets/data/mercati.json?t=" + Date.now())
+        .then(function (r) { if (!r.ok) throw new Error("json " + r.status); return r.json(); })
+        .then(function (d) {
+            renderMercati(d);
+            if (d.cripto && d.cripto.length) renderCripto(d.cripto, false);
+            loadCriptoLive();
+        })
+        .catch(function (e) {
+            ["tassi-grid", "indici-grid", "cripto-grid"].forEach(function (id) {
+                document.getElementById(id).innerHTML = '<div class="mkt-card"><div class="mkt-note">Dati non raggiungibili (' + e.message + '). Riprova tra poco.</div></div>';
+            });
+        });
+
+    document.getElementById("crypto-refresh").addEventListener("click", loadCriptoLive);
+    </script>
+</body>
+</html>
