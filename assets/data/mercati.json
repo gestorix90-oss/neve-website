@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-09-17 22:33",
+  "aggiornato": "2026-09-17 23:11",
   "fonte_indici": "Yahoo Finance (aggiornamento quotidiano automatico)",
   "fonte_cripto": "CoinGecko (live nel browser)",
   "indici": [
@@ -38,8 +38,8 @@
     {
       "nome": "Oro (future)",
       "simbolo": "GC=F",
-      "prezzo": 4383.4,
-      "var_pct": -0.09,
+      "prezzo": 4380.6,
+      "var_pct": -0.16,
       "unita": "$/oz"
     }
   ],
@@ -56,28 +56,28 @@
     {
       "nome": "Bitcoin",
       "ticker": "BTC",
-      "prezzo_eur": 66760,
-      "var_24h_pct": 0.58
+      "prezzo_eur": 66601,
+      "var_24h_pct": 0.32
     },
     {
       "nome": "Ethereum",
       "ticker": "ETH",
-      "prezzo_eur": 2138.62,
-      "var_24h_pct": 1.83
+      "prezzo_eur": 2133.63,
+      "var_24h_pct": 1.48
     },
     {
       "nome": "Solana",
       "ticker": "SOL",
-      "prezzo_eur": 88.12,
-      "var_24h_pct": 2.64
+      "prezzo_eur": 88.03,
+      "var_24h_pct": 2.43
     }
   ],
   "tassi_italia": {
-    "bce_depositi": 2.5,
-    "btp_10y": 4.24,
-    "spread": 86,
-    "aggiornato": "2026-09-17",
-    "fonte": "BCE 2,50% (rialzo 10/09, Il Fatto Quotidiano) · BTP 4,24% (Soldionline 02/09) · Spread 86 pb (Borsa Italiana 12/09) — aggiornamento automatico ogni mattina"
-  },
+      "bce_depositi": 2.5,
+      "btp_10y": 4.36,
+      "spread": 86,
+      "aggiornato": "2026-09-17",
+      "fonte": "BCE 2,50% (ANSA 10/09/2026) · BTP 4,36% (ANSA 17/09/2026) · Spread 86 pb (ANSA 17/09/2026)"
+    },
   "errori": []
 }
