@@ -453,3 +453,53 @@
 })();
 
 console.log('SoldiChiari v3.1 — Sistema attivo ✅');
+
+/* ===== Slider + Tilt 3D (SoldiChiari) ===== */
+(function () {
+  var slides = document.getElementById("scSlides");
+  if (slides) {
+    var n = slides.children.length, cur = 0, timer = null;
+    var dots = document.getElementById("scDots");
+    for (var i = 0; i < n; i++) {
+      var b = document.createElement("button");
+      b.dataset.i = i;
+      b.setAttribute("aria-label", "Slide " + (i + 1));
+      dots.appendChild(b);
+    }
+    function show(i) {
+      cur = (i + n) % n;
+      slides.style.transform = "translateX(-" + cur * 100 + "%)";
+      Array.prototype.forEach.call(dots.children, function (d, k) { d.className = k === cur ? "on" : ""; });
+      Array.prototype.forEach.call(slides.children, function (s, k) { s.classList.toggle("active", k === cur); });
+    }
+    function auto() { timer && clearInterval(timer); timer = setInterval(function () { show(cur + 1); }, 5200); }
+    document.getElementById("scNext").addEventListener("click", function () { show(cur + 1); auto(); });
+    document.getElementById("scPrev").addEventListener("click", function () { show(cur - 1); auto(); });
+    dots.addEventListener("click", function (e) { if (e.target.dataset.i !== undefined) { show(+e.target.dataset.i); auto(); } });
+    var wrap = document.getElementById("scSlider");
+    wrap.addEventListener("mouseenter", function () { clearInterval(timer); });
+    wrap.addEventListener("mouseleave", auto);
+    var x0 = null;
+    wrap.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    wrap.addEventListener("touchend", function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 40) { show(cur + (dx < 0 ? 1 : -1)); auto(); }
+      x0 = null;
+    }, { passive: true });
+    show(0); auto();
+  }
+
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll(".impact-card, .tool-card, .purpose-card, .channel-card, .problem-card").forEach(function (c) {
+      c.classList.add("tilt3d");
+      c.addEventListener("mousemove", function (e) {
+        var r = c.getBoundingClientRect();
+        var px = (e.clientX - r.left) / r.width - 0.5;
+        var py = (e.clientY - r.top) / r.height - 0.5;
+        c.style.transform = "perspective(700px) rotateY(" + px * 8 + "deg) rotateX(" + -py * 8 + "deg) translateZ(6px)";
+      });
+      c.addEventListener("mouseleave", function () { c.style.transform = ""; });
+    });
+  }
+})();
