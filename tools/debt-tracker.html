@@ -6,6 +6,7 @@
     <title>Debt Tracker — TreasuryWorks</title>
     <meta name="description" content="Calcola quanto tempo ti servirà per estinguere un debito e quanto interesse pagherai. Inserisci importo, tasso e rata mensile.">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/tools.css">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -52,16 +53,16 @@
 
                 <div class="tool-form">
                     <div class="form-group">
-                        <label for="debt">Importo debito (€)</label>
-                        <input type="number" id="debt" placeholder="Es. 10000" min="0" step="0.01">
+                        <label for="debt1">Importo debito (€)</label>
+                        <input type="number" id="debt1" placeholder="Es. 10000" min="0" step="0.01">
                     </div>
                     <div class="form-group">
-                        <label for="rate">Tasso di interesse annuo (%)</label>
-                        <input type="number" id="rate" placeholder="Es. 5" min="0" step="0.01">
+                        <label for="rate1">Tasso di interesse annuo (%)</label>
+                        <input type="number" id="rate1" placeholder="Es. 5" min="0" step="0.01">
                     </div>
                     <div class="form-group">
-                        <label for="payment">Rata mensile (€)</label>
-                        <input type="number" id="payment" placeholder="Es. 250" min="0" step="0.01">
+                        <label for="pay1">Rata mensile (€)</label>
+                        <input type="number" id="pay1" placeholder="Es. 250" min="0" step="0.01">
                     </div>
                     <button class="btn-primary" onclick="calcDebt()">Calcola Piano di Estinzione</button>
                 </div>

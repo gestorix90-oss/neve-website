@@ -6,6 +6,7 @@
     <title>Calcolatore Budget Famiglia — TreasuryWorks</title>
     <meta name="description" content="Calcola il tuo budget mensile: entra entrate, debiti e scopri quanto puoi risparmiare ogni mese.">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/tools.css">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -62,8 +63,11 @@
                     <button class="btn-primary" onclick="calcBudget()">Calcola Budget</button>
                 </div>
 
-                <div class="tool-result" id="budgetResult">
-                    <!-- Risultati verranno inseriti qui -->
+                <div class="tool-result calc-results" id="budgetResult" style="display:grid">
+                    <div class="calc-result-card"><span class="result-label">🏠 Bisogni (50%)</span><span class="result-value" id="resultNeeds">—</span></div>
+                    <div class="calc-result-card"><span class="result-label">🎯 Desideri (30%)</span><span class="result-value" id="resultWants">—</span></div>
+                    <div class="calc-result-card"><span class="result-label">💰 Risparmio (20%)</span><span class="result-value" id="resultSavings">—</span></div>
+                    <div class="calc-result-card"><span class="result-label">📊 Tasso di risparmio</span><span class="result-value" id="resultFree">—</span></div>
                 </div>
 
                 <div class="tool-chart">
