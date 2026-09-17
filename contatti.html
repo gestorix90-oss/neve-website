@@ -57,7 +57,7 @@
 
     <div class="scroll-progress" id="scrollProgress"></div>
 
-    <section class="hero" id="hero" style="min-height:38vh;">
+    <section class="hero hero-compact" id="hero">
         <div class="hero-particles" id="particles"></div>
         <div class="hero-content">
             <span class="hero-badge">🔧 L'OFFICINA È APERTA</span>
@@ -66,9 +66,6 @@
                 <span class="title-line accent">SoldiChiari</span>
             </h1>
             <p class="hero-subtitle">Domande, errori trovati nei calcolatori, bandi o proposte serie. Dall'altra parte c'è uno che apre i cofani davvero — non una chatbot aziendale.</p>
-        </div>
-        <div class="hero-visual" id="heroVisual">
-            <img src="assets/img/hero-contatti.svg" alt="Contatti SoldiChiari" class="hero-svg">
         </div>
     </section>
 
@@ -88,7 +85,8 @@
                         </div>
                         <div class="form-group">
                             <label for="contact-subject">Di cosa parliamo?</label>
-                            <select id="contact-subject" style="width:100%;padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:var(--bg-secondary,#0d1728);color:var(--text-primary,#e2e8f0)">
+                            <select id="contact-subject">
+                                <option value="">Scegli un argomento…</option>
                                 <option>Domanda su un tool o un articolo</option>
                                 <option>Ho trovato un errore (grazie!)</option>
                                 <option>Bandi / fondi per la mia attività</option>
@@ -219,7 +217,11 @@
             var q = new URLSearchParams(location.search);
             if (q.get("oggetto") === "bandi") {
                 var s = document.getElementById("contact-subject");
-                if (s && s.tagName === "SELECT") s.selectedIndex = 2;
+                if (s && s.tagName === "SELECT") {
+                    for (var i = 0; i < s.options.length; i++) {
+                        if (s.options[i].text.indexOf("Bandi") === 0) { s.selectedIndex = i; break; }
+                    }
+                }
                 var m = document.getElementById("contact-message");
                 if (m && !m.value) m.value = "Vorrei informazioni su bandi/fondi per: ";
             }
