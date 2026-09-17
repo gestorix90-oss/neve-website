@@ -70,7 +70,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 118px;
 }
 
 body {
@@ -1232,3 +1232,22 @@ li {
 
 /* ============ IMPORT BLOG STYLES ============ */
 @import url('blog.css');
+
+/* ===== Ticker "officina aperta" ===== */
+.sc-ticker{background:linear-gradient(90deg,#f59e0b,#f97316);color:#0a1628;overflow:hidden;position:relative;height:38px;display:flex;align-items:center;z-index:1001}
+.sc-ticker-track{display:flex;gap:48px;white-space:nowrap;animation:sc-ticker 38s linear infinite;padding-left:100%}
+.sc-ticker:hover .sc-ticker-track{animation-play-state:paused}
+.sc-ticker a{color:#0a1628;font-weight:800;text-decoration:none;font-size:.85rem;letter-spacing:.02em}
+.sc-ticker a:hover{text-decoration:underline}
+.sc-ticker span.sep{opacity:.5}
+@keyframes sc-ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.sc-ticker-track{animation:none;padding-left:12px}}
+
+/* ===== ticker fisso sopra la navbar ===== */
+.sc-ticker{position:fixed;top:0;left:0;right:0;z-index:1002}
+.navbar{top:38px}
+@media(max-width:768px){
+  .sc-ticker{height:34px}
+  .sc-ticker-track{animation-duration:30s}
+  .navbar{top:34px}
+}
