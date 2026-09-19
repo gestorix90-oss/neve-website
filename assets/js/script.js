@@ -10,7 +10,12 @@
   function initCookieBanner() {
     const banner = document.getElementById('cookieBanner');
     if (!banner) return;
-    const consent = localStorage.getItem('soldichiari_cookies');
+    try {
+      const consent = localStorage.getItem('soldichiari_cookies');
+    } catch (e) {
+      // localStorage not available
+      const consent = null;
+    }
     if (consent === 'accepted') {
       banner.classList.add('hidden');
     } else {
@@ -20,7 +25,11 @@
   }
 
   window.acceptCookies = function () {
-    localStorage.setItem('soldichiari_cookies', 'accepted');
+    try {
+      localStorage.setItem('soldichiari_cookies', 'accepted');
+    } catch (e) {
+      // ignore
+    }
     const banner = document.getElementById('cookieBanner');
     if (banner) {
       banner.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
@@ -31,7 +40,11 @@
   };
 
   window.declineCookies = function () {
-    localStorage.setItem('soldichiari_cookies', 'declined');
+    try {
+      localStorage.setItem('soldichiari_cookies', 'declined');
+    } catch (e) {
+      // ignore
+    }
     const banner = document.getElementById('cookieBanner');
     if (banner) {
       banner.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
