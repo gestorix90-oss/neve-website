@@ -23,11 +23,13 @@ async function twPost(data, options = {}) {
     // Di default usa Web3Forms; passa useFormsSubmit:true per FormSubmit
     const endpoint = options.useFormsSubmit ? "https://formsubmit.co/ajax/" + TW_EMAIL : "https://api.web3forms.com/submit";
     const body = { access_key: options.access_key || WEB3FORMS_ACCESS_KEY, ...data };
+    console.log("twPost endpoint:", endpoint, "body:", body); // DEBUG
     const res = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify(body),
     });
+    console.log("twPost response status:", res.status); // DEBUG
     if (!res.ok) throw new Error("invio fallito");
     return await res.json();
 }
@@ -49,6 +51,7 @@ function ko(error) {
 
 function handleNewsletter(event) {
     event.preventDefault();
+    console.log("handleNewsletter called"); // DEBUG
     const form = event.target;
     const email = form.querySelector('input[type="email"]');
     const btn = form.querySelector("button");
@@ -68,6 +71,7 @@ function handleNewsletter(event) {
 /* ----- Contatto ----- */
 
 function handleContactForm(event) {
+    console.log("handleContactForm called"); // DEBUG
     event.preventDefault();
     const form = event.target;
     const name = document.getElementById("contact-name");
@@ -75,7 +79,10 @@ function handleContactForm(event) {
     const subject = document.getElementById("contact-subject");
     const message = document.getElementById("contact-message");
     const btn = form.querySelector('button[type="submit"]');
-    if (!name || !email || !message || !name.value || !email.value || !message.value) return;
+    if (!name || !email || !message || !name.value || !email.value || !message.value) {
+        console.log("validation failed"); // DEBUG
+        return;
+    }
     if (btn) { btn.textContent = "⏳ Invio..."; btn.disabled = true; }
 
     // Il form HTML già ha <input type="hidden" name="access_key" ...>
@@ -89,16 +96,21 @@ function handleContactForm(event) {
         pagina: location.pathname,
         _subject: "Nuovo contatto da SoldiChiari: " + (subject && subject.value ? subject.value : name.value)
     };
+    console.log("payload:", payload); // DEBUG
 
     const ok = () => {
+        console.log("ok called"); // DEBUG
         const box = document.getElementById("contact-success");
         form.style.display = "none";
         if (box) box.classList.remove("hidden");
     };
     const koLocal = () => {
+        console.log("koLocal called"); // DEBUG
         twSaveLocal("tw_contacts", Object.assign(payload, { date: new Date().toISOString(), pending: true }));
         if (btn) { btn.textContent = "📩 Invia Messaggio"; btn.disabled = false; }
         alert("Problema di rete: messaggio salvato, riprova tra poco.");
     };
-    twPost(payload, { useFormsSubmit: false }).then(ok).catch(koLocal);
+    twPost(payload, { useFormsSubmit: false })
+        .then(ok)
+        .catch(koLocal);
 }
