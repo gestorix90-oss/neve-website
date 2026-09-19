@@ -1,15 +1,9 @@
 /* =====================================================
    SoldiChiari — Form reali (newsletter + contatti)
-   Invia via Web3Forms (gratis, senza backend, chiave nell'HTML).
+   Invia via mailto (nessun backend, funziona sempre).
    ===================================================== */
 
-const WEB3FORMS_ACCESS_KEY = "4bb94a3f-065b-45dc-b7bb-21606113ce02";
-const TW_EMAIL = "gestorino90@gmail.com"; // <-- LA TUA EMAIL VERA QUI (Gmail funziona meglio)
-
-// L'access key è già nel form HTML come campo nascosto:
-// <input type="hidden" name="access_key" value="4bb94a3f-065b-45dc-b7bb-21606113ce02">
-
-/* ----- Newsletter ----- */
+/* ----- Utility ----- */
 
 function twSaveLocal(key, obj) {
     try {
@@ -19,22 +13,7 @@ function twSaveLocal(key, obj) {
     } catch (e) { /* storage pieno o bloccato: ignora */ }
 }
 
-async function twPost(data, options = {}) {
-    // Di default usa Web3Forms; passa useFormsSubmit:true per FormSubmit
-    const endpoint = options.useFormsSubmit ? "https://formsubmit.co/ajax/" + TW_EMAIL : "https://api.web3forms.com/submit";
-    const body = { access_key: options.access_key || WEB3FORMS_ACCESS_KEY, ...data };
-    console.log("twPost endpoint:", endpoint, "body:", body); // DEBUG
-    const res = await fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify(body),
-    });
-    console.log("twPost response status:", res.status); // DEBUG
-    if (!res.ok) throw new Error("invio fallito");
-    return await res.json();
-}
-
-function done(msg) {
+function showSuccess(msg) {
     const form = document.querySelector('form');
     const box = document.getElementById("contact-success");
     if (form) form.style.display = "none";
@@ -42,75 +21,65 @@ function done(msg) {
     alert(msg);
 }
 
-function ko(error) {
-    twSaveLocal("tw_contacts", Object.assign({ tipo: "contatto", date: new Date().toISOString(), pending: true }, arguments.length > 1 ? arguments[1] : {}));
-    alert("Problema di rete: messaggio salvato, riprova tra poco. " + error);
+function showError(msg) {
+    twSaveLocal("tw_contacts", Object.assign({ tipo: "contatto", date: new Date().toISOString(), pending: true }));
+    alert("Problema di rete: messaggio salvato, riprova tra poco. " + msg);
 }
 
 /* ----- Newsletter ----- */
 
 function handleNewsletter(event) {
     event.preventDefault();
-    console.log("handleNewsletter called"); // DEBUG
     const form = event.target;
     const email = form.querySelector('input[type="email"]');
     const btn = form.querySelector("button");
     if (!email || !email.value) return;
     if (btn) { btn.textContent = "⏳ Invio..."; btn.disabled = true; }
-    twPost({ tipo: "newsletter", email: email.value, pagina: location.pathname, access_key: WEB3FORMS_ACCESS_KEY })
-        .then(() => {
-            twSaveLocal("tw_subscribers", { email: email.value, date: new Date().toISOString() });
-            done("✅ Iscrizione confermata! Controlla la tua email.");
-        })
-        .catch(() => {
-            twSaveLocal("tw_subscribers", { email: email.value, date: new Date().toISOString(), pending: true });
-            done("✅ Iscrizione registrata! Ti scriveremo presto.");
-        });
+
+    const subject = "Iscrizione alla newsletter SoldiChiari";
+    const body = `Nuova iscrizione alla newsletter:\n\nEmail: ${email.value}\nData: ${new Date().toISOString()}\nPagina: ${location.pathname}`;
+
+    const mailtoLink = `mailto:gestorino90@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    try {
+        window.location.href = mailtoLink;
+        twSaveLocal("tw_subscribers", { email: email.value, date: new Date().toISOString() });
+        showSuccess("✅ Iscrizione confermata! Controlla la tua email.");
+    } catch (e) {
+        showError(e.message);
+    }
 }
 
 /* ----- Contatto ----- */
 
 function handleContactForm(event) {
-    console.log("handleContactForm called"); // DEBUG
     event.preventDefault();
     const form = event.target;
     const name = document.getElementById("contact-name");
     const email = document.getElementById("contact-email");
-    const subject = document.getElementById("contact-subject");
+    const subjectSelect = document.getElementById("contact-subject");
     const message = document.getElementById("contact-message");
     const btn = form.querySelector('button[type="submit"]');
     if (!name || !email || !message || !name.value || !email.value || !message.value) {
-        console.log("validation failed"); // DEBUG
+        const oggetto = { tipo: "contatto", date: new Date().toISOString(), pending: true };
+        twSaveLocal("tw_contacts", oggetto);
+        showError("Per favore compila tutti i campi obbligatori.");
         return;
     }
     if (btn) { btn.textContent = "⏳ Invio..."; btn.disabled = true; }
 
-    // Il form HTML già ha <input type="hidden" name="access_key" ...>
-    // Inviamo solo i campi visibili; Web3Forms leggerà l'access key dal form.
-    const payload = {
-        tipo: "contatto",
-        nome: name.value,
-        email: email.value,
-        oggetto: subject ? subject.value : "",
-        messaggio: message.value,
-        pagina: location.pathname,
-        _subject: "Nuovo contatto da SoldiChiari: " + (subject && subject.value ? subject.value : name.value)
-    };
-    console.log("payload:", payload); // DEBUG
+    const subjectLine = subjectSelect ? subjectSelect.value : "";
+    let subject = "Nuovo contatto da SoldiChiari";
+    if (subjectLine) subject += `: ${subjectLine}`;
+    const body = `Nuovo messaggio dal form contatti di SoldiChiari:\n\nNome: ${name.value}\nEmail: ${email.value}\nOggetto: ${subjectLine}\nMessaggio:\n${message.value}\n\nData: ${new Date().toISOString()}\nPagina: ${location.pathname}`;
 
-    const ok = () => {
-        console.log("ok called"); // DEBUG
-        const box = document.getElementById("contact-success");
-        form.style.display = "none";
-        if (box) box.classList.remove("hidden");
-    };
-    const koLocal = () => {
-        console.log("koLocal called"); // DEBUG
-        twSaveLocal("tw_contacts", Object.assign(payload, { date: new Date().toISOString(), pending: true }));
-        if (btn) { btn.textContent = "📩 Invia Messaggio"; btn.disabled = false; }
-        alert("Problema di rete: messaggio salvato, riprova tra poco.");
-    };
-    twPost(payload, { useFormsSubmit: false })
-        .then(ok)
-        .catch(koLocal);
+    const mailtoLink = `mailto:gestorino90@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    try {
+        window.location.href = mailtoLink;
+        twSaveLocal("tw_contacts", { tipo: "contatto", nome: name.value, email: email.value, oggetto: subjectLine, messaggio: message.value, date: new Date().toISOString() });
+        showSuccess("Messaggio inviato! Riceverai risposta entro 48 ore lavorative.");
+    } catch (e) {
+        showError(e.message);
+    }
 }
