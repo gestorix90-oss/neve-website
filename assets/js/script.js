@@ -10,11 +10,11 @@
   function initCookieBanner() {
     const banner = document.getElementById('cookieBanner');
     if (!banner) return;
+    let consent = null;
     try {
-      const consent = localStorage.getItem('soldichiari_cookies');
+      consent = localStorage.getItem('soldichiari_cookies');
     } catch (e) {
-      // localStorage not available
-      const consent = null;
+      // storage bloccato: mostra il banner
     }
     if (consent === 'accepted') {
       banner.classList.add('hidden');
