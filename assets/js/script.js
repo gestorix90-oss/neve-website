@@ -30,6 +30,7 @@
     } catch (e) {
       // ignore
     }
+    if (window.__scAds) window.__scAds();
     const banner = document.getElementById('cookieBanner');
     if (banner) {
       banner.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
