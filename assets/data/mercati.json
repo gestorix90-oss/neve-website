@@ -1,27 +1,27 @@
 {
-  "aggiornato": "2026-09-21 07:31",
+  "aggiornato": "2026-09-22 07:30",
   "fonte_indici": "Yahoo Finance (aggiornamento quotidiano automatico)",
   "fonte_cripto": "CoinGecko (live nel browser)",
   "indici": [
     {
       "nome": "S&P 500",
       "simbolo": "^GSPC",
-      "prezzo": 7650.5,
-      "var_pct": 0.17,
+      "prezzo": 7764.7,
+      "var_pct": 1.49,
       "unita": "punti"
     },
     {
       "nome": "Nasdaq Composite",
       "simbolo": "^IXIC",
-      "prezzo": 26522.545,
-      "var_pct": 0.39,
+      "prezzo": 27122.094,
+      "var_pct": 2.26,
       "unita": "punti"
     },
     {
       "nome": "FTSE MIB (Milano)",
       "simbolo": "FTSEMIB.MI",
-      "prezzo": 51545.25,
-      "var_pct": -1.6,
+      "prezzo": 52371.54,
+      "var_pct": 1.6,
       "unita": "punti"
     }
   ],
@@ -30,7 +30,7 @@
       "nome": "Euro / Dollaro",
       "simbolo": "EURUSD=X",
       "prezzo": 1.1478,
-      "var_pct": -0.1,
+      "var_pct": 0.08,
       "unita": "$"
     }
   ],
@@ -38,8 +38,8 @@
     {
       "nome": "Oro (future)",
       "simbolo": "GC=F",
-      "prezzo": 4394.5,
-      "var_pct": -0.69,
+      "prezzo": 4375.6,
+      "var_pct": -0.19,
       "unita": "$/oz"
     }
   ],
@@ -47,8 +47,8 @@
     {
       "nome": "Rend. Treasury USA 10 anni",
       "simbolo": "^TNX",
-      "prezzo": 4.998,
-      "var_pct": 1.03,
+      "prezzo": 4.963,
+      "var_pct": -0.7,
       "unita": "%"
     }
   ],
@@ -56,28 +56,28 @@
     {
       "nome": "Bitcoin",
       "ticker": "BTC",
-      "prezzo_eur": 71091,
-      "var_24h_pct": 1.36
+      "prezzo_eur": 74209,
+      "var_24h_pct": 4.36
     },
     {
       "nome": "Ethereum",
       "ticker": "ETH",
-      "prezzo_eur": 2326.75,
-      "var_24h_pct": 3.65
+      "prezzo_eur": 2369.16,
+      "var_24h_pct": 1.82
     },
     {
       "nome": "Solana",
       "ticker": "SOL",
-      "prezzo_eur": 97.53,
-      "var_24h_pct": 2.82
+      "prezzo_eur": 100.88,
+      "var_24h_pct": 3.42
     }
   ],
   "tassi_italia": {
       "bce_depositi": 2.5,
-      "btp_10y": 4.34,
-      "spread": 86.6,
+      "btp_10y": 4.33,
+      "spread": 88,
       "aggiornato": "2026-09-21",
-      "fonte": "BCE 2,50% (Il Sole 24 Ore 10/09/2026) · BTP 4,34% (ANSA 18/09/2026) · Spread 86,6 pb (ANSA 18/09/2026)"
+      "fonte": "BCE 2,50% (BCE 10/09/2026, efficace 16/09) · BTP 4,33% (ANSA 21/09/2026 chiusura) · Spread 88 pb (ANSA 21/09/2026 chiusura)"
     },
   "errori": []
 }
