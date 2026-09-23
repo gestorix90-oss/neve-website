@@ -54,6 +54,8 @@ async function handleContactForm(event) {
         alert("Compila tutti i campi obbligatori.");
         return;
     }
+    const consentC = document.getElementById('contact-consent');
+    if (consentC && !consentC.checked) { alert("Spunta la casella GDPR per inviare il messaggio."); return; }
     if (btn) { btn.textContent = "⏳ Invio..."; btn.disabled = true; }
 
     const payload = {
@@ -87,6 +89,8 @@ async function handleNewsletter(event) {
     const email = form.querySelector('input[type="email"]') || form.querySelector('input');
     const btn = form.querySelector("button");
     if (!email || !email.value) { alert("Inserisci la tua email."); return; }
+    const consent = document.getElementById('newsletter-consent') || document.getElementById('blog-newsletter-consent');
+    if (consent && !consent.checked) { alert("Spunta la casella GDPR per iscriverti."); return; }
     if (btn) { btn.textContent = "⏳ ..."; btn.disabled = true; }
 
     try {

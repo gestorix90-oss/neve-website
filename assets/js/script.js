@@ -8,7 +8,7 @@
 
   // ===== COOKIE CONSENT =====
   function initCookieBanner() {
-    const banner = document.getElementById('cookieBanner');
+    let banner = document.getElementById('cookieBanner') || document.getElementById('cookie-banner') || document.getElementById('cookieConsent');
     if (!banner) return;
     let consent = null;
     try {
@@ -24,6 +24,13 @@
     }
   }
 
+  window.closeCookieBanner = function () {
+    try {
+      localStorage.setItem('soldichiari_cookies', 'declined');
+    } catch (e) {}
+    window.declineCookies();
+  };
+
   window.acceptCookies = function () {
     try {
       localStorage.setItem('soldichiari_cookies', 'accepted');
@@ -31,7 +38,7 @@
       // ignore
     }
     if (window.__scAds) window.__scAds();
-    const banner = document.getElementById('cookieBanner');
+    const banner = document.getElementById('cookieBanner') || document.getElementById('cookie-banner') || document.getElementById('cookieConsent');
     if (banner) {
       banner.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
       banner.style.transform = 'translateY(100%)';
@@ -46,12 +53,12 @@
     } catch (e) {
       // ignore
     }
-    const banner = document.getElementById('cookieBanner');
-    if (banner) {
-      banner.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
-      banner.style.transform = 'translateY(100%)';
-      banner.style.opacity = '0';
-      setTimeout(() => banner.classList.add('hidden'), 400);
+    const banner2 = document.getElementById('cookieBanner') || document.getElementById('cookie-banner') || document.getElementById('cookieConsent');
+    if (banner2) {
+      banner2.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
+      banner2.style.transform = 'translateY(100%)';
+      banner2.style.opacity = '0';
+      setTimeout(() => banner2.classList.add('hidden'), 400);
     }
   };
 

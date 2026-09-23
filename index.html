@@ -425,7 +425,10 @@
                 <form class="newsletter-form" onsubmit="handleNewsletter(event)">
                     <div class="form-group">
                         <input type="email" id="newsletter-email" placeholder="La tua email migliore" required>
-                        <button type="submit" class="btn btn-primary glow-btn">Iscriviti Gratis →</button>
+                        <label style="font-size:0.85rem;margin-top:6px;display:block;color:#ccc;">
+                            <input type="checkbox" id="newsletter-consent" required style="margin-right:6px;transform:scale(1.2);"> Acconsento al trattamento dei dati secondo la <a href="privacy.html" target="_blank" style="color:var(--orange);">Privacy Policy</a> (GDPR, art. 6.1.a).
+                        </label>
+                        <button type="submit" class="btn btn-primary glow-btn" style="margin-top:8px;">Iscriviti Gratis →</button>
                     </div>
                 </form>
                 <p class="cta-note">🔒 Niente spam. Solo roba utile. Puoi cancellarti quando vuoi.</p>
