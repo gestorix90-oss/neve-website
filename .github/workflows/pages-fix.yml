@@ -1,0 +1,31 @@
+name: Pages settings fix
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Stato attuale Pages
+        run: |
+          curl -sS -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "${{ github.api_url }}/repos/${{ github.repository }}/pages" | head -c 800
+          echo
+      - name: Riapplica custom domain (richiesta certificato)
+        run: |
+          curl -sS -X PUT -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "${{ github.api_url }}/repos/${{ github.repository }}/pages" \
+            -d '{"cname":"soldichiari.com","build_type":"legacy","source":{"branch":"main","path":"/"}}' -w "\nHTTP %{http_code}\n"
+      - name: Attiva Enforce HTTPS
+        run: |
+          curl -sS -X PUT -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "${{ github.api_url }}/repos/${{ github.repository }}/pages" \
+            -d '{"https_enforced":true}' -w "\nHTTP %{http_code}\n"
