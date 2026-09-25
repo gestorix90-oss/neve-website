@@ -1,0 +1,7 @@
+/_docs/*      /404.html  404
+/_scripts/*   /404.html  404
+/.github/*    /404.html  404
+/package.json /404.html  404
+/netlify.toml /404.html  404
+/CNAME        /404.html  404
+/*.md         /404.html  404

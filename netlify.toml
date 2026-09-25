@@ -1,0 +1,9 @@
+# Configurazione Netlify per il sito statico di SoldiChiari.
+# Publish directory = radice del repository (nessun build step: HTML/CSS/JS puri).
+[build]
+  publish = "."
+  command = ""
+
+# Gli header di sicurezza stanno nel file _headers (formato Netlify).
+[context.production.environment]
+  NETLIFY_FORCE_HTTPS = "true"
