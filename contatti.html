@@ -2,6 +2,8 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatti SoldiChiari — scrivi all'officina</title>
     <meta name="description" content="Domande, errori nei calcolatori, bandi o proposte di collaborazione: scrivi a SoldiChiari. Risposta entro 48 ore.">
@@ -111,7 +113,7 @@
                             <textarea id="contact-message" rows="6" placeholder="Scrivi pure lungo, qui si apprezza." required></textarea>
                         </div>
                         <label style="font-size:0.85rem;display:block;color:#ccc;margin-bottom:6px;">
-                            <input type="checkbox" id="contact-consent" required style="margin-right:6px;transform:scale(1.2);"> Acconsento al trattamento dei dati secondo la <a href="privacy.html" target="_blank" style="color:var(--orange);">Privacy Policy</a> (GDPR, art. 6.1.b).
+                            <input type="checkbox" id="contact-consent" required style="margin-right:6px;transform:scale(1.2);"> Acconsento al trattamento dei dati secondo la <a href="privacy.html" target="_blank" style="color:var(--orange);" rel="noopener noreferrer">Privacy Policy</a> (GDPR, art. 6.1.b).
                         </label>
                         <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">📩 Invia messaggio</button>
                     </form>

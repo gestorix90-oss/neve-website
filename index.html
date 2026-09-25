@@ -2,6 +2,8 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoldiChiari — Officina della Tua Ricchezza</title>
     <meta name="description" content="SoldiChiari è il tuo laboratorio di finanza comportamentale. Scopri come riparare la tua relazione con il denaro attraverso la psicologia e le metafore meccaniche.">
@@ -428,15 +430,15 @@
                     <div class="form-group">
                         <input type="email" id="newsletter-email" placeholder="La tua email migliore" required>
                         <label style="font-size:0.85rem;margin-top:6px;display:block;color:#ccc;">
-                            <input type="checkbox" id="newsletter-consent" required style="margin-right:6px;transform:scale(1.2);"> Acconsento al trattamento dei dati secondo la <a href="privacy.html" target="_blank" style="color:var(--orange);">Privacy Policy</a> (GDPR, art. 6.1.a).
+                            <input type="checkbox" id="newsletter-consent" required style="margin-right:6px;transform:scale(1.2);"> Acconsento al trattamento dei dati secondo la <a href="privacy.html" target="_blank" style="color:var(--orange);" rel="noopener noreferrer">Privacy Policy</a> (GDPR, art. 6.1.a).
                         </label>
                         <button type="submit" class="btn btn-primary glow-btn" style="margin-top:8px;">Iscriviti Gratis →</button>
                     </div>
                 </form>
                 <p class="cta-note">🔒 Niente spam. Solo roba utile. Puoi cancellarti quando vuoi.</p>
                 <div class="cta-social-links">
-                    <a href="https://youtube.com/@nevenoir90" target="_blank" class="social-link" title="YouTube">📺</a>
-                    <a href="https://www.tiktok.com/@neve.noir" target="_blank" class="social-link" title="TikTok">🎵</a>
+                    <a href="https://youtube.com/@nevenoir90" target="_blank" class="social-link" title="YouTube" rel="noopener noreferrer">📺</a>
+                    <a href="https://www.tiktok.com/@neve.noir" target="_blank" class="social-link" title="TikTok" rel="noopener noreferrer">🎵</a>
                 </div>
             </div>
         </div>
@@ -453,8 +455,8 @@
                     </div>
                     <p>L'officina dove ripari la tua relazione con il denaro.<br>Meccanica + Psicologia = Ricchezza.</p>
                     <div class="footer-social">
-                        <a href="https://youtube.com/@nevenoir90" target="_blank" class="social-icon" title="YouTube">📺</a>
-                        <a href="https://www.tiktok.com/@neve.noir" target="_blank" class="social-icon" title="TikTok">🎵</a>
+                        <a href="https://youtube.com/@nevenoir90" target="_blank" class="social-icon" title="YouTube" rel="noopener noreferrer">📺</a>
+                        <a href="https://www.tiktok.com/@neve.noir" target="_blank" class="social-icon" title="TikTok" rel="noopener noreferrer">🎵</a>
                         <button class="social-btn" onclick="alert('X/Twitter: ancora non disponibile')" title="X/Twitter" aria-label="X/Twitter">🐦</button>
                     </div>
                 </div>
@@ -481,8 +483,8 @@
                 <div class="footer-col">
                     <h4>Social</h4>
                     <ul>
-                        <li><a href="https://youtube.com/@nevenoir90" target="_blank">📺 YouTube — 93+ video</a></li>
-                        <li><a href="https://www.tiktok.com/@neve.noir" target="_blank">🎵 TikTok — @neve.noir</a></li>
+                        <li><a href="https://youtube.com/@nevenoir90" target="_blank" rel="noopener noreferrer">📺 YouTube — 93+ video</a></li>
+                        <li><a href="https://www.tiktok.com/@neve.noir" target="_blank" rel="noopener noreferrer">🎵 TikTok — @neve.noir</a></li>
                         <li><button class="footer-btn" onclick="alert('X/Twitter: ancora non disponibile')" aria-label="X — Coming soon">🐦 X — Coming soon</button></li>
                     </ul>
                 </div>
