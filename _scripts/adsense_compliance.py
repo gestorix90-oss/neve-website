@@ -27,6 +27,7 @@ ADSENSE_ALLOWED = {
     "blog/24-milioni-italiani-non-pagano-irpef-2026-09.html",
     "blog/inflazione-definitiva-agosto-2026-2026-09.html",
     "blog/investire-senza-paura.html",
+    "blog/economia-invisibile-197-miliardi-2026-09.html",
 }
 
 LOADER_RE = re.compile(
