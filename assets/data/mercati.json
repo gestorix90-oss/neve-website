@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-09-26 07:33",
+  "aggiornato": "2026-09-27 07:31",
   "fonte_indici": "Yahoo Finance (aggiornamento quotidiano automatico)",
   "fonte_cripto": "CoinGecko (live nel browser)",
   "indici": [
@@ -29,8 +29,8 @@
     {
       "nome": "Euro / Dollaro",
       "simbolo": "EURUSD=X",
-      "prezzo": 1.1392,
-      "var_pct": 0.11,
+      "prezzo": 1.1401,
+      "var_pct": 0.18,
       "unita": "$"
     }
   ],
@@ -56,20 +56,20 @@
     {
       "nome": "Bitcoin",
       "ticker": "BTC",
-      "prezzo_eur": 73667,
-      "var_24h_pct": -0.41
+      "prezzo_eur": 74073,
+      "var_24h_pct": 0.55
     },
     {
       "nome": "Ethereum",
       "ticker": "ETH",
-      "prezzo_eur": 2359.03,
-      "var_24h_pct": 0.2
+      "prezzo_eur": 2367.05,
+      "var_24h_pct": 0.34
     },
     {
       "nome": "Solana",
       "ticker": "SOL",
-      "prezzo_eur": 105.67,
-      "var_24h_pct": 3.31
+      "prezzo_eur": 105.94,
+      "var_24h_pct": 0.25
     }
   ],
   "tassi_italia": {
