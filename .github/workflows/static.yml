@@ -33,7 +33,7 @@ jobs:
         run: |
           mkdir -p _site
           rsync -a \
-            --exclude='.git' --exclude='.github' --exclude='.netlify' \
+            --exclude='.git' --exclude='.github' --exclude='.netlify' --exclude='_site' \
             --exclude='_docs' --exclude='_scripts' --exclude='export' \
             --exclude='netlify.toml' --exclude='_headers' --exclude='_redirects' \
             --exclude='package.json' --exclude='package-lock.json' \

@@ -1,0 +1,15 @@
+# GitHub Pages (build legacy dal branch): esclude dal sito i file di lavoro e
+# quelli dell'host precedente, che non devono essere raggiungibili dal web.
+exclude:
+  - netlify.toml
+  - package.json
+  - package-lock.json
+  - LICENSE
+  - _headers
+  - _redirects
+  - _docs
+  - _scripts
+  - export
+  - .github
+  - .netlify
+  - AGENTS.md
