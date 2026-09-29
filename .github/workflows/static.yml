@@ -24,12 +24,32 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      # Mette online SOLO i file pubblici del sito: le cartelle di lavoro (_docs,
+      # _scripts, export), i file dell'host precedente (netlify.toml, _headers,
+      # _redirects) e i file di progetto non fanno parte del sito e non devono
+      # essere raggiungibili dal web.
+      - name: Prepara i file pubblici in _site
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude='.git' --exclude='.github' --exclude='.netlify' \
+            --exclude='_docs' --exclude='_scripts' --exclude='export' \
+            --exclude='netlify.toml' --exclude='_headers' --exclude='_redirects' \
+            --exclude='package.json' --exclude='package-lock.json' \
+            --exclude='LICENSE' --exclude='*.md' \
+            ./ _site/
+          echo "--- contenuto pubblicato ---"
+          ls -1 _site
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_site'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
