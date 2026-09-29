@@ -135,4 +135,31 @@
 <h3>Quanto TFR si matura con una RAL di 40.000 €?</h3>
 <p>Circa 2.963 € all'anno, ossia una mensilità ogni 13,5. Il TFR non è tassato come la retribuzione e resta fuori dal calcolo del netto mensile.</p>
 
-<p><a href="../tools/calcolo-stipendio-netto.html">→ Calcola il tuo netto reale con il calcolatore stipendio</a></p></body></html>
+<p><a href="../tools/calcolo-stipendio-netto.html">→ Calcola il tuo netto reale con il calcolatore stipendio</a></p><!-- Cookie banner (consenso tecnico + pubblicitario) -->
+<div id="cookie-banner" class="cookie-banner hidden">
+    <button class="cookie-close" onclick="closeCookieBanner()">✕</button>
+    <div class="cookie-content">
+        <p>🍪 Usiamo cookie tecnici e cookie pubblicitari di Google AdSense. Senza il tuo consenso gli annunci restano spenti. <a href="../privacy.html">Privacy e Cookie Policy</a>.</p>
+        <div class="cookie-buttons">
+            <button class="btn btn-sm btn-outline" onclick="closeCookieBanner()">Rifiuta</button>
+            <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accetta</button>
+        </div>
+    </div>
+</div>
+<!-- Consenso cookie: definizioni locali (pagine senza assets/js/script.js) -->
+<script>
+(function(){
+  if (window.acceptCookies) return;
+  function el(){return document.getElementById('cookieBanner')||document.getElementById('cookie-banner')||document.getElementById('cookieConsent');}
+  window.acceptCookies=function(){try{localStorage.setItem('soldichiari_cookies','accepted');localStorage.setItem('cookie-ok','1');}catch(e){}
+    if(window.__scAds)window.__scAds();
+    var b=el(); if(!b)return; b.style.transition='transform .4s ease, opacity .4s ease'; b.style.transform='translateY(100%)'; b.style.opacity='0';
+    setTimeout(function(){b.classList.add('hidden');},400);};
+  window.declineCookies=function(){try{localStorage.setItem('soldichiari_cookies','declined');}catch(e){}
+    var b=el(); if(b)b.classList.add('hidden');};
+  window.closeCookieBanner=function(){window.declineCookies();};
+  var b=el(); if(!b)return; var c=null; try{c=localStorage.getItem('soldichiari_cookies');}catch(e){}
+  if(c==='accepted'){b.classList.add('hidden');}else{setTimeout(function(){b.classList.remove('hidden');},800);}
+})();
+</script>
+</body></html>

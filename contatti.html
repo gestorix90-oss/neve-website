@@ -234,5 +234,16 @@
         } catch (e) {}
     })();
     </script>
+<!-- Cookie banner (consenso tecnico + pubblicitario) -->
+<div id="cookie-banner" class="cookie-banner hidden">
+    <button class="cookie-close" onclick="closeCookieBanner()">✕</button>
+    <div class="cookie-content">
+        <p>🍪 Usiamo cookie tecnici e cookie pubblicitari di Google AdSense. Senza il tuo consenso gli annunci restano spenti. <a href="privacy.html">Privacy e Cookie Policy</a>.</p>
+        <div class="cookie-buttons">
+            <button class="btn btn-sm btn-outline" onclick="closeCookieBanner()">Rifiuta</button>
+            <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accetta</button>
+        </div>
+    </div>
+</div>
 </body>
 </html>
