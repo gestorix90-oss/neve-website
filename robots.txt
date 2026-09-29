@@ -1,8 +1,5 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://soldichiari.com/sitemap.xml
-
 Disallow: /admin/
 Disallow: /node_modules/
 Disallow: /.git/
@@ -12,3 +9,12 @@ Allow: /
 
 User-agent: Bingbot
 Allow: /
+
+# Crawler pubblicitari Google: devono poter leggere tutte le pagine con annunci
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+Sitemap: https://soldichiari.com/sitemap.xml
