@@ -1,0 +1,25 @@
+# SoldiChiari
+
+> SoldiChiari (soldichiari.com) è un sito italiano di finanza personale e finanza comportamentale: spiega
+> in modo pratico come funzionano stipendio netto, tasse sul lavoro dipendente, budgeting e debiti.
+> Pubblica calcolatori gratuiti e articoli verificati con fonti ufficiali (ISTAT, INPS, MEF, CNEL).
+> Lingua: italiano (it-IT). Aggiornamento: settembre 2026.
+
+## Calcolatori (strumenti gratuiti)
+- [Calcolo stipendio netto 2026](https://soldichiari.com/tools/calcolo-stipendio-netto.html): dal RAL al netto mensile e annuo con IRPEF 23/33/43%, contributi INPS 9,19%, addizionali regionali e comunali, cuneo fiscale 2026, TFR e 13ª/14ª mensilità.
+- [Budget 50/30/20](https://soldichiari.com/tools/budget-calculator.html): ripartizione di necessità, desideri e risparmio sul netto mensile.
+- [Debt tracker](https://soldichiari.com/tools/debt-tracker.html): mesi per estinguere un debito e interessi totali.
+- [Simulatore interesse composto](https://soldichiari.com/tools/savings-simulator.html): crescita di un risparmio nel tempo.
+
+## Articoli di riferimento (risposte dirette)
+- [Come leggere la busta paga](https://soldichiari.com/blog/come-leggere-busta-paga.html): cosa significano contributi INPS, imponibile, IRPEF, detrazioni, bonus cuneo e addizionali; esempio da RAL 30.000 € a 1.796 € netti al mese.
+- [Aumento di stipendio: quanto resta in netto](https://soldichiari.com/blog/aumento-stipendio-quanto-netto.html): tabella RAL 28.000-35.000 €; +2.000 € lordi valgono circa +84 € netti al mese.
+- [Cuneo fiscale 2026](https://soldichiari.com/blog/cuneo-fiscale-2026.html): come funziona il taglio del cuneo e la detrazione di 1.000 €.
+- [Metodo 50/30/20](https://soldichiari.com/blog/metodo-50-30-20.html): come ripartire lo stipendio con numeri reali.
+- [Fondo emergenze: quanto e dove](https://soldichiari.com/blog/fondo-emergenze-quanto.html): 3-6 mesi di spese obbligate, non di stipendio.
+- [RAL 30.000 €: quanto è il netto](https://soldichiari.com/blog/ral-30000-netto-mese.html): caso completo con dettaglio voce per voce.
+- [TFR: azienda o fondo pensione](https://soldichiari.com/blog/tfr-meglio-azienda-fondo.html): differenze pratiche.
+
+## Altro
+- [Blog](https://soldichiari.com/blog/blog.html) · [Strumenti](https://soldichiari.com/strumenti.html) · [FAQ](https://soldichiari.com/faq.html) · [Chi sono](https://soldichiari.com/chi-sono.html) · [Contatti](https://soldichiari.com/contatti.html)
+- [Sitemap](https://soldichiari.com/sitemap.xml)

@@ -4,16 +4,31 @@ Disallow: /admin/
 Disallow: /node_modules/
 Disallow: /.git/
 
-User-agent: Googlebot
+# --- Crawler per ricerca generativa (GEO) ---
+User-agent: GPTBot
 Allow: /
-
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
 User-agent: Bingbot
 Allow: /
 
-# Crawler pubblicitari Google: devono poter leggere tutte le pagine con annunci
+# --- Google AdSense ---
 User-agent: Mediapartners-Google
 Allow: /
-
 User-agent: AdsBot-Google
 Allow: /
 
