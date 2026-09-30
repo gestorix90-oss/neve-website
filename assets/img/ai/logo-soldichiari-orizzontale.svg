@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 360" width="1240" height="360" role="img" aria-label="SoldiChiari — Officina della tua ricchezza">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f97316"/><stop offset="100%" stop-color="#fbbf24"/></linearGradient>
+    <linearGradient id="a1" x1="0%" y1="100%" x2="0%" y2="0%"><stop offset="0%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#f97316"/></linearGradient>
+  </defs>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800;900&amp;display=swap');
+   .wm{font-family:'Inter','Segoe UI',system-ui,sans-serif;font-weight:900;font-size:138px;letter-spacing:-4px}
+   .tag{font-family:'Inter','Segoe UI',system-ui,sans-serif;font-weight:600;font-size:31px;letter-spacing:6px}</style>
+  <g transform="translate(16,16) scale(0.60)"><g>
+      <rect x="8" y="8" width="496" height="496" rx="112" fill="#0c1220"/>
+      <rect x="11" y="11" width="490" height="490" rx="109" fill="none" stroke="#f97316" stroke-opacity="0.30" stroke-width="7"/>
+      <path d="M 229.56 67.85 L 282.44 67.85 L 286.16 109.06 L 327.34 124.05 L 356.68 94.87 L 397.20 128.87 L 373.55 162.83 L 395.47 200.78 L 436.70 197.29 L 445.88 249.37 L 405.94 260.19 L 398.33 303.35 L 432.16 327.18 L 405.72 372.98 L 368.17 355.59 L 334.60 383.76 L 345.20 423.76 L 295.50 441.85 L 277.91 404.39 L 234.09 404.39 L 216.50 441.85 L 166.80 423.76 L 177.40 383.76 L 143.83 355.59 L 106.28 372.98 L 79.84 327.18 L 113.67 303.35 L 106.06 260.19 L 66.12 249.37 L 75.30 197.29 L 116.53 200.78 L 138.45 162.83 L 114.80 128.87 L 155.32 94.87 L 184.66 124.05 L 225.84 109.06 Z" fill="url(#g1)" fill-rule="evenodd"/>
+      <circle cx="256" cy="256" r="128" fill="#0c1220"/>
+      <path d="M 228 352 L 228 214 L 196 214 L 256 138 L 316 214 L 284 214 L 284 352 Z" fill="url(#a1)"/>
+    </g></g>
+  <text class="wm" x="368" y="200" fill="#ffffff">Soldi</text>
+  <text class="wm" x="748" y="200" fill="#f97316">Chiari</text>
+  <text class="tag" x="372" y="266" fill="#fbbf24" fill-opacity="0.92">OFFICINA DELLA TUA RICCHEZZA</text>
+</svg>
