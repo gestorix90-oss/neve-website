@@ -20,14 +20,20 @@
 <meta property="og:image" content="https://soldichiari.com/assets/img/ai/blog-budget.png">
 <meta name="twitter:card" content="summary">
 <script>
-/* AdSense caricato SOLO dopo consenso cookie (GDPR ePrivacy) */
+/* AdSense — opzione A: lo script di Google si carica subito.
+   Il consenso agli annunci in SEE/UK/Svizzera e' raccolto dalla CMP certificata di Google
+   (AdSense -> Privacy e messaggi -> messaggio per i regolamenti europei), come richiesto
+   dal 16/01/2024: senza quel messaggio Google non serve annunci personalizzati.
+   Il banner del sito riguarda i cookie tecnici. __scAds resta definito (idempotente)
+   per le chiamate legacy dei pulsanti di consenso. */
 (function(){
-  function accepted(){try{return localStorage.getItem('cookie-ok')==='1'||localStorage.getItem('soldichiari_cookies')==='accepted'}catch(e){return false}}
-  window.__scAds=function(){if(window.__scAdsDone)return;window.__scAdsDone=1;
+  window.__scAds=function(){
+    if(window.__scAdsDone)return;window.__scAdsDone=1;
     var s=document.createElement('script');s.async=true;s.crossOrigin='anonymous';
     s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952';
-    document.head.appendChild(s);};
-  if(accepted())window.__scAds();
+    document.head.appendChild(s);
+  };
+  window.__scAds();
 })();
 </script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Fondo emergenze: quanto mettere da parte (e dove tenerlo)", "description": "Quanto serve davvero il fondo emergenze, come calcolarlo sulle spese obbligate e non sullo stipendio, dove tenerlo e in quale ordine riempirlo.", "datePublished": "2026-09-29", "dateModified": "2026-09-29", "inLanguage": "it-IT", "author": {"@type": "Person", "name": "Neve", "url": "https://soldichiari.com/chi-sono.html", "sameAs": ["https://youtube.com/@nevenoir90", "https://www.tiktok.com/@neve.noir"], "description": "Autore di SoldiChiari: finanza personale spiegata con logica meccanica."}, "publisher": {"@type": "Organization", "name": "SoldiChiari", "logo": {"@type": "ImageObject", "url": "https://soldichiari.com/assets/img/ai/logo-soldichiari-1024.png", "width": 1024, "height": 1024}}, "mainEntityOfPage": "https://soldichiari.com/blog/fondo-emergenze-quanto.html"}</script>
@@ -239,7 +245,7 @@
 <div id="cookie-banner" class="cookie-banner hidden">
     <button class="cookie-close" onclick="closeCookieBanner()">✕</button>
     <div class="cookie-content">
-        <p>🍪 Usiamo cookie tecnici e cookie pubblicitari di Google AdSense. Senza il tuo consenso gli annunci restano spenti. <a href="../privacy.html">Privacy e Cookie Policy</a>.</p>
+        <p>🍪 Usiamo cookie tecnici necessari al funzionamento del sito. Per la pubblicità Google mostra un proprio messaggio di consenso: puoi accettare o rifiutare gli annunci, e cambiare scelta quando vuoi dalla <a href="../privacy.html">Privacy e Cookie Policy</a>.</p>
         <div class="cookie-buttons">
             <button class="btn btn-sm btn-outline" onclick="closeCookieBanner()">Rifiuta</button>
             <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accetta</button>
