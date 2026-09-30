@@ -1,27 +1,27 @@
 {
-  "aggiornato": "2026-09-29 07:31",
+  "aggiornato": "2026-09-30 07:35",
   "fonte_indici": "Yahoo Finance (aggiornamento quotidiano automatico)",
   "fonte_cripto": "CoinGecko (live nel browser)",
   "indici": [
     {
       "nome": "S&P 500",
       "simbolo": "^GSPC",
-      "prezzo": 7683.69,
-      "var_pct": -0.77,
+      "prezzo": 7670.84,
+      "var_pct": -0.17,
       "unita": "punti"
     },
     {
       "nome": "Nasdaq Composite",
       "simbolo": "^IXIC",
-      "prezzo": 26820.38,
-      "var_pct": -0.92,
+      "prezzo": 26797.541,
+      "var_pct": -0.09,
       "unita": "punti"
     },
     {
       "nome": "FTSE MIB (Milano)",
       "simbolo": "FTSEMIB.MI",
-      "prezzo": 51759.9,
-      "var_pct": -0.21,
+      "prezzo": 51804.94,
+      "var_pct": 0.09,
       "unita": "punti"
     }
   ],
@@ -29,8 +29,8 @@
     {
       "nome": "Euro / Dollaro",
       "simbolo": "EURUSD=X",
-      "prezzo": 1.1362,
-      "var_pct": -0.1,
+      "prezzo": 1.134,
+      "var_pct": -0.06,
       "unita": "$"
     }
   ],
@@ -38,8 +38,8 @@
     {
       "nome": "Oro (future)",
       "simbolo": "GC=F",
-      "prezzo": 4160.6,
-      "var_pct": -0.19,
+      "prezzo": 4202.9,
+      "var_pct": 0.56,
       "unita": "$/oz"
     }
   ],
@@ -47,8 +47,8 @@
     {
       "nome": "Rend. Treasury USA 10 anni",
       "simbolo": "^TNX",
-      "prezzo": 5.24,
-      "var_pct": 1.08,
+      "prezzo": 5.255,
+      "var_pct": 0.29,
       "unita": "%"
     }
   ],
@@ -56,20 +56,20 @@
     {
       "nome": "Bitcoin",
       "ticker": "BTC",
-      "prezzo_eur": 73317,
-      "var_24h_pct": 0.52
+      "prezzo_eur": 73572,
+      "var_24h_pct": 0.69
     },
     {
       "nome": "Ethereum",
       "ticker": "ETH",
-      "prezzo_eur": 2351.63,
-      "var_24h_pct": 1.19
+      "prezzo_eur": 2360.4,
+      "var_24h_pct": 0.84
     },
     {
       "nome": "Solana",
       "ticker": "SOL",
-      "prezzo_eur": 103.89,
-      "var_24h_pct": -0.59
+      "prezzo_eur": 105.21,
+      "var_24h_pct": 1.87
     }
   ],
   "tassi_italia": {
