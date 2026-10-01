@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://soldichiari.com/blog/blog.html</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://soldichiari.com/</loc><lastmod>2026-09-28</lastmod><priority>1.0</priority></url>
-    <url><loc>https://soldichiari.com/blog.html</loc><lastmod>2026-09-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://soldichiari.com/mercati.html</loc><lastmod>2026-09-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://soldichiari.com/bandi.html</loc><lastmod>2026-09-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://soldichiari.com/chi-sono.html</loc><lastmod>2026-09-21</lastmod><priority>0.7</priority></url>
@@ -42,5 +42,6 @@
   <url><loc>https://soldichiari.com/blog/aumento-stipendio-quanto-netto.html</loc><lastmod>2026-09-29</lastmod><priority>0.8</priority></url>
   <url><loc>https://soldichiari.com/blog/fondo-emergenze-quanto.html</loc><lastmod>2026-09-29</lastmod><priority>0.8</priority></url>
   <url><loc>https://soldichiari.com/guida-bandi.html</loc><lastmod>2026-09-30</lastmod><priority>0.8</priority></url>
-  <url><loc>https://soldichiari.com/blog/irpef-inflazione-fiscal-drag-2026-09-29.html</loc><lastmod>2026-09-30</lastmod><priority>0.7</priority></url>
+  <url><loc>https://soldichiari.com/blog/irpef-inflazione-fiscal-drag-2026-09-29.html</loc><lastmod>2026-10-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://soldichiari.com/blog/istat-inflazione-acquisita-2026-sale-al-3-1-percento-2026-09-30.html</loc><lastmod>2026-09-30</lastmod><priority>0.7</priority></url>
 </urlset>
