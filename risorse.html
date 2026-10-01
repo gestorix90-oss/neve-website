@@ -209,6 +209,28 @@
         </div>
     </section>
 
+    <section class="section" style="background:var(--bg-secondary);">
+        <div class="container" style="max-width:620px;">
+            <div class="section-header">
+                <span class="section-tag">📬 ISCRIVITI</span>
+                <h2 class="section-title">La guida <span class="accent">gratuita</span></h2>
+                <p style="margin-top:8px;">Ricevi gratis la guida "Busta paga senza misteri" e gli aggiornamenti rari del sito. Un click per cancellarti, mai spam.</p>
+            </div>
+            <form name="lead-soldi" netlify netlify-honeypot="bot-field" style="display:flex;flex-direction:column;gap:14px;">
+                <div>
+                    <label for="email-risorse" style="display:block;margin-bottom:6px;">Email</label>
+                    <input type="email" id="email-risorse" name="email" required placeholder="tua@email.com" style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border-color,#334155);background:var(--bg-primary,#0f172a);color:inherit;">
+                </div>
+                <input type="hidden" name="bot-field">
+                <label style="display:flex;gap:8px;align-items:flex-start;font-size:.9rem;">
+                    <input type="checkbox" name="privacy-consent" required style="margin-top:4px;">
+                    <span>Ho letto l'<a href="privacy.html">informativa sulla privacy</a> e acconsento al trattamento dei miei dati per ricevere la guida e aggiornamenti rari.</span>
+                </label>
+                <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Iscriviti gratis</button>
+            </form>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
