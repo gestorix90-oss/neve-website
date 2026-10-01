@@ -1,27 +1,27 @@
 {
-  "aggiornato": "2026-09-30 07:35",
+  "aggiornato": "2026-10-01 07:36",
   "fonte_indici": "Yahoo Finance (aggiornamento quotidiano automatico)",
   "fonte_cripto": "CoinGecko (live nel browser)",
   "indici": [
     {
       "nome": "S&P 500",
       "simbolo": "^GSPC",
-      "prezzo": 7670.84,
-      "var_pct": -0.17,
+      "prezzo": 7651.54,
+      "var_pct": -0.25,
       "unita": "punti"
     },
     {
       "nome": "Nasdaq Composite",
       "simbolo": "^IXIC",
-      "prezzo": 26797.541,
-      "var_pct": -0.09,
+      "prezzo": 26861.064,
+      "var_pct": 0.24,
       "unita": "punti"
     },
     {
       "nome": "FTSE MIB (Milano)",
       "simbolo": "FTSEMIB.MI",
-      "prezzo": 51804.94,
-      "var_pct": 0.09,
+      "prezzo": 51371.98,
+      "var_pct": -0.84,
       "unita": "punti"
     }
   ],
@@ -29,8 +29,8 @@
     {
       "nome": "Euro / Dollaro",
       "simbolo": "EURUSD=X",
-      "prezzo": 1.134,
-      "var_pct": -0.06,
+      "prezzo": 1.1324,
+      "var_pct": -0.09,
       "unita": "$"
     }
   ],
@@ -38,8 +38,8 @@
     {
       "nome": "Oro (future)",
       "simbolo": "GC=F",
-      "prezzo": 4202.9,
-      "var_pct": 0.56,
+      "prezzo": 4216.2,
+      "var_pct": 0.7,
       "unita": "$/oz"
     }
   ],
@@ -47,8 +47,8 @@
     {
       "nome": "Rend. Treasury USA 10 anni",
       "simbolo": "^TNX",
-      "prezzo": 5.255,
-      "var_pct": 0.29,
+      "prezzo": 5.293,
+      "var_pct": 0.72,
       "unita": "%"
     }
   ],
@@ -56,20 +56,20 @@
     {
       "nome": "Bitcoin",
       "ticker": "BTC",
-      "prezzo_eur": 73572,
-      "var_24h_pct": 0.69
+      "prezzo_eur": 74433,
+      "var_24h_pct": 1.14
     },
     {
       "nome": "Ethereum",
       "ticker": "ETH",
-      "prezzo_eur": 2360.4,
-      "var_24h_pct": 0.84
+      "prezzo_eur": 2397.9,
+      "var_24h_pct": 1.56
     },
     {
       "nome": "Solana",
       "ticker": "SOL",
-      "prezzo_eur": 105.21,
-      "var_24h_pct": 1.87
+      "prezzo_eur": 105.47,
+      "var_24h_pct": 0.12
     }
   ],
   "tassi_italia": {

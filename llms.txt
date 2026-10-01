@@ -3,7 +3,7 @@
 > SoldiChiari (soldichiari.com) è un sito italiano di finanza personale e finanza comportamentale: spiega
 > in modo pratico come funzionano stipendio netto, tasse sul lavoro dipendente, budgeting e debiti.
 > Pubblica calcolatori gratuiti e articoli verificati con fonti ufficiali (ISTAT, INPS, MEF, CNEL).
-> Lingua: italiano (it-IT). Aggiornamento: settembre 2026.
+> Lingua: italiano (it-IT). Aggiornamento: 1 ottobre 2026.
 
 ## Calcolatori (strumenti gratuiti)
 - [Calcolo stipendio netto 2026](https://soldichiari.com/tools/calcolo-stipendio-netto.html): dal RAL al netto mensile e annuo con IRPEF 23/33/43%, contributi INPS 9,19%, addizionali regionali e comunali, cuneo fiscale 2026, TFR e 13ª/14ª mensilità.
@@ -19,6 +19,10 @@
 - [Fondo emergenze: quanto e dove](https://soldichiari.com/blog/fondo-emergenze-quanto.html): 3-6 mesi di spese obbligate, non di stipendio.
 - [RAL 30.000 €: quanto è il netto](https://soldichiari.com/blog/ral-30000-netto-mese.html): caso completo con dettaglio voce per voce.
 - [TFR: azienda o fondo pensione](https://soldichiari.com/blog/tfr-meglio-azienda-fondo.html): differenze pratiche.
+
+- [Istat: inflazione 2026 acquisita al 3,1%](https://soldichiari.com/blog/istat-inflazione-acquisita-2026-sale-al-3-1-percento-2026-09-30.html): comunicato 30/09/2026, NIC +4,2% a settembre; differenza tra dato mensile e media acquisita; quanto resta di un aumento pari all'inflazione (930 € lordi → 546 € netti a RAL 30.000 €).
+- [IRPEF e inflazione: il fiscal drag 2026-2027](https://soldichiari.com/blog/irpef-inflazione-fiscal-drag-2026-09-29.html): tabella per RAL dell'imposta aggiuntiva su un aumento nominale del 3,1%; perché la fascia 32.000-40.000 € è la più cara (décalage del beneficio sul cuneo).
+- [Guida ai bandi 2026](https://soldichiari.com/guida-bandi.html): dove si trovano i bandi veri (incentivi.gov.it, Invitalia, Funding & Tenders, albi pretori), come filtrarli, checklist documenti e rendicontazione.
 
 ## Altro
 - [Blog](https://soldichiari.com/blog/blog.html) · [Strumenti](https://soldichiari.com/strumenti.html) · [FAQ](https://soldichiari.com/faq.html) · [Chi sono](https://soldichiari.com/chi-sono.html) · [Contatti](https://soldichiari.com/contatti.html)
