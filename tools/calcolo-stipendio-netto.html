@@ -82,6 +82,7 @@
 <meta property="og:image" content="https://soldichiari.com/assets/img/ai/blog-irpef.png">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://soldichiari.com/#website", "name": "SoldiChiari", "url": "https://soldichiari.com/", "inLanguage": "it-IT", "publisher": {"@id": "https://soldichiari.com/#organization"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://soldichiari.com/"}, {"@type": "ListItem", "position": 2, "name": "Calcolo Stipendio Netto 2026", "item": "https://soldichiari.com/tools/calcolo-stipendio-netto.html"}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Perché il netto cambia con la regione?", "acceptedAnswer": {"@type": "Answer", "text": "Per le addizionali: Lazio e Campania penalizzano fino a 100 €/mese rispetto a Veneto e P.A. di Trento."}}, {"@type": "Question", "name": "Le 14 mensilità convengono?", "acceptedAnswer": {"@type": "Answer", "text": "Il netto annuo non cambia: cambia la distribuzione. Con la quattordicesima l'imposta si spalma e spesso si evita lo scatto di aliquota di fine anno. Conviene se gestisci il flusso; non conviene se conti 12 stipendi."}}, {"@type": "Question", "name": "Il calcolo è esatto al centesimo?", "acceptedAnswer": {"@type": "Answer", "text": "È una stima normativa accurata per la casistica standard. Conguagli, bonus aziendali, welfare e casi misti possono spostare il risultato: confronta sempre con il tuo cedolino."}}]}</script>
 </head>
 <body>
 
@@ -246,6 +247,42 @@
 
         <h3>5. TFR</h3>
         <p>Accantonamento pari a RAL ÷ 13,5 (~7,41%), rivalutato ogni anno secondo i coefficienti ministeriali. L'importo non passa dal netto mensile e può restare in azienda o andare a un fondo pensione.</p>
+
+        <h3>6. Esempi reali: da RAL a netto al mese nel 2026</h3>
+        <p>Questa tabella è generata con <strong>le stesse regole di calcolo di questo strumento</strong>: 13 mensilità, contributi INPS al 9,19%, addizionali nella media nazionale (regionale 1,73% + comunale 0,5%) e nessuna detrazione per carichi di famiglia. È il punto di partenza; il tuo cedolino si scosta da qui per regione, familiari a carico e bonus.</p>
+        <table>
+            <tr><th>RAL</th><th>Netto al mese (13 mens.)</th><th>Netto annuo</th><th>Netto / lordo</th><th>TFR accantonato</th></tr>
+            <tr><td>20.000 €</td><td><strong>1335 €</strong></td><td>17.350 €</td><td>87%</td><td>1481 €</td></tr>
+            <tr><td>25.000 €</td><td><strong>1567 €</strong></td><td>20.370 €</td><td>81%</td><td>1852 €</td></tr>
+            <tr><td>28.000 €</td><td><strong>1704 €</strong></td><td>22.157 €</td><td>79%</td><td>2074 €</td></tr>
+            <tr><td>30.000 €</td><td><strong>1796 €</strong></td><td>23.349 €</td><td>78%</td><td>2222 €</td></tr>
+            <tr><td>35.000 €</td><td><strong>1969 €</strong></td><td>25.593 €</td><td>73%</td><td>2593 €</td></tr>
+            <tr><td>40.000 €</td><td><strong>2116 €</strong></td><td>27.514 €</td><td>69%</td><td>2963 €</td></tr>
+            <tr><td>50.000 €</td><td><strong>2508 €</strong></td><td>32.608 €</td><td>65%</td><td>3704 €</td></tr>
+            <tr><td>60.000 €</td><td><strong>2896 €</strong></td><td>37.642 €</td><td>63%</td><td>4444 €</td></tr>
+        </table>
+        <p>Due cose che si vedono solo nei numeri. La prima: <strong>l'aliquota effettiva non è quella dello scaglione</strong>. A 20.000 € tieni l'87% del lordo, a 60.000 € il 63% — non perché il 43% si applichi su tutto lo stipendio, ma perché sopra i 32.000 € finiscono le detrazioni da lavoro dipendente e il beneficio sul cuneo fiscale, quindi l'imposta cresce più del reddito. La seconda: <strong>il 33% non scatta a 30.000 € di RAL</strong>, ma intorno ai <strong>30.840 €</strong>: prima si tolgono i contributi INPS, quindi a RAL 30.000 l'imponibile fiscale è 27.243 € e resti nello scaglione del 23%. È l'errore che quasi tutti i simulatori in rete ripetono.</p>
+        <p>Se stai valutando un'offerta di lavoro, confronta anche la riga dell'apprendistato: con i contributi al 5,84% lo stesso identico RAL rende circa <strong>33-90 € in più al mese</strong> (a 30.000 € di RAL: 1.845 € contro 1.796 €), ma l'aliquota piena riparte alla conversione a tempo indeterminato.</p>
+
+        <h3>7. Perché il cedolino vero non torna al centesimo</h3>
+        <p>Un simulatore applica la media nazionale; il tuo datore applica te. Le cinque voci che spostano di più, in ordine di grandezza:</p>
+        <ul>
+            <li><strong>Addizionale regionale reale</strong>: si va dallo 0,70% della P.A. di Bolzano al 3,33% delle regioni in piano di rientro. Su 35.000 € di RAL sono oltre 800 € l'anno di differenza a parità di stipendio.</li>
+            <li><strong>Addizionale comunale</strong>: dallo 0,1% allo 0,8%, fissato dal tuo Comune di residenza, non da quello della sede di lavoro.</li>
+            <li><strong>Detrazioni per carichi</strong>: coniuge e figli riducono l'IRPEF netta in modo decrescente col reddito; il conguaglio si vede soprattutto nei cedolini di fine anno.</li>
+            <li><strong>Welfare aziendale e rimborsi</strong>: buoni pasto, flexible benefit e premi di produttività sono tassati (o esenti) con regole loro, fuori da questo calcolo.</li>
+            <li><strong>Casi misti</strong>: due CU nello stesso anno, un cambio di lavoro a metà anno o una mensilità aggiuntiva spostano il conguaglio: il beneficio sul cuneo viene ricalcolato sul reddito complessivo.</li>
+        </ul>
+        <p>Per questo lo strumento ti dà una <strong>stima normativa</strong>, non un cedolino legale: usala per decidere, poi verifica con la tua busta paga reale.</p>
+
+        <h3>8. Come usare questo calcolatore in 4 passi</h3>
+        <ol>
+            <li>Inserisci la <strong>RAL</strong> (lo stipendio lordo annuo che c'è nella lettera di assunzione), non il lordo mensile: sono due numeri diversi.</li>
+            <li>Scegli il numero di <strong>mensilità</strong> (13, 14 o 12): cambia il netto di ogni singolo stipendio, non il netto annuo.</li>
+            <li>Indica <strong>regione e Comune</strong> se li conosci: è la voce che fa la differenza maggiore dopo i carichi di famiglia.</li>
+            <li>Aggiungi <strong>eventuali bonus</strong> o il tipo di contratto (apprendistato) e leggi il dettaglio: la riga "Incidenza fiscale" ti dice quanto trattieni davvero del lordo.</li>
+        </ol>
+        <p>Se devi negoziare un aumento, non ragionare sul lordo: <a href="../blog/aumento-stipendio-quanto-netto.html">qui trovi quanto diventano davvero 1.000 € in più in RAL</a>, con gli scalini dove l'aumento rende meno.</p>
 
         <h3>Domande frequenti</h3>
         <p><strong>Perché il netto cambia con la regione?</strong> Per le addizionali: Lazio e Campania penalizzano fino a 100 €/mese rispetto a Veneto e P.A. di Trento.</p>
