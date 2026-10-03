@@ -214,14 +214,16 @@
                 <div class="breakdown-row"><span>TFR annuo accantonato:</span><span class="val-neutral" id="res-tfr">—</span></div>
                 <div class="breakdown-row"><span>Incidenza fiscale (netto/lordo):</span><span class="val-info" id="res-pct">—</span></div>
             </div>
-            <!-- FORM PER LEAD CAPTURO - WEB3FORMS -->
-            <form action="https://web3forms.com/submit" method="POST" style="margin-top:24px;padding:16px;border:1px solid #334155;border-radius:8px;background:#1e293b;">
+<!-- FORM PER LEAD CAPTURO - WEB3FORMS -->
+            <form action="https://web3forms.com/submit" method="POST" name="lead-calcolatore" style="margin-top:24px;padding:16px;border:1px solid #334155;border-radius:8px;background:#1e293b;">
               <input type="hidden" name="email" value="info@soldichiari.com">
+              <!-- Honeypot field -->
+              <input type="text" name="honeypot" id="honeypot" style="position:absolute; left:-9999px; top:-9999px;" tabindex="-1" autocomplete="off">
               <div style="margin-bottom:12px;">
                 <label for="email-lead" style="display:block;font-weight:600;margin-bottom:4px;color:#f8fafc;">
                   Salva questo risultato e ricevilo per email + consigli settimanali sulla busta paga
                 </label>
-                <input type="email" id="email-lead" name="email" 
+                <input type="email" id="email-lead" name="user-email" 
                        required placeholder="tua@email.com"
                        style="width:100%;padding:10px;border:1px solid #334155;border-radius:4px;background:#0f172a;color:#f8fafc;font-size:16px;">
               </div>
