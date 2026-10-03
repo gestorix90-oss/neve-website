@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-adsense-account" content="ca-pub-8921798913364952">
     <title>Calcolo Stipendio Netto 2026 — Busta Paga e TFR</title>
@@ -218,21 +218,23 @@
               <p style="color:#f8fafc;font-weight:600;margin-bottom:8px;">Hai trovato utile questo calcolo?</p>
               <p style="color:#94a3b8;font-size:14px;">Salva il tuo risultato e ricevilo per email + consigli settimanali sulla busta paga</p>
             </div>
-<!-- FORM PER LEAD CAPTURO - WEB3FORMS -->
-            <form action="https://web3forms.com/submit" method="POST" name="lead-calcolatore" style="margin-top:24px;padding:16px;border:1px solid #334155;border-radius:8px;background:#1e293b;">
-              <input type="hidden" name="email" value="info@soldichiari.com">
-              <!-- Honeypot field -->
-              <input type="text" name="honeypot" id="honeypot" style="position:absolute; left:-9999px; top:-9999px;" tabindex="-1" autocomplete="off">
+<!-- FORM PER LEAD CAPTURO - FormSubmit (zero signup, zero API key) -->
+            <form action="https://formsubmit.co/info@soldichiari.com" method="POST" name="lead-calcolatore"
+                  style="margin-top:24px;padding:16px;border:1px solid #334155;border-radius:8px;background:#1e293b;">
+              <input type="text" name="_honey" style="position:absolute; left:-9999px; top:-9999px; opacity:0;" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="_subject" value="Nuovo lead dal calcolatore stipendio netto">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" value="https://soldichiari.com/tools/calcolo-stipendio-netto.html?submitted=ok">
               <div style="margin-bottom:12px;">
                 <label for="email-lead" style="display:block;font-weight:600;margin-bottom:4px;color:#f8fafc;">
                   Salva questo risultato e ricevilo per email + consigli settimanali sulla busta paga
                 </label>
-                <input type="email" id="email-lead" name="user-email" 
+                <input type="email" id="email-lead" name="email"
                        required placeholder="tua@email.com"
                        style="width:100%;padding:10px;border:1px solid #334155;border-radius:4px;background:#0f172a;color:#f8fafc;font-size:16px;">
               </div>
               <div style="text-align:center;">
-                <button type="submit" 
+                <button type="submit"
                         style="background:#2563eb;color:#ffffff;border:none;padding:10px 20px;border-radius:4px;font-weight:600;cursor:pointer;">
                   Invia richiesta
                 </button>
