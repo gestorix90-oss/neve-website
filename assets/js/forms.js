@@ -4,7 +4,7 @@
    ===================================================== */
 
 const WEB3FORMS_KEY = "4bb94a3f-065b-45dc-b7bb-21606113ce02";
-const CONTACT_EMAIL = "gestorino90@gmail.com";
+const CONTACT_EMAIL = "gestorix90@gmail.com";
 
 function twSaveLocal(key, obj) {
     try {
