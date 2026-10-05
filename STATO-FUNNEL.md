@@ -1,6 +1,7 @@
 # STATO-FUNNEL — soldichiari.com
 
 Aggiornato: 2026-10-06, ore 01:00 — verifica live (@sito), non a memoria.
+Fonte canonica per **funnel/canali lead** (questo file). Per **cron/flotta/prompt**: `C:\Users\ONDA\SOLDI_CHIARI\05_DOCUMENTAZIONE\STATO-FUNNEL.md` — un solo capitolo per file, niente accorpamenti.
 
 ## Canali lead attivi (tutti → Web3Forms → gestorix90@gmail.com)
 | Canale | Pagina | Stato |
