@@ -1,27 +1,27 @@
 {
-  "aggiornato": "2026-10-02 07:35",
+  "aggiornato": "2026-10-05 07:31",
   "fonte_indici": "Yahoo Finance (aggiornamento quotidiano automatico)",
   "fonte_cripto": "CoinGecko (live nel browser)",
   "indici": [
     {
       "nome": "S&P 500",
       "simbolo": "^GSPC",
-      "prezzo": 7666.45,
-      "var_pct": 0.19,
+      "prezzo": 7722.72,
+      "var_pct": 0.73,
       "unita": "punti"
     },
     {
       "nome": "Nasdaq Composite",
       "simbolo": "^IXIC",
-      "prezzo": 26871.596,
-      "var_pct": 0.04,
+      "prezzo": 27190.863,
+      "var_pct": 1.19,
       "unita": "punti"
     },
     {
       "nome": "FTSE MIB (Milano)",
       "simbolo": "FTSEMIB.MI",
-      "prezzo": 50237.86,
-      "var_pct": -2.21,
+      "prezzo": 50483.21,
+      "var_pct": 0.49,
       "unita": "punti"
     }
   ],
@@ -29,8 +29,8 @@
     {
       "nome": "Euro / Dollaro",
       "simbolo": "EURUSD=X",
-      "prezzo": 1.1252,
-      "var_pct": 0.06,
+      "prezzo": 1.1189,
+      "var_pct": -0.6,
       "unita": "$"
     }
   ],
@@ -38,8 +38,8 @@
     {
       "nome": "Oro (future)",
       "simbolo": "GC=F",
-      "prezzo": 4217.5,
-      "var_pct": 0.36,
+      "prezzo": 4166.1,
+      "var_pct": 0.09,
       "unita": "$/oz"
     }
   ],
@@ -47,8 +47,8 @@
     {
       "nome": "Rend. Treasury USA 10 anni",
       "simbolo": "^TNX",
-      "prezzo": 5.237,
-      "var_pct": -1.06,
+      "prezzo": 5.277,
+      "var_pct": 0.76,
       "unita": "%"
     }
   ],
@@ -56,20 +56,20 @@
     {
       "nome": "Bitcoin",
       "ticker": "BTC",
-      "prezzo_eur": 76704,
-      "var_24h_pct": 3.05
+      "prezzo_eur": 76431,
+      "var_24h_pct": 1.4
     },
     {
       "nome": "Ethereum",
       "ticker": "ETH",
-      "prezzo_eur": 2423.08,
-      "var_24h_pct": 1.05
+      "prezzo_eur": 2410.6,
+      "var_24h_pct": 0.71
     },
     {
       "nome": "Solana",
       "ticker": "SOL",
-      "prezzo_eur": 109.07,
-      "var_24h_pct": 3.42
+      "prezzo_eur": 107.41,
+      "var_24h_pct": 0.15
     }
   ],
   "tassi_italia": {
