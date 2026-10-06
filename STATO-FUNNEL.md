@@ -22,6 +22,16 @@ Chiave unica: `assets/js/forms.js` → `access_key 4bb94a3f-…`. FormSubmit e f
 - File di lavoro (`*.md`, `_scripts/`, `.github/`) → 404 via `_redirects` ✅
 - Calcolatore raggiungibile solo su `/tools/…` (mai esistito a root: nessun link interno rotto) ✅
 
+## Prodotto a pagamento (funnel di vendita)
+| Nodo | URL | Stato (verificato live 06/10) |
+|---|---|---|
+| Landing workbook | `/busta-paga-senza-misteri.html` (+ `/busta-paga-senza-misteri` → 200) | ✅ 200, commit `07bfb8a`. Copertina reale estratta dal PDF v1, JSON-LD `Product` €9, FAQ, disclaimer "non è consulenza" |
+| Ingressi funnel | `tools/calcolo-stipendio-netto.html`, `risorse.html` | ✅ CTA/link verso la landing presenti su entrambe (verificato sul live) |
+| Sitemap | `sitemap.xml` | ✅ URL canonico `.html` aggiunto, XML validato |
+| **Checkout** | `soldichiari.gumroad.com/l/busta-paga-senza-misteri` | ❌ **404** — account Gumroad inesistente. La landing raccoglie **interesse via Web3Forms** (pulsante "Richiedi il link d'acquisto"), non incassa: nessun finto pagamento. |
+
+Da fare quando la listing esiste: sostituire l'`href` del pulsante `#btn-buy` nella landing con l'URL Gumroad (punto di modifica commentato nel file) e passare la bio TikTok al link di vendita.
+
 ## Aperti — azione richiesta
 1. **Enforce HTTPS**: `http://soldichiari.com` risponde **200 senza redirect** → contenuto duplicato http/https. Solo ONDA: GitHub → Settings → Pages → *Enforce HTTPS* (l'API rifiuta il PAT su quell'opzione).
 2. **Sequenza email Brevo**: servono le chiavi in `.env` (mai in chat) per attivarla.
