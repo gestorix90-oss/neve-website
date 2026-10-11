@@ -16,11 +16,12 @@
     } catch (e) {
       // storage bloccato: mostra il banner
     }
-    if (consent === 'accepted') {
+    if (consent === 'accepted' || consent === 'declined') {
       banner.classList.add('hidden');
+      banner.classList.remove('show');
     } else {
-      // Delay appearance slightly for less intrusion
-      setTimeout(() => banner.classList.remove('hidden'), 800);
+      // Il CSS base nasconde il banner con translateY(100%): va aggiunta la classe .show, non tolta .hidden
+      setTimeout(() => { banner.classList.remove('hidden'); banner.classList.add('show'); }, 800);
     }
   }
 
