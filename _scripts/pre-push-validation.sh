@@ -41,6 +41,11 @@ CRITICAL_FILES=("index.html" "faq.html" "strumenti.html" "blog.html" "risorse.ht
 
 for file in "${CRITICAL_FILES[@]}"; do
     if [ -f "$file" ]; then
+        # I redirect-stub (noindex + refresh) non hanno nav/footer by design: saltali
+        if grep -q 'http-equiv="refresh"' "$file" && grep -q 'noindex' "$file"; then
+            info_if_needed "Stub di redirect, salto controlli struttura: $file"
+            continue
+        fi
         # BLOCKING: Struttura base HTML MINIMA
         if ! grep -q "<nav[> ]" "$file" || ! grep -q "</footer>" "$file"; then
             exit_with_error "Struttura HTML incompleta in: $file (nav/footer mancanti)"
@@ -74,6 +79,11 @@ echo "3. Controllo Placeholder Link... (BLOCKING)"
 PLACEHOLDER_ISSUES=0
 for file in "${CRITICAL_FILES[@]}"; do
     if [ -f "$file" ]; then
+        # I redirect-stub (noindex + refresh) non hanno nav/footer by design: saltali
+        if grep -q 'http-equiv="refresh"' "$file" && grep -q 'noindex' "$file"; then
+            info_if_needed "Stub di redirect, salto controlli struttura: $file"
+            continue
+        fi
         # Cerca righe che contengono href="#"
         while IFS= read -r line; do
             # Se la linea contiene href="#"
@@ -108,6 +118,11 @@ echo ""
 echo "4. Verifica Coerenza Navigation/Footer... (WARNING)"
 for file in "${CRITICAL_FILES[@]}"; do
     if [ -f "$file" ]; then
+        # I redirect-stub (noindex + refresh) non hanno nav/footer by design: saltali
+        if grep -q 'http-equiv="refresh"' "$file" && grep -q 'noindex' "$file"; then
+            info_if_needed "Stub di redirect, salto controlli struttura: $file"
+            continue
+        fi
         # WARNING: Controllo semantico navigation
         if ! grep -q '<nav[> ]' "$file"; then
             warn_if_needed "Tag <nav> non trovato in: $file (usare tag semantico)"
@@ -219,3 +234,6 @@ echo "Script versione: v3.2 - CALIBRATO (BLOCKING vs WARNING)"
 
 # Return 0 se tutti i check blocking sono superati
 exit 0
+echo ''
+echo "6. Deduplica articoli blog... (BLOCKING)"
+if python _scripts/dedup_check.py 50; then :; else exit_with_error "Articoli duplicati trovati"; fi

@@ -1,0 +1,17 @@
+<script>
+/* AdSense — opzione A: lo script di Google si carica subito.
+   Il consenso agli annunci in SEE/UK/Svizzera e' raccolto dalla CMP certificata di Google
+   (AdSense -> Privacy e messaggi -> messaggio per i regolamenti europei), come richiesto
+   dal 16/01/2024: senza quel messaggio Google non serve annunci personalizzati.
+   Il banner del sito riguarda i cookie tecnici. __scAds resta definito (idempotente)
+   per le chiamate legacy dei pulsanti di consenso. */
+(function(){
+  window.__scAds=function(){
+    if(window.__scAdsDone)return;window.__scAdsDone=1;
+    var s=document.createElement('script');s.async=true;s.crossOrigin='anonymous';
+    s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952';
+    document.head.appendChild(s);
+  };
+  window.__scAds();
+})();
+</script>
