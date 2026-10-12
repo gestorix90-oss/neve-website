@@ -33,7 +33,11 @@
     s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952';
     document.head.appendChild(s);
   };
-  window.__scAds();
+  // Il loader parte solo se la pagina contiene davvero un'unita ads (<ins>).
+  // Script in <head>: il body non e ancora parsato, quindi si valuta a DOMContentLoaded.
+  document.addEventListener('DOMContentLoaded',function(){
+    if(document.querySelector('ins.adsbygoogle'))window.__scAds();
+  });
 })();
 </script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://soldichiari.com/#organization", "name": "SoldiChiari", "url": "https://soldichiari.com/", "logo": {"@type": "ImageObject", "url": "https://soldichiari.com/assets/img/ai/hero-officina.png"}, "sameAs": ["https://youtube.com/@nevenoir90", "https://www.tiktok.com/@neve.noir"]}</script>

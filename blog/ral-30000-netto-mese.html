@@ -15,7 +15,11 @@
     s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952';
     document.head.appendChild(s);
   };
-  window.__scAds();
+  // Il loader parte solo se la pagina contiene davvero un'unita ads (<ins>).
+  // Script in <head>: il body non e ancora parsato, quindi si valuta a DOMContentLoaded.
+  document.addEventListener('DOMContentLoaded',function(){
+    if(document.querySelector('ins.adsbygoogle'))window.__scAds();
+  });
 })();
 </script>
 <link rel="canonical" href="https://soldichiari.com/blog/ral-30000-netto-mese.html"><style>body{font-family:system-ui,sans-serif;max-width:800px;margin:0 auto;padding:24px;line-height:1.75;color:#e2e8f0;background:#0f172a}h1{color:#fff}a{color:#38bdf8}.box{background:#1e293b;border:1px solid #334155;border-radius:10px;padding:18px;margin:18px 0}</style>    <link rel="stylesheet" href="../assets/css/styles.css">

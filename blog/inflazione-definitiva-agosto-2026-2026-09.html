@@ -26,7 +26,11 @@
     s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952';
     document.head.appendChild(s);
   };
-  window.__scAds();
+  // Il loader parte solo se la pagina contiene davvero un'unita ads (<ins>).
+  // Script in <head>: il body non e ancora parsato, quindi si valuta a DOMContentLoaded.
+  document.addEventListener('DOMContentLoaded',function(){
+    if(document.querySelector('ins.adsbygoogle'))window.__scAds();
+  });
 })();
 </script>
 <meta property="og:title" content="Inflazione agosto 2026: +3,3% confermato da ISTAT">

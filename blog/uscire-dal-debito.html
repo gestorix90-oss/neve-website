@@ -33,7 +33,10 @@
         s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8921798913364952';
         document.head.appendChild(s);
       };
-      window.__scAds();
+      // Il loader parte solo se la pagina contiene davvero un'unita ads (<ins>).
+      document.addEventListener('DOMContentLoaded',function(){
+        if(document.querySelector('ins.adsbygoogle'))window.__scAds();
+      });
     })();
     </script>
     <link rel="alternate" type="application/rss+xml" title="Feed articoli SoldiChiari" href="https://soldichiari.com/feed.xml">
