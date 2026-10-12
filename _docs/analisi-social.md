@@ -4,10 +4,10 @@
 # ═══════════════════════════════════════════════════
 
 # ═══════════════════════════════════════════════
-# 📺 YOUTUBE — @nevenoir90
+# 📺 YOUTUBE — @neve_noir
 # ═══════════════════════════════════════════════
 
-CANALE: nevenoir90
+CANALE: neve_noir
 STATO: Attivo, in crescita
 
 PLAYLIST TROVATE (4):
@@ -55,14 +55,14 @@ ma il link è stato confermato: tiktok.com/@neve.noir
 # ═══════════════════════════════════════════════
 
 PROBLEMA ATTUALE:
-  ❌ Username "nevenoir90" non comunica il brand SoldiChiari
+  ❌ Username "neve_noir" non comunica il brand SoldiChiari
   ❌ Playlist YouTube non hanno il brand name
   ❌ Bio diverse su ogni piattaforma
   ❌ Nessuna CTA verso il sito web
 
 SOLUZIONE — Rebranding progressivo:
 
-1. YOUTUBE: Mantieni @nevenoir90 (username non si può cambiare facilmente)
+1. YOUTUBE: Mantieni @neve_noir (username non si può cambiare facilmente)
    ma cambia la BIO e la DESCRIZIONE del canale
 
 2. INSTAGRAM: Se possibile, cambia username in @treasuryworks
