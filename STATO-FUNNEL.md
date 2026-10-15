@@ -28,9 +28,9 @@ Chiave unica: `assets/js/forms.js` → `access_key 4bb94a3f-…`. FormSubmit e f
 | Landing workbook | `/busta-paga-senza-misteri.html` (+ `/busta-paga-senza-misteri` → 200) | ✅ 200, commit `07bfb8a`. Copertina reale estratta dal PDF v1, JSON-LD `Product` €9, FAQ, disclaimer "non è consulenza" |
 | Ingressi funnel | `tools/calcolo-stipendio-netto.html`, `risorse.html` | ✅ CTA/link verso la landing presenti su entrambe (verificato sul live) |
 | Sitemap | `sitemap.xml` | ✅ URL canonico `.html` aggiunto, XML validato |
-| **Checkout** | `soldichiari.gumroad.com/l/busta-paga-senza-misteri` | ❌ **404** — account Gumroad inesistente. La landing raccoglie **interesse via Web3Forms** (pulsante "Richiedi il link d'acquisto"), non incassa: nessun finto pagamento. |
+| **Checkout** | `soldichiari.gumroad.com/l/busta-paga-senza-misteri` | ✅ **200, listing attiva** (verificato 15/10: prodotto pubblicato, €9). Il pulsante `#btn-buy` della landing punta già all'URL Gumroad (commit `fdd5f0b`). |
 
-Da fare quando la listing esiste: sostituire l'`href` del pulsante `#btn-buy` nella landing con l'URL Gumroad (punto di modifica commentato nel file) e passare la bio TikTok al link di vendita.
+Fatto: `#btn-buy` → URL Gumroad (commit `fdd5f0b`). Pendente: unificare il link in bio TikTok/IG sul `/l/` diretto (decisione @Negozio, fuori repo).
 
 ## Aperti — azione richiesta
 1. **Enforce HTTPS**: `http://soldichiari.com` risponde **200 senza redirect** → contenuto duplicato http/https. Solo ONDA: GitHub → Settings → Pages → *Enforce HTTPS* (l'API rifiuta il PAT su quell'opzione).
