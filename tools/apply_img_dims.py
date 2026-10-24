@@ -121,14 +121,22 @@ def fix_page(html, page_path):
             return tag
         seen_raster += 1
         new = tag
-        if 'width=' not in new or 'height=' not in new:
-            local = os.path.join(REPO, resolve_rel(page_path, src))
-            d = dims(local)
-            if d:
-                if 'width=' not in new:
-                    new = new[:-1] + ' width="%d"' % d[0] + '>'
-                if 'height=' not in new:
-                    new = new[:-1] + ' height="%d"' % d[1] + '>'
+        local = os.path.join(REPO, resolve_rel(page_path, src))
+        d = dims(local)
+        if d and ('width=' not in new or 'height=' not in new):
+            if 'width=' not in new:
+                new = new[:-1] + ' width="%d"' % d[0] + '>'
+            if 'height=' not in new:
+                new = new[:-1] + ' height="%d"' % d[1] + '>'
+            n_dims += 1
+        elif d:
+            # dimensioni GIA' dichiarate: se non combaciano con il file vanno corrette.
+            # Un rapporto sbagliato riserva una scatola della forma sbagliata -> CLS.
+            wm = re.search(r'width="(\d+)"', new)
+            hm = re.search(r'height="(\d+)"', new)
+            if wm and hm and (int(wm.group(1)), int(hm.group(1))) != d:
+                new = re.sub(r'width="\d+"', 'width="%d"' % d[0], new, count=1)
+                new = re.sub(r'height="\d+"', 'height="%d"' % d[1], new, count=1)
                 n_dims += 1
         if 'loading=' not in new and 'fetchpriority' not in new and seen_raster > 1:
             new = new[:-1] + ' loading="lazy" decoding="async">'
