@@ -770,7 +770,7 @@ li {
   margin-bottom: 0;
 }
 
-.tool-card .tool-name{font-size:1rem;font-weight:700;color:var(--text-primary);line-height:1.4;margin-bottom:var(--space-xs)}
+.tool-card .tool-name{font-size:1rem;font-weight:800;color:var(--text-primary);line-height:1.2;margin-bottom:var(--space-xs)}
 
 /* ============ TESTIMONIALS ============ */
 .testimonial-card {
