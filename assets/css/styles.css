@@ -1495,7 +1495,7 @@ li {
   background:url('../img/ai/bg-crepuscolo-montagne.webp') center 62%/cover no-repeat;}
 .hero-layer-far{background-size:165%;background-position:center 72%;opacity:.45;filter:blur(1.5px)}
 .hero-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:linear-gradient(180deg,rgba(11,21,38,.30) 0%,rgba(11,21,38,.60) 42%,rgba(11,21,38,.88) 76%,#0b1526 100%)}
+  background:linear-gradient(180deg,rgba(11,21,38,.34) 0%,rgba(11,21,38,.70) 40%,rgba(11,21,38,.92) 74%,#0b1526 100%)}
 .cta-box{position:relative;overflow:hidden}
 .cta-box::before{content:'';position:absolute;inset:0;z-index:0;opacity:.16;
   background:url('../img/ai/hero-officina-v2.webp') center/cover no-repeat}
