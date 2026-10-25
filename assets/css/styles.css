@@ -1591,3 +1591,14 @@ html{scrollbar-color:var(--tono-4) transparent}
 .newsletter-form .btn{margin-top:16px;min-width:220px;padding:13px 26px}
 .form-group p#newsletter-esito{font-size:.85rem;min-height:1em}
 .cta-note{font-size:.82rem;color:var(--text-muted);margin-top:14px}
+
+/* rifinitura del riquadro newsletter (secondo giro, dal controllo visivo) */
+.cta-box{max-width:980px;margin:0 auto;padding:clamp(24px,3.4vw,38px)}
+.cta-box h2{margin-bottom:12px}
+.cta-box > p{font-size:.96rem;margin:0 auto 18px}
+.form-group input[type="email"]{height:44px;font-size:.95rem}
+.form-group label,.cta-box form label{font-size:.88rem;color:var(--text-secondary);line-height:1.5}
+.form-group label.consent,.cta-box form label.consent{color:var(--text-secondary);text-align:left}
+.cta-note{color:var(--text-secondary);font-size:.85rem}
+.newsletter-form .btn{background:linear-gradient(135deg,#9ec5ea 0%,#cfe2f5 100%);border:1px solid rgba(233,241,250,.55);color:#08111f;box-shadow:0 12px 28px rgba(8,17,31,.5)}
+.newsletter-form .btn:hover{background:linear-gradient(135deg,#cfe2f5 0%,#ffffff 100%)}
