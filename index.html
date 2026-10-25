@@ -615,8 +615,14 @@
     });
   }, { rootMargin: '0px 0px -10% 0px', threshold: 0.06 });
   sez.forEach(function (s) { io.observe(s); });
-  /* rete di sicurezza: se qualcosa va storto, dopo 2,5s mostro tutto */
-  window.setTimeout(function () { sez.forEach(function (s) { s.classList.add('aperta'); }); }, 2500);
+  /* rete di sicurezza: se dopo 2,5s NESSUNA sezione si è aperta, l'observer non
+     funziona -> le mostro tutte. (Non apro tutto subito, altrimenti l'effetto 3D
+     sparirebbe per chiunque arrivi dopo 2 secondi.) */
+  window.setTimeout(function () {
+    if (!document.querySelector('.sec3d.aperta')) {
+      sez.forEach(function (s) { s.classList.add('aperta'); });
+    }
+  }, 2500);
 })();
 </script>
 </body>
