@@ -1478,10 +1478,23 @@ li {
 @media(max-width:480px){.mkt-grid{grid-template-columns:1fr}}
 
 /* ===== Landing 25/10/2026: fotografie reali, niente animazioni decorative ===== */
-.hero{gap:56px}
 .hero-content{max-width:600px}
-.hero-photo{position:relative;z-index:2;flex:0 1 560px;border-radius:22px;overflow:hidden;border:1px solid var(--border);box-shadow:0 30px 70px rgba(0,0,0,.45)}
-.hero-photo img{display:block;width:100%;height:auto}
-@media(max-width:1000px){.hero{flex-direction:column;gap:32px}.hero-content{max-width:640px}.hero-photo{flex:0 0 auto;width:100%;max-width:560px;margin:0 auto}}
 .photo-band{max-width:1040px;margin:0 auto var(--space-xl);border-radius:20px;overflow:hidden;border:1px solid var(--border)}
 .photo-band img{display:block;width:100%;height:clamp(220px,30vw,360px);object-fit:cover}
+
+/* ===== Direzione C: crepuscolo in montagna + apertura 3D delle sezioni (25/10/2026) ===== */
+.hero-layer{position:absolute;inset:-7% -5%;z-index:0;pointer-events:none;
+  background:url('../img/ai/bg-crepuscolo-montagne.webp') center 62%/cover no-repeat;}
+.hero-layer-far{background-size:165%;background-position:center 72%;opacity:.45;filter:blur(1.5px)}
+.hero-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(11,21,38,.30) 0%,rgba(11,21,38,.60) 42%,rgba(11,21,38,.88) 76%,#0b1526 100%)}
+.cta-box{position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;inset:0;z-index:0;opacity:.16;
+  background:url('../img/ai/hero-officina-v2.webp') center/cover no-repeat}
+.cta-box > *{position:relative;z-index:1}
+@media (prefers-reduced-motion: no-preference){
+  .sec3d{opacity:0;transform:perspective(1100px) translate3d(0,52px,-60px) rotateX(7deg) scale(.975);
+    transform-origin:center top;transition:opacity .7s ease,transform 1s cubic-bezier(.22,1,.36,1)}
+  .sec3d.aperta{opacity:1;transform:perspective(1100px) translate3d(0,0,0) rotateX(0) scale(1)}
+}
+@media (prefers-reduced-motion: reduce){.hero-layer{transform:none!important}}

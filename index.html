@@ -131,9 +131,9 @@
                 <span class="proof-link">📅 Aggiornato il 24 ottobre 2026</span>
             </div>
         </div>
-            <div class="hero-photo">
-                <img src="assets/img/ai/hero-officina-v2.webp" alt="Officina luminosa: bancone in legno con attrezzi, banconote in euro e quaderno dei conti" width="1600" height="900" fetchpriority="high" decoding="async">
-            </div>
+            <div class="hero-layer" aria-hidden="true"></div>
+            <div class="hero-layer hero-layer-far" aria-hidden="true"></div>
+            <div class="hero-scrim" aria-hidden="true"></div>
         <div class="scroll-progress" id="scrollProgress"></div>
     </section>
 
@@ -582,5 +582,42 @@
 
     <script src="assets/js/script.js"></script>
     <script src="assets/js/forms.js"></script>
+
+<script>
+/* ==== Landing: parallax dell'hero + apertura 3D delle sezioni ====
+   La classe che nasconde una sezione viene aggiunta SOLO qui: senza JS il contenuto
+   resta visibile e indicizzabile. Con "riduci animazioni" non si attiva nulla. */
+(function () {
+  var strati = [].slice.call(document.querySelectorAll('.hero-layer'));
+  var ridotto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ticking = false;
+  function muovi() {
+    var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+    for (var i = 0; i < strati.length; i++) {
+      var d = i === 0 ? 0.08 : 0.20;
+      strati[i].style.transform = 'translate3d(0,' + (y * d).toFixed(2) + 'px,0)';
+    }
+    ticking = false;
+  }
+  if (strati.length && !ridotto) {
+    window.addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; window.requestAnimationFrame(muovi); }
+    }, { passive: true });
+    muovi();
+  }
+
+  var sez = [].slice.call(document.querySelectorAll('section.section'));
+  if (!sez.length || ridotto || !('IntersectionObserver' in window)) return;
+  sez.forEach(function (s) { s.classList.add('sec3d'); });
+  var io = new IntersectionObserver(function (voci) {
+    voci.forEach(function (v) {
+      if (v.isIntersecting) { v.target.classList.add('aperta'); io.unobserve(v.target); }
+    });
+  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.06 });
+  sez.forEach(function (s) { io.observe(s); });
+  /* rete di sicurezza: se qualcosa va storto, dopo 2,5s mostro tutto */
+  window.setTimeout(function () { sez.forEach(function (s) { s.classList.add('aperta'); }); }, 2500);
+})();
+</script>
 </body>
 </html>
