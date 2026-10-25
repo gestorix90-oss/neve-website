@@ -1568,3 +1568,10 @@ input:focus,select:focus,textarea:focus,.newsletter-form input:focus{border-colo
 html{scrollbar-color:var(--tono-4) transparent}
 ::-webkit-scrollbar-thumb{background:var(--tono-4);border-radius:8px}
 ::-webkit-scrollbar-track{background:transparent}
+
+/* leggibilità dei testi piccoli (segnalata dal controllo visivo del 25/10/2026) */
+.sc-ticker a,.sc-ticker .tick-clone{font-size:.92rem}
+.hero-badge,.section-tag{font-size:.82rem;padding:7px 15px}
+.hero-proof,.proof-link{font-size:.92rem}
+.footer a,.footer-bottom,.blog-date{font-size:.9rem}
+.hero-subtitle{color:#dfe9f7}
