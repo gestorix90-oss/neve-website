@@ -585,47 +585,71 @@
 
 <script>
 /* ==== Landing: parallax dell'hero + apertura 3D delle sezioni ====
-   La classe che nasconde una sezione viene aggiunta SOLO qui: senza JS il contenuto
-   resta visibile e indicizzabile. Con "riduci animazioni" non si attiva nulla. */
+   Regole di sicurezza:
+   - la classe che nasconde una sezione la aggiunge SOLO questo script: senza JS (o con
+     "riduci animazioni" attivo) il contenuto resta visibile e indicizzabile;
+   - l'observer parte a pagina caricata, quando il layout è assestato, e apre una sezione solo
+     se è davvero nella finestra (altrimenti durante il caricamento le aprirebbe tutte);
+   - se l'observer non risponde affatto, dopo 5s mostra tutto. */
 (function () {
   var strati = [].slice.call(document.querySelectorAll('.hero-layer'));
   var ridotto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var ticking = false;
+  var ultimo = 0;
+
   function muovi() {
     var y = window.pageYOffset || document.documentElement.scrollTop || 0;
     for (var i = 0; i < strati.length; i++) {
-      var d = i === 0 ? 0.08 : 0.20;
-      strati[i].style.transform = 'translate3d(0,' + (y * d).toFixed(2) + 'px,0)';
+      strati[i].style.transform = 'translate3d(0,' + (y * (i === 0 ? 0.08 : 0.20)).toFixed(2) + 'px,0)';
     }
-    ticking = false;
   }
   if (strati.length && !ridotto) {
     window.addEventListener('scroll', function () {
-      if (!ticking) { ticking = true; window.requestAnimationFrame(muovi); }
+      var ora = Date.now();
+      if (ora - ultimo < 16) return;
+      ultimo = ora;
+      muovi();
     }, { passive: true });
     muovi();
   }
 
   var sez = [].slice.call(document.querySelectorAll('section.section'));
   if (!sez.length || ridotto || !('IntersectionObserver' in window)) return;
+
   sez.forEach(function (s) { s.classList.add('sec3d'); });
-  var osservatoreAttivo = false;
-  var io = new IntersectionObserver(function (voci) {
-    osservatoreAttivo = true;
-    voci.forEach(function (v) {
-      if (v.isIntersecting) { v.target.classList.add('aperta'); io.unobserve(v.target); }
-    });
-  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.06 });
-  sez.forEach(function (s) { io.observe(s); });
-  /* rete di sicurezza: apre tutto SOLO se l'observer non ha mai risposto (guasto reale).
-     Non si basa su "nessuna sezione aperta" perche' su una pagina con pubblicita' la
-     prima risposta dell'observer puo' arrivare dopo qualche secondo, e in quel caso
-     aprirebbe tutto annullando l'effetto. */
-  window.setTimeout(function () {
-    if (!osservatoreAttivo) {
-      sez.forEach(function (s) { s.classList.add('aperta'); });
+
+  function avvia() {
+    var attivo = false;
+    function dentro(el) {
+      var r = el.getBoundingClientRect();
+      var h = window.innerHeight || document.documentElement.clientHeight;
+      return r.top < h * 0.92 && r.bottom > h * 0.06;
     }
-  }, 4000);
+    var io = new IntersectionObserver(function (voci) {
+      attivo = true;
+      voci.forEach(function (v) {
+        if (v.isIntersecting && dentro(v.target)) {
+          v.target.classList.add('aperta');
+          io.unobserve(v.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    sez.forEach(function (s) { io.observe(s); });
+    window.setTimeout(function () {
+      if (!attivo) { sez.forEach(function (s) { s.classList.add('aperta'); }); }
+    }, 5000);
+  }
+
+  /* primo controllo: quello che è già in vista si apre subito, senza animazione */
+  sez.forEach(function (s) {
+    var r = s.getBoundingClientRect();
+    var h = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < h * 0.92 && r.bottom > 0) { s.classList.add('aperta'); }
+  });
+  if (document.readyState === 'complete') {
+    window.setTimeout(avvia, 500);
+  } else {
+    window.addEventListener('load', function () { window.setTimeout(avvia, 500); });
+  }
 })();
 </script>
 </body>
