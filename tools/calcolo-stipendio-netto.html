@@ -15,13 +15,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #2563eb;
+            --primary: #7fa9d6;
             --primary-hover: #1d4ed8;
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --card-border: #334155;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
+            --bg: #0a1526;
+            --card-bg: #12203a;
+            --card-border: #26395a;
+            --text-main: #e9f1fa;
+            --text-muted: #a8bdd6;
             --accent-green: #10b981;
             --accent-yellow: #8fb8e0;
         }
@@ -31,18 +31,18 @@
         header { text-align: center; margin-bottom: 24px; padding: 16px 0; }
         header h1 { font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 8px; }
         header p { color: var(--text-muted); font-size: 1rem; }
-        .sc-ticker { overflow: hidden; white-space: nowrap; background: #1e293b; border: 1px solid var(--card-border); border-radius: 8px; padding: 8px 0; margin-bottom: 16px; }
+        .sc-ticker { overflow: hidden; white-space: nowrap; background: #12203a; border: 1px solid var(--card-border); border-radius: 8px; padding: 8px 0; margin-bottom: 16px; }
         .sc-ticker-track { display: inline-block; animation: tick 30s linear infinite; }
         @keyframes tick { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-        .sc-ticker a { color: #38bdf8; text-decoration: none; margin: 0 18px; font-size: 0.85rem; }
-        .sc-ticker .sep { color: #475569; margin: 0 6px; }
+        .sc-ticker a { color: #9ec5ea; text-decoration: none; margin: 0 18px; font-size: 0.85rem; }
+        .sc-ticker .sep { color: #3a5273; margin: 0 6px; }
         .main-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
         @media (max-width: 768px) { .main-grid { grid-template-columns: 1fr; } }
         .card { background-color: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,.2); }
         .card-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
         .form-group { margin-bottom: 14px; }
         label { display: block; font-size: 0.875rem; font-weight: 500; color: var(--text-muted); margin-bottom: 6px; }
-        input[type="number"], select { width: 100%; padding: 12px 14px; background-color: #0f172a; border: 1px solid var(--card-border); border-radius: 8px; color: #fff; font-size: 1rem; outline: none; transition: border-color .2s; }
+        input[type="number"], select { width: 100%; padding: 12px 14px; background-color: #0a1526; border: 1px solid var(--card-border); border-radius: 8px; color: #fff; font-size: 1rem; outline: none; transition: border-color .2s; }
         input[type="number"]:focus, select:focus { border-color: var(--primary); }
         .check-row { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
         .check-row input { width: 18px; height: 18px; accent-color: var(--primary); }
@@ -50,26 +50,26 @@
         .btn-calc { width: 100%; padding: 14px; background-color: var(--primary); color: #fff; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background-color .2s; margin-top: 8px; }
         .btn-calc:hover { background-color: var(--primary-hover); }
         .results-box { display: flex; flex-direction: column; gap: 14px; }
-        .highlight-res { background: linear-gradient(135deg, #1e3a8a 0%, #1e293b 100%); border: 1px solid #3b82f6; border-radius: 10px; padding: 20px; text-align: center; }
-        .highlight-label { font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; color: #93c5fd; margin-bottom: 4px; }
-        .highlight-val { font-size: 2.25rem; font-weight: 800; color: #38bdf8; }
-        .breakdown-row { display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-bottom: 1px solid #334155; font-size: .92rem; gap: 10px; }
+        .highlight-res { background: linear-gradient(135deg, #1b2b44 0%, #12203a 100%); border: 1px solid #9ec5ea; border-radius: 10px; padding: 20px; text-align: center; }
+        .highlight-label { font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; color: #cfe2f5; margin-bottom: 4px; }
+        .highlight-val { font-size: 2.25rem; font-weight: 800; color: #9ec5ea; }
+        .breakdown-row { display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-bottom: 1px solid #26395a; font-size: .92rem; gap: 10px; }
         .breakdown-row:last-child { border-bottom: none; }
         .breakdown-row span:first-child { color: var(--text-muted); }
         .val-minus { color: #f87171; font-weight: 600; }
         .val-plus { color: var(--accent-green); font-weight: 600; }
-        .val-neutral { color: #f8fafc; font-weight: 600; }
+        .val-neutral { color: #e9f1fa; font-weight: 600; }
         .val-info { color: var(--accent-yellow); font-weight: 600; }
         .seo-content { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 28px; margin-bottom: 32px; }
         .seo-content h2 { font-size: 1.4rem; margin-bottom: 14px; color: #fff; }
-        .seo-content h3 { font-size: 1.1rem; margin-top: 18px; margin-bottom: 8px; color: #38bdf8; }
+        .seo-content h3 { font-size: 1.1rem; margin-top: 18px; margin-bottom: 8px; color: #9ec5ea; }
         .seo-content p, .seo-content ul { color: var(--text-muted); font-size: .95rem; margin-bottom: 12px; }
         .seo-content ul { padding-left: 20px; }
         .seo-content table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: .9rem; }
         .seo-content th, .seo-content td { border: 1px solid var(--card-border); padding: 8px 10px; text-align: left; color: var(--text-muted); }
-        .seo-content th { color: #fff; background: #0f172a; }
-        .int-links a { color: #38bdf8 !important; }
-        footer { text-align: center; padding: 24px 0; color: var(--text-muted); font-size: .8rem; border-top: 1px solid #334155; }
+        .seo-content th { color: #fff; background: #0a1526; }
+        .int-links a { color: #9ec5ea !important; }
+        footer { text-align: center; padding: 24px 0; color: var(--text-muted); font-size: .8rem; border-top: 1px solid #26395a; }
     </style>
 <meta property="og:title" content="Calcolo Stipendio Netto 2026 — Busta Paga e TFR">
 <meta property="og:description" content="Calcolatore stipendio netto 2026 gratuito: IRPEF 23/33/43%, cuneo fiscale con detrazione 1.000 €, addizionali regionali e comunali, TFR e 13ª/14ª mensilità.">
@@ -103,12 +103,12 @@
         <a href="../busta-paga-senza-misteri.html">🔧 Workbook Busta Paga — €9 (35 pagine compilabili)</a><span class="sep">⚙️</span>
     </div>
 </div>
-<div style="background:#0f172a;border-bottom:1px solid #334155;padding:10px 16px;text-align:center;font-family:'Inter',sans-serif">
-    <a href="../index.html" style="color:#38bdf8;text-decoration:none;font-weight:600">⚙️ SoldiChiari</a>
-    <span style="color:#475569;margin:0 8px">·</span>
-    <a href="../strumenti.html" style="color:#94a3b8;text-decoration:none">🛠️ Strumenti</a>
-    <span style="color:#475569;margin:0 8px">·</span>
-    <a href="../blog/blog.html" style="color:#94a3b8;text-decoration:none">📝 Blog</a>
+<div style="background:#0a1526;border-bottom:1px solid #26395a;padding:10px 16px;text-align:center;font-family:'Inter',sans-serif">
+    <a href="../index.html" style="color:#9ec5ea;text-decoration:none;font-weight:600">⚙️ SoldiChiari</a>
+    <span style="color:#3a5273;margin:0 8px">·</span>
+    <a href="../strumenti.html" style="color:#a8bdd6;text-decoration:none">🛠️ Strumenti</a>
+    <span style="color:#3a5273;margin:0 8px">·</span>
+    <a href="../blog/blog.html" style="color:#a8bdd6;text-decoration:none">📝 Blog</a>
 </div>
 
 <div class="container">
@@ -218,22 +218,22 @@
                 <div class="breakdown-row"><span>TFR annuo accantonato:</span><span class="val-neutral" id="res-tfr">—</span></div>
                 <div class="breakdown-row"><span>Incidenza fiscale (netto/lordo):</span><span class="val-info" id="res-pct">—</span></div>
             </div>
-            <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:16px;margin:20px 0;text-align:center;">
-                          <p style="color:#f8fafc;font-weight:600;margin-bottom:8px;">Hai trovato utile questo calcolo?</p>
-                          <p style="color:#94a3b8;font-size:14px;">Salva il tuo risultato e ricevilo per email + consigli settimanali sulla busta paga</p>
+            <div style="background:#12203a;border:1px solid #26395a;border-radius:8px;padding:16px;margin:20px 0;text-align:center;">
+                          <p style="color:#e9f1fa;font-weight:600;margin-bottom:8px;">Hai trovato utile questo calcolo?</p>
+                          <p style="color:#a8bdd6;font-size:14px;">Salva il tuo risultato e ricevilo per email + consigli settimanali sulla busta paga</p>
                           <p style="margin-top:12px;"><a href="../busta-paga-senza-misteri.html" style="color:#9ec5ea;font-weight:600;">Vuoi rifare i conti con la TUA busta paga in mano? Il «Bundle Stipendio Escape» (Workbook + Playbook), 2 PDF — €15 →</a></p>
                         </div>
 <!-- FORM PER LEAD CAPTURO - Google Form (embedded, notifica Gmail diretta) -->
-            <div id="lead-form-anchor" style="margin-top:24px;padding:16px;border:1px solid #334155;border-radius:8px;background:#1e293b;">
+            <div id="lead-form-anchor" style="margin-top:24px;padding:16px;border:1px solid #26395a;border-radius:8px;background:#12203a;">
               <iframe title="Modulo lead - Calcolatore Stipendio Netto"
                       src="https://docs.google.com/forms/d/e/1FAIpQLSf8yvDhej7vueGd59kWy0sRnvgFJgCqBo2OJdFCyk3j3iWidg/viewform?embedded=true"
                       width="100%" height="520" style="border:0;border-radius:4px;background:#fff;"
                       loading="lazy" frameborder="0">
                 Caricamento modulo…
               </iframe>
-              <p style="margin-top:8px;font-size:13px;color:#94a3b8;text-align:center;">
+              <p style="margin-top:8px;font-size:13px;color:#a8bdd6;text-align:center;">
                 Se non vedi il modulo sopra
-                <a href="https://forms.gle/k5YfWQBGd8Db9DtbA" target="_blank" rel="noopener" style="color:#38bdf8;">aprilo in una nuova scheda →</a>
+                <a href="https://forms.gle/k5YfWQBGd8Db9DtbA" target="_blank" rel="noopener" style="color:#9ec5ea;">aprilo in una nuova scheda →</a>
               </p>
             </div>
         </div>
@@ -312,7 +312,7 @@
         <p><strong>Le 14 mensilità convengono?</strong> Il netto annuo non cambia: cambia la distribuzione. Con la quattordicesima l'imposta si spalma e spesso si evita lo scatto di aliquota di fine anno. Conviene se gestisci il flusso; non conviene se conti 12 stipendi.</p>
         <p><strong>Il calcolo è esatto al centesimo?</strong> È una stima normativa accurata per la casistica standard. Conguagli, bonus aziendali, welfare e casi misti possono spostare il risultato: confronta sempre con il tuo cedolino.</p>
     
-<div class="author-box" style="margin-top:2rem;padding:18px;border:1px solid var(--border,#334155);border-radius:12px">
+<div class="author-box" style="margin-top:2rem;padding:18px;border:1px solid var(--border,#26395a);border-radius:12px">
   <p style="margin:0"><strong>Scritto da Neve</strong> — il meccanico dei tuoi soldi. <a href="/chi-sono.html">La mia storia</a> · Dati fiscali verificati alla fonte, ultima revisione: 11 ottobre 2026.</p>
 </div>
 <h2>Fonti</h2>
@@ -322,16 +322,16 @@
 <li><a href="https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.09.messaggio-numero-2829-del-14-09-2026_15371.html" rel="nofollow noopener" target="_blank">INPS, Messaggio 2829 del 14/09/2026 — applicazione dei benefici 2026</a></li>
 <li><a href="https://www.gazzettaufficiale.it/eli/id/2024/12/30/24G00214/sg" rel="nofollow noopener" target="_blank">Legge 30 dicembre 2024, n. 207 (Bilancio 2025) — Gazzetta Ufficiale</a></li>
 </ul>
-<p style="font-size:.85rem;color:var(--text-muted,#94a3b8)">Parametri 2026 — aggiornato 11 ottobre 2026: contributi INPS dipendenti 9,19%, scaglioni IRPEF 23/33/43%, bonus cuneo fiscale 2026.</p>
+<p style="font-size:.85rem;color:var(--text-muted,#a8bdd6)">Parametri 2026 — aggiornato 11 ottobre 2026: contributi INPS dipendenti 9,19%, scaglioni IRPEF 23/33/43%, bonus cuneo fiscale 2026.</p>
 </article>
 
     <div class="card" style="margin-top:32px;">
         <h2 class="card-title">📥 La guida è gratuita</h2>
-        <p style="color:#94a3b8;font-size:14px;margin-bottom:12px;">
+        <p style="color:#a8bdd6;font-size:14px;margin-bottom:12px;">
           Se ti è utile il calcolatore, iscriviti alla newsletter: ti mando la <strong>“Guida alla Busta Paga 2026”</strong> in PDF via email, più un consiglio a settimana.
         </p>
         <p style="text-align:center;">
-          <a href="../risorse.html#lead" style="display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:600;">📬 Iscriviti gratis</a>
+          <a href="../risorse.html#lead" style="display:inline-block;background:#7fa9d6;color:#fff;padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:600;">📬 Iscriviti gratis</a>
         </p>
     </div>
 
@@ -350,7 +350,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 SoldiChiari — <a href="../privacy.html" style="color:#38bdf8">Privacy e Cookie</a> · <a href="../contatti.html" style="color:#38bdf8">Contatti</a></p>
+        <p>&copy; 2026 SoldiChiari — <a href="../privacy.html" style="color:#9ec5ea">Privacy e Cookie</a> · <a href="../contatti.html" style="color:#9ec5ea">Contatti</a></p>
         <p style="margin-top:8px">Strumento di simulazione indicativo, senza valore di consulenza fiscale ufficiale.</p>
         <p style="text-align:center;margin:10px 0;">Seguici: <a href="https://x.com/nevenoir" target="_blank" rel="noopener noreferrer">🐦 X — @nevenoir</a> · <a href="https://youtube.com/@neve_noir" target="_blank" rel="noopener noreferrer">📺 YouTube — @neve.noir</a> · <a href="https://www.tiktok.com/@neve.noir" target="_blank" rel="noopener noreferrer">🎵 TikTok — @neve.noir</a> · <a href="https://www.instagram.com/soldichiari.official" target="_blank" rel="noopener noreferrer">📸 Instagram — @soldichiari.official</a></p>
 </footer>
