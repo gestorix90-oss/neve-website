@@ -108,6 +108,15 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.01em;
 }
 
+/* focus visibile da tastiera (a11y): prima solo i campi form lo avevano */
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible,
+.btn:focus-visible,.nav-link:focus-visible,.signal-chip:focus-visible,
+.tool-card:focus-visible,.band-card a:focus-visible{
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
 h2 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); }
 h3 { font-size: clamp(1.1rem, 2.5vw, 1.3rem); }
