@@ -330,17 +330,17 @@
 
         svg.innerHTML =
           '<defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">' +
-          '<stop offset="0%" stop-color="#f97316" stop-opacity="0.3"/>' +
-          '<stop offset="100%" stop-color="#f97316" stop-opacity="0.02"/>' +
+          '<stop offset="0%" stop-color="#9ec5ea" stop-opacity="0.3"/>' +
+          '<stop offset="100%" stop-color="#9ec5ea" stop-opacity="0.02"/>' +
           '</linearGradient></defs>' +
           '<polygon points="40,' + (h - 30) + ' ' + path.trim().replace(/M[^M]+$/, '').replace(/L/g, 'L') + ' ' + (w - 40) + ',' + (h - 30) + '" fill="url(#cg)"/>' +
-          '<path d="' + path + '" fill="none" stroke="#f97316" stroke-width="2.5"/>' +
+          '<path d="' + path + '" fill="none" stroke="#9ec5ea" stroke-width="2.5"/>' +
           '<line x1="40" y1="' + (h - 30) + '" x2="' + (w - 40) + '" y2="' + (h - 30) + '" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>' +
           '<line x1="40" y1="30" x2="40" y2="' + (h - 30) + '" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>' +
           '<text x="40" y="' + (h - 10) + '" fill="#64748b" font-size="10" font-family="Inter">0</text>' +
           '<text x="' + (w - 40) + '" y="' + (h - 10) + '" fill="#64748b" font-size="10" font-family="Inter">' + years + 'y</text>' +
           '<text x="30" y="25" fill="#64748b" font-size="10" font-family="Inter" text-anchor="end">' + (maxVal / 1000).toFixed(0) + 'k€</text>' +
-          '<text x="' + (w - 45) + '" y="25" fill="#f97316" font-size="11" font-family="Inter" font-weight="700" text-anchor="end">' + Math.round(total).toLocaleString() + '€</text>';
+          '<text x="' + (w - 45) + '" y="25" fill="#9ec5ea" font-size="11" font-family="Inter" font-weight="700" text-anchor="end">' + Math.round(total).toLocaleString() + '€</text>';
 
         ctx.appendChild(svg);
       }

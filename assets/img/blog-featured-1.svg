@@ -5,14 +5,14 @@
       <stop offset="100%" style="stop-color:#111d35"/>
     </linearGradient>
     <radialGradient id="glow" cx="60%" cy="40%">
-      <stop offset="0%" style="stop-color:rgba(249,115,22,0.12)"/>
+      <stop offset="0%" style="stop-color:rgba(158,197,234,0.12)"/>
       <stop offset="100%" style="stop-color:transparent"/>
     </radialGradient>
   </defs>
   <rect width="800" height="360" fill="url(#bg)"/>
   <rect width="800" height="360" fill="url(#glow)"/>
   <!-- Single bold shape -->
-  <circle cx="620" cy="120" r="140" fill="none" stroke="#f97316" stroke-width="3" opacity="0.5"/>
-  <circle cx="620" cy="120" r="100" fill="none" stroke="#f97316" stroke-width="1.5" opacity="0.25"/>
-  <path d="M180 200 Q280 100 400 160 Q520 220 600 180" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.3"/>
+  <circle cx="620" cy="120" r="140" fill="none" stroke="#9ec5ea" stroke-width="3" opacity="0.5"/>
+  <circle cx="620" cy="120" r="100" fill="none" stroke="#9ec5ea" stroke-width="1.5" opacity="0.25"/>
+  <path d="M180 200 Q280 100 400 160 Q520 220 600 180" fill="none" stroke="#bcd8f2" stroke-width="2" opacity="0.3"/>
 </svg>

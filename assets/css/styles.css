@@ -9,30 +9,38 @@
 
 /* ============ CSS VARIABLES ============ */
 :root {
+  /* ===== Palette tonale 25/10/2026 — presa dalla fotografia (blu notte -> azzurro luna), senza arancione ===== */
+  --tono-1: #cfe2f5;
+  --tono-2: #9ec5ea;
+  --tono-3: #7fa9d6;
+  --tono-4: #5c82ab;
+  --accent-soft: rgba(158,197,234,.16);
+  --accent-line: rgba(158,197,234,.34);
+  --velo: rgba(10,21,38,.72);
   /* Palette */
-  --orange: #f97316;
-  --orange-dark: #ea580c;
-  --orange-light: #fed7aa;
-  --blue: #3b82f6;
-  --blue-dark: #1d4ed8;
-  --green: #10b981;
-  --green-dark: #059669;
-  --red: #ef4444;
-  --yellow: #fbbf24;
-  --purple: #a855f7;
-  --accent: #f97316;
+  --orange: var(--tono-2);
+  --orange-dark: var(--tono-3);
+  --orange-light: var(--tono-1);
+  --blue: var(--tono-2);
+  --blue-dark: var(--tono-4);
+  --green: #8fc6bd;
+  --green-dark: #6fa79e;
+  --red: #e08a8a;
+  --yellow: var(--tono-1);
+  --purple: #a9b8e8;
+  --accent: var(--tono-2);
 
   /* Dark Theme — tuned for editorial depth */
-  --bg-primary: #0a1628;
-  --bg-secondary: #111d3a;
-  --bg-card: #142140;
-  --bg-card-hover: #1c2e50;
-  --bg-input: #131f36;
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted: #526484;
-  --border: #1e2d4a;
-  --border-light: #2a3a5c;
+  --bg-primary: #0a1526;
+  --bg-secondary: #0f1e33;
+  --bg-card: #12203a;
+  --bg-card-hover: #172a47;
+  --bg-input: #101d33;
+  --text-primary: #e9f1fa;
+  --text-secondary: #a8bdd6;
+  --text-muted: #7c93b0;
+  --border: #1b2b44;
+  --border-light: #26395a;
 
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -55,7 +63,7 @@
   --shadow-sm: 0 1px 2px rgba(0,0,0,0.25);
   --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
   --shadow-lg: 0 8px 30px rgba(0,0,0,0.35);
-  --shadow-glow: 0 0 24px rgba(249,115,22,0.12);
+  --shadow-glow: 0 0 24px rgba(158,197,234,0.12);
 
   /* Transitions */
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -243,11 +251,11 @@ li {
 }
 
 .glow-btn {
-  box-shadow: 0 0 20px rgba(249,115,22,0.25);
+  box-shadow: 0 0 20px rgba(158,197,234,0.25);
 }
 
 .glow-btn:hover {
-  box-shadow: 0 0 30px rgba(249,115,22,0.45);
+  box-shadow: 0 0 30px rgba(158,197,234,0.45);
 }
 
 /* ============ NAVBAR ============ */
@@ -291,7 +299,7 @@ li {
 .logo-img {
   height: 36px;
   width: 36px;
-  filter: drop-shadow(0 0 6px rgba(249,115,22,0.4));
+  filter: drop-shadow(0 0 6px rgba(158,197,234,0.4));
 }
 
 .logo-text {
@@ -346,7 +354,7 @@ li {
 
 .nav-link.active {
   color: var(--orange);
-  background: rgba(249,115,22,0.08);
+  background: rgba(158,197,234,0.08);
 }
 
 .nav-cta {
@@ -384,7 +392,7 @@ li {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 45%, rgba(249,115,22,0.07) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 45%, rgba(158,197,234,0.07) 0%, transparent 60%);
 }
 
 .hero-content {
@@ -395,13 +403,13 @@ li {
 
 .hero-badge {
   display: inline-block;
-  background: rgba(249,115,22,0.12);
+  background: rgba(158,197,234,0.12);
   color: var(--orange);
   font-size: 0.8rem;
   font-weight: 700;
   padding: 6px 18px;
   border-radius: 50px;
-  border: 1px solid rgba(249,115,22,0.25);
+  border: 1px solid rgba(158,197,234,0.25);
   margin-bottom: 24px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -531,7 +539,7 @@ li {
 }
 
 .problem-card:hover {
-  border-color: rgba(249,115,22,0.3);
+  border-color: rgba(158,197,234,0.3);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -628,7 +636,7 @@ li {
 }
 
 .impact-card:hover {
-  border-color: rgba(249,115,22,0.25);
+  border-color: rgba(158,197,234,0.25);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -668,7 +676,7 @@ li {
 }
 
 .blog-card:hover {
-  border-color: rgba(249,115,22,0.25);
+  border-color: rgba(158,197,234,0.25);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -700,7 +708,7 @@ li {
 .tag-bias  { background: rgba(168,85,247,0.2); color: #c084fc; }
 .tag-invest { background: rgba(16,185,129,0.2); color: #34d399; }
 .tag-psych  { background: rgba(59,130,246,0.2); color: #60a5fa; }
-.tag-budget { background: rgba(249,115,22,0.2); color: #fdba74; }
+.tag-budget { background: rgba(158,197,234,0.2); color: #cfe2f5; }
 .tag-debt   { background: rgba(239,68,68,0.2); color: #f87171; }
 
 .blog-content { padding: var(--space-md); }
@@ -752,7 +760,7 @@ li {
 }
 
 .tool-card:hover {
-  border-color: rgba(249,115,22,0.25);
+  border-color: rgba(158,197,234,0.25);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -792,7 +800,7 @@ li {
 }
 
 .testimonial-card:hover {
-  border-color: rgba(249,115,22,0.2);
+  border-color: rgba(158,197,234,0.2);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -869,8 +877,8 @@ li {
 }
 
 .cta-box {
-  background: linear-gradient(135deg, rgba(249,115,22,0.06), rgba(59,130,246,0.04));
-  border: 1px solid rgba(249,115,22,0.15);
+  background: linear-gradient(135deg, rgba(158,197,234,0.06), rgba(59,130,246,0.04));
+  border: 1px solid rgba(158,197,234,0.15);
   border-radius: var(--border-radius-xl);
   padding: var(--space-2xl);
   text-align: center;
@@ -885,7 +893,7 @@ li {
   left: -40%;
   width: 180%;
   height: 180%;
-  background: radial-gradient(circle, rgba(249,115,22,0.03) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(158,197,234,0.03) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -964,7 +972,7 @@ li {
 .form-group input[type="email"]:focus {
   outline: none;
   border-color: var(--orange);
-  box-shadow: 0 0 0 3px rgba(249,115,22,0.1);
+  box-shadow: 0 0 0 3px rgba(158,197,234,0.1);
 }
 
 .form-group input[type="email"]::placeholder {
@@ -1245,7 +1253,7 @@ li {
 @import url('blog.css');
 
 /* ===== Ticker "officina aperta" ===== */
-.sc-ticker{background:linear-gradient(90deg,#f59e0b,#f97316);color:#0a1628;overflow:hidden;position:relative;height:38px;display:flex;align-items:center;z-index:1001}
+.sc-ticker{background:linear-gradient(90deg,#8fb8e0,#9ec5ea);color:#0a1628;overflow:hidden;position:relative;height:38px;display:flex;align-items:center;z-index:1001}
 .sc-ticker-track{display:flex;gap:48px;white-space:nowrap;animation:sc-ticker 38s linear infinite;padding-left:100%}
 .sc-ticker:hover .sc-ticker-track{animation-play-state:paused}
 .sc-ticker a,.sc-ticker .tick-clone{color:#0a1628;font-weight:800;text-decoration:none;font-size:.85rem;letter-spacing:.02em}
@@ -1277,23 +1285,23 @@ li {
 .sc-slide.active img{transform:scale(1)}
 .sc-slide-cap{position:absolute;left:0;right:0;bottom:0;padding:22px 26px;background:linear-gradient(transparent,rgba(10,22,40,.92));color:#fff}
 .sc-slide-cap strong{display:block;font-size:1.35rem;margin-bottom:4px}
-.sc-slide-cap span{color:#fbbf24;font-weight:600;font-size:.95rem}
-.sc-arrow{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:none;background:rgba(10,22,40,.55);color:#fbbf24;font-size:1.6rem;cursor:pointer;z-index:2;backdrop-filter:blur(4px);transition:background .2s}
-.sc-arrow:hover{background:rgba(245,158,11,.85);color:#0a1628}
+.sc-slide-cap span{color:#bcd8f2;font-weight:600;font-size:.95rem}
+.sc-arrow{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:none;background:rgba(10,22,40,.55);color:#bcd8f2;font-size:1.6rem;cursor:pointer;z-index:2;backdrop-filter:blur(4px);transition:background .2s}
+.sc-arrow:hover{background:rgba(143,184,224,.85);color:#0a1628}
 .sc-prev{left:14px}.sc-next{right:14px}
 .sc-dots{position:absolute;bottom:12px;right:20px;display:flex;gap:8px;z-index:2}
 .sc-dots button{width:10px;height:10px;border-radius:50%;border:none;background:rgba(255,255,255,.4);cursor:pointer;padding:0}
-.sc-dots button.on{background:#fbbf24;transform:scale(1.25)}
+.sc-dots button.on{background:#bcd8f2;transform:scale(1.25)}
 
 /* ===== Tilt 3D card ===== */
 .tilt3d{transform-style:preserve-3d;transition:transform .18s ease,box-shadow .3s ease;will-change:transform}
-.tilt3d:hover{box-shadow:0 18px 48px rgba(245,158,11,.14)}
+.tilt3d:hover{box-shadow:0 18px 48px rgba(143,184,224,.14)}
 @media(prefers-reduced-motion:reduce){.sc-slides{transition:none}}
 
 .real-signals{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:8px}
 .signal-chip{display:inline-flex;align-items:center;gap:8px;background:var(--card,#111a2e);border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:12px 22px;color:var(--foreground,#e2e8f0);text-decoration:none;font-weight:600;transition:transform .2s,border-color .2s}
-.signal-chip span{color:#fbbf24;transition:transform .2s}
-.signal-chip:hover{border-color:#f59e0b;transform:translateY(-2px)}
+.signal-chip span{color:#bcd8f2;transition:transform .2s}
+.signal-chip:hover{border-color:#8fb8e0;transform:translateY(-2px)}
 .signal-chip:hover span{transform:translateX(4px)}
 
 /* ============ CONTATTI — pagina dedicata (SoldiChiari) ============ */
@@ -1379,7 +1387,7 @@ li {
   outline: none;
   border-color: var(--accent);
   background: var(--bg-card);
-  box-shadow: 0 0 0 3px rgba(249, 115, 22, .18);
+  box-shadow: 0 0 0 3px rgba(158, 197, 234, .18);
 }
 
 .contact-form .btn { width: 100%; justify-content: center; }
@@ -1473,7 +1481,7 @@ li {
 .mkt-geo{background:var(--bg-secondary);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:12px;padding:22px 24px}
 .mkt-geo h3{font-size:1rem;margin:0 0 10px}
 .mkt-geo p{margin:0;font-size:.9rem;line-height:1.65;color:var(--text-secondary)}
-.mkt-disclaimer{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.3);border-radius:12px;padding:18px 22px;font-size:.88rem;line-height:1.6;color:var(--text-secondary)}
+.mkt-disclaimer{background:rgba(188,216,242,.06);border:1px solid rgba(188,216,242,.3);border-radius:12px;padding:18px 22px;font-size:.88rem;line-height:1.6;color:var(--text-secondary)}
 @media(max-width:768px){.mkt-geo-grid{grid-template-columns:1fr}.mkt-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.mkt-grid{grid-template-columns:1fr}}
 
@@ -1502,3 +1510,61 @@ li {
 /* contrasto del sottotitolo della hero sopra la fotografia (WCAG) */
 .hero-subtitle{color:#dce7f6;text-shadow:0 1px 12px rgba(6,12,24,.55)}
 .hero-subtitle strong{color:#ffffff}
+
+/* ==========================================================================
+   Rinnovazione 25/10/2026 — superfici tonali e fluide (fotografia: blu notte)
+   Tutto resta nella stessa famiglia cromatica: nessun arancione, nessuno stacco duro.
+   ========================================================================== */
+html,body{background:var(--bg-primary);color:var(--text-primary)}
+a,.btn,.nav-link,.tool-card,.blog-card,.problem-card,.impact-card,.signal-chip,.band-card{transition:color .28s ease,background-color .28s ease,border-color .28s ease,box-shadow .28s ease,transform .28s ease}
+
+/* bottone principale: gradiente tonale, testo blu notte (contrasto verificato) */
+.btn-primary{background:linear-gradient(135deg,var(--tono-2) 0%,var(--tono-1) 100%);color:#0a1526;border:1px solid rgba(207,226,245,.45);box-shadow:0 10px 30px rgba(10,21,38,.45)}
+.btn-primary:hover{background:linear-gradient(135deg,var(--tono-1) 0%,#ffffff 100%);color:#08111f;box-shadow:0 14px 36px rgba(158,197,234,.22)}
+.btn-outline{background:rgba(158,197,234,.06);color:var(--tono-1);border:1px solid var(--accent-line)}
+.btn-outline:hover{background:rgba(158,197,234,.14);border-color:var(--tono-2);color:#ffffff}
+.nav-link.nav-cta{background:linear-gradient(135deg,var(--tono-3),var(--tono-2));color:#08111f;border:1px solid rgba(207,226,245,.35)}
+.nav-link.nav-cta:hover{background:linear-gradient(135deg,var(--tono-2),var(--tono-1));color:#08111f}
+
+/* barra in alto: da superficie più accesa della pagina a barra discreta e traslucida */
+.sc-ticker{background:rgba(9,18,32,.94);border-bottom:1px solid var(--accent-line);backdrop-filter:blur(8px);color:#cfe2f5}
+.sc-ticker a,.sc-ticker .tick-clone{color:#cfe2f5;font-weight:600}
+.sc-ticker a:hover{color:#ffffff}
+.sc-ticker span.sep{color:var(--tono-3);opacity:.75}
+
+/* navbar e footer: stessa famiglia, separatori tenui */
+.navbar{background:rgba(10,21,38,.86);backdrop-filter:blur(12px);border-bottom:1px solid rgba(158,197,234,.10)}
+.nav-link{color:var(--text-secondary)}
+.nav-link:hover,.nav-link.active{color:#ffffff}
+.nav-menu{background:transparent}
+.sc-ticker,.navbar{box-shadow:0 8px 30px rgba(6,12,24,.35)}
+
+/* pill e tag: da etichetta colorata a pastiglia tonale */
+.hero-badge,.section-tag{background:rgba(158,197,234,.10);color:var(--tono-1);border:1px solid var(--accent-line);border-radius:999px;padding:6px 14px;letter-spacing:.06em}
+.section-title .accent,.accent{color:var(--tono-2)}
+
+/* superfici: vetro scuro traslucido, bordi tenui, angoli morbidi */
+.tool-card,.blog-card,.problem-card,.impact-card,.band-card,.mkt-card,.signal-chip{background:rgba(158,197,234,.045);border:1px solid rgba(158,197,234,.13);backdrop-filter:blur(6px);box-shadow:0 18px 44px rgba(6,12,24,.35)}
+.tool-card:hover,.blog-card:hover,.problem-card:hover,.impact-card:hover,.band-card:hover,.mkt-card:hover{background:rgba(158,197,234,.075);border-color:var(--accent-line);transform:translateY(-3px);box-shadow:0 24px 54px rgba(6,12,24,.45)}
+.signal-chip:hover{border-color:var(--tono-2);background:rgba(158,197,234,.12)}
+.blog-image-wrapper{background:rgba(158,197,234,.06)}
+.cta-box{background:linear-gradient(150deg,rgba(158,197,234,.10),rgba(10,21,38,.55));border:1px solid var(--accent-line)}
+
+/* moduli: campi tonale, focus visibile coerente */
+input,select,textarea,.newsletter-form input{background:rgba(9,18,32,.7);border:1px solid rgba(158,197,234,.16);color:var(--text-primary)}
+input:focus,select:focus,textarea:focus,.newsletter-form input:focus{border-color:var(--tono-2);box-shadow:0 0 0 3px rgba(158,197,234,.14)}
+
+/* footer */
+.footer{background:rgba(9,18,32,.72);border-top:1px solid rgba(158,197,234,.12)}
+.footer-col h4{color:var(--tono-1)}
+.footer a{color:var(--text-secondary)}
+.footer a:hover{color:#ffffff}
+
+/* titoli e testi: nessun nero puro, tutto nel blu notte */
+.hero-title,.section-title,h1,h2,h3{color:var(--text-primary)}
+.hero-subtitle,.section-desc{color:var(--text-secondary)}
+
+/* scrollbar tonale (dettaglio, ma chiude il cerchio) */
+html{scrollbar-color:var(--tono-4) transparent}
+::-webkit-scrollbar-thumb{background:var(--tono-4);border-radius:8px}
+::-webkit-scrollbar-track{background:transparent}
