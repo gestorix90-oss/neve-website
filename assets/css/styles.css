@@ -1498,3 +1498,7 @@ li {
   .sec3d.aperta{opacity:1;transform:perspective(1100px) translate3d(0,0,0) rotateX(0) scale(1)}
 }
 @media (prefers-reduced-motion: reduce){.hero-layer{transform:none!important}}
+
+/* contrasto del sottotitolo della hero sopra la fotografia (WCAG) */
+.hero-subtitle{color:#dce7f6;text-shadow:0 1px 12px rgba(6,12,24,.55)}
+.hero-subtitle strong{color:#ffffff}
