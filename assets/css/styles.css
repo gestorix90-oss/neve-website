@@ -1250,26 +1250,12 @@ li {
 @import url('blog.css');
 
 /* ===== Ticker "officina aperta" ===== */
-.sc-ticker{background:linear-gradient(90deg,#8fb8e0,#9ec5ea);color:#0a1628;overflow:hidden;position:relative;height:38px;display:flex;align-items:center;z-index:1001}
-.sc-ticker-track{display:flex;gap:48px;white-space:nowrap;animation:sc-ticker 38s linear infinite;padding-left:100%}
-.sc-ticker:hover .sc-ticker-track{animation-play-state:paused}
-.sc-ticker a,.sc-ticker .tick-clone{color:#0a1628;font-weight:800;text-decoration:none;font-size:.85rem;letter-spacing:.02em}
-.sc-ticker a:hover{text-decoration:underline}
-.sc-ticker span.sep{opacity:.5}
-@keyframes sc-ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media(prefers-reduced-motion:reduce){.sc-ticker-track{animation:none;padding-left:12px}}
 
 /* ===== ticker fisso sopra la navbar ===== */
-.sc-ticker{position:fixed;top:0;left:0;right:0;z-index:1002}
-.navbar{top:38px}
 @media(max-width:768px){
-  .sc-ticker{height:34px}
-  .sc-ticker-track{animation-duration:30s}
-  .navbar{top:34px}
 }
 
 
-/* ===== 3D: moneta euro in hero ===== */
 @keyframes coinSpin{from{transform:rotateY(0) rotateX(14deg)}to{transform:rotateY(360deg) rotateX(14deg)}}
 @media(max-width:860px){.coin3d{width:58px;height:58px;top:8%;right:4%}.coin3d-face{font-size:1.7rem}}
 
@@ -1523,18 +1509,12 @@ a,.btn,.nav-link,.tool-card,.blog-card,.problem-card,.impact-card,.signal-chip,.
 .nav-link.nav-cta{background:rgba(158,197,234,.16);color:#eef5fd;border:1px solid var(--accent-line)}
 .nav-link.nav-cta:hover{background:rgba(158,197,234,.28);color:#ffffff;border-color:var(--tono-2)}
 
-/* barra in alto: da superficie più accesa della pagina a barra discreta e traslucida */
-.sc-ticker{background:rgba(9,18,32,.94);border-bottom:1px solid var(--accent-line);backdrop-filter:blur(8px);color:#cfe2f5}
-.sc-ticker a,.sc-ticker .tick-clone{color:#cfe2f5;font-weight:600}
-.sc-ticker a:hover{color:#ffffff}
-.sc-ticker span.sep{color:var(--tono-3);opacity:.75}
 
 /* navbar e footer: stessa famiglia, separatori tenui */
 .navbar{background:rgba(10,21,38,.86);backdrop-filter:blur(12px);border-bottom:1px solid rgba(158,197,234,.10)}
 .nav-link{color:var(--text-secondary)}
 .nav-link:hover,.nav-link.active{color:#ffffff}
 .nav-menu{background:transparent}
-.sc-ticker,.navbar{box-shadow:0 8px 30px rgba(6,12,24,.35)}
 
 /* pill e tag: da etichetta colorata a pastiglia tonale */
 .hero-badge,.section-tag{background:rgba(158,197,234,.10);color:var(--tono-1);border:1px solid var(--accent-line);border-radius:999px;padding:6px 14px;letter-spacing:.06em}
@@ -1567,7 +1547,6 @@ html{scrollbar-color:var(--tono-4) transparent}
 ::-webkit-scrollbar-track{background:transparent}
 
 /* leggibilità dei testi piccoli (segnalata dal controllo visivo del 25/10/2026) */
-.sc-ticker a,.sc-ticker .tick-clone{font-size:.92rem}
 .hero-badge,.section-tag{font-size:.82rem;padding:7px 15px}
 .hero-proof,.proof-link{font-size:.92rem}
 .footer a,.footer-bottom,.blog-date{font-size:.9rem}
