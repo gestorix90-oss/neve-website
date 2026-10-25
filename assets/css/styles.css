@@ -1519,12 +1519,12 @@ html,body{background:var(--bg-primary);color:var(--text-primary)}
 a,.btn,.nav-link,.tool-card,.blog-card,.problem-card,.impact-card,.signal-chip,.band-card{transition:color .28s ease,background-color .28s ease,border-color .28s ease,box-shadow .28s ease,transform .28s ease}
 
 /* bottone principale: gradiente tonale, testo blu notte (contrasto verificato) */
-.btn-primary{background:linear-gradient(135deg,var(--tono-2) 0%,var(--tono-1) 100%);color:#0a1526;border:1px solid rgba(207,226,245,.45);box-shadow:0 10px 30px rgba(10,21,38,.45)}
+.btn-primary{background:linear-gradient(135deg,#93bcdf 0%,#bcd8f2 100%);color:#0a1526;border:1px solid rgba(207,226,245,.45);box-shadow:0 10px 30px rgba(10,21,38,.45)}
 .btn-primary:hover{background:linear-gradient(135deg,var(--tono-1) 0%,#ffffff 100%);color:#08111f;box-shadow:0 14px 36px rgba(158,197,234,.22)}
 .btn-outline{background:rgba(158,197,234,.06);color:var(--tono-1);border:1px solid var(--accent-line)}
 .btn-outline:hover{background:rgba(158,197,234,.14);border-color:var(--tono-2);color:#ffffff}
-.nav-link.nav-cta{background:linear-gradient(135deg,var(--tono-3),var(--tono-2));color:#08111f;border:1px solid rgba(207,226,245,.35)}
-.nav-link.nav-cta:hover{background:linear-gradient(135deg,var(--tono-2),var(--tono-1));color:#08111f}
+.nav-link.nav-cta{background:rgba(158,197,234,.16);color:#eef5fd;border:1px solid var(--accent-line)}
+.nav-link.nav-cta:hover{background:rgba(158,197,234,.28);color:#ffffff;border-color:var(--tono-2)}
 
 /* barra in alto: da superficie più accesa della pagina a barra discreta e traslucida */
 .sc-ticker{background:rgba(9,18,32,.94);border-bottom:1px solid var(--accent-line);backdrop-filter:blur(8px);color:#cfe2f5}
