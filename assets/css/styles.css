@@ -1572,3 +1572,22 @@ html{scrollbar-color:var(--tono-4) transparent}
 .hero-proof,.proof-link{font-size:.92rem}
 .footer a,.footer-bottom,.blog-date{font-size:.9rem}
 .hero-subtitle{color:#dfe9f7}
+
+/* ===== Riquadro newsletter: era sproporzionato e il modulo si schiacciava =====
+   Causa trovata misurando: .form-group era display:flex ORIZZONTALE ma contiene campi
+   impilati (etichetta email, input, consenso GDPR, bottone): finivano uno accanto
+   all'altro schiacciati in colonne alte 236px, e il riquadro arrivava a 704px di altezza.
+   Ora i campi sono impilati, il riquadro è più compatto e il bottone ha la sua misura. */
+.cta-box{padding:clamp(26px,4vw,42px)}
+.cta-visual{display:none}
+.cta-box h2{font-size:clamp(1.35rem,2.6vw,1.75rem);margin-bottom:14px}
+.cta-box > p{max-width:520px;margin:0 auto 22px}
+.newsletter-form{display:block;max-width:520px;margin:22px auto 0;position:relative}
+.form-group{display:block;max-width:none;width:100%}
+.form-group input[type="email"]{flex:none;width:100%}
+.form-group label{display:block;font-size:.88rem;color:var(--text-secondary);margin-bottom:7px;text-align:left}
+.form-group a{color:var(--tono-2)}
+.newsletter-form label input[type="checkbox"]{transform:none;width:15px;height:15px;accent-color:var(--tono-2);vertical-align:-2px}
+.newsletter-form .btn{margin-top:16px;min-width:220px;padding:13px 26px}
+.form-group p#newsletter-esito{font-size:.85rem;min-height:1em}
+.cta-note{font-size:.82rem;color:var(--text-muted);margin-top:14px}
