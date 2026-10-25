@@ -404,7 +404,7 @@
   background: var(--bg-input, #131f36); color: var(--foreground,#e2e8f0);
   font-size: 1.05rem; font-family: inherit;
 }
-.tool-form input[type="number"]:focus { outline:none; border-color: var(--orange,#8fb8e0); box-shadow: 0 0 0 3px rgba(143,184,224,.15); }
+.tool-form input[type="number"]:focus { outline:none; border-color: var(--accent,#8fb8e0); box-shadow: 0 0 0 3px rgba(143,184,224,.15); }
 .tool-result {
   background: linear-gradient(135deg, rgba(143,184,224,.08), rgba(143,184,224,.02));
   border: 1px solid rgba(143,184,224,.25);
