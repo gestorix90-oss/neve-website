@@ -1602,3 +1602,6 @@ html{scrollbar-color:var(--tono-4) transparent}
 .cta-note{color:var(--text-secondary);font-size:.85rem}
 .newsletter-form .btn{background:linear-gradient(135deg,#9ec5ea 0%,#cfe2f5 100%);border:1px solid rgba(233,241,250,.55);color:#08111f;box-shadow:0 12px 28px rgba(8,17,31,.5)}
 .newsletter-form .btn:hover{background:linear-gradient(135deg,#cfe2f5 0%,#ffffff 100%)}
+
+/* i titoli del footer non sono intestazioni del documento: -3 heading per pagina */
+.footer-col .footer-title{font-size:.82rem;color:var(--tono-1);margin-bottom:var(--space-md);text-transform:uppercase;letter-spacing:.06em;font-weight:700}
