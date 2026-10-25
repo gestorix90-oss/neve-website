@@ -55,7 +55,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--orange), var(--blue));
+    background: linear-gradient(90deg, var(--accent), var(--blue));
 }
 
 .featured-badge {
@@ -98,7 +98,7 @@
 }
 
 .news-source {
-    color: var(--orange);
+    color: var(--accent);
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -167,7 +167,7 @@
     padding: 4px 12px;
     border-radius: 50px;
     background: rgba(158, 197, 234, 0.1);
-    color: var(--orange);
+    color: var(--accent);
 }
 
 .news-card h3 {
@@ -183,7 +183,7 @@
 }
 
 .news-card h3 a:hover {
-    color: var(--orange);
+    color: var(--accent);
 }
 
 .news-summary {
@@ -203,7 +203,7 @@
 }
 
 .news-link {
-    color: var(--orange);
+    color: var(--accent);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
@@ -240,7 +240,7 @@
 }
 
 .analysis-tag {
-    background: linear-gradient(135deg, var(--orange), #7fa9d6);
+    background: linear-gradient(135deg, var(--accent), #7fa9d6);
     color: #fff;
     padding: 4px 14px;
     border-radius: 50px;
@@ -311,7 +311,7 @@
     top: 0;
     width: 24px;
     height: 24px;
-    background: linear-gradient(135deg, var(--orange), #7fa9d6);
+    background: linear-gradient(135deg, var(--accent), #7fa9d6);
     color: #fff;
     border-radius: 50%;
     display: flex;
@@ -333,7 +333,7 @@
 }
 
 .analysis-box strong {
-    color: var(--orange);
+    color: var(--accent);
 }
 
 /* --- RESOURCES SECTION --- */
@@ -374,7 +374,7 @@
     border-radius: 50px;
 }
 
-.resource-type.book { background: rgba(158, 197, 234, 0.15); color: var(--orange); }
+.resource-type.book { background: rgba(158, 197, 234, 0.15); color: var(--accent); }
 .resource-type.tool { background: rgba(59, 130, 246, 0.15); color: var(--blue); }
 .resource-type.course { background: rgba(16, 185, 129, 0.15); color: #10b981; }
 .resource-type.website { background: rgba(168, 85, 247, 0.15); color: #a855f7; }
@@ -406,7 +406,7 @@
 
 .resource-link {
     display: inline-block;
-    color: var(--orange);
+    color: var(--accent);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
@@ -519,7 +519,7 @@
 }
 
 .form-group input:focus {
-    border-color: var(--orange);
+    border-color: var(--accent);
 }
 
 .checkbox-label {
@@ -533,11 +533,11 @@
 }
 
 .checkbox-label input {
-    accent-color: var(--orange);
+    accent-color: var(--accent);
 }
 
 .checkbox-label a {
-    color: var(--orange);
+    color: var(--accent);
 }
 
 /* --- NEWSLETTER BANNER --- */
@@ -603,12 +603,12 @@
 }
 
 .newsletter-form input:focus {
-    border-color: var(--orange);
+    border-color: var(--accent);
 }
 
 .newsletter-form button {
     padding: 14px 28px;
-    background: linear-gradient(135deg, var(--orange), #7fa9d6);
+    background: linear-gradient(135deg, var(--accent), #7fa9d6);
     color: #fff;
     border: none;
     border-radius: 10px;

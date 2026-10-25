@@ -8,7 +8,7 @@
     padding: 80px 0 60px;
     position: relative;
     overflow: hidden;
-    border-bottom: 3px solid var(--orange);
+    border-bottom: 3px solid var(--accent);
 }
 
 .hero-tools::before {
@@ -27,7 +27,7 @@
 }
 
 .hero-tools .hero-badge {
-    background: linear-gradient(135deg, var(--orange), #7fa9d6);
+    background: linear-gradient(135deg, var(--accent), #7fa9d6);
     color: #fff;
 }
 
@@ -69,7 +69,7 @@
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--orange), var(--blue));
+    background: linear-gradient(90deg, var(--accent), var(--blue));
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -115,7 +115,7 @@
 }
 
 .tool-btn {
-    background: linear-gradient(135deg, var(--orange), #7fa9d6);
+    background: linear-gradient(135deg, var(--accent), #7fa9d6);
     color: #fff;
     border: none;
     padding: 12px 28px;
@@ -186,7 +186,7 @@
 .piggy-body {
     width: 60px;
     height: 45px;
-    background: var(--orange);
+    background: var(--accent);
     border-radius: 50% 50% 40% 40%;
     position: relative;
 }
@@ -199,7 +199,7 @@
     transform: translateX(-50%);
     width: 20px;
     height: 15px;
-    background: var(--orange);
+    background: var(--accent);
     border-radius: 50% 50% 0 0;
 }
 
@@ -236,7 +236,7 @@
     position: absolute;
     width: 8px;
     height: 8px;
-    background: var(--orange);
+    background: var(--accent);
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -276,7 +276,7 @@
 
 .meter-fill {
     height: 100%;
-    background: linear-gradient(90deg, #ef4444, var(--orange));
+    background: linear-gradient(90deg, #ef4444, var(--accent));
     border-radius: 15px;
     transition: width 1.5s ease;
 }
@@ -309,7 +309,7 @@
 .calc-wrapper h3 {
     text-align: center;
     margin-bottom: 30px;
-    color: var(--orange);
+    color: var(--accent);
 }
 
 .calc-inputs {
@@ -343,7 +343,7 @@
 }
 
 .calc-field input:focus {
-    border-color: var(--orange);
+    border-color: var(--accent);
 }
 
 .calc-results {
@@ -375,7 +375,7 @@
     color: #fff;
 }
 
-.result-value.highlight-orange { color: var(--orange); }
+.result-value.highlight-orange { color: var(--accent); }
 .result-value.highlight-green { color: #22c55e; }
 .result-value.highlight-blue { color: var(--blue); }
 
