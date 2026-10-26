@@ -5,3 +5,12 @@
 /netlify.toml /404.html  404
 /CNAME        /404.html  404
 /*.md         /404.html  404
+
+# --- Fix stub/redirect pages per Google Search Console ---
+/blog.html              /blog/blog.html        301
+/blog/                  /blog/blog.html        301
+/blog/index.html        /blog/blog.html        301
+/calcolo-stipendio-netto.html  /tools/calcolo-stipendio-netto.html  301
+/blog/inflazione-agosto-2026-3-3.html  /blog/inflazione-definitiva-agosto-2026-2026-09.html  301
+/blog/inflazione-settembre-2026-4-2-percento-il-sole-24-ore-1-ottobre-2026.html  /blog/istat-inflazione-acquisita-2026-sale-al-3-1-percento-2026-09-30.html  301
+/blog/inflazione-settembre-2026-4-2-percento-istan-30-settembre-2026.html  /blog/istat-inflazione-acquisita-2026-sale-al-3-1-percento-2026-09-30.html  301
