@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SoldiChiari</title>
     <link>https://soldichiari.com/</link>
@@ -9,6 +9,16 @@
     <lastBuildDate>Thu, 01 Oct 2026 00:00:00 GMT</lastBuildDate>
     <generator>SoldiChiari (statico)</generator>
     <image><url>https://soldichiari.com/assets/img/ai/logo-soldichiari-512.png</url><title>SoldiChiari</title><link>https://soldichiari.com/</link></image>
+    <item>
+      <title>TFR contro inflazione: come funziona la rivalutazione legale</title>
+      <link>https://soldichiari.com/blog/tfr-contro-inflazione-rivalutazione-come-funziona.html</link>
+      <guid isPermaLink="false">sck-2026-11-25-tfr-contro-inflazione-9</guid>
+      <pubDate>Tue, 25 Nov 2026 08:00:00 +0100</pubDate>
+      <category>Risparmio</category>
+      <dc:creator>SoldiChiari</dc:creator>
+      <description><![CDATA[La formula dell&#8217;art. 2120 c.c. con gli indici ISTAT 2021-2025: perch&#233; la rivalutazione segue l&#8217;indice di dicembre, non il costo della vita medio dell&#8217;anno, e quanto resta dopo il 17%.]]></description>
+      <content:encoded><![CDATA[<p>1,5% fisso + 75% dell&#8217;indice FOI di dicembre, ma la quota dell&#8217;anno non matura nulla e l&#8217;imposta sostitutiva del 17% colpisce l&#8217;incremento ogni anno. Tabella 2021-2025 con i dati ufficiali ISTAT e il calcolo in 5 minuti sul tuo TFR.</p><p><a href="https://soldichiari.com/blog/tfr-contro-inflazione-rivalutazione-come-funziona.html">Leggi l&#8217;articolo completo →</a></p>]]></content:encoded>
+    </item>
     <item>
       <title>Accise gasolio: lo sconto è scaduto, cosa cambia al pieno</title>
       <link>https://soldichiari.com/blog/accise-gasolio-sconto-scadenza-5-ottobre-2026-ansa-5-ottobre-2026.html</link>
