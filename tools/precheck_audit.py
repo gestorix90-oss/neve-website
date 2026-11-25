@@ -390,6 +390,30 @@ def main():
         print(f"link esterni: {min(len(ext),80)} provati | bot-wall da riverificare in browser reale: {walled}")
         block("link esterni morti", deadl)
 
+    # 7. feed/sitemap XML validity + all referenced /assets exist (2026-11: feed was invalid
+    #    for months - content:encoded without xmlns:content; og:image pointed at missing files)
+    import xml.etree.ElementTree as _ET
+    errs = []
+    for xmlf in ("feed.xml", "sitemap.xml"):
+        fp = os.path.join(repo, xmlf)
+        if os.path.exists(fp):
+            try: _ET.parse(fp)
+            except Exception as er: errs.append(f"{xmlf}: {er}")
+    block("XML feed/sitemap validi", errs)
+
+    missing_assets = []
+    for root_dir, _, files in os.walk(repo):
+        if ".git" in root_dir: continue
+        for fn in files:
+            if not fn.endswith(".html"): continue
+            fp = os.path.join(root_dir, fn)
+            try: h = open(fp, encoding="utf-8", errors="ignore").read()
+            except Exception: continue
+            for r in set(re.findall(r'(?:content="|src=")(?:https?://[^/]+)?(/assets/[^"]+)', h)):
+                if not os.path.exists(os.path.join(repo, r.lstrip("/"))):
+                    missing_assets.append(f"{os.path.relpath(fp, repo)}: {r}")
+    block("asset referenziati esistenti", missing_assets[:12])
+
     print("\nBLOCCHI FALLITI:", failed)
     sys.exit(1 if failed else 0)
 
